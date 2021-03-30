@@ -1,0 +1,10 @@
+uuid: cef6bc32-b426-456f-8016-cef40d1b5962
+langcode: es
+status: true
+dependencies:
+  module:
+    - block
+id: block.token
+label: Comodín
+targetEntityType: block
+cache: true

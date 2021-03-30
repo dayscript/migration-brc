@@ -1,0 +1,14 @@
+uuid: 5d52882e-f2cb-4936-a967-bd31c0694e63
+name: 'La Red Cultural del Banco de la República'
+mail: yruiz@dayscript.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
