@@ -1,0 +1,14 @@
+uuid: 4fc4a5af-c029-4f9c-9e70-000fbcd88e0e
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.leticia_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.leticia_colas_de_nodos
+label: 'Añade el rol Leticia - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: leticia_colas_de_nodos

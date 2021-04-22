@@ -1,0 +1,15 @@
+uuid: e8a6db82-b4c9-47e1-989a-f82fbf567c10
+langcode: es
+status: true
+dependencies: {  }
+name: sc_7
+label: 'SC 800x480'
+effects:
+  d4ccefb4-0cf1-4d86-95e0-93cec206a4a9:
+    uuid: d4ccefb4-0cf1-4d86-95e0-93cec206a4a9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 480
+      anchor: center-center

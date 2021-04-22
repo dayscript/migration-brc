@@ -1,0 +1,23 @@
+uuid: 45c44942-2090-46a7-8bf8-7128b967e118
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_precio_de_venta
+    - node.type.publicacion
+id: node.publicacion.field_precio_de_venta
+field_name: field_precio_de_venta
+entity_type: node
+bundle: publicacion
+label: 'Precio de venta'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: COP
+field_type: integer

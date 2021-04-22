@@ -1,0 +1,83 @@
+uuid: 95eae7d4-4847-4d15-901b-3d70ffbc4e4f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.informaci_n_de_los_acompa_.field_birth_year
+    - field.field.paragraph.informaci_n_de_los_acompa_.field_email
+    - field.field.paragraph.informaci_n_de_los_acompa_.field_firstname
+    - field.field.paragraph.informaci_n_de_los_acompa_.field_form_city
+    - field.field.paragraph.informaci_n_de_los_acompa_.field_lastname
+    - field.field.paragraph.informaci_n_de_los_acompa_.field_numero_identificacion
+    - field.field.paragraph.informaci_n_de_los_acompa_.field_tel
+    - field.field.paragraph.informaci_n_de_los_acompa_.field_tipo_de_documento
+    - paragraphs.paragraphs_type.informaci_n_de_los_acompa_
+id: paragraph.informaci_n_de_los_acompa_.default
+targetEntityType: paragraph
+bundle: informaci_n_de_los_acompa_
+mode: default
+content:
+  field_birth_year:
+    weight: 6
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_email:
+    weight: 20
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_firstname:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_form_city:
+    weight: 12
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_lastname:
+    weight: 4
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_numero_identificacion:
+    weight: 10
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tel:
+    weight: 18
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tipo_de_documento:
+    weight: 8
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

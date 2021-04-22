@@ -1,0 +1,14 @@
+uuid: 6c7ba641-0ced-4ec7-8569-8aaae2f4f603
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.contenidos_credencial_historia
+  module:
+    - user
+id: user_remove_role_action.contenidos_credencial_historia
+label: 'Elimina el rol Contenidos Credencial Historia al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: contenidos_credencial_historia

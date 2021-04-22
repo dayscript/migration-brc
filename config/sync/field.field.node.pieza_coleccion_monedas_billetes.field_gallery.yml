@@ -1,0 +1,33 @@
+uuid: 0de45b31-6f0f-45a2-a8e6-2c9393f8b0b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery
+    - node.type.pieza_coleccion_monedas_billetes
+  module:
+    - image
+id: node.pieza_coleccion_monedas_billetes.field_gallery
+field_name: field_gallery
+entity_type: node
+bundle: pieza_coleccion_monedas_billetes
+label: 'Galería de imágenes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: pieza_coleccion_monedas_billetes/gallery
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

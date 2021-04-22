@@ -1,0 +1,8 @@
+uuid: 7040160c-77a0-49bb-beb9-de3a87b4e62d
+langcode: es
+status: true
+dependencies: {  }
+name: 'Derechos de uso'
+vid: derechos_de_uso
+description: 'Tipo de licencia bajo la que el Banco utiliza esta imagen ej: copyright, Creative commons, Dominio público, otra'
+weight: 2

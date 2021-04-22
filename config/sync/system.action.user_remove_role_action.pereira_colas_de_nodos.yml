@@ -1,0 +1,14 @@
+uuid: a7bb4dd3-8fba-4ae3-a349-80e01e6495b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.pereira_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.pereira_colas_de_nodos
+label: 'Elimina el rol Pereira - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: pereira_colas_de_nodos

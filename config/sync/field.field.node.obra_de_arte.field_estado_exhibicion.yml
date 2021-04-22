@@ -1,0 +1,21 @@
+uuid: 1288b90a-a290-4ed2-aa03-a1f277f14091
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado_exhibicion
+    - node.type.obra_de_arte
+  module:
+    - options
+id: node.obra_de_arte.field_estado_exhibicion
+field_name: field_estado_exhibicion
+entity_type: node
+bundle: obra_de_arte
+label: 'En exhibición'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

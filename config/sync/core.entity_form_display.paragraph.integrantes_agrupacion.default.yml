@@ -1,0 +1,83 @@
+uuid: 20c8c168-e7c3-4a99-aae8-91e83b78ed02
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.integrantes_agrupacion.field_birth_year
+    - field.field.paragraph.integrantes_agrupacion.field_email
+    - field.field.paragraph.integrantes_agrupacion.field_firstname
+    - field.field.paragraph.integrantes_agrupacion.field_form_city
+    - field.field.paragraph.integrantes_agrupacion.field_lastname
+    - field.field.paragraph.integrantes_agrupacion.field_numero_identificacion
+    - field.field.paragraph.integrantes_agrupacion.field_tel
+    - field.field.paragraph.integrantes_agrupacion.field_tipo_de_documento
+    - paragraphs.paragraphs_type.integrantes_agrupacion
+id: paragraph.integrantes_agrupacion.default
+targetEntityType: paragraph
+bundle: integrantes_agrupacion
+mode: default
+content:
+  field_birth_year:
+    weight: 6
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_email:
+    weight: 18
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_firstname:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_form_city:
+    weight: 12
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_lastname:
+    weight: 4
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_numero_identificacion:
+    weight: 10
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tel:
+    weight: 16
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tipo_de_documento:
+    weight: 8
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

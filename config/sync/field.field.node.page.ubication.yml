@@ -1,0 +1,26 @@
+uuid: 7c75c6bb-5d4a-4e8f-831f-43839dd00423
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.ubication
+    - node.type.page
+    - taxonomy.vocabulary.city
+id: node.page.ubication
+field_name: ubication
+entity_type: node
+bundle: page
+label: 'Ciudad y Lugar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      city: city
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

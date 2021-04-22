@@ -1,0 +1,28 @@
+uuid: e660393f-96d2-40a2-8aa7-a919f1dafc2c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_area_misional
+    - node.type.article
+    - taxonomy.vocabulary.area
+id: node.article.field_area_misional
+field_name: field_area_misional
+entity_type: node
+bundle: article
+label: 'Área misional'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    tid: '184'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      area: area
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

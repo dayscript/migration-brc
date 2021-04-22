@@ -1,0 +1,19 @@
+uuid: 7234bc38-7979-4056-9e53-920b6acb462a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_fecha_muerte
+    - taxonomy.vocabulary.ca_artista
+id: taxonomy_term.ca_artista.field_fecha_muerte
+field_name: field_fecha_muerte
+entity_type: taxonomy_term
+bundle: ca_artista
+label: 'Fecha Muerte'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

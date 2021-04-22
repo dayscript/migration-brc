@@ -1,0 +1,19 @@
+uuid: 0dd0fc09-fbde-443c-b569-5e5ae84debef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.multimedia
+id: node.multimedia.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: multimedia
+label: Subtítulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

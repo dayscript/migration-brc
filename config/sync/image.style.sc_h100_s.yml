@@ -1,0 +1,15 @@
+uuid: dde06dbe-dd20-43d3-9c94-e165cfe0a6ae
+langcode: es
+status: true
+dependencies: {  }
+name: sc_h100_s
+label: sc_h100_s
+effects:
+  cc578ce0-14b6-49e4-a9b2-def03930474c:
+    uuid: cc578ce0-14b6-49e4-a9b2-def03930474c
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: 150
+      upscale: false

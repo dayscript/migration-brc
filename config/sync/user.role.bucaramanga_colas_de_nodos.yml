@@ -1,0 +1,11 @@
+uuid: d9fabb56-7218-41c3-a611-501ddfc72736
+langcode: es
+status: true
+dependencies: {  }
+id: bucaramanga_colas_de_nodos
+label: 'Bucaramanga - colas de nodos'
+weight: 17
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

@@ -1,0 +1,26 @@
+uuid: 882e3053-4959-4929-aab7-d28e54887497
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.service
+    - taxonomy.vocabulary.tags
+id: node.service.field_tags
+field_name: field_tags
+entity_type: node
+bundle: service
+label: Etiquetas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tags: tags
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

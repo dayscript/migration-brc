@@ -1,0 +1,15 @@
+uuid: 4d6792c2-1ebd-40d8-b9cf-5d95277608dc
+langcode: es
+status: true
+dependencies: {  }
+name: seeker_medium
+label: seeker_medium
+effects:
+  70ee01a5-1787-4210-a775-dfef8751ae6c:
+    uuid: 70ee01a5-1787-4210-a775-dfef8751ae6c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 200
+      anchor: center-center

@@ -1,0 +1,26 @@
+uuid: a0a080bd-cb7c-468d-9994-7140a2b8cd2d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_city
+    - node.type.obra_de_arte
+    - taxonomy.vocabulary.city
+id: node.obra_de_arte.field_city
+field_name: field_city
+entity_type: node
+bundle: obra_de_arte
+label: 'Ciudad y Lugar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      city: city
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

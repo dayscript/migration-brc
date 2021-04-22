@@ -1,0 +1,19 @@
+uuid: ff63c281-13bd-4d77-9467-3e905589ce22
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lista_de_obras
+    - node.type.minisitio
+id: node.minisitio.field_lista_de_obras
+field_name: field_lista_de_obras
+entity_type: node
+bundle: minisitio
+label: 'Lista de obras'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

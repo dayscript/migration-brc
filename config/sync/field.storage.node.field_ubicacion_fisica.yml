@@ -1,0 +1,20 @@
+uuid: 727298fb-22c2-47cd-9a73-e141ba358a75
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ubicacion_fisica
+field_name: field_ubicacion_fisica
+entity_type: node
+type: text
+settings:
+  max_length: 300
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

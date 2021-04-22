@@ -1,0 +1,142 @@
+uuid: bea5838a-f650-44da-bdf9-edc497776e48
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pieza_coleccion_monedas_billetes.body
+    - field.field.node.pieza_coleccion_monedas_billetes.field_denominacion_numismatica
+    - field.field.node.pieza_coleccion_monedas_billetes.field_dimensiones
+    - field.field.node.pieza_coleccion_monedas_billetes.field_emisor
+    - field.field.node.pieza_coleccion_monedas_billetes.field_fecha_de_emision
+    - field.field.node.pieza_coleccion_monedas_billetes.field_fecha_de_ingreso_a_la_cole
+    - field.field.node.pieza_coleccion_monedas_billetes.field_gallery
+    - field.field.node.pieza_coleccion_monedas_billetes.field_impresor
+    - field.field.node.pieza_coleccion_monedas_billetes.field_numero_de_registro
+    - field.field.node.pieza_coleccion_monedas_billetes.field_obra_destacada
+    - field.field.node.pieza_coleccion_monedas_billetes.field_sufijo_valor
+    - field.field.node.pieza_coleccion_monedas_billetes.field_tags
+    - field.field.node.pieza_coleccion_monedas_billetes.field_tipo_de_pieza
+    - node.type.pieza_coleccion_monedas_billetes
+  module:
+    - datetime
+    - image
+    - options
+    - text
+    - user
+id: node.pieza_coleccion_monedas_billetes.default
+targetEntityType: node
+bundle: pieza_coleccion_monedas_billetes
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_denominacion_numismatica:
+    label: above
+    weight: 12
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_dimensiones:
+    label: above
+    weight: 11
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_emisor:
+    label: above
+    weight: 6
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_fecha_de_emision:
+    label: above
+    weight: 1
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_fecha_de_ingreso_a_la_cole:
+    label: above
+    weight: 4
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    label: above
+    weight: 3
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_impresor:
+    label: above
+    weight: 10
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_numero_de_registro:
+    label: above
+    weight: 14
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_obra_destacada:
+    label: above
+    weight: 15
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sufijo_valor:
+    label: above
+    weight: 13
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    label: above
+    weight: 8
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tipo_de_pieza:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

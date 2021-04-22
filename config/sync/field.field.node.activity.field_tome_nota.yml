@@ -1,0 +1,21 @@
+uuid: d03b98ad-b074-4c9c-9db0-43404027135e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tome_nota
+    - node.type.activity
+  module:
+    - text
+id: node.activity.field_tome_nota
+field_name: field_tome_nota
+entity_type: node
+bundle: activity
+label: 'Toma nota'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

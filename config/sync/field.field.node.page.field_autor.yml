@@ -1,0 +1,19 @@
+uuid: bb4344c2-db6d-408d-bf22-25c3a200931e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autor
+    - node.type.page
+id: node.page.field_autor
+field_name: field_autor
+entity_type: node
+bundle: page
+label: Author
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

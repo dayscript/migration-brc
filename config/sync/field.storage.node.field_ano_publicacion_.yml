@@ -1,0 +1,18 @@
+uuid: 49624222-239c-414e-b179-76c2a2ce6c67
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ano_publicacion_
+field_name: field_ano_publicacion_
+entity_type: node
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

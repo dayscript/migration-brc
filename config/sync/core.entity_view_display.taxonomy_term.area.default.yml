@@ -1,0 +1,35 @@
+uuid: d28db583-5dc9-42ba-b906-cf5469aa4074
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.area.field_image
+    - field.field.taxonomy_term.area.field_metatag
+    - taxonomy.vocabulary.area
+  module:
+    - image
+    - text
+id: taxonomy_term.area.default
+targetEntityType: taxonomy_term
+bundle: area
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    label: above
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_metatag: true
+  langcode: true

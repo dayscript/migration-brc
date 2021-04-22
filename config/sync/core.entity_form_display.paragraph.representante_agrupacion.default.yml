@@ -1,0 +1,92 @@
+uuid: 4f903ba4-7146-4507-afa4-8e37250d2724
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.representante_agrupacion.field_birth_year
+    - field.field.paragraph.representante_agrupacion.field_dir
+    - field.field.paragraph.representante_agrupacion.field_email
+    - field.field.paragraph.representante_agrupacion.field_firstname
+    - field.field.paragraph.representante_agrupacion.field_form_city
+    - field.field.paragraph.representante_agrupacion.field_lastname
+    - field.field.paragraph.representante_agrupacion.field_numero_identificacion
+    - field.field.paragraph.representante_agrupacion.field_tel
+    - field.field.paragraph.representante_agrupacion.field_tipo_de_documento
+    - paragraphs.paragraphs_type.representante_agrupacion
+id: paragraph.representante_agrupacion.default
+targetEntityType: paragraph
+bundle: representante_agrupacion
+mode: default
+content:
+  field_birth_year:
+    weight: 6
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_dir:
+    weight: 12
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_email:
+    weight: 20
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_firstname:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_form_city:
+    weight: 14
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_lastname:
+    weight: 4
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_numero_identificacion:
+    weight: 10
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tel:
+    weight: 18
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tipo_de_documento:
+    weight: 8
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

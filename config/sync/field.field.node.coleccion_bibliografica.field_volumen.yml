@@ -1,0 +1,21 @@
+uuid: 1bf4c0c5-988d-487f-8525-a26a089a764b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_volumen
+    - node.type.coleccion_bibliografica
+  module:
+    - text
+id: node.coleccion_bibliografica.field_volumen
+field_name: field_volumen
+entity_type: node
+bundle: coleccion_bibliografica
+label: Volumen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

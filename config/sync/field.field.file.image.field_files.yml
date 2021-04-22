@@ -1,0 +1,27 @@
+uuid: ffc766e7-8ec5-4a3d-bf4c-e786ac865c9a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_files
+  module:
+    - file
+id: file.image.field_files
+field_name: field_files
+entity_type: file
+bundle: image
+label: 'Licencia de uso'
+description: 'Para las imágenes que tienen un permiso de uso, debe adjuntarse el documento que la respalda.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: image/license
+  file_extensions: 'txt doc docx pdf png jpg'
+  max_filesize: 2MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
+

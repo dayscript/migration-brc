@@ -1,0 +1,20 @@
+uuid: 3a2e7c86-0bf1-4948-86a6-54da7338b855
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_siglo
+field_name: field_siglo
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,15 @@
+uuid: c743eaed-7716-412e-bfe7-5db3d1cce749
+langcode: es
+status: true
+dependencies: {  }
+name: sc_6
+label: 'SC 595x460'
+effects:
+  bd60cd34-56f1-4a5a-987b-aba12eaf3cfd:
+    uuid: bd60cd34-56f1-4a5a-987b-aba12eaf3cfd
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 595
+      height: 460
+      anchor: center-center

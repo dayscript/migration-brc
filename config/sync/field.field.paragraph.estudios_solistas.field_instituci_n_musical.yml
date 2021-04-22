@@ -1,0 +1,19 @@
+uuid: 9809f6a1-7f5b-48f1-b1e8-5f57ff3fa510
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_instituci_n_musical
+    - paragraphs.paragraphs_type.estudios_solistas
+id: paragraph.estudios_solistas.field_instituci_n_musical
+field_name: field_instituci_n_musical
+entity_type: paragraph
+bundle: estudios_solistas
+label: 'Institución musical donde estudia'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

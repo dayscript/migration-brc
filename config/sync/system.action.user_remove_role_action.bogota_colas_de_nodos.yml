@@ -1,0 +1,14 @@
+uuid: 9c823ecd-02a0-4b4a-b550-802b9408de70
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.bogota_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.bogota_colas_de_nodos
+label: 'Elimina el rol Bogotá - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: bogota_colas_de_nodos

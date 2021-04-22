@@ -1,0 +1,21 @@
+uuid: 88815646-69f1-4ee8-b026-37075c11b355
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_especif_instru_agrupacion
+field_name: field_especif_instru_agrupacion
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

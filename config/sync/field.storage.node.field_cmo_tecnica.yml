@@ -1,0 +1,20 @@
+uuid: 58de48c4-a199-4b1e-8d5c-9e81bb76d0ce
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_cmo_tecnica
+field_name: field_cmo_tecnica
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: 359efce5-97e7-4706-9acc-77fe7543afc8
+langcode: es
+status: true
+dependencies: {  }
+name: Caracter-exposicion
+vid: caracter_exposicion
+description: 'Para los minisitios tipo exposición: Individual o colectiva'
+weight: 0

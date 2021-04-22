@@ -1,0 +1,21 @@
+uuid: 7d4ab5a3-504f-4f1e-a78e-ee5495107154
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_de_emision
+    - node.type.pieza_coleccion_monedas_billetes
+  module:
+    - datetime
+id: node.pieza_coleccion_monedas_billetes.field_fecha_de_emision
+field_name: field_fecha_de_emision
+entity_type: node
+bundle: pieza_coleccion_monedas_billetes
+label: 'Fecha de emision'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

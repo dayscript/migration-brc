@@ -1,0 +1,10 @@
+uuid: 9fcd4e1b-8e50-40bc-b2b7-2616b51f969e
+langcode: es
+status: true
+dependencies: {  }
+id: datos_de_la_agrupaci_n
+label: 'Datos de la agrupaci n'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_datos_de_la_agrupaci_n'
+behavior_plugins: {  }

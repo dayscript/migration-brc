@@ -1,0 +1,20 @@
+uuid: 6d47cd47-8d0f-4664-828f-2238b2fa1045
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_precio_de_venta
+field_name: field_precio_de_venta
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

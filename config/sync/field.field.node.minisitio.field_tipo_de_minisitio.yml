@@ -1,0 +1,26 @@
+uuid: 6aa7c7a5-6358-4498-964d-43aa68d1638e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_minisitio
+    - node.type.minisitio
+    - taxonomy.vocabulary.tipo_de_minisitio
+id: node.minisitio.field_tipo_de_minisitio
+field_name: field_tipo_de_minisitio
+entity_type: node
+bundle: minisitio
+label: 'Tipo de minisitio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tipo_de_minisitio: tipo_de_minisitio
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

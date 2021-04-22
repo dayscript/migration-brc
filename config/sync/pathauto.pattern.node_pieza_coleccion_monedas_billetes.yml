@@ -1,0 +1,21 @@
+uuid: fa5c4370-2317-40fc-80e6-309563045ab3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_pieza_coleccion_monedas_billetes
+label: 'Content - CMB Billete o moneda'
+type: 'canonical_entities:node'
+pattern: 'coleccion-billetes-monedas/pieza/[node:title]-[node:field_numero_de_registro]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      pieza_coleccion_monedas_billetes: pieza_coleccion_monedas_billetes
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

@@ -1,0 +1,21 @@
+uuid: 3302fc6f-114d-4567-9263-6d0e3694d26b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ubicacion_fisica
+    - node.type.coleccion_bibliografica
+  module:
+    - text
+id: node.coleccion_bibliografica.field_ubicacion_fisica
+field_name: field_ubicacion_fisica
+entity_type: node
+bundle: coleccion_bibliografica
+label: 'Ubicación física'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,23 @@
+uuid: 3fece399-6475-4db5-9932-4afee9f166b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_unidades
+    - node.type.estampilla
+id: node.estampilla.field_unidades
+field_name: field_unidades
+entity_type: node
+bundle: estampilla
+label: Unidades
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

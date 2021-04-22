@@ -1,0 +1,21 @@
+uuid: ebcae7fb-cf30-4ed0-b9e5-41a6e55923e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_metatag
+    - taxonomy.vocabulary.cmo_estilo
+  module:
+    - metatag
+id: taxonomy_term.cmo_estilo.field_metatag
+field_name: field_metatag
+entity_type: taxonomy_term
+bundle: cmo_estilo
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

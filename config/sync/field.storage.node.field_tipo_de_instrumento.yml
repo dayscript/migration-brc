@@ -1,0 +1,20 @@
+uuid: 7858d22c-de52-4e5f-a22c-a63f70f1bdb1
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_tipo_de_instrumento
+field_name: field_tipo_de_instrumento
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

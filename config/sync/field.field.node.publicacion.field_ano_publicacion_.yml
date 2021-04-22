@@ -1,0 +1,19 @@
+uuid: 9e7937ed-c472-4f87-aab2-42b02f22b474
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ano_publicacion_
+    - node.type.publicacion
+id: node.publicacion.field_ano_publicacion_
+field_name: field_ano_publicacion_
+entity_type: node
+bundle: publicacion
+label: 'Año publicación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

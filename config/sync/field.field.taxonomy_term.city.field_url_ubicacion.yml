@@ -1,0 +1,19 @@
+uuid: f18bdcd1-1287-4836-9997-66734b5d8815
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_url_ubicacion
+    - taxonomy.vocabulary.city
+id: taxonomy_term.city.field_url_ubicacion
+field_name: field_url_ubicacion
+entity_type: taxonomy_term
+bundle: city
+label: 'URL Ubicación'
+description: 'En este campo se incluye la URL de una ubicación externa al banco'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

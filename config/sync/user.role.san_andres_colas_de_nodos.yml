@@ -1,0 +1,11 @@
+uuid: 84b4e87c-31df-4b67-b917-4fa67fa9ece6
+langcode: es
+status: true
+dependencies: {  }
+id: san_andres_colas_de_nodos
+label: 'San Andrés - colas de nodos'
+weight: 37
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

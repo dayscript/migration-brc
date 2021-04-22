@@ -1,0 +1,11 @@
+uuid: c41a7c59-3dc0-4b44-b4fc-5371c546668d
+langcode: es
+status: true
+dependencies: {  }
+id: tunja_colas_de_nodos
+label: 'Tunja - colas de nodos'
+weight: 40
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

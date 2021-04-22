@@ -1,0 +1,21 @@
+uuid: 93b7819a-4829-4700-b62e-0edd23b0e516
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_instrumentos_acompanamient
+field_name: field_instrumentos_acompanamient
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

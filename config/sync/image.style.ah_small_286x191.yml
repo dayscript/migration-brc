@@ -1,0 +1,14 @@
+uuid: 13a61fcb-5bd8-469b-9819-374fc0506b88
+langcode: es
+status: true
+dependencies: {  }
+name: ah_small_286x191
+label: 'AH Small 286x191'
+effects:
+  fa86b632-17ab-4460-a648-fd18bf5e7b78:
+    uuid: fa86b632-17ab-4460-a648-fd18bf5e7b78
+    id: image_resize
+    weight: 1
+    data:
+      width: 286
+      height: 191

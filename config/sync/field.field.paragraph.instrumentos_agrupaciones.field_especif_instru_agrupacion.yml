@@ -1,0 +1,19 @@
+uuid: e669692f-7211-4554-bd41-99558d05b16e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_especif_instru_agrupacion
+    - paragraphs.paragraphs_type.instrumentos_agrupaciones
+id: paragraph.instrumentos_agrupaciones.field_especif_instru_agrupacion
+field_name: field_especif_instru_agrupacion
+entity_type: paragraph
+bundle: instrumentos_agrupaciones
+label: 'Especifique los instrumentos (tessituras en el caso de las voces) que hacen parte del formato de su agrupación:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

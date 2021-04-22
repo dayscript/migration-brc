@@ -1,0 +1,15 @@
+uuid: 0101ce92-265b-41d7-97a6-116c67c21d20
+langcode: es
+status: true
+dependencies: {  }
+name: hca_h200
+label: hca_h200
+effects:
+  74723685-f748-4ca3-9c77-4d769b6feda8:
+    uuid: 74723685-f748-4ca3-9c77-4d769b6feda8
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 220
+      upscale: true

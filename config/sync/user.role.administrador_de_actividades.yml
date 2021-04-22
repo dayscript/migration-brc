@@ -1,0 +1,44 @@
+uuid: 58824b38-6c5f-4c9d-a635-84a177bdd8ea
+langcode: es
+status: true
+dependencies: {  }
+id: administrador_de_actividades
+label: 'Administrador de actividades'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration menu'
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access media browser'
+  - 'administer entityform types'
+  - 'administer filters'
+  - 'administer nodes'
+  - 'create activity content'
+  - 'create url aliases'
+  - 'delete any document files'
+  - 'delete any image files'
+  - 'delete own activity content'
+  - 'delete own document files'
+  - 'delete own image files'
+  - 'display site structure menu'
+  - 'download any document files'
+  - 'download any image files'
+  - 'download own document files'
+  - 'download own image files'
+  - 'edit any activity content'
+  - 'edit any document files'
+  - 'edit any image files'
+  - 'edit any page content'
+  - 'edit own activity content'
+  - 'edit own document files'
+  - 'edit own image files'
+  - 'edit own page content'
+  - 'manipulate queues'
+  - 'show item administration menu'
+  - 'use text format filtered_html'
+  - 'use text format full_html'
+  - 'view any entityform'
+  - 'view own entityform'
+  - 'view own unpublished content'

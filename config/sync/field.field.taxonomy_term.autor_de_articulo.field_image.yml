@@ -1,0 +1,33 @@
+uuid: 936ec77c-669f-480e-9df3-ff2bc62d51c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image
+    - taxonomy.vocabulary.autor_de_articulo
+  module:
+    - image
+id: taxonomy_term.autor_de_articulo.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: autor_de_articulo
+label: 'Imagen principal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: taxonomy/autor_de_articulo
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: 500x600
+  min_resolution: 100x100
+  alt_field: true
+  title_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,14 @@
+uuid: 6d970c97-826b-4bd9-be95-ea33a82efa39
+langcode: es
+status: true
+dependencies: {  }
+name: ed_small_386x386
+label: 'ED Small 386x386'
+effects:
+  00a2bcad-b454-4635-bc2d-5d149a648d10:
+    uuid: 00a2bcad-b454-4635-bc2d-5d149a648d10
+    id: image_resize
+    weight: 1
+    data:
+      width: 386
+      height: 386

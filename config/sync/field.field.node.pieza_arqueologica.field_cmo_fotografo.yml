@@ -1,0 +1,26 @@
+uuid: 39418d68-14d8-44c0-a30e-88c501d37cc7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cmo_fotografo
+    - node.type.pieza_arqueologica
+    - taxonomy.vocabulary.cmo_fotografos
+id: node.pieza_arqueologica.field_cmo_fotografo
+field_name: field_cmo_fotografo
+entity_type: node
+bundle: pieza_arqueologica
+label: Fotógrafos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      cmo_fotografos: cmo_fotografos
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

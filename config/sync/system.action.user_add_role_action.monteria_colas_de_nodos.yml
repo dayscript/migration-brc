@@ -1,0 +1,14 @@
+uuid: c43c4472-5421-4728-b20a-d06942dc8d49
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.monteria_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.monteria_colas_de_nodos
+label: 'Añade el rol Montería - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: monteria_colas_de_nodos

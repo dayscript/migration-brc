@@ -1,0 +1,23 @@
+uuid: 4bb1f201-7d9a-44a3-9ef2-11aee71dc4ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_front
+    - node.type.minisitio
+id: node.minisitio.field_is_front
+field_name: field_is_front
+entity_type: node
+bundle: minisitio
+label: 'Es portada?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'true'
+  off_label: 'false'
+field_type: boolean

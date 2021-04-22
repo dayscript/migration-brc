@@ -1,0 +1,18 @@
+uuid: 8510bd8d-c8f5-4e84-b688-ce2b72715008
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+id: file.field_uso_permitido_para_divulga
+field_name: field_uso_permitido_para_divulga
+entity_type: file
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

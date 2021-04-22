@@ -1,0 +1,14 @@
+uuid: 6faeb5d4-e1d6-479e-94b9-6fb271cd1f96
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.barranquilla_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.barranquilla_colas_de_nodos
+label: 'Añade el rol Barranquilla - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: barranquilla_colas_de_nodos

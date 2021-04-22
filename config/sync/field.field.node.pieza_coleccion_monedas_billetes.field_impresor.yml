@@ -1,0 +1,19 @@
+uuid: ab01ecd5-ee3c-472e-bdac-2ddeca4edaf8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_impresor
+    - node.type.pieza_coleccion_monedas_billetes
+id: node.pieza_coleccion_monedas_billetes.field_impresor
+field_name: field_impresor
+entity_type: node
+bundle: pieza_coleccion_monedas_billetes
+label: Impresor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

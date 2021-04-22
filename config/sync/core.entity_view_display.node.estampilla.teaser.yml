@@ -1,0 +1,63 @@
+uuid: 36f6a4c1-8e2e-4b1c-8174-92955767b095
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.estampilla.body
+    - field.field.node.estampilla.comment_node_estampilla
+    - field.field.node.estampilla.field_autor_estampilla
+    - field.field.node.estampilla.field_catalogo_colombia
+    - field.field.node.estampilla.field_color_de_estampilla
+    - field.field.node.estampilla.field_fecha_de_creaci_n
+    - field.field.node.estampilla.field_fecha_de_creaci_n_completa
+    - field.field.node.estampilla.field_gallery
+    - field.field.node.estampilla.field_metatag
+    - field.field.node.estampilla.field_numero_de_registro
+    - field.field.node.estampilla.field_scott
+    - field.field.node.estampilla.field_servicio_estampilla
+    - field.field.node.estampilla.field_sufijo_valor
+    - field.field.node.estampilla.field_tags
+    - field.field.node.estampilla.field_tipo_estampilla
+    - field.field.node.estampilla.field_unidades
+    - field.field.node.estampilla.field_valor_facial
+    - node.type.estampilla
+  module:
+    - text
+    - user
+id: node.estampilla.teaser
+targetEntityType: node
+bundle: estampilla
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_estampilla: true
+  field_autor_estampilla: true
+  field_catalogo_colombia: true
+  field_color_de_estampilla: true
+  field_fecha_de_creaci_n: true
+  field_fecha_de_creaci_n_completa: true
+  field_gallery: true
+  field_metatag: true
+  field_numero_de_registro: true
+  field_scott: true
+  field_servicio_estampilla: true
+  field_sufijo_valor: true
+  field_tags: true
+  field_tipo_estampilla: true
+  field_unidades: true
+  field_valor_facial: true
+  langcode: true

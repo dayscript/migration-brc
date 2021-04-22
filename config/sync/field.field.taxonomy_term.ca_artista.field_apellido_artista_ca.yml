@@ -1,0 +1,19 @@
+uuid: bf67d61e-e003-4b49-ac79-a9d8e587cace
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_apellido_artista_ca
+    - taxonomy.vocabulary.ca_artista
+id: taxonomy_term.ca_artista.field_apellido_artista_ca
+field_name: field_apellido_artista_ca
+entity_type: taxonomy_term
+bundle: ca_artista
+label: 'Orden alfabético'
+description: 'Incluya acá el apellido o la parte del nombre del artista por el cual se deba organizar alfabéticamente, de acuerdo a como más conocido sea por el público. Por ejemplo: Colectivo de artistas Agua, debería poner "Agua"'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

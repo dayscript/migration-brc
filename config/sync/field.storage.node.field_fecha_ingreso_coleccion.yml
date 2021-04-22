@@ -1,0 +1,18 @@
+uuid: aba276aa-dfae-4f1b-81d1-1bd6ca8c19f6
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_fecha_ingreso_coleccion
+field_name: field_fecha_ingreso_coleccion
+entity_type: node
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

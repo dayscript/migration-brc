@@ -1,0 +1,14 @@
+uuid: ecc81067-a77d-49d9-add8-6ee34aa5f589
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.florencia_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.florencia_colas_de_nodos
+label: 'Añade el rol Florencia - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: florencia_colas_de_nodos

@@ -1,0 +1,26 @@
+uuid: db85ff46-9cb7-475d-ade1-20e31916d540
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sufijo_valor
+    - node.type.estampilla
+    - taxonomy.vocabulary.sufijo_valor
+id: node.estampilla.field_sufijo_valor
+field_name: field_sufijo_valor
+entity_type: node
+bundle: estampilla
+label: 'Sufijo valor'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      sufijo_valor: sufijo_valor
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

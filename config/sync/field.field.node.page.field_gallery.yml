@@ -1,0 +1,33 @@
+uuid: 93c10f6b-08c0-410a-b849-8127f6203ecd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery
+    - node.type.page
+  module:
+    - image
+id: node.page.field_gallery
+field_name: field_gallery
+entity_type: node
+bundle: page
+label: 'Galería de imágenes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: page/gallery
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

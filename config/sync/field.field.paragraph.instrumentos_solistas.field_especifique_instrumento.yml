@@ -1,0 +1,19 @@
+uuid: e64a033a-2590-4dfc-9f85-1282fbc06522
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_especifique_instrumento
+    - paragraphs.paragraphs_type.instrumentos_solistas
+id: paragraph.instrumentos_solistas.field_especifique_instrumento
+field_name: field_especifique_instrumento
+entity_type: paragraph
+bundle: instrumentos_solistas
+label: 'Especifique cuál es su instrumento. En el caso de las voces especifique su tessitura:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

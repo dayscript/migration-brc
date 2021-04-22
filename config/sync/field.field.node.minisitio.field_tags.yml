@@ -1,0 +1,26 @@
+uuid: 54f254b5-d7d5-43a6-ae3d-c33fcac2790a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.minisitio
+    - taxonomy.vocabulary.tags
+id: node.minisitio.field_tags
+field_name: field_tags
+entity_type: node
+bundle: minisitio
+label: 'Palabras clave'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tags: tags
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 2bcb2d42-16e2-4195-b590-2a7b6347b6d0
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_instituci_n_es_educativa_s
+field_name: field_instituci_n_es_educativa_s
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,27 @@
+uuid: d0b074cb-6e40-47ff-9e08-4b5aa627b9eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.activity
+  module:
+    - text
+id: node.activity.field_description
+field_name: field_description
+entity_type: node
+bundle: activity
+label: 'Compra de boletas'
+description: 'Use este campo para agregar información importante con respecto a la compra de boletas'
+required: false
+translatable: false
+default_value:
+  -
+    summary: ''
+    value: "<h3>Boletería</h3>\r\n\r\n<p><a href=\"http://vive.tuboleta.com/\" target=\"_blank\"><img alt=\"tuboleta.png\" src=\"http://blaa.demodayscript.com/sites/default/files/gz-tuboleta-bogota-262x69.jpg\" /></a><br />\r\nCompra tus biletas en línea,<br />\r\n<button class=\"button\">Comprar</button><br />\r\nEdad mínima recomendada: 7 años</p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

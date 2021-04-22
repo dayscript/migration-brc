@@ -1,0 +1,21 @@
+uuid: 4b02dfc1-f8b3-4f92-b09b-f2ebc275644f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tipo_de_documento
+    - paragraphs.paragraphs_type.integrantes_agrupacion
+  module:
+    - options
+id: paragraph.integrantes_agrupacion.field_tipo_de_documento
+field_name: field_tipo_de_documento
+entity_type: paragraph
+bundle: integrantes_agrupacion
+label: 'Tipo de documento'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

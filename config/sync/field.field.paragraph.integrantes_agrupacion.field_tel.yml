@@ -1,0 +1,19 @@
+uuid: 463ce5e7-4e30-4187-abe4-f75ab171b0fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tel
+    - paragraphs.paragraphs_type.integrantes_agrupacion
+id: paragraph.integrantes_agrupacion.field_tel
+field_name: field_tel
+entity_type: paragraph
+bundle: integrantes_agrupacion
+label: 'Teléfono (celular o fijo)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

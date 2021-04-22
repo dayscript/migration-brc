@@ -1,0 +1,28 @@
+uuid: 9b87d669-c52f-4e10-b026-3b501a5efb85
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disponibilidad
+    - node.type.publicacion
+    - taxonomy.vocabulary.disponibilidad
+id: node.publicacion.field_disponibilidad
+field_name: field_disponibilidad
+entity_type: node
+bundle: publicacion
+label: Disponibilidad
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    tid: '36983'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      disponibilidad: disponibilidad
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

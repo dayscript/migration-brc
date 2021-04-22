@@ -1,0 +1,287 @@
+uuid: 6c7e3f0e-5340-4f28-8141-969ac195d725
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.multimedia.body
+    - field.field.node.multimedia.comment_node_multimedia
+    - field.field.node.multimedia.field_area_misional
+    - field.field.node.multimedia.field_city
+    - field.field.node.multimedia.field_gallery
+    - field.field.node.multimedia.field_image
+    - field.field.node.multimedia.field_imagen_para_slider
+    - field.field.node.multimedia.field_metatag
+    - field.field.node.multimedia.field_p_blico_objetivo
+    - field.field.node.multimedia.field_plugin
+    - field.field.node.multimedia.field_subtitle
+    - field.field.node.multimedia.field_tags
+    - field.field.node.multimedia.field_url_multimedia
+    - field.field.node.multimedia.field_video_embed
+    - node.type.multimedia
+  module:
+    - comment
+    - field_group
+    - file
+    - metatag
+    - path
+    - text
+    - video_embed_field
+third_party_settings:
+  field_group:
+    group_general:
+      children:
+        - body
+        - field_subtitle
+        - title
+      parent_name: ''
+      weight: 0
+      label: General
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-general field-group-tab'
+        required_fields: true
+      format_type: tab
+      region: content
+    group_multimedia:
+      children:
+        - field_video_embed
+        - field_image
+        - field_imagen_para_slider
+        - field_plugin
+        - field_url_multimedia
+        - group_video
+      parent_name: ''
+      weight: 1
+      label: Multimedia
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-multimedia field-group-tab'
+        required_fields: true
+      format_type: tab
+      region: content
+    group_relaciones:
+      children:
+        - field_area_misional
+        - field_tags
+        - field_p_blico_objetivo
+        - field_city
+      parent_name: ''
+      weight: 2
+      label: Relaciones
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        required_fields: true
+      format_type: tab
+      region: content
+    group_video:
+      children: {  }
+      parent_name: group_multimedia
+      weight: 20
+      label: Video
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-video field-group-tab'
+        required_fields: true
+      format_type: tab
+      region: content
+    group_target_public:
+      children: {  }
+      parent_name: ''
+      weight: 9
+      label: 'Publico objetivo'
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-target-public field-group-htab'
+        required_fields: true
+      format_type: tab
+      region: content
+    group_misional_area:
+      children: {  }
+      parent_name: ''
+      weight: 6
+      label: 'Área Misional'
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        required_fields: true
+      format_type: tab
+      region: content
+    group_gallery:
+      children:
+        - field_gallery
+      parent_name: ''
+      weight: 3
+      label: Galeria
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-gallery field-group-tab'
+        required_fields: true
+      format_type: tab
+      region: content
+id: node.multimedia.default
+targetEntityType: node
+bundle: multimedia
+mode: default
+content:
+  body:
+    weight: 3
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment_node_multimedia:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_area_misional:
+    weight: 15
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    weight: 6
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 15
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider:
+    weight: 16
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_metatag:
+    weight: 122
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_p_blico_objetivo:
+    weight: 16
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_plugin:
+    weight: 19
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_subtitle:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 250
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 18
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_url_multimedia:
+    weight: 17
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_video_embed:
+    weight: 18
+    type: video_embed_field_textfield
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_city: true

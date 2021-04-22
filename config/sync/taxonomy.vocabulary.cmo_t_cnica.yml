@@ -1,0 +1,8 @@
+uuid: 616e0889-674b-4719-99a6-d161e281649c
+langcode: es
+status: true
+dependencies: {  }
+name: CMO-Técnica
+vid: cmo_t_cnica
+description: 'Piezas arqueológicas de la colección del Museo del Oro'
+weight: 0

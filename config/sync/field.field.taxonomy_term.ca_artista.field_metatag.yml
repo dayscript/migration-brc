@@ -1,0 +1,21 @@
+uuid: b5115e58-d188-4da2-803c-ea8656e0c899
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_metatag
+    - taxonomy.vocabulary.ca_artista
+  module:
+    - metatag
+id: taxonomy_term.ca_artista.field_metatag
+field_name: field_metatag
+entity_type: taxonomy_term
+bundle: ca_artista
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

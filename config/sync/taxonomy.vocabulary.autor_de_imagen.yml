@@ -1,0 +1,8 @@
+uuid: 2b405a60-f9dc-4393-a1bb-b9c188cf4d86
+langcode: es
+status: true
+dependencies: {  }
+name: 'Autor de imagen'
+vid: autor_de_imagen
+description: 'Solo para archivos tipo imagen'
+weight: 0

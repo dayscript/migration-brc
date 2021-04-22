@@ -1,0 +1,26 @@
+uuid: e0137c24-5a65-46a3-b464-c1b9735b54bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tema_coleccion_bibliografi
+    - node.type.coleccion_bibliografica
+    - taxonomy.vocabulary.temas_de_coleccion_bibliografi
+id: node.coleccion_bibliografica.field_tema_coleccion_bibliografi
+field_name: field_tema_coleccion_bibliografi
+entity_type: node
+bundle: coleccion_bibliografica
+label: 'Tema de colección bibliográfica'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      temas_de_coleccion_bibliografi: temas_de_coleccion_bibliografi
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

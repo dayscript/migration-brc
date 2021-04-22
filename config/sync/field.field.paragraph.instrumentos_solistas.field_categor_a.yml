@@ -1,0 +1,21 @@
+uuid: eb1c5c11-e95f-4fad-87bf-13fb714ea75a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_categor_a
+    - paragraphs.paragraphs_type.instrumentos_solistas
+  module:
+    - options
+id: paragraph.instrumentos_solistas.field_categor_a
+field_name: field_categor_a
+entity_type: paragraph
+bundle: instrumentos_solistas
+label: Categoría
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

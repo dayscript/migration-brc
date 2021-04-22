@@ -1,0 +1,35 @@
+uuid: ac007377-73d6-4b19-956a-b77a13942141
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.article
+  module:
+    - image
+_core:
+  default_config_hash: tgJzhA7Swh4M_gWU5FwFe5lPxPj5rebpMbvhpdNrERs
+id: node.article.field_image
+field_name: field_image
+entity_type: node
+bundle: article
+label: 'Imagen principal'
+description: 'Imagen principal del Artículo, su formato debe ser de 640px de ancho por 400px de alto.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: article/main
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: 640x400
+  min_resolution: 640x400
+  alt_field: true
+  alt_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

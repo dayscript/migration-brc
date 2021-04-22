@@ -1,0 +1,10 @@
+uuid: 9508d540-177c-46a4-b392-4a9cadb09b5c
+langcode: es
+status: true
+dependencies: {  }
+id: telefono
+label: Telefono
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_telefono'
+behavior_plugins: {  }

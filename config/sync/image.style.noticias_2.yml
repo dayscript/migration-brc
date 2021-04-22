@@ -1,0 +1,15 @@
+uuid: 13eaf455-1ea5-41b6-9a3b-d04d5564dac7
+langcode: es
+status: true
+dependencies: {  }
+name: noticias_2
+label: Noticias
+effects:
+  882808db-b240-465a-baeb-94f5a9aa9280:
+    uuid: 882808db-b240-465a-baeb-94f5a9aa9280
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 300
+      height: 225
+      anchor: center-center

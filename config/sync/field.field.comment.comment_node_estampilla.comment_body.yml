@@ -1,0 +1,21 @@
+uuid: 5aa6b5bd-91ac-445d-a491-43d84c3464f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_estampilla
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_estampilla.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_estampilla
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

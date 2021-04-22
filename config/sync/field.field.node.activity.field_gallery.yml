@@ -1,0 +1,34 @@
+uuid: 0d23d6f0-7f80-4515-a924-b9d29ebc7d3b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery
+    - node.type.activity
+  module:
+    - image
+id: node.activity.field_gallery
+field_name: field_gallery
+entity_type: node
+bundle: activity
+label: 'Galería de imágenes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: activity/gallery
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
+

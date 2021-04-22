@@ -1,0 +1,19 @@
+uuid: a0fdad3f-8e4a-4462-8863-91094b067c3e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.minisitio
+id: node.minisitio.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: minisitio
+label: Subtítulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

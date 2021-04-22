@@ -1,0 +1,33 @@
+uuid: cdb7a34b-ca69-4304-9cc5-c4c815c10a8f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image
+    - taxonomy.vocabulary.tipos_documentales
+  module:
+    - image
+id: taxonomy_term.tipos_documentales.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: tipos_documentales
+label: Imagen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: taxonomy/tipos_documentales
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

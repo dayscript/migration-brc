@@ -1,0 +1,21 @@
+uuid: 2009d2c3-7d71-40fb-8ae2-053bbe5c5e38
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_metatag
+    - taxonomy.vocabulary.cmo_region
+  module:
+    - metatag
+id: taxonomy_term.cmo_region.field_metatag
+field_name: field_metatag
+entity_type: taxonomy_term
+bundle: cmo_region
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

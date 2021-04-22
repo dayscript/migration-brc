@@ -1,0 +1,27 @@
+uuid: bd6e9c19-a298-4da0-9178-56541f0387e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_tags
+    - taxonomy.vocabulary.tags
+  module:
+    - file
+id: file.image.field_tags
+field_name: field_tags
+entity_type: file
+bundle: image
+label: Etiquetas
+description: 'palabras clave asociadas a la imagen que pueden ayudar a encontrarlas en el buscador'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tags: tags
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

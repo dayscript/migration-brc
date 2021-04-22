@@ -1,0 +1,33 @@
+uuid: 52c4f37c-21b6-4fe1-b4ea-7ee0c7ae7202
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image
+    - taxonomy.vocabulary.area
+  module:
+    - image
+id: taxonomy_term.area.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: area
+label: Imagen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: taxonomy/area
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

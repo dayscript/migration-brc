@@ -1,0 +1,40 @@
+uuid: 2281600e-6926-4bba-84df-462d2d7a9469
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.instrumentos_agrupaciones.field_agrupaci_n_vocal_con_acomp
+    - field.field.paragraph.instrumentos_agrupaciones.field_categoria_agrupaciones
+    - field.field.paragraph.instrumentos_agrupaciones.field_especif_instru_agrupacion
+    - paragraphs.paragraphs_type.instrumentos_agrupaciones
+  module:
+    - options
+id: paragraph.instrumentos_agrupaciones.default
+targetEntityType: paragraph
+bundle: instrumentos_agrupaciones
+mode: default
+content:
+  field_agrupaci_n_vocal_con_acomp:
+    label: above
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_categoria_agrupaciones:
+    label: above
+    weight: 0
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_especif_instru_agrupacion:
+    label: above
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,8 @@
+uuid: c2a0b452-e353-4929-893f-bc1422428cfd
+langcode: es
+status: true
+dependencies: {  }
+name: CMO-Fotógrafos
+vid: cmo_fotografos
+description: ''
+weight: 0

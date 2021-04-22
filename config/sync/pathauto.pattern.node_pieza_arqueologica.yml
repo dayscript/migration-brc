@@ -1,0 +1,21 @@
+uuid: d449df0b-6b28-4bf6-9821-64cb6ed644e2
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_pieza_arqueologica
+label: 'Content - CMO pieza arqueológica'
+type: 'canonical_entities:node'
+pattern: 'coleccion-arqueologica/pieza/[node:field_cmo_funcion]-[node:field_apodo_o_nombre_si_lo_tiene]-[node:field_numero_de_registro]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      pieza_arqueologica: pieza_arqueologica
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

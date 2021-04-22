@@ -1,0 +1,23 @@
+uuid: 8c59bcfd-0b21-4b12-b258-76472f10ddaf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.minisitio
+  module:
+    - text
+id: node.minisitio.body
+field_name: body
+entity_type: node
+bundle: minisitio
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

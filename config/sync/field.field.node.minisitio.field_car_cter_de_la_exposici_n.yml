@@ -1,0 +1,26 @@
+uuid: 4e911e8c-35ad-4d5b-b513-ee16765d616b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_car_cter_de_la_exposici_n
+    - node.type.minisitio
+    - taxonomy.vocabulary.caracter_exposicion
+id: node.minisitio.field_car_cter_de_la_exposici_n
+field_name: field_car_cter_de_la_exposici_n
+entity_type: node
+bundle: minisitio
+label: 'Carácter de la exposición'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      caracter_exposicion: caracter_exposicion
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

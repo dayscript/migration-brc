@@ -1,0 +1,19 @@
+uuid: 800641ea-0273-4595-96f2-d618262d93dc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lastname
+    - paragraphs.paragraphs_type.integrantes_agrupacion
+id: paragraph.integrantes_agrupacion.field_lastname
+field_name: field_lastname
+entity_type: paragraph
+bundle: integrantes_agrupacion
+label: Apellidos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

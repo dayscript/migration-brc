@@ -1,0 +1,20 @@
+uuid: c6041c97-055d-4d82-ad74-2f5831a25596
+langcode: und
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_fecha_de_creaci_n
+field_name: field_fecha_de_creaci_n
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

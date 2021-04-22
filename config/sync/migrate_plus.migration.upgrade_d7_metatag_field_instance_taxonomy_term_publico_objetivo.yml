@@ -1,0 +1,46 @@
+uuid: cc8c6cdf-5644-4d3b-bf95-6dcd3420db91
+langcode: es
+status: true
+dependencies: {  }
+id: upgrade_d7_metatag_field_instance_taxonomy_term_publico_objetivo
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Metatag field instance of Público Objetivo términos de taxonomía'
+source:
+  plugin: d7_metatag_field_instance
+  source_module: metatag
+  ignore_map: true
+  constants:
+    field_name: field_metatag
+    label: 'Meta tags'
+  entity_type_id: taxonomy_term
+  entity_type: taxonomy_term
+  bundle: publico_objetivo
+process:
+  bundle:
+    -
+      plugin: get
+      source: bundle
+  entity_type:
+    -
+      plugin: get
+      source: entity_type
+  field_name:
+    -
+      plugin: get
+      source: constants/field_name
+  label:
+    -
+      plugin: get
+      source: constants/label
+destination:
+  plugin: 'entity:field_config'
+migration_dependencies:
+  required:
+    - upgrade_d7_metatag_field_taxonomy_term
+  optional: {  }

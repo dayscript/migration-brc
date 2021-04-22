@@ -1,0 +1,46 @@
+uuid: d4ac8c8a-276e-4e1d-89c5-cd62ef8bfa92
+langcode: es
+status: true
+dependencies: {  }
+id: upgrade_d7_metatag_field_instance_widget_settings_taxonomy_term_derechos_de_uso
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Metatag field instance widget settings of Derechos de uso términos de taxonomía'
+source:
+  plugin: d7_metatag_field_instance
+  source_module: metatag
+  ignore_map: true
+  constants:
+    field_name: field_metatag
+    form_mode: default
+  entity_type_id: taxonomy_term
+  entity_type: taxonomy_term
+  bundle: derechos_de_uso
+process:
+  bundle:
+    -
+      plugin: get
+      source: bundle
+  entity_type:
+    -
+      plugin: get
+      source: entity_type
+  field_name:
+    -
+      plugin: get
+      source: constants/field_name
+  form_mode:
+    -
+      plugin: get
+      source: constants/form_mode
+destination:
+  plugin: component_entity_form_display
+migration_dependencies:
+  required:
+    - upgrade_d7_metatag_field_instance_taxonomy_term_derechos_de_uso
+  optional: {  }

@@ -1,0 +1,19 @@
+uuid: 183f6e9b-2054-46ab-9a44-033448f18f02
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_lugar_nacimiento
+field_name: field_lugar_nacimiento
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 8eb536cb-38ac-4418-b5a0-cbc6b379ea75
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_instituci_n_es_educativa_s
+    - paragraphs.paragraphs_type.datos_de_la_agrupaci_n
+id: paragraph.datos_de_la_agrupaci_n.field_instituci_n_es_educativa_s
+field_name: field_instituci_n_es_educativa_s
+entity_type: paragraph
+bundle: datos_de_la_agrupaci_n
+label: 'Institución(es) educativa(s) a la(s) que pertenecen los integrantes de la agrupación:'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

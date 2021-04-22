@@ -1,0 +1,14 @@
+uuid: 79a9655b-73bf-4a74-a6d9-d56597f787e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.manizales_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.manizales_colas_de_nodos
+label: 'Elimina el rol Manizales - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: manizales_colas_de_nodos

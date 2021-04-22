@@ -1,0 +1,15 @@
+uuid: 294ad17d-80e6-4b20-b745-8bc44c7ca594
+langcode: es
+status: true
+dependencies: {  }
+name: sc_2
+label: 'SC 600x600'
+effects:
+  63f343a2-7a89-406a-8f60-4cca8b938a58:
+    uuid: 63f343a2-7a89-406a-8f60-4cca8b938a58
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 600
+      anchor: center-center

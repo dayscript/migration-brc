@@ -1,0 +1,15 @@
+uuid: 1c4bead9-7d20-4da1-8519-a177b588341b
+langcode: es
+status: true
+dependencies: {  }
+name: escalar_320x320
+label: 'Escalar (320x320)'
+effects:
+  a0fdfb3b-c307-41bb-b1b7-e5f7569fe623:
+    uuid: a0fdfb3b-c307-41bb-b1b7-e5f7569fe623
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 320
+      anchor: center-center

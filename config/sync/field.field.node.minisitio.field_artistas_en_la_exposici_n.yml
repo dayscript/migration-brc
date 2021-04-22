@@ -1,0 +1,19 @@
+uuid: 5307a35d-f55d-43ae-911a-8e9dad8deabe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_artistas_en_la_exposici_n
+    - node.type.minisitio
+id: node.minisitio.field_artistas_en_la_exposici_n
+field_name: field_artistas_en_la_exposici_n
+entity_type: node
+bundle: minisitio
+label: 'Artistas en la exposición'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

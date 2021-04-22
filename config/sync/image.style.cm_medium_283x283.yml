@@ -1,0 +1,14 @@
+uuid: 32b5566b-69bc-4457-b0f5-22e0af14a077
+langcode: es
+status: true
+dependencies: {  }
+name: cm_medium_283x283
+label: 'CM Medium 283x283'
+effects:
+  4816fa86-6f34-40f8-b383-7a3a08382c99:
+    uuid: 4816fa86-6f34-40f8-b383-7a3a08382c99
+    id: image_resize
+    weight: 2
+    data:
+      width: 283
+      height: 283

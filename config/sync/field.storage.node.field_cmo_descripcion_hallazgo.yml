@@ -1,0 +1,19 @@
+uuid: 8a5cc369-60f2-470f-b93e-651b2873ccdc
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_cmo_descripcion_hallazgo
+field_name: field_cmo_descripcion_hallazgo
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

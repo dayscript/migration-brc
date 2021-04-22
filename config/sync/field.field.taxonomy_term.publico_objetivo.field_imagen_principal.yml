@@ -1,0 +1,33 @@
+uuid: bd7e29fc-a87a-405e-87d7-4e21512af0af
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_imagen_principal
+    - taxonomy.vocabulary.publico_objetivo
+  module:
+    - image
+id: taxonomy_term.publico_objetivo.field_imagen_principal
+field_name: field_imagen_principal
+entity_type: taxonomy_term
+bundle: publico_objetivo
+label: 'imagen principal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: taxonomy/publico_objetivo
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: 640x400
+  min_resolution: 640x400
+  alt_field: true
+  title_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

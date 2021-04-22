@@ -1,0 +1,19 @@
+uuid: 0dc6365c-b9c2-499f-aaa8-92541fb793a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prefijo_fecha_de_creacion
+    - node.type.instrumento
+id: node.instrumento.field_prefijo_fecha_de_creacion
+field_name: field_prefijo_fecha_de_creacion
+entity_type: node
+bundle: instrumento
+label: 'Prefijo fecha'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

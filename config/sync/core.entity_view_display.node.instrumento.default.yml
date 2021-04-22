@@ -1,0 +1,137 @@
+uuid: fb86c0d3-b17c-4aa5-9067-3f5d3b19bb72
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_instrumento.default
+    - field.field.node.instrumento.body
+    - field.field.node.instrumento.comment_node_instrumento
+    - field.field.node.instrumento.field_a_o_de_creaci_n
+    - field.field.node.instrumento.field_dimensiones
+    - field.field.node.instrumento.field_fabricante_instrumento
+    - field.field.node.instrumento.field_gallery
+    - field.field.node.instrumento.field_materiales_instrumento
+    - field.field.node.instrumento.field_metatag
+    - field.field.node.instrumento.field_numero_de_registro
+    - field.field.node.instrumento.field_origen
+    - field.field.node.instrumento.field_prefijo_fecha_de_creacion
+    - field.field.node.instrumento.field_tags
+    - field.field.node.instrumento.field_tipo_de_instrumento
+    - node.type.instrumento
+  module:
+    - comment
+    - datetime
+    - image
+    - text
+    - user
+id: node.instrumento.default
+targetEntityType: node
+bundle: instrumento
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_instrumento:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_a_o_de_creaci_n:
+    label: above
+    weight: 3
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_dimensiones:
+    label: above
+    weight: 4
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_fabricante_instrumento:
+    label: above
+    weight: 9
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    label: above
+    weight: 7
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_materiales_instrumento:
+    label: above
+    weight: 10
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_numero_de_registro:
+    label: above
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_origen:
+    label: above
+    weight: 6
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_prefijo_fecha_de_creacion:
+    label: above
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    label: above
+    weight: 8
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tipo_de_instrumento:
+    label: above
+    weight: 5
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_metatag: true
+  langcode: true

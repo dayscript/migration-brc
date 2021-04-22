@@ -1,0 +1,19 @@
+uuid: eb2f7af1-1522-4e2f-8aeb-5eacd37c660b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_instrumentos_acompanamient
+    - paragraphs.paragraphs_type.instrumentos_solistas
+id: paragraph.instrumentos_solistas.field_instrumentos_acompanamient
+field_name: field_instrumentos_acompanamient
+entity_type: paragraph
+bundle: instrumentos_solistas
+label: 'Enuncie los instrumentos que hacen parte de su formato de acompañamiento. Si no tiene acompañamiento escriba Sin acompañamiento:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

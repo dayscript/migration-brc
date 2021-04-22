@@ -1,0 +1,8 @@
+uuid: e0569f95-a70b-444b-a557-635fba970d4e
+langcode: es
+status: true
+dependencies: {  }
+name: 'CI - Tipo de instrumento'
+vid: ci_tipo_de_instrumento
+description: ''
+weight: 0

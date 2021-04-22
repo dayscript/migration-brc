@@ -1,0 +1,172 @@
+uuid: deda8641-2fa2-4706-9597-75a0b81b1f33
+langcode: es
+status: true
+dependencies: {  }
+id: upgrade_d7_node_complete_pieza_coleccion_monedas_billetes
+class: Drupal\node\Plugin\migrate\D7NodeTranslation
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node complete (CMB Billete o moneda)'
+source:
+  plugin: d7_node_complete
+  node_type: pieza_coleccion_monedas_billetes
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  content_translation_source:
+    -
+      plugin: get
+      source: source_langcode
+  comment_node_pieza_coleccion_monedas_billetes/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_fecha_de_emision:
+    -
+      plugin: sub_process
+      source: field_fecha_de_emision
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d\TH:i:s'
+          to_format: Y-01-01
+          source: value
+  field_tipo_de_pieza:
+    -
+      plugin: sub_process
+      source: field_tipo_de_pieza
+      process:
+        target_id: tid
+  field_gallery:
+    -
+      plugin: sub_process
+      source: field_gallery
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_fecha_de_ingreso_a_la_cole:
+    -
+      plugin: sub_process
+      source: field_fecha_de_ingreso_a_la_cole
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d\TH:i:s'
+          to_format: Y-m-d
+          source: value
+  field_emisor:
+    -
+      plugin: sub_process
+      source: field_emisor
+      process:
+        target_id: tid
+  field_tags:
+    -
+      plugin: sub_process
+      source: field_tags
+      process:
+        target_id: tid
+  field_impresor:
+    -
+      plugin: get
+      source: field_impresor
+  field_dimensiones:
+    -
+      plugin: get
+      source: field_dimensiones
+  field_denominacion_numismatica:
+    -
+      plugin: get
+      source: field_denominacion_numismatica
+  field_sufijo_valor:
+    -
+      plugin: sub_process
+      source: field_sufijo_valor
+      process:
+        target_id: tid
+  field_numero_de_registro:
+    -
+      plugin: get
+      source: field_numero_de_registro
+  field_obra_destacada:
+    -
+      plugin: get
+      source: field_obra_destacada
+  field_metatag:
+    -
+      plugin: d7_metatag_entities
+      source: pseudo_metatag_entities
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: pieza_coleccion_monedas_billetes
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+    - upgrade_language
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

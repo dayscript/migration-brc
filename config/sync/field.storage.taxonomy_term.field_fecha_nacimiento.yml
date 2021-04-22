@@ -1,0 +1,18 @@
+uuid: d2ec8daf-dafd-45bd-a630-36469f22962a
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_fecha_nacimiento
+field_name: field_fecha_nacimiento
+entity_type: taxonomy_term
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

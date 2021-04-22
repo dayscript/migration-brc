@@ -1,0 +1,19 @@
+uuid: c23f40d2-d890-463f-bf90-4153ab6e7cd6
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - text
+id: taxonomy_term.field_l_nea_de_tiempo
+field_name: field_l_nea_de_tiempo
+entity_type: taxonomy_term
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

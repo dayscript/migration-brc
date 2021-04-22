@@ -1,0 +1,33 @@
+uuid: a9e432c5-6e06-4b07-a42e-a74eb4176a7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image
+    - taxonomy.vocabulary.ca_artista
+  module:
+    - image
+id: taxonomy_term.ca_artista.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: ca_artista
+label: Imagen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: taxonomy/ca_artista
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

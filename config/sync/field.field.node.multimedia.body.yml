@@ -1,0 +1,23 @@
+uuid: f8075b17-aa46-4160-996e-3e747e8b69ce
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.multimedia
+  module:
+    - text
+id: node.multimedia.body
+field_name: body
+entity_type: node
+bundle: multimedia
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

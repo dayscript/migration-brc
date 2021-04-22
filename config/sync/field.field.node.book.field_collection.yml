@@ -1,0 +1,26 @@
+uuid: 8a2f5573-e037-4ae9-ba74-c9af38ef52bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_collection
+    - node.type.book
+    - taxonomy.vocabulary.book_collection
+id: node.book.field_collection
+field_name: field_collection
+entity_type: node
+bundle: book
+label: 'Colección de Credencial Historia'
+description: 'esta taxonomía permite agrupar distintos números de Credencial Historia por temática'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      book_collection: book_collection
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

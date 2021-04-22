@@ -1,0 +1,15 @@
+uuid: f827717a-5126-411c-af2e-b4c1bc647dd6
+langcode: es
+status: true
+dependencies: {  }
+name: buscador_general_tabs
+label: 'Buscador General Tabs'
+effects:
+  61955ea8-0d22-4e2e-8cb5-3f1b54fbb4f3:
+    uuid: 61955ea8-0d22-4e2e-8cb5-3f1b54fbb4f3
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 380
+      upscale: false

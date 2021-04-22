@@ -1,0 +1,33 @@
+uuid: efbdb988-4ee1-4bbf-82c8-a3955406396f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.teaser
+    - field.field.file.image.field_autor_imagen
+    - field.field.file.image.field_derechos_de_uso
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+    - field.field.file.image.field_files
+    - field.field.file.image.field_fuente_de_la_imagen
+    - field.field.file.image.field_longdesc
+    - field.field.file.image.field_tags
+    - field.field.file.image.field_uso_permitido_para_divulga
+  module:
+    - file
+id: file.image.teaser
+targetEntityType: file
+bundle: image
+mode: teaser
+content: {  }
+hidden:
+  field_autor_imagen: true
+  field_derechos_de_uso: true
+  field_file_image_alt_text: true
+  field_file_image_title_text: true
+  field_files: true
+  field_fuente_de_la_imagen: true
+  field_longdesc: true
+  field_tags: true
+  field_uso_permitido_para_divulga: true
+  langcode: true

@@ -1,0 +1,15 @@
+uuid: e7c182d9-9976-4122-b7e1-8c7764b5e492
+langcode: es
+status: true
+dependencies: {  }
+name: sc_4
+label: 'SC 50x50'
+effects:
+  0d8f84ac-0f51-4abf-804f-69efa70b809d:
+    uuid: 0d8f84ac-0f51-4abf-804f-69efa70b809d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      anchor: center-center

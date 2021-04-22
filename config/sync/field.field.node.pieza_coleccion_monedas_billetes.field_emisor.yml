@@ -1,0 +1,26 @@
+uuid: f8d9ff59-e66a-4baf-a67e-197963485cc1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_emisor
+    - node.type.pieza_coleccion_monedas_billetes
+    - taxonomy.vocabulary.cbm_emisor
+id: node.pieza_coleccion_monedas_billetes.field_emisor
+field_name: field_emisor
+entity_type: node
+bundle: pieza_coleccion_monedas_billetes
+label: Emisor
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      cbm_emisor: cbm_emisor
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

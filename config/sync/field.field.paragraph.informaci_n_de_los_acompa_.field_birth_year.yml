@@ -1,0 +1,23 @@
+uuid: c7d52112-2a85-4eee-bbbb-a29d3a75c455
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_birth_year
+    - paragraphs.paragraphs_type.informaci_n_de_los_acompa_
+id: paragraph.informaci_n_de_los_acompa_.field_birth_year
+field_name: field_birth_year
+entity_type: paragraph
+bundle: informaci_n_de_los_acompa_
+label: 'Año de nacimiento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

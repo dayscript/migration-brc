@@ -1,0 +1,14 @@
+uuid: 4accbaf1-301a-4ad6-861f-de33fa2e595e
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.cucuta_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.cucuta_colas_de_nodos
+label: 'Elimina el rol Cúcuta - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: cucuta_colas_de_nodos

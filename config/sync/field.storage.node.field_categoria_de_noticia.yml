@@ -1,0 +1,20 @@
+uuid: 95bd2f9b-1ea8-4888-a430-0daf186ca3de
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_categoria_de_noticia
+field_name: field_categoria_de_noticia
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

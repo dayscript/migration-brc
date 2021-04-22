@@ -1,0 +1,19 @@
+uuid: fa5939c5-3017-4ba0-afaf-96dddd1959a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_form
+    - node.type.page
+id: node.page.field_title_form
+field_name: field_title_form
+entity_type: node
+bundle: page
+label: 'Título de Formulario'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

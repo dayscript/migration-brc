@@ -1,0 +1,55 @@
+uuid: d3262db3-6f78-47c8-9e64-3de42156239e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pieza_coleccion_monedas_billetes.body
+    - field.field.node.pieza_coleccion_monedas_billetes.field_denominacion_numismatica
+    - field.field.node.pieza_coleccion_monedas_billetes.field_dimensiones
+    - field.field.node.pieza_coleccion_monedas_billetes.field_emisor
+    - field.field.node.pieza_coleccion_monedas_billetes.field_fecha_de_emision
+    - field.field.node.pieza_coleccion_monedas_billetes.field_fecha_de_ingreso_a_la_cole
+    - field.field.node.pieza_coleccion_monedas_billetes.field_gallery
+    - field.field.node.pieza_coleccion_monedas_billetes.field_impresor
+    - field.field.node.pieza_coleccion_monedas_billetes.field_numero_de_registro
+    - field.field.node.pieza_coleccion_monedas_billetes.field_obra_destacada
+    - field.field.node.pieza_coleccion_monedas_billetes.field_sufijo_valor
+    - field.field.node.pieza_coleccion_monedas_billetes.field_tags
+    - field.field.node.pieza_coleccion_monedas_billetes.field_tipo_de_pieza
+    - node.type.pieza_coleccion_monedas_billetes
+  module:
+    - text
+    - user
+id: node.pieza_coleccion_monedas_billetes.teaser
+targetEntityType: node
+bundle: pieza_coleccion_monedas_billetes
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_denominacion_numismatica: true
+  field_dimensiones: true
+  field_emisor: true
+  field_fecha_de_emision: true
+  field_fecha_de_ingreso_a_la_cole: true
+  field_gallery: true
+  field_impresor: true
+  field_numero_de_registro: true
+  field_obra_destacada: true
+  field_sufijo_valor: true
+  field_tags: true
+  field_tipo_de_pieza: true
+  langcode: true

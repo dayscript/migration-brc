@@ -1,0 +1,14 @@
+uuid: ed86538e-c24f-4f1c-b0db-aedeb07b44bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.bucaramanga_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.bucaramanga_colas_de_nodos
+label: 'Elimina el rol Bucaramanga - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: bucaramanga_colas_de_nodos

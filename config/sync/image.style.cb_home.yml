@@ -1,0 +1,15 @@
+uuid: f31a9ea9-c660-4768-aa5f-eedc4b519e3e
+langcode: es
+status: true
+dependencies: {  }
+name: cb_home
+label: 'CB Home'
+effects:
+  aca6db8b-3674-4e29-bb12-c2ff873941e7:
+    uuid: aca6db8b-3674-4e29-bb12-c2ff873941e7
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 300
+      upscale: true

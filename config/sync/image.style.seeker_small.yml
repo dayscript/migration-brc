@@ -1,0 +1,15 @@
+uuid: 98e61b37-bc30-40ef-96d2-ad35b82130e4
+langcode: es
+status: true
+dependencies: {  }
+name: seeker_small
+label: seeker_small
+effects:
+  a1898c58-45e6-4746-a603-f20902793785:
+    uuid: a1898c58-45e6-4746-a603-f20902793785
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 183
+      height: 115
+      anchor: center-center

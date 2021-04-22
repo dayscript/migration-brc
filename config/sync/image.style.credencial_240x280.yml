@@ -1,0 +1,14 @@
+uuid: 2f6f4a8b-2923-4623-8846-1bb5877f037a
+langcode: es
+status: true
+dependencies: {  }
+name: credencial_240x280
+label: 'Credencial 240x280'
+effects:
+  6b10e432-3f00-4b8a-b07c-fe7d2d602844:
+    uuid: 6b10e432-3f00-4b8a-b07c-fe7d2d602844
+    id: image_resize
+    weight: 1
+    data:
+      width: 240
+      height: 280

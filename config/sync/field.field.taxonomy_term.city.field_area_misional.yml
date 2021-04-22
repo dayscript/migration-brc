@@ -1,0 +1,26 @@
+uuid: cbf6adf3-a040-4f6e-8dbb-452c1e999218
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_area_misional
+    - taxonomy.vocabulary.area
+    - taxonomy.vocabulary.city
+id: taxonomy_term.city.field_area_misional
+field_name: field_area_misional
+entity_type: taxonomy_term
+bundle: city
+label: 'Area misional'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      area: area
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: cdbad9ed-d1c0-41db-8136-58ffc72c4cd7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lastname
+    - paragraphs.paragraphs_type.representante_agrupacion
+id: paragraph.representante_agrupacion.field_lastname
+field_name: field_lastname
+entity_type: paragraph
+bundle: representante_agrupacion
+label: Apellidos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: a6483aef-cbea-4440-b92a-352324e6fb93
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scott
+    - node.type.estampilla
+id: node.estampilla.field_scott
+field_name: field_scott
+entity_type: node
+bundle: estampilla
+label: 'Catálogo Scott'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

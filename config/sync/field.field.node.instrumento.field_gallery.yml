@@ -1,0 +1,33 @@
+uuid: d0c760f4-a014-4e2d-837b-f43d7640ed11
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery
+    - node.type.instrumento
+  module:
+    - image
+id: node.instrumento.field_gallery
+field_name: field_gallery
+entity_type: node
+bundle: instrumento
+label: 'Galería de imágenes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: instrumento/gallery
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field: true
+  default_image: '46206'
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

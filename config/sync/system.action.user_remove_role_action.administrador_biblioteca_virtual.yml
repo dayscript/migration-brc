@@ -1,0 +1,14 @@
+uuid: 430a0815-e0c5-4cde-9040-8e2671f54b7b
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_biblioteca_virtual
+  module:
+    - user
+id: user_remove_role_action.administrador_biblioteca_virtual
+label: 'Elimina el rol Administrador Biblioteca virtual al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrador_biblioteca_virtual

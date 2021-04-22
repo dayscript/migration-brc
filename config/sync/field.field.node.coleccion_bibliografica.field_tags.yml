@@ -1,0 +1,26 @@
+uuid: e203e299-77b9-4d3e-b824-13a72c68e5a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.coleccion_bibliografica
+    - taxonomy.vocabulary.tags
+id: node.coleccion_bibliografica.field_tags
+field_name: field_tags
+entity_type: node
+bundle: coleccion_bibliografica
+label: Etiquetas
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tags: tags
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

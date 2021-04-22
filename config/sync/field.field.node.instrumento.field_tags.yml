@@ -1,0 +1,37 @@
+uuid: e716cda1-b71a-4ad7-afdf-f17d26b8a408
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.instrumento
+    - taxonomy.vocabulary.tags
+id: node.instrumento.field_tags
+field_name: field_tags
+entity_type: node
+bundle: instrumento
+label: Etiquetas
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    tid: '44109'
+    vid: '1'
+    name: 'colección de instrumentos'
+    description: null
+    format: null
+    weight: '143'
+    hweight: '2407'
+    hdepth: '0'
+    vocabulary_machine_name: tags
+    field_color: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tags: tags
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

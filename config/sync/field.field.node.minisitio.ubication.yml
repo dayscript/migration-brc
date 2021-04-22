@@ -1,0 +1,32 @@
+uuid: b4627029-c22b-4b91-a7ff-0848099eccea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.ubication
+    - node.type.minisitio
+    - taxonomy.vocabulary.city
+id: node.minisitio.ubication
+field_name: ubication
+entity_type: node
+bundle: minisitio
+label: Ubicación
+description: 'Diga en qué espacio del Banco de la República se realizó esta exposición.'
+required: false
+translatable: false
+default_value:
+  -
+    tid: '1192'
+  -
+    tid: '35502'
+  -
+    tid: '1235'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      city: city
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

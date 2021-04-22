@@ -1,0 +1,33 @@
+uuid: 3328c999-c093-417c-a07f-1805a0804743
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_para_slider
+    - node.type.article
+  module:
+    - image
+id: node.article.field_imagen_para_slider
+field_name: field_imagen_para_slider
+entity_type: node
+bundle: article
+label: 'Imagen para slider'
+description: 'Esta imagen se visualizara en el slider del Portal, debe contar con unas medidas mínimas de 1400px de ancho por 415px de alto o similares en proporción y con resolución HD.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: article/slider
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: 1440x415
+  min_resolution: 1400x415
+  alt_field: true
+  alt_field: true
+  default_image: '4033'
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

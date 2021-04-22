@@ -1,0 +1,21 @@
+uuid: 493e1db5-8481-4ea7-827e-eaf94d0474c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_metatag
+    - taxonomy.vocabulary.cmo_representaci_n
+  module:
+    - metatag
+id: taxonomy_term.cmo_representaci_n.field_metatag
+field_name: field_metatag
+entity_type: taxonomy_term
+bundle: cmo_representaci_n
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

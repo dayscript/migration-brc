@@ -1,0 +1,33 @@
+uuid: cc23ec05-f36b-4c7f-9ce1-4852be6c9974
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icono
+    - taxonomy.vocabulary.tipe_service
+  module:
+    - image
+id: taxonomy_term.tipe_service.field_icono
+field_name: field_icono
+entity_type: taxonomy_term
+bundle: tipe_service
+label: Ícono
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: taxonomy/type_service/icon
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: 800x800
+  min_resolution: ''
+  alt_field: true
+  alt_field: true
+  default_image: '5794'
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

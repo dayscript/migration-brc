@@ -1,0 +1,19 @@
+uuid: 5f3e1399-dd7d-4de4-8ee0-c911593e42d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_numero_de_registro
+    - node.type.estampilla
+id: node.estampilla.field_numero_de_registro
+field_name: field_numero_de_registro
+entity_type: node
+bundle: estampilla
+label: 'Número de registro'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

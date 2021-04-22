@@ -1,0 +1,14 @@
+uuid: 7ba2c019-1602-4c0b-a5ee-cd65e9b2081f
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.bucaramanga_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.bucaramanga_colas_de_nodos
+label: 'Añade el rol Bucaramanga - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: bucaramanga_colas_de_nodos

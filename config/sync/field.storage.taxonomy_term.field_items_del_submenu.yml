@@ -1,0 +1,19 @@
+uuid: cada4395-7327-4606-a71b-d773a79b76a5
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_items_del_submenu
+field_name: field_items_del_submenu
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

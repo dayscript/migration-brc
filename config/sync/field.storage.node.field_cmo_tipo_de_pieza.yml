@@ -1,0 +1,27 @@
+uuid: 06048ff1-5e81-41d9-af51-f5bd42f599ad
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_cmo_tipo_de_pieza
+field_name: field_cmo_tipo_de_pieza
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: arqueologica
+      label: Arqueológica
+    -
+      value: etnografica
+      label: Etnográfica
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

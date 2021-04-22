@@ -1,0 +1,26 @@
+uuid: 34f12ea2-b216-4d10-a322-fd229ae5f373
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - node.type.book
+    - taxonomy.vocabulary.autor
+id: node.book.field_author
+field_name: field_author
+entity_type: node
+bundle: book
+label: Autor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      autor: autor
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: b9219ef4-7b4a-476b-89b1-43f16fff66e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.santa_marta_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.santa_marta_colas_de_nodos
+label: 'Elimina el rol Santa Marta - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: santa_marta_colas_de_nodos

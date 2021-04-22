@@ -1,0 +1,19 @@
+uuid: 34e9bc29-15a2-4126-a003-624fc368782b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_dir
+    - taxonomy.vocabulary.city
+id: taxonomy_term.city.field_dir
+field_name: field_dir
+entity_type: taxonomy_term
+bundle: city
+label: Dirección
+description: 'incluir dirección y barrio. Ej: Calle 11 No. 4-21, La Candelaria. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

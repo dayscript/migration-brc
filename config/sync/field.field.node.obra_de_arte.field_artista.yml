@@ -1,0 +1,26 @@
+uuid: 054d331b-14ad-46b0-a8d3-8986486cc95a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_artista
+    - node.type.obra_de_arte
+    - taxonomy.vocabulary.ca_artista
+id: node.obra_de_arte.field_artista
+field_name: field_artista
+entity_type: node
+bundle: obra_de_arte
+label: Artista
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      ca_artista: ca_artista
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

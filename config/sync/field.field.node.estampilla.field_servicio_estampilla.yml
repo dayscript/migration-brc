@@ -1,0 +1,19 @@
+uuid: ee3351db-1bf4-4933-a285-3e7c8391f1c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_servicio_estampilla
+    - node.type.estampilla
+id: node.estampilla.field_servicio_estampilla
+field_name: field_servicio_estampilla
+entity_type: node
+bundle: estampilla
+label: 'Servicio estampilla'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

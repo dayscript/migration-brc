@@ -1,0 +1,19 @@
+uuid: 7fd3557b-b740-41af-9a17-ee4b0cc274fe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_firstname
+    - paragraphs.paragraphs_type.integrantes_agrupacion
+id: paragraph.integrantes_agrupacion.field_firstname
+field_name: field_firstname
+entity_type: paragraph
+bundle: integrantes_agrupacion
+label: Nombres
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

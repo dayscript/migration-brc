@@ -1,0 +1,8 @@
+uuid: 545a5bcd-aea9-453f-b831-d1e805a532e5
+langcode: es
+status: true
+dependencies: {  }
+name: Ubicación
+vid: city
+description: 'Ciudad > Lugares > espacios en que suceden los eventos'
+weight: -10

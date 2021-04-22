@@ -1,0 +1,20 @@
+uuid: 798777b0-7770-4553-ba6e-a3e9e2f1305b
+langcode: und
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_fecha_de_creaci_n_completa
+field_name: field_fecha_de_creaci_n_completa
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

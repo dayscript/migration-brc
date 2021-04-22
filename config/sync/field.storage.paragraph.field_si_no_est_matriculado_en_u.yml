@@ -1,0 +1,19 @@
+uuid: 094a7e52-5d50-413e-a3b2-e5469303e97f
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_si_no_est_matriculado_en_u
+field_name: field_si_no_est_matriculado_en_u
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

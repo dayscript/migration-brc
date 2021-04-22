@@ -1,0 +1,46 @@
+uuid: 2a0dfc3f-8a71-4f08-b027-75f2d0d0239f
+langcode: es
+status: true
+dependencies: {  }
+id: upgrade_d7_metatag_field_instance_widget_settings_taxonomy_term_tipo_de_exposici_n
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Metatag field instance widget settings of Tipo de Exposición términos de taxonomía'
+source:
+  plugin: d7_metatag_field_instance
+  source_module: metatag
+  ignore_map: true
+  constants:
+    field_name: field_metatag
+    form_mode: default
+  entity_type_id: taxonomy_term
+  entity_type: taxonomy_term
+  bundle: tipo_de_exposici_n
+process:
+  bundle:
+    -
+      plugin: get
+      source: bundle
+  entity_type:
+    -
+      plugin: get
+      source: entity_type
+  field_name:
+    -
+      plugin: get
+      source: constants/field_name
+  form_mode:
+    -
+      plugin: get
+      source: constants/form_mode
+destination:
+  plugin: component_entity_form_display
+migration_dependencies:
+  required:
+    - upgrade_d7_metatag_field_instance_taxonomy_term_tipo_de_exposici_n
+  optional: {  }

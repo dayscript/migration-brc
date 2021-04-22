@@ -1,0 +1,15 @@
+uuid: f3919ba6-65a0-41a9-bc20-c81e8d718b19
+langcode: es
+status: true
+dependencies: {  }
+name: sc_3
+label: 'SC 300x300'
+effects:
+  01d7ea18-7665-4916-9c74-bb600f8c0cf6:
+    uuid: 01d7ea18-7665-4916-9c74-bb600f8c0cf6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center

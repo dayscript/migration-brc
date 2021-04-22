@@ -1,0 +1,10 @@
+uuid: 3f8d248d-5679-4b81-a637-69245ec5587f
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
+name: 'Palabras clave'
+vid: tags
+description: 'Use las palabras clave para agrupar artículos y otros contenidos.'
+weight: -9

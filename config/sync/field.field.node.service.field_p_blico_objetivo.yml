@@ -1,0 +1,26 @@
+uuid: 58dc2d4f-29db-45cc-a439-15918cdd7e48
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_p_blico_objetivo
+    - node.type.service
+    - taxonomy.vocabulary.publico_objetivo
+id: node.service.field_p_blico_objetivo
+field_name: field_p_blico_objetivo
+entity_type: node
+bundle: service
+label: 'Público Objetivo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      publico_objetivo: publico_objetivo
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

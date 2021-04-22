@@ -1,0 +1,8 @@
+uuid: 5c6256b6-a111-4603-87e8-b75e40fc090f
+langcode: es
+status: true
+dependencies: {  }
+name: 'Área misional'
+vid: area
+description: 'SGCL; Red de Bibliotecas; Museos de Arte; Música; Museo del Oro'
+weight: -6

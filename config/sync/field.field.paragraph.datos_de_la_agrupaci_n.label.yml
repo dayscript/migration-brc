@@ -1,0 +1,19 @@
+uuid: dd0e1584-a019-4063-baf3-3b22a4477a35
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.label
+    - paragraphs.paragraphs_type.datos_de_la_agrupaci_n
+id: paragraph.datos_de_la_agrupaci_n.label
+field_name: label
+entity_type: paragraph
+bundle: datos_de_la_agrupaci_n
+label: Nombre
+description: 'Escriba el nombre completo de la agrupación'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,26 @@
+uuid: f1cde25b-94dd-40d0-91a4-cc98d677b6c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_derechos_de_uso
+    - node.type.obra_de_arte
+    - taxonomy.vocabulary.derechos_de_uso
+id: node.obra_de_arte.field_derechos_de_uso
+field_name: field_derechos_de_uso
+entity_type: node
+bundle: obra_de_arte
+label: 'Derechos de uso'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      derechos_de_uso: derechos_de_uso
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

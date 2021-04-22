@@ -1,0 +1,21 @@
+uuid: 7cb38271-78d4-4d98-856a-6a064266484f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_creacion_obra
+    - node.type.obra_de_arte
+  module:
+    - datetime
+id: node.obra_de_arte.field_fecha_creacion_obra
+field_name: field_fecha_creacion_obra
+entity_type: node
+bundle: obra_de_arte
+label: 'Fecha de creación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

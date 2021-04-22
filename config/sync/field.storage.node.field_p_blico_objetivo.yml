@@ -1,0 +1,20 @@
+uuid: 244da558-5983-4513-b607-6483b4feb067
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_p_blico_objetivo
+field_name: field_p_blico_objetivo
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

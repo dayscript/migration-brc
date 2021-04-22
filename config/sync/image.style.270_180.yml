@@ -1,0 +1,15 @@
+uuid: 9291eb13-4328-4ae3-b260-04742f18111d
+langcode: es
+status: true
+dependencies: {  }
+name: '270_180'
+label: '270*180'
+effects:
+  20bcad1f-f348-4c13-a511-4ab7827ca33f:
+    uuid: 20bcad1f-f348-4c13-a511-4ab7827ca33f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 270
+      height: 180
+      anchor: center-center

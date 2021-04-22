@@ -1,0 +1,79 @@
+uuid: b8a61030-2ab3-4169-8337-f657010690b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pieza_arqueologica.body
+    - field.field.node.pieza_arqueologica.comment_node_pieza_arqueologica
+    - field.field.node.pieza_arqueologica.field_apodo_o_nombre_si_lo_tiene
+    - field.field.node.pieza_arqueologica.field_city
+    - field.field.node.pieza_arqueologica.field_cmo_descripcion_hallazgo
+    - field.field.node.pieza_arqueologica.field_cmo_fecha_periodo
+    - field.field.node.pieza_arqueologica.field_cmo_fotografo
+    - field.field.node.pieza_arqueologica.field_cmo_funcion
+    - field.field.node.pieza_arqueologica.field_cmo_sitio
+    - field.field.node.pieza_arqueologica.field_cmo_tecnica
+    - field.field.node.pieza_arqueologica.field_cmo_tipo_de_pieza
+    - field.field.node.pieza_arqueologica.field_derechos_de_uso
+    - field.field.node.pieza_arqueologica.field_dimensiones
+    - field.field.node.pieza_arqueologica.field_estado_exhibicion
+    - field.field.node.pieza_arqueologica.field_estilo
+    - field.field.node.pieza_arqueologica.field_forma
+    - field.field.node.pieza_arqueologica.field_gallery
+    - field.field.node.pieza_arqueologica.field_lugar_de_procedencia
+    - field.field.node.pieza_arqueologica.field_material
+    - field.field.node.pieza_arqueologica.field_metatag
+    - field.field.node.pieza_arqueologica.field_numero_de_registro
+    - field.field.node.pieza_arqueologica.field_periodo
+    - field.field.node.pieza_arqueologica.field_region
+    - field.field.node.pieza_arqueologica.field_representaci_n
+    - field.field.node.pieza_arqueologica.field_tags
+    - node.type.pieza_arqueologica
+  module:
+    - text
+    - user
+id: node.pieza_arqueologica.teaser
+targetEntityType: node
+bundle: pieza_arqueologica
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_pieza_arqueologica: true
+  field_apodo_o_nombre_si_lo_tiene: true
+  field_city: true
+  field_cmo_descripcion_hallazgo: true
+  field_cmo_fecha_periodo: true
+  field_cmo_fotografo: true
+  field_cmo_funcion: true
+  field_cmo_sitio: true
+  field_cmo_tecnica: true
+  field_cmo_tipo_de_pieza: true
+  field_derechos_de_uso: true
+  field_dimensiones: true
+  field_estado_exhibicion: true
+  field_estilo: true
+  field_forma: true
+  field_gallery: true
+  field_lugar_de_procedencia: true
+  field_material: true
+  field_metatag: true
+  field_numero_de_registro: true
+  field_periodo: true
+  field_region: true
+  field_representaci_n: true
+  field_tags: true
+  langcode: true

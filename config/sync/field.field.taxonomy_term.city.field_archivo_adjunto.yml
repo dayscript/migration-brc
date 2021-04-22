@@ -1,0 +1,28 @@
+uuid: 47c1a550-a767-4d37-9d0e-790828e12eb4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_archivo_adjunto
+    - taxonomy.vocabulary.city
+  module:
+    - file
+id: taxonomy_term.city.field_archivo_adjunto
+field_name: field_archivo_adjunto
+entity_type: taxonomy_term
+bundle: city
+label: 'Archivos adjuntos'
+description: 'En este campo puede agregar documentos, imágenes, videos o audios adicionales que necesite para acompañar el contenido principal.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: taxonomy/city/attached
+  file_extensions: 'txt pdf mp3 m4v mov jpg jpeg tiff gif doc docx xls xlsx ppt png pptx wav mp4 avi m4a'
+  max_filesize: 50MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
+

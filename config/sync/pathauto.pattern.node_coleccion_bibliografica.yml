@@ -1,0 +1,21 @@
+uuid: af95bfb9-f314-4ac6-9ca7-3b59cfb149fa
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_coleccion_bibliografica
+label: 'Content - Colección Bibliográfica'
+type: 'canonical_entities:node'
+pattern: 'coleccion-bibliografica/especiales/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      coleccion_bibliografica: coleccion_bibliografica
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

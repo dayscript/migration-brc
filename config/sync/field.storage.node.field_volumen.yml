@@ -1,0 +1,20 @@
+uuid: 8177e283-3a6f-4712-b249-7af23e73cce2
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_volumen
+field_name: field_volumen
+entity_type: node
+type: text
+settings:
+  max_length: 300
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

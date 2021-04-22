@@ -1,0 +1,26 @@
+uuid: 08c85caf-8c27-40ca-abcd-ff07f712a047
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tecnica
+    - node.type.obra_de_arte
+    - taxonomy.vocabulary.ca_tecnica
+id: node.obra_de_arte.field_tecnica
+field_name: field_tecnica
+entity_type: node
+bundle: obra_de_arte
+label: Técnica
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      ca_tecnica: ca_tecnica
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

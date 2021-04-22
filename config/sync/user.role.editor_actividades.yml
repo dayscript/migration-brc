@@ -1,0 +1,37 @@
+uuid: 7587a65f-2bcf-4e45-a8af-b2c28b51e7df
+langcode: es
+status: true
+dependencies: {  }
+id: editor_actividades
+label: 'Editor actividades'
+weight: 7
+is_admin: null
+permissions:
+  - 'access administration menu'
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access media browser'
+  - 'add content to books'
+  - 'administer book outlines'
+  - 'administer entityform types'
+  - 'create activity content'
+  - 'create article content'
+  - 'create new books'
+  - 'delete any activity content'
+  - 'delete any article content'
+  - 'delete own activity content'
+  - 'delete own article content'
+  - 'edit any activity content'
+  - 'edit any article content'
+  - 'edit any entityform'
+  - 'edit any page content'
+  - 'edit own activity content'
+  - 'edit own article content'
+  - 'edit own entityform'
+  - 'edit own page content'
+  - 'edit terms in 1'
+  - 'use text format full_html'
+  - 'view any entityform'
+  - 'view own entityform'
+  - 'view own unpublished content'

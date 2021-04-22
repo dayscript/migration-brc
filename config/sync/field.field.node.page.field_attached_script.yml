@@ -1,0 +1,19 @@
+uuid: 1733116d-a826-4030-bed3-45b024fabfb6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attached_script
+    - node.type.page
+id: node.page.field_attached_script
+field_name: field_attached_script
+entity_type: node
+bundle: page
+label: 'Código adjunto'
+description: 'Use este campo para insertar códigos embebidos en la pagina, generalmente inician y finalizan con etiquetas "script"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

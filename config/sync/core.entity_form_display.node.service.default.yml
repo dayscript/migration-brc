@@ -1,0 +1,276 @@
+uuid: bfbe99c2-5290-4402-893b-a50992937055
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.service.body
+    - field.field.node.service.comment_node_service
+    - field.field.node.service.field_area_misional
+    - field.field.node.service.field_content
+    - field.field.node.service.field_files
+    - field.field.node.service.field_icono
+    - field.field.node.service.field_image
+    - field.field.node.service.field_imagen_para_slider
+    - field.field.node.service.field_limite_de_inscripciones
+    - field.field.node.service.field_p_blico_objetivo
+    - field.field.node.service.field_score_order
+    - field.field.node.service.field_subt_tulo
+    - field.field.node.service.field_tags
+    - field.field.node.service.field_title_form
+    - field.field.node.service.field_type_service
+    - image.style.thumbnail
+    - node.type.service
+  module:
+    - comment
+    - field_group
+    - file
+    - image
+    - paragraphs
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_general:
+      children:
+        - body
+        - field_type_service
+        - field_subt_tulo
+        - title
+      parent_name: ''
+      weight: 0
+      label: General
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        required_fields: true
+      format_type: tab
+      region: content
+    group_multimedia:
+      children:
+        - field_image
+        - field_files
+        - field_imagen_para_slider
+        - field_icono
+      parent_name: ''
+      weight: 1
+      label: Multimedia
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        required_fields: true
+      format_type: tab
+      region: content
+    group_relaciones:
+      children:
+        - field_content
+        - field_p_blico_objetivo
+        - field_area_misional
+        - field_tags
+        - field_score_order
+      parent_name: ''
+      weight: 2
+      label: Relaciones
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        required_fields: true
+      format_type: tab
+      region: content
+    group_inscriptions:
+      children:
+        - field_show_form
+        - field_title_form
+        - field_limite_de_inscripciones
+      parent_name: ''
+      weight: 3
+      label: Inscripciones
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-inscriptions field-group-tab'
+        required_fields: true
+      format_type: tab
+      region: content
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  body:
+    weight: 4
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment_node_service:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_area_misional:
+    weight: 3
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_content:
+    weight: 4
+    type: entity_reference_paragraphs
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_files:
+    weight: 6
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_icono:
+    weight: 3
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 4
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider:
+    weight: 5
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_limite_de_inscripciones:
+    weight: 34
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_p_blico_objetivo:
+    weight: 5
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_score_order:
+    weight: 7
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_subt_tulo:
+    weight: 3
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 6
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_title_form:
+    weight: 33
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_type_service:
+    weight: 1
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

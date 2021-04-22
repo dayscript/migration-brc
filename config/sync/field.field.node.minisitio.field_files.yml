@@ -1,0 +1,28 @@
+uuid: 1f2356a0-d18f-4ef7-9351-76c823343ef1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.minisitio
+  module:
+    - file
+id: node.minisitio.field_files
+field_name: field_files
+entity_type: node
+bundle: minisitio
+label: 'Archivos adjuntos'
+description: 'En este campo puede agregar documentos, imágenes, videos o audios adicionales que necesite para acompañar el contenido principal.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: minisitio/attached
+  file_extensions: 'txt pdf mp3 m4v mov jpg jpeg tiff gif doc docx xls xlsx ppt png pptx wav mp4 avi m4a'
+  max_filesize: 50MB
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
+

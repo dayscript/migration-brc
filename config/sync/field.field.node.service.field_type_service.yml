@@ -1,0 +1,26 @@
+uuid: 202f3e12-15db-44ad-ae8c-8c0d22d0766d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_service
+    - node.type.service
+    - taxonomy.vocabulary.tipe_service
+id: node.service.field_type_service
+field_name: field_type_service
+entity_type: node
+bundle: service
+label: 'Tipo de servicio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tipe_service: tipe_service
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

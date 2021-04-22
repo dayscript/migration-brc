@@ -1,0 +1,28 @@
+uuid: 4487d652-14b8-474b-9310-ef71092b243a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.page
+  module:
+    - file
+id: node.page.field_files
+field_name: field_files
+entity_type: node
+bundle: page
+label: 'Archivos adjuntos'
+description: 'En este campo puede agregar documentos, imágenes, videos o audios adicionales que necesite para acompañar el contenido principal.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: page/attached
+  file_extensions: 'txt pdf mp3 m4v mov jpg jpeg tiff gif doc docx xls xlsx ppt png pptx wav mp4 avi m4a'
+  max_filesize: 50MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
+

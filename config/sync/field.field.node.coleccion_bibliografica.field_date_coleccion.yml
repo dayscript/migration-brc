@@ -1,0 +1,21 @@
+uuid: 18ac3d68-f5f1-4783-ba8e-b09e72ee9529
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_coleccion
+    - node.type.coleccion_bibliografica
+  module:
+    - datetime_range
+id: node.coleccion_bibliografica.field_date_coleccion
+field_name: field_date_coleccion
+entity_type: node
+bundle: coleccion_bibliografica
+label: Fecha
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

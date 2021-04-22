@@ -1,0 +1,21 @@
+uuid: 2f005e83-c826-4d1b-b3a1-bd812a9b7eb0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_metatag
+    - taxonomy.vocabulary.publico_objetivo
+  module:
+    - metatag
+id: taxonomy_term.publico_objetivo.field_metatag
+field_name: field_metatag
+entity_type: taxonomy_term
+bundle: publico_objetivo
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

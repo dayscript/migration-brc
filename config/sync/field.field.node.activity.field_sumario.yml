@@ -1,0 +1,19 @@
+uuid: 76894afd-319e-4692-b0c0-dbe6ef3dfc01
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sumario
+    - node.type.activity
+id: node.activity.field_sumario
+field_name: field_sumario
+entity_type: node
+bundle: activity
+label: Sumario
+description: 'Incluya acá 2 frases que resuman el contenido del artículo o actividad.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

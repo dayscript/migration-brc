@@ -1,0 +1,11 @@
+uuid: f4c6e204-d7c9-4437-8d2e-46244339d806
+langcode: es
+status: true
+dependencies: {  }
+id: manizales_colas_de_nodos
+label: 'Manizales - colas de nodos'
+weight: 28
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

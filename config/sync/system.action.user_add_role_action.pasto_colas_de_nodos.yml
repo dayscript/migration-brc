@@ -1,0 +1,14 @@
+uuid: 362562c3-1e7b-44d2-af6f-1feb61bec908
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.pasto_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.pasto_colas_de_nodos
+label: 'Añade el rol Pasto - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: pasto_colas_de_nodos

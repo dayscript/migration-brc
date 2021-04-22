@@ -1,0 +1,55 @@
+uuid: 2465f104-e8be-4441-8f5c-b49c41273570
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_telefono
+    - paragraphs.paragraphs_type.telefono
+    - taxonomy.vocabulary.city
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.city.field_telefono
+field_name: field_telefono
+entity_type: taxonomy_term
+bundle: city
+label: Telefonos
+description: 'Teléfonos de contacto de la ubicacion'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      telefono: telefono
+    target_bundles_drag_drop:
+      content:
+        enabled: false
+        weight: 2
+      datos_de_la_agrupaci_n:
+        enabled: false
+        weight: 3
+      estudios_solistas:
+        enabled: false
+        weight: 4
+      informaci_n_de_los_acompa_:
+        enabled: false
+        weight: 5
+      instrumentos_agrupaciones:
+        enabled: false
+        weight: 6
+      instrumentos_solistas:
+        enabled: false
+        weight: 7
+      integrantes_agrupacion:
+        enabled: false
+        weight: 8
+      representante_agrupacion:
+        enabled: false
+        weight: 9
+      telefono:
+        enabled: true
+        weight: 1
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

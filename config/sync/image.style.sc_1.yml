@@ -1,0 +1,15 @@
+uuid: c099527a-03a9-4bce-b10c-459c84293883
+langcode: es
+status: true
+dependencies: {  }
+name: sc_1
+label: 'Slider 1440x415'
+effects:
+  3cdff70b-fcc3-4bf7-aa25-f955b8664bd5:
+    uuid: 3cdff70b-fcc3-4bf7-aa25-f955b8664bd5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 415
+      anchor: center-center

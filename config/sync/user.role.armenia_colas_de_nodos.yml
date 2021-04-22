@@ -1,0 +1,11 @@
+uuid: 6a6aa1a2-f41a-42d5-8dcf-7e9493707ee4
+langcode: es
+status: true
+dependencies: {  }
+id: armenia_colas_de_nodos
+label: 'Armenia - colas de nodos'
+weight: 14
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

@@ -1,0 +1,21 @@
+uuid: b0b979eb-b785-4d50-ba25-06f2ce246022
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_obra_de_arte
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_obra_de_arte.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_obra_de_arte
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

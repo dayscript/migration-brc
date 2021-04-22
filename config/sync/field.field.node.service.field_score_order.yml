@@ -1,0 +1,25 @@
+uuid: 1ec75eee-54d6-4497-b402-665791169952
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_score_order
+    - node.type.service
+id: node.service.field_score_order
+field_name: field_score_order
+entity_type: node
+bundle: service
+label: 'Orden de puntuación'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

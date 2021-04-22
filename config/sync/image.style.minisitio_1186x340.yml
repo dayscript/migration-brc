@@ -1,0 +1,15 @@
+uuid: 1b6827c4-64da-4680-a5a8-2348a252e152
+langcode: es
+status: true
+dependencies: {  }
+name: minisitio_1186x340
+label: 'Minisitio 1186x340'
+effects:
+  1f5c0aee-a74e-4950-ace3-948269c31339:
+    uuid: 1f5c0aee-a74e-4950-ace3-948269c31339
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1186
+      height: 340
+      anchor: center-center

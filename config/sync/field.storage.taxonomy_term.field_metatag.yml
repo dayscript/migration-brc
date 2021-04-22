@@ -1,0 +1,19 @@
+uuid: 239d2f79-249c-46c7-a5f1-c8e3023f5182
+langcode: und
+status: true
+dependencies:
+  module:
+    - metatag
+    - taxonomy
+id: taxonomy_term.field_metatag
+field_name: field_metatag
+entity_type: taxonomy_term
+type: metatag
+settings: {  }
+module: metatag
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,33 @@
+uuid: 64d59cd2-7fec-4bfb-92fc-f6ae7f8f92ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.coleccion_bibliografica
+  module:
+    - image
+id: node.coleccion_bibliografica.field_image
+field_name: field_image
+entity_type: node
+bundle: coleccion_bibliografica
+label: 'Imagen principal'
+description: 'Imagen principal de la Colección Bibliográfica, su formato debe ser de 640px de ancho por 400px de alto.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: coleccion_bibliografica/main
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: 640x400
+  min_resolution: 640x400
+  alt_field: true
+  alt_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

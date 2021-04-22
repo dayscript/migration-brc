@@ -1,0 +1,14 @@
+uuid: 9c41fe95-71a4-4cc5-80f4-0f2d1c3ac722
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.sincelejo_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.sincelejo_colas_de_nodos
+label: 'Elimina el rol Sincelejo - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: sincelejo_colas_de_nodos

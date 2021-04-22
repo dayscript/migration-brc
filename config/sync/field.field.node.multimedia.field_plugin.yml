@@ -1,0 +1,32 @@
+uuid: c98667ca-935e-465d-9692-9f4b67f8121c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plugin
+    - node.type.multimedia
+    - node.type.plugin
+id: node.multimedia.field_plugin
+field_name: field_plugin
+entity_type: node
+bundle: multimedia
+label: 'Plugin (tipo de link)'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_id: '282261'
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      plugin: plugin
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

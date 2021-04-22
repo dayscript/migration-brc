@@ -1,0 +1,28 @@
+uuid: 160c53c3-f678-4eb0-b72b-51e3139a6f0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autor_del_art_culo
+    - node.type.article
+    - taxonomy.vocabulary.autor_de_articulo
+id: node.article.field_autor_del_art_culo
+field_name: field_autor_del_art_culo
+entity_type: node
+bundle: article
+label: 'Autor del artículo'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    tid: '36969'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      autor_de_articulo: autor_de_articulo
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

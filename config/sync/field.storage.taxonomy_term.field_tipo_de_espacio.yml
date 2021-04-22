@@ -1,0 +1,19 @@
+uuid: 16ccec77-4c12-4b7b-8c7d-ac1873767bb8
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_tipo_de_espacio
+field_name: field_tipo_de_espacio
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+uuid: 45944dd9-4e2b-4b7c-8d45-4faddbbcd9ba
+langcode: es
+status: true
+dependencies: {  }
+name: 186_x_117
+label: 'CM Small 186x117'
+effects:
+  fafe8e01-e9aa-4f73-a262-6c3aa90e6872:
+    uuid: fafe8e01-e9aa-4f73-a262-6c3aa90e6872
+    id: image_resize
+    weight: 1
+    data:
+      width: 186
+      height: 117

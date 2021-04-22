@@ -1,0 +1,23 @@
+uuid: 3ee48076-0c65-4599-92e6-a63ae5c9cf23
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_a_o
+    - node.type.minisitio
+id: node.minisitio.field_a_o
+field_name: field_a_o
+entity_type: node
+bundle: minisitio
+label: Año
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

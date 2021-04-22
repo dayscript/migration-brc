@@ -1,0 +1,26 @@
+uuid: 7e3688a8-d5e2-47b9-a245-15352e026bec
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cmo_tecnica
+    - node.type.pieza_arqueologica
+    - taxonomy.vocabulary.cmo_t_cnica
+id: node.pieza_arqueologica.field_cmo_tecnica
+field_name: field_cmo_tecnica
+entity_type: node
+bundle: pieza_arqueologica
+label: Técnica
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      cmo_t_cnica: cmo_t_cnica
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

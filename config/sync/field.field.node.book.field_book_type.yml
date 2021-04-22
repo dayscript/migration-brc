@@ -1,0 +1,26 @@
+uuid: 0abbdb18-1121-4b56-8294-47d2b0e1d453
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_type
+    - node.type.book
+    - taxonomy.vocabulary.book_type
+id: node.book.field_book_type
+field_name: field_book_type
+entity_type: node
+bundle: book
+label: Tipo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      book_type: book_type
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

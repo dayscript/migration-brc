@@ -1,0 +1,23 @@
+uuid: 0e95b820-06e3-4d4b-9a6e-0032a807cb55
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.publicacion
+  module:
+    - text
+id: node.publicacion.body
+field_name: body
+entity_type: node
+bundle: publicacion
+label: 'Contenido (reseña)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

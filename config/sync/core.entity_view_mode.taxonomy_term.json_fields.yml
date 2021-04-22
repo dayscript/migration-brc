@@ -1,0 +1,10 @@
+uuid: 18bc5e49-2386-4c91-9d07-276251d25530
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.json_fields
+label: json_fields
+targetEntityType: taxonomy_term
+cache: true

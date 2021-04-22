@@ -1,0 +1,19 @@
+uuid: 284f037a-e1ea-4dc9-91ea-bbe6bb5c5c0e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_enlace_a_facebook
+    - taxonomy.vocabulary.city
+id: taxonomy_term.city.field_enlace_a_facebook
+field_name: field_enlace_a_facebook
+entity_type: taxonomy_term
+bundle: city
+label: 'Enlace a Facebook'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

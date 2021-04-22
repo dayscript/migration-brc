@@ -1,0 +1,21 @@
+uuid: 311092be-57bf-4c5b-8002-ad3ab7bdfd51
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag
+    - node.type.instrumento
+  module:
+    - metatag
+id: node.instrumento.field_metatag
+field_name: field_metatag
+entity_type: node
+bundle: instrumento
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

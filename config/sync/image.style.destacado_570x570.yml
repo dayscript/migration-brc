@@ -1,0 +1,15 @@
+uuid: a6be0d53-ddf1-4c01-9e6e-9ce4554860ed
+langcode: es
+status: true
+dependencies: {  }
+name: destacado_570x570
+label: 'Destacado 570x570'
+effects:
+  a67aea01-c159-4797-9c99-344ef017c067:
+    uuid: a67aea01-c159-4797-9c99-344ef017c067
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 570
+      height: 570
+      anchor: center-center

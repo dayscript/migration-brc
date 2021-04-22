@@ -1,0 +1,49 @@
+uuid: 4be5e41e-c112-4740-ae00-59f205b97674
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.instrumentos_solistas.field_categor_a
+    - field.field.paragraph.instrumentos_solistas.field_especifique_instrumento
+    - field.field.paragraph.instrumentos_solistas.field_formato_de_acompa_amiento_
+    - field.field.paragraph.instrumentos_solistas.field_instrumentos_acompanamient
+    - paragraphs.paragraphs_type.instrumentos_solistas
+  module:
+    - options
+id: paragraph.instrumentos_solistas.default
+targetEntityType: paragraph
+bundle: instrumentos_solistas
+mode: default
+content:
+  field_categor_a:
+    label: above
+    weight: 0
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_especifique_instrumento:
+    label: above
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_formato_de_acompa_amiento_:
+    label: above
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_instrumentos_acompanamient:
+    label: above
+    weight: 3
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

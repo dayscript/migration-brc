@@ -1,0 +1,21 @@
+uuid: c7e7c878-2599-482b-8abc-7fcb6d5bbdc9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_minisitio
+label: 'Content - Minisitio'
+type: 'canonical_entities:node'
+pattern: '[node:field_tipo_de_minisitio]/[node:book:parents:join-path]/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      minisitio: minisitio
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

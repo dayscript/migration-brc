@@ -1,0 +1,11 @@
+uuid: 8416acda-3d1b-42d7-a042-890611a31d1b
+langcode: es
+status: true
+dependencies: {  }
+id: riohacha_colas_de_nodos
+label: 'Riohacha - colas de nodos'
+weight: 36
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

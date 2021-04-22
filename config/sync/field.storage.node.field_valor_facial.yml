@@ -1,0 +1,21 @@
+uuid: a24036bc-b17c-4c6a-9a5e-6bf54238f01f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_valor_facial
+field_name: field_valor_facial
+entity_type: node
+type: string
+settings:
+  max_length: 30
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

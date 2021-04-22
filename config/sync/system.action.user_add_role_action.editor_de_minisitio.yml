@@ -1,0 +1,14 @@
+uuid: c9a96ea2-5126-4bc0-abcf-a444c81d76bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_de_minisitio
+  module:
+    - user
+id: user_add_role_action.editor_de_minisitio
+label: 'Añade el rol Editor de minisitio al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: editor_de_minisitio

@@ -1,0 +1,21 @@
+uuid: a53d442f-57f7-4229-a2b5-4f7747bcb78d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_categoria_agrupaciones
+    - paragraphs.paragraphs_type.instrumentos_agrupaciones
+  module:
+    - options
+id: paragraph.instrumentos_agrupaciones.field_categoria_agrupaciones
+field_name: field_categoria_agrupaciones
+entity_type: paragraph
+bundle: instrumentos_agrupaciones
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: c5f6d5f5-4805-4359-a17e-ed685aa06365
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_si_no_est_matriculado_en_u
+    - paragraphs.paragraphs_type.datos_de_la_agrupaci_n
+id: paragraph.datos_de_la_agrupaci_n.field_si_no_est_matriculado_en_u
+field_name: field_si_no_est_matriculado_en_u
+entity_type: paragraph
+bundle: datos_de_la_agrupaci_n
+label: 'Si no está matriculado en una institución explique por qué:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

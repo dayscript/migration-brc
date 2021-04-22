@@ -1,0 +1,14 @@
+uuid: fb11407e-1fe4-45fa-a4cc-a8020000a71d
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_biblioteca_virtual
+  module:
+    - user
+id: user_add_role_action.administrador_biblioteca_virtual
+label: 'Añade el rol Administrador Biblioteca virtual al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administrador_biblioteca_virtual

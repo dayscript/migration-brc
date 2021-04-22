@@ -1,0 +1,26 @@
+uuid: d1d6cf2b-ab50-40b4-b8b0-006097f2a320
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_activity
+    - node.type.activity
+    - taxonomy.vocabulary.type_activity
+id: node.activity.field_type_activity
+field_name: field_type_activity
+entity_type: node
+bundle: activity
+label: 'Tipo de actividad'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      type_activity: type_activity
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

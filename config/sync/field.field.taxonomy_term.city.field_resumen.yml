@@ -1,0 +1,19 @@
+uuid: 2b1073bf-b291-4bae-8c12-3b78ce9e471a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_resumen
+    - taxonomy.vocabulary.city
+id: taxonomy_term.city.field_resumen
+field_name: field_resumen
+entity_type: taxonomy_term
+bundle: city
+label: Resumen
+description: 'Este texto aparecerá en la primera imágen del slider - 350 caracteres máximo'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

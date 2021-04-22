@@ -1,0 +1,21 @@
+uuid: 8de61d8d-b5d3-4231-89de-18f9f467c399
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_material_complementario
+    - node.type.coleccion_bibliografica
+  module:
+    - text
+id: node.coleccion_bibliografica.field_material_complementario
+field_name: field_material_complementario
+entity_type: node
+bundle: coleccion_bibliografica
+label: 'Material complementario'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

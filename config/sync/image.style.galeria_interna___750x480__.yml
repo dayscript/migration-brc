@@ -1,0 +1,15 @@
+uuid: 5dce4bff-f774-46cc-b99f-cf2aaac5e14f
+langcode: es
+status: true
+dependencies: {  }
+name: galeria_interna___750x480__
+label: 'Galeria Interna ( 750x480 )'
+effects:
+  5cb79998-2a8a-4c84-822d-4f74091150be:
+    uuid: 5cb79998-2a8a-4c84-822d-4f74091150be
+    id: image_scale
+    weight: 2
+    data:
+      width: 750
+      height: 480
+      upscale: false

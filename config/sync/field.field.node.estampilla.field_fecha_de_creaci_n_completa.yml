@@ -1,0 +1,21 @@
+uuid: 9eee6021-ff95-422a-8bec-27d983e52125
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_de_creaci_n_completa
+    - node.type.estampilla
+  module:
+    - datetime
+id: node.estampilla.field_fecha_de_creaci_n_completa
+field_name: field_fecha_de_creaci_n_completa
+entity_type: node
+bundle: estampilla
+label: 'Fecha de emisión completa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

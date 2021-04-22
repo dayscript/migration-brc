@@ -1,0 +1,28 @@
+uuid: c212d307-8621-4df4-91ab-459df52aa8c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_items_del_submenu
+    - taxonomy.vocabulary.city
+    - taxonomy.vocabulary.items_de_submenu
+id: taxonomy_term.city.field_items_del_submenu
+field_name: field_items_del_submenu
+entity_type: taxonomy_term
+bundle: city
+label: 'Items del submenu'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    tid: '36935'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      items_de_submenu: items_de_submenu
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

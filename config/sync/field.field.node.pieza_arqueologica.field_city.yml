@@ -1,0 +1,26 @@
+uuid: 54a572bd-bfe9-4ffb-9cec-8ce8509392b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_city
+    - node.type.pieza_arqueologica
+    - taxonomy.vocabulary.city
+id: node.pieza_arqueologica.field_city
+field_name: field_city
+entity_type: node
+bundle: pieza_arqueologica
+label: 'Ciudad y Lugar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      city: city
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

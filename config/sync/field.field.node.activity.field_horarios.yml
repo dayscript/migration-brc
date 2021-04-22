@@ -1,0 +1,21 @@
+uuid: 2390f71a-2bd1-47c3-8c9c-a18cc1aa37d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horarios
+    - node.type.activity
+  module:
+    - office_hours
+id: node.activity.field_horarios
+field_name: field_horarios
+entity_type: node
+bundle: activity
+label: Horarios
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: office_hours

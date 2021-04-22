@@ -1,0 +1,14 @@
+uuid: 1c2c330e-1497-4c7c-8dd1-c46d37aaf02c
+langcode: es
+status: true
+dependencies: {  }
+name: slider_small_1263x364
+label: 'Slider Small 1263x364'
+effects:
+  7dc8d470-adc8-411c-a9c8-ddf216bdbd1a:
+    uuid: 7dc8d470-adc8-411c-a9c8-ddf216bdbd1a
+    id: image_resize
+    weight: 1
+    data:
+      width: 1263
+      height: 364

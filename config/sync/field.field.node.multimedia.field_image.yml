@@ -1,0 +1,34 @@
+uuid: b61662d1-01a2-4706-80e9-66e1f21c4d7a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.multimedia
+  module:
+    - image
+id: node.multimedia.field_image
+field_name: field_image
+entity_type: node
+bundle: multimedia
+label: 'Imagen Principal'
+description: 'Imagen principal de Multimedia, su formato debe ser de 640px de ancho por 400px de alto.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: multimedia/main
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: 640x400
+  min_resolution: 640x400
+  alt_field: true
+  alt_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
+

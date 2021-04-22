@@ -1,0 +1,15 @@
+uuid: 4b87c935-a74b-4d75-a1c2-76391fb35813
+langcode: es
+status: true
+dependencies: {  }
+name: 750x480
+label: 'Detalle de actividad(750x480)'
+effects:
+  1b9aa481-829c-49a9-85c6-f5e5a7ebb5ba:
+    uuid: 1b9aa481-829c-49a9-85c6-f5e5a7ebb5ba
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 770
+      height: 480
+      anchor: center-center

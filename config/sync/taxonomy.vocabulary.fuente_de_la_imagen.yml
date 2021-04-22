@@ -1,0 +1,8 @@
+uuid: 356403b7-9587-4a94-ad74-376c116c17e3
+langcode: es
+status: true
+dependencies: {  }
+name: 'Fuente de la imagen'
+vid: fuente_de_la_imagen
+description: 'De donde proviene la imagen. por ejemplo Colección de Arte del Banco de la Rep´blica, Revista credencial Historia...'
+weight: 4

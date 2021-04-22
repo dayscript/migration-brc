@@ -1,0 +1,21 @@
+uuid: c6d710e6-67bc-48a4-95b6-5951f9b18152
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_url_ubicacion
+field_name: field_url_ubicacion
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 500
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

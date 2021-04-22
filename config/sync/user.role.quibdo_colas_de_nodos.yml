@@ -1,0 +1,11 @@
+uuid: d93d3b7f-f8fe-4017-871f-4af3512699bb
+langcode: es
+status: true
+dependencies: {  }
+id: quibdo_colas_de_nodos
+label: 'Quibdó - colas de nodos'
+weight: 35
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

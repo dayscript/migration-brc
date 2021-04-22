@@ -1,0 +1,33 @@
+uuid: 87ae3956-851a-4baa-a4d4-2e13ea609b62
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_portada
+    - node.type.book
+  module:
+    - image
+id: node.book.field_portada
+field_name: field_portada
+entity_type: node
+bundle: book
+label: Portada
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: books/page
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field: true
+  default_image: '13989'
+  alt_field_required: true
+  title_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,26 @@
+uuid: 0ba4874d-6eea-4cb1-9724-dca13aedccfd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.activity
+    - taxonomy.vocabulary.tags
+id: node.activity.field_tags
+field_name: field_tags
+entity_type: node
+bundle: activity
+label: 'Palabra clave'
+description: 'Seleccione una o varias opciones disponibles de la lista de autocompletado.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tags: tags
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

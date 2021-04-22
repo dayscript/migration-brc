@@ -1,0 +1,26 @@
+uuid: bee61c03-ab24-4776-a394-852afed638c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - node.type.publicacion
+    - taxonomy.vocabulary.autor
+id: node.publicacion.field_author
+field_name: field_author
+entity_type: node
+bundle: publicacion
+label: Autor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      autor: autor
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

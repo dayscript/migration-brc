@@ -1,0 +1,26 @@
+uuid: 573ae2d4-8f77-4f8e-bd60-bba93691eebc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_periodo
+    - node.type.pieza_arqueologica
+    - taxonomy.vocabulary.cmo_periodo
+id: node.pieza_arqueologica.field_periodo
+field_name: field_periodo
+entity_type: node
+bundle: pieza_arqueologica
+label: Periodo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      cmo_periodo: cmo_periodo
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

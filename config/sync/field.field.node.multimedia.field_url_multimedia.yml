@@ -1,0 +1,19 @@
+uuid: e9c274f3-fdb5-49b3-894d-6930d56ac20a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_multimedia
+    - node.type.multimedia
+id: node.multimedia.field_url_multimedia
+field_name: field_url_multimedia
+entity_type: node
+bundle: multimedia
+label: 'URL multimedia'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

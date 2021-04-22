@@ -1,0 +1,21 @@
+uuid: 0d4d0898-a29b-46d2-b21b-9c27d4a490ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_horarios
+    - taxonomy.vocabulary.city
+  module:
+    - office_hours
+id: taxonomy_term.city.field_horarios
+field_name: field_horarios
+entity_type: taxonomy_term
+bundle: city
+label: Horarios
+description: 'Horarios de disponibilidad de esta ubicación'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: office_hours

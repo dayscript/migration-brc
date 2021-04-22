@@ -1,0 +1,23 @@
+uuid: acfa3271-5bf8-42c6-aa13-72d28481a14a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_obra_destacada
+    - node.type.pieza_coleccion_monedas_billetes
+id: node.pieza_coleccion_monedas_billetes.field_obra_destacada
+field_name: field_obra_destacada
+entity_type: node
+bundle: pieza_coleccion_monedas_billetes
+label: 'Pieza destacada'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

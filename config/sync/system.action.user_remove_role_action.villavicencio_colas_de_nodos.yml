@@ -1,0 +1,14 @@
+uuid: 0ad206ca-c80b-4bbe-9e50-51f36d4e10bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.villavicencio_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.villavicencio_colas_de_nodos
+label: 'Elimina el rol Villavicencio - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: villavicencio_colas_de_nodos

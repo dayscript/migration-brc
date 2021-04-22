@@ -1,0 +1,11 @@
+uuid: ced52f10-733d-477e-a6d6-30e73e8ec0a7
+langcode: es
+status: true
+dependencies: {  }
+id: cartagena_colas_de_nodos
+label: 'Cartagena - colas de nodos'
+weight: 20
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

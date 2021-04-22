@@ -1,0 +1,8 @@
+uuid: 4a56d3de-d977-402c-abd3-4630c00e56e7
+langcode: es
+status: true
+dependencies: {  }
+id: menu-header-menu
+label: header-menu
+description: 'Contiene los links que componen el componente header-menu del portal en angular'
+locked: false

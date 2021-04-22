@@ -1,0 +1,19 @@
+uuid: fada608a-97b9-4fa8-8520-531adb2cff53
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subt_tulo
+    - node.type.service
+id: node.service.field_subt_tulo
+field_name: field_subt_tulo
+entity_type: node
+bundle: service
+label: Subtítulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

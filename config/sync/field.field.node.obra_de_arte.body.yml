@@ -1,0 +1,23 @@
+uuid: 340b17f0-e08a-4c44-bc45-30e393c755dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.obra_de_arte
+  module:
+    - text
+id: node.obra_de_arte.body
+field_name: body
+entity_type: node
+bundle: obra_de_arte
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

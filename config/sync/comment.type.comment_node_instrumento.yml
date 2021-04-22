@@ -1,0 +1,8 @@
+uuid: 9ebe2a8f-35a7-46d7-86d4-ba2839cf08fc
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_instrumento
+label: 'CI instrumento comment'
+target_entity_type_id: node
+description: null

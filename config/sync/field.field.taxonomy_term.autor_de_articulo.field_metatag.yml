@@ -1,0 +1,21 @@
+uuid: 1dee465b-8f4d-4990-adcc-22b01607eac6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_metatag
+    - taxonomy.vocabulary.autor_de_articulo
+  module:
+    - metatag
+id: taxonomy_term.autor_de_articulo.field_metatag
+field_name: field_metatag
+entity_type: taxonomy_term
+bundle: autor_de_articulo
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag
