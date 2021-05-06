@@ -1,0 +1,20 @@
+uuid: e618120b-0b37-4fc1-bd08-d32c66d74412
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - adminimal_theme
+id: mensajes
+theme: adminimal_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Mensajes
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -6,12 +6,11 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main-menu
-    parent: 'main-menu:0:'
-name: 'CMB Billete o moneda'
+    available_menus: {  }
+    parent: ''
+name: 'Billete o moneda'
 type: pieza_coleccion_monedas_billetes
-description: 'Piezas de la colección de numismática del Banco de la República (billetes y monedas) '
+description: 'Este tipo de contenido se utiliza para publicar piezas que integran la Colección Numismática (Billetes y Monedas) del Banco de la República.'
 help: ''
 new_revision: false
 preview_mode: 1

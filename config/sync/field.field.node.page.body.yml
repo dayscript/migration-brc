@@ -13,7 +13,7 @@ id: node.page.body
 field_name: body
 entity_type: node
 bundle: page
-label: Contenido
+label: Body
 description: 'Texto de contenido de esta página básica'
 required: false
 translatable: false

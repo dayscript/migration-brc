@@ -1,0 +1,29 @@
+label: 'Configuring CDN integration'
+tips:
+  cdn-ui-main:
+    label: 'CDN settings'
+    body: 'View and edit the CDN settings.'
+  cdn-ui-status:
+    label: Status
+    body: 'Enable or disable CDN integration: no need to uninstall the module to disable CDN integration.'
+  cdn-ui-mapping:
+    label: Mapping
+    body: 'Set up a CDN mapping: configure which files are served from a CDN.'
+  cdn-ui-mapping-type:
+    label: 'Mapping type'
+    body: 'Simple mappings can be configured right in this UI. Advanced mappings can only be configured by modifying and importing the <code>cdn.settings.yml</code> file.'
+  cdn-ui-mapping-simple-domain:
+    label: 'CDN domain'
+    body: 'Enter the domain name to use. That means just something like <code>cdn.example.com</code>, not a full URL like <code>https://cdn.example.com</code>.'
+  cdn-ui-mapping-simple-scheme:
+    label: 'Scheme-relative or absolute CDN URLs'
+    body: 'By default, scheme-relative URLs are used to link to files on CDN.<br><br>On sites that are only accessible via <code>https://</code>, absolute HTTPS URLs are recommended.<br><br>For local development, absolute HTTP URLs are recommended.'
+  cdn-ui-mapping-simple-conditions:
+    label: Conditions
+    body: 'You can choose to serve <em>all</em> files from the same CDN, or to only serve files with certain extensions from the chosen CDN domain. Anything more advanced will require modifying and importing <code>cdn.settings.yml</code>.'
+  cdn-ui-farfuture:
+    label: 'Forever cacheable files'
+    body: 'Marks all files to expire in the far future, telling browsers to <em>always</em> use cached files, speeding up page loads. Lets Drupal serve files, but cached by the CDN, so server impact is negligible. You can opt out.'
+  cdn-ui-streamwrappers:
+    label: 'Stream wrappers'
+    body: 'Files included with Drupal modules and themes can always be served from a CDN as can files stored in the default Drupal stream wrapper, <code>public://</code>. This site has additional stream wrappers installed, those can optionally be enabled too.'

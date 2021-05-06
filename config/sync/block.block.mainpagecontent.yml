@@ -1,0 +1,20 @@
+uuid: 3919b7df-9933-4f8d-bf20-b245098f2d75
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - adminimal_theme
+id: mainpagecontent
+theme: adminimal_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

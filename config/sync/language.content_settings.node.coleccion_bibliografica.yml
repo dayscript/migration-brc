@@ -1,0 +1,11 @@
+uuid: a68302ee-cc76-4e9b-94bf-cecb8d5d60f7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.coleccion_bibliografica
+id: node.coleccion_bibliografica
+target_entity_type_id: node
+target_bundle: coleccion_bibliografica
+default_langcode: site_default
+language_alterable: false

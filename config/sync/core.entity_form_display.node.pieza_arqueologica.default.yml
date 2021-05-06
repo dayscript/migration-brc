@@ -28,11 +28,13 @@ dependencies:
     - field.field.node.pieza_arqueologica.field_region
     - field.field.node.pieza_arqueologica.field_representaci_n
     - field.field.node.pieza_arqueologica.field_tags
+    - image.style.thumbnail
     - node.type.pieza_arqueologica
   module:
     - comment
+    - cshs
     - field_group
-    - file
+    - image
     - metatag
     - path
     - text
@@ -40,15 +42,14 @@ third_party_settings:
   field_group:
     group_general:
       children:
+        - title
+        - field_cmo_tipo_de_pieza
+        - field_apodo_o_nombre_si_lo_tiene
         - body
         - field_numero_de_registro
-        - field_gallery
         - field_dimensiones
-        - field_peso
         - field_tags
-        - field_apodo_o_nombre_si_lo_tiene
-        - field_cmo_tipo_de_pieza
-        - title
+        - field_gallery
         - group_caracteristicas
         - group_contexto
         - group_material
@@ -66,18 +67,17 @@ third_party_settings:
       region: content
     group_caracteristicas:
       children:
+        - field_cmo_funcion
+        - field_forma
+        - field_representaci_n
         - field_region
         - field_estilo
         - field_periodo
         - field_cmo_fecha_periodo
-        - field_cmo_funcion
-        - field_forma
-        - field_representaci_n
       parent_name: group_general
       weight: 58
       label: 'Descripción general'
       format_settings:
-        label: 'Descripción general'
         formatter: collapsible
         required_fields: true
         id: ''
@@ -94,7 +94,6 @@ third_party_settings:
       weight: 59
       label: 'Procedencia y contexto de hallazgo'
       format_settings:
-        label: 'Procedencia y contexto de hallazgo'
         formatter: collapsible
         required_fields: true
         id: ''
@@ -104,8 +103,8 @@ third_party_settings:
       region: content
     group_material:
       children:
-        - field_cmo_tecnica
         - field_material
+        - field_cmo_tecnica
       parent_name: group_general
       weight: 60
       label: 'Material y técnica de manufactura'
@@ -119,8 +118,8 @@ third_party_settings:
       region: content
     group_ubicacion:
       children:
-        - field_city
         - field_estado_exhibicion
+        - field_city
       parent_name: group_general
       weight: 62
       label: Ubicación
@@ -134,8 +133,8 @@ third_party_settings:
       region: content
     group_derechos:
       children:
-        - field_derechos_de_uso
         - field_cmo_fotografo
+        - field_derechos_de_uso
       parent_name: group_general
       weight: 63
       label: Derechos
@@ -164,13 +163,13 @@ content:
     region: content
   comment_node_pieza_arqueologica:
     type: comment_default
-    weight: 20
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -182,6 +181,19 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_city:
+    type: cshs
+    weight: 48
+    region: content
+    settings:
+      parent: '0'
+      level_labels: ''
+      force_deepest: false
+      save_lineage: false
+      hierarchy_depth: 0
+      required_depth: 0
+      none_label: '- Please select -'
+    third_party_settings: {  }
   field_cmo_descripcion_hallazgo:
     weight: 21
     type: string_textarea
@@ -268,9 +280,10 @@ content:
     region: content
   field_gallery:
     weight: 57
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_lugar_de_procedencia:
@@ -288,7 +301,7 @@ content:
     third_party_settings: {  }
     region: content
   field_metatag:
-    weight: 122
+    weight: 9
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -332,14 +345,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 1
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -347,21 +360,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 4
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 8
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
@@ -374,7 +387,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
@@ -382,5 +395,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_city: true
+hidden: {  }

@@ -6,12 +6,11 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main-menu
-    parent: 'main-menu:0:'
+    available_menus: {  }
+    parent: ''
 name: Multimedia
 type: multimedia
-description: "Use este tipo de contenido para la creación de cualquier contenido multimedia\r\n\r\n"
+description: "Este tipo de contenido se utiliza para publicar nodos Multimedia como audio, vídeo, interactivos y más.\r\n"
 help: ''
 new_revision: true
 preview_mode: 1

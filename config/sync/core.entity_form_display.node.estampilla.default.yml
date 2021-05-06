@@ -20,12 +20,14 @@ dependencies:
     - field.field.node.estampilla.field_tipo_estampilla
     - field.field.node.estampilla.field_unidades
     - field.field.node.estampilla.field_valor_facial
+    - image.style.thumbnail
     - node.type.estampilla
   module:
     - comment
+    - cshs
     - datetime
     - field_group
-    - file
+    - image
     - metatag
     - path
     - text
@@ -33,20 +35,20 @@ third_party_settings:
   field_group:
     group_general:
       children:
+        - title
         - body
         - field_numero_de_registro
+        - group_valor_estampilla
         - field_fecha_de_creaci_n
-        - field_autor_estampilla
+        - field_fecha_de_creaci_n_completa
         - field_scott
-        - field_tipo_estampilla
+        - field_catalogo_colombia
         - field_unidades
+        - field_tipo_estampilla
         - field_color_de_estampilla
         - field_servicio_estampilla
-        - field_fecha_de_creaci_n_completa
-        - field_catalogo_colombia
+        - field_autor_estampilla
         - field_tags
-        - title
-        - group_valor_estampilla
       parent_name: ''
       weight: 0
       label: General
@@ -59,10 +61,10 @@ third_party_settings:
       region: content
     group_valor_estampilla:
       children:
-        - field_sufijo_valor
         - field_valor_facial
+        - field_sufijo_valor
       parent_name: group_general
-      weight: 13
+      weight: -2
       label: Valor
       format_settings:
         formatter: collapsible
@@ -91,7 +93,7 @@ bundle: estampilla
 mode: default
 content:
   body:
-    weight: 11
+    weight: -4
     type: text_textarea_with_summary
     settings:
       rows: 9
@@ -102,18 +104,18 @@ content:
     region: content
   comment_node_estampilla:
     type: comment_default
-    weight: 20
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_autor_estampilla:
-    weight: 22
+    weight: 7
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
@@ -123,7 +125,7 @@ content:
     third_party_settings: {  }
     region: content
   field_catalogo_colombia:
-    weight: 17
+    weight: 2
     type: string_textfield
     settings:
       size: 30
@@ -131,7 +133,7 @@ content:
     third_party_settings: {  }
     region: content
   field_color_de_estampilla:
-    weight: 20
+    weight: 5
     type: string_textfield
     settings:
       size: 60
@@ -139,33 +141,34 @@ content:
     third_party_settings: {  }
     region: content
   field_fecha_de_creaci_n:
-    weight: 14
+    weight: -1
     type: datetime_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_fecha_de_creaci_n_completa:
-    weight: 15
+    weight: 0
     type: datetime_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_gallery:
     weight: 24
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_metatag:
-    weight: 122
+    weight: 10
     settings:
       sidebar: true
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_numero_de_registro:
-    weight: 12
+    weight: -3
     type: string_textfield
     settings:
       size: 10
@@ -173,7 +176,7 @@ content:
     third_party_settings: {  }
     region: content
   field_scott:
-    weight: 16
+    weight: 1
     type: string_textfield
     settings:
       size: 30
@@ -181,7 +184,7 @@ content:
     third_party_settings: {  }
     region: content
   field_servicio_estampilla:
-    weight: 21
+    weight: 6
     type: string_textfield
     settings:
       size: 60
@@ -195,7 +198,7 @@ content:
     third_party_settings: {  }
     region: content
   field_tags:
-    weight: 23
+    weight: 8
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
@@ -204,8 +207,21 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_tipo_estampilla:
+    type: cshs
+    weight: 4
+    region: content
+    settings:
+      parent: '0'
+      level_labels: ''
+      force_deepest: false
+      save_lineage: false
+      hierarchy_depth: 0
+      required_depth: 0
+      none_label: '- Please select -'
+    third_party_settings: {  }
   field_unidades:
-    weight: 18
+    weight: 3
     type: number
     settings:
       placeholder: ''
@@ -228,7 +244,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -236,21 +252,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -263,7 +279,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -271,5 +287,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_tipo_estampilla: true
+hidden: {  }

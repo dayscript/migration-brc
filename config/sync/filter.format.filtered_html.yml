@@ -1,7 +1,9 @@
 uuid: 7e0bd0c9-eaa1-441f-8bef-752f68f3a967
 langcode: es
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - media
 name: 'Filtered HTML'
 format: filtered_html
 weight: 0
@@ -18,7 +20,7 @@ filters:
     status: true
     weight: 1
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <input>'
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <input> <img src alt data-entity-type data-entity-uuid data-align data-caption>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_htmlcorrector:
@@ -34,3 +36,12 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }

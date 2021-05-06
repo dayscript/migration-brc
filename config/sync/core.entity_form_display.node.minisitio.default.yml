@@ -24,12 +24,15 @@ dependencies:
     - field.field.node.minisitio.field_tipo_de_exposici_n
     - field.field.node.minisitio.field_tipo_de_minisitio
     - field.field.node.minisitio.ubication
+    - image.style.thumbnail
     - node.type.minisitio
   module:
     - comment
+    - cshs
     - datetime
     - field_group
     - file
+    - image
     - metatag
     - path
     - text
@@ -37,11 +40,11 @@ third_party_settings:
   field_group:
     group_general:
       children:
+        - title
+        - field_subtitle
         - body
         - field_publication_date
         - field_is_front
-        - field_subtitle
-        - title
       parent_name: ''
       weight: 0
       label: General
@@ -56,9 +59,9 @@ third_party_settings:
     group_multimedia:
       children:
         - field_image
-        - field_files
         - field_imagen_para_slider
         - field_gallery
+        - field_files
       parent_name: ''
       weight: 1
       label: Multimedia
@@ -76,7 +79,7 @@ third_party_settings:
         - field_tags
         - field_area_misional
       parent_name: ''
-      weight: 3
+      weight: 4
       label: Relaciones
       format_settings:
         formatter: collapsible
@@ -88,16 +91,16 @@ third_party_settings:
       region: content
     group_exposicion:
       children:
-        - ubication
+        - field_curador
+        - field_tipo_de_exposici_n
         - field_car_cter_de_la_exposici_n
         - field_lista_de_obras
+        - field_artistas_en_la_exposici_n
         - field_a_o
         - field_date
-        - field_curador
-        - field_artistas_en_la_exposici_n
-        - field_tipo_de_exposici_n
+        - ubication
       parent_name: ''
-      weight: 2
+      weight: 3
       label: Exposición
       format_settings:
         formatter: collapsible
@@ -124,13 +127,13 @@ content:
     region: content
   comment_node_minisitio:
     type: comment_default
-    weight: 20
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -176,31 +179,34 @@ content:
     third_party_settings: {  }
     region: content
   field_files:
-    weight: 8
+    weight: 10
     type: file_generic
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     region: content
   field_gallery:
-    weight: 11
-    type: file_generic
+    weight: 9
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_image:
     weight: 7
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_imagen_para_slider:
-    weight: 9
-    type: file_generic
+    weight: 8
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_is_front:
@@ -219,7 +225,7 @@ content:
     third_party_settings: {  }
     region: content
   field_metatag:
-    weight: 122
+    weight: 12
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -270,7 +276,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -278,21 +284,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 7
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
@@ -302,6 +308,19 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  ubication:
+    type: cshs
+    weight: 34
+    region: content
+    settings:
+      parent: '0'
+      level_labels: ''
+      force_deepest: false
+      save_lineage: false
+      hierarchy_depth: 0
+      required_depth: 0
+      none_label: '- Please select -'
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
@@ -313,5 +332,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  ubication: true
+hidden: {  }

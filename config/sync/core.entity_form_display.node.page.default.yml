@@ -22,11 +22,14 @@ dependencies:
     - field.field.node.page.field_title_form
     - field.field.node.page.field_video_embed
     - field.field.node.page.ubication
+    - image.style.thumbnail
     - node.type.page
   module:
     - comment
+    - cshs
     - field_group
     - file
+    - image
     - metatag
     - path
     - text
@@ -35,9 +38,9 @@ third_party_settings:
   field_group:
     group_general:
       children:
-        - body
-        - field_subtitle
         - title
+        - field_subtitle
+        - body
       parent_name: ''
       weight: 0
       label: General
@@ -50,12 +53,12 @@ third_party_settings:
       region: content
     group_related:
       children:
-        - field_quote
-        - field_autor
-        - field_relation
-        - field_minisite_type
         - ubication
         - field_tags
+        - field_relation
+        - field_minisite_type
+        - field_quote
+        - field_autor
       parent_name: ''
       weight: 2
       label: Relaciones
@@ -69,10 +72,10 @@ third_party_settings:
     group_multimedia:
       children:
         - field_image
+        - field_imagen_para_slider
+        - field_audio
         - field_video_embed
         - field_files
-        - field_audio
-        - field_imagen_para_slider
         - field_gallery
         - field_attached_script
       parent_name: ''
@@ -88,7 +91,6 @@ third_party_settings:
     group_inscriptions:
       children:
         - field_title_form
-        - field_show_form
         - field_limite_de_inscripciones
       parent_name: ''
       weight: 3
@@ -120,13 +122,13 @@ content:
     region: content
   comment_node_page:
     type: comment_default
-    weight: 20
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -146,7 +148,7 @@ content:
     third_party_settings: {  }
     region: content
   field_autor:
-    weight: 14
+    weight: 20
     type: string_textfield
     settings:
       size: 60
@@ -162,23 +164,26 @@ content:
     region: content
   field_gallery:
     weight: 11
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_image:
     weight: 6
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_imagen_para_slider:
     weight: 7
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_limite_de_inscripciones:
@@ -190,20 +195,20 @@ content:
     third_party_settings: {  }
     region: content
   field_metatag:
-    weight: 121
+    weight: 12
     settings:
       sidebar: true
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_minisite_type:
-    weight: 12
+    weight: 18
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_quote:
-    weight: 13
+    weight: 19
     type: string_textfield
     settings:
       size: 60
@@ -211,7 +216,7 @@ content:
     third_party_settings: {  }
     region: content
   field_relation:
-    weight: 11
+    weight: 17
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
@@ -229,7 +234,7 @@ content:
     third_party_settings: {  }
     region: content
   field_tags:
-    weight: 10
+    weight: 16
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
@@ -254,14 +259,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 4
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -269,21 +274,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 7
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
@@ -293,6 +298,19 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  ubication:
+    type: cshs
+    weight: 15
+    region: content
+    settings:
+      parent: '0'
+      level_labels: ''
+      force_deepest: false
+      save_lineage: false
+      hierarchy_depth: 0
+      required_depth: 0
+      none_label: '- Please select -'
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
@@ -304,5 +322,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden:
-  ubication: true
+hidden: {  }

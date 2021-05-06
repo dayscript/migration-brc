@@ -24,12 +24,15 @@ dependencies:
     - field.field.node.activity.field_title_form
     - field.field.node.activity.field_tome_nota
     - field.field.node.activity.field_type_activity
+    - image.style.thumbnail
     - node.type.activity
   module:
     - comment
-    - datetime
+    - cshs
+    - datetime_range
     - field_group
     - file
+    - image
     - metatag
     - office_hours
     - path
@@ -38,16 +41,15 @@ third_party_settings:
   field_group:
     group_general:
       children:
+        - title
+        - field_sumario
         - body
+        - field_tome_nota
+        - field_horarios
+        - field_date
         - field_type_activity
         - field_price
-        - field_horarios
-        - field_sumario
-        - field_date
         - field_disponibilidad
-        - field_tome_nota
-        - field_serie_franja
-        - title
       parent_name: ''
       weight: 0
       label: General
@@ -62,9 +64,9 @@ third_party_settings:
     group_multimedia:
       children:
         - field_image
-        - field_files
         - field_imagen_para_slider
         - field_gallery
+        - field_files
       parent_name: ''
       weight: 1
       label: Multimedia
@@ -79,9 +81,9 @@ third_party_settings:
     group_related:
       children:
         - field_city
-        - field_tags
-        - field_p_blico_objetivo
         - field_area_misional
+        - field_p_blico_objetivo
+        - field_tags
       parent_name: ''
       weight: 2
       label: Relaciones
@@ -93,26 +95,11 @@ third_party_settings:
         id: ''
       format_type: tab
       region: content
-    group_complements:
-      children:
-        - path
-      parent_name: ''
-      weight: 3
-      label: Complementarios
-      format_settings:
-        formatter: collapsible
-        description: ''
-        classes: 'group-complements field-group-fieldset'
-        required_fields: true
-        id: ''
-      format_type: tab
-      region: content
     group_inscriptions:
       children:
-        - field_show_form
-        - field_description
         - field_title_form
         - field_limite_de_inscripciones
+        - field_description
       parent_name: ''
       weight: 4
       label: Inscripciones
@@ -129,7 +116,7 @@ bundle: activity
 mode: default
 content:
   body:
-    weight: 8
+    weight: -3
     type: text_textarea_with_summary
     settings:
       rows: 9
@@ -140,25 +127,38 @@ content:
     region: content
   comment_node_activity:
     type: comment_default
-    weight: 20
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_area_misional:
-    weight: 11
+    weight: 14
     type: options_buttons
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_city:
+    type: cshs
+    weight: 13
+    region: content
+    settings:
+      parent: '0'
+      level_labels: ''
+      force_deepest: false
+      save_lineage: false
+      hierarchy_depth: 0
+      required_depth: 0
+      none_label: '- Please select -'
+    third_party_settings: {  }
   field_date:
-    weight: 11
-    type: datetime_default
+    weight: 0
+    type: daterange_default
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -173,7 +173,7 @@ content:
     third_party_settings: {  }
     region: content
   field_disponibilidad:
-    weight: 15
+    weight: 3
     type: options_select
     settings: {  }
     third_party_settings: {  }
@@ -187,29 +187,32 @@ content:
     region: content
   field_gallery:
     weight: 18
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_horarios:
-    weight: 10
+    weight: -1
     type: office_hours_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_image:
     weight: 16
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_imagen_para_slider:
     weight: 17
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_limite_de_inscripciones:
@@ -221,26 +224,26 @@ content:
     third_party_settings: {  }
     region: content
   field_metatag:
-    weight: 122
+    weight: 12
     settings:
       sidebar: true
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_p_blico_objetivo:
-    weight: 14
+    weight: 15
     type: options_buttons
     settings: {  }
     third_party_settings: {  }
     region: content
   field_price:
-    weight: 14
+    weight: 2
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_sumario:
-    weight: 7
+    weight: -4
     type: string_textfield
     settings:
       size: 160
@@ -248,7 +251,7 @@ content:
     third_party_settings: {  }
     region: content
   field_tags:
-    weight: 13
+    weight: 16
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
@@ -266,16 +269,29 @@ content:
     third_party_settings: {  }
     region: content
   field_tome_nota:
-    weight: 9
+    weight: -2
     type: text_textarea
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_type_activity:
+    type: cshs
+    weight: 1
+    region: content
+    settings:
+      parent: '0'
+      level_labels: ''
+      force_deepest: false
+      save_lineage: false
+      hierarchy_depth: 0
+      required_depth: 0
+      none_label: '- Please select -'
+    third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 5
     region: content
     settings:
       include_locked: true
@@ -290,21 +306,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 8
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 9
     region: content
     third_party_settings: {  }
   title:
@@ -317,7 +333,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
@@ -325,6 +341,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_city: true
-  field_type_activity: true
+hidden: {  }

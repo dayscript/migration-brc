@@ -6,12 +6,11 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main-menu
-    parent: 'main-menu:0:'
+    available_menus: {  }
+    parent: ''
 name: Minisitio
 type: minisitio
-description: ''
+description: 'Este tipo de contenido se utiliza para publicar Minisitios como Programas, Proyectos y más.'
 help: ''
 new_revision: true
 preview_mode: 1

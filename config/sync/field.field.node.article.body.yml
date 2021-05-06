@@ -13,7 +13,7 @@ id: node.article.body
 field_name: body
 entity_type: node
 bundle: article
-label: Contenido
+label: Body
 description: 'Texto del cuerpo del artículo'
 required: true
 translatable: false

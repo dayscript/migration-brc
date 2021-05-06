@@ -1,0 +1,11 @@
+uuid: 026fc724-6669-4641-9c58-d1ab60168b75
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pieza_coleccion_monedas_billetes
+id: node.pieza_coleccion_monedas_billetes
+target_entity_type_id: node
+target_bundle: pieza_coleccion_monedas_billetes
+default_langcode: site_default
+language_alterable: false

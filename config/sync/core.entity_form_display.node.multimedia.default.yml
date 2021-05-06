@@ -17,11 +17,13 @@ dependencies:
     - field.field.node.multimedia.field_tags
     - field.field.node.multimedia.field_url_multimedia
     - field.field.node.multimedia.field_video_embed
+    - image.style.thumbnail
     - node.type.multimedia
   module:
     - comment
+    - cshs
     - field_group
-    - file
+    - image
     - metatag
     - path
     - text
@@ -30,9 +32,9 @@ third_party_settings:
   field_group:
     group_general:
       children:
-        - body
-        - field_subtitle
         - title
+        - field_subtitle
+        - body
       parent_name: ''
       weight: 0
       label: General
@@ -45,11 +47,11 @@ third_party_settings:
       region: content
     group_multimedia:
       children:
-        - field_video_embed
         - field_image
         - field_imagen_para_slider
-        - field_plugin
         - field_url_multimedia
+        - field_video_embed
+        - field_plugin
         - group_video
       parent_name: ''
       weight: 1
@@ -64,11 +66,11 @@ third_party_settings:
     group_relaciones:
       children:
         - field_area_misional
-        - field_tags
         - field_p_blico_objetivo
+        - field_tags
         - field_city
       parent_name: ''
-      weight: 2
+      weight: 3
       label: Relaciones
       format_settings:
         formatter: closed
@@ -89,35 +91,11 @@ third_party_settings:
         required_fields: true
       format_type: tab
       region: content
-    group_target_public:
-      children: {  }
-      parent_name: ''
-      weight: 9
-      label: 'Publico objetivo'
-      format_settings:
-        formatter: closed
-        description: ''
-        classes: 'group-target-public field-group-htab'
-        required_fields: true
-      format_type: tab
-      region: content
-    group_misional_area:
-      children: {  }
-      parent_name: ''
-      weight: 6
-      label: 'Área Misional'
-      format_settings:
-        formatter: closed
-        description: ''
-        classes: ''
-        required_fields: true
-      format_type: tab
-      region: content
     group_gallery:
       children:
         - field_gallery
       parent_name: ''
-      weight: 3
+      weight: 4
       label: Galeria
       format_settings:
         formatter: closed
@@ -143,13 +121,13 @@ content:
     region: content
   comment_node_multimedia:
     type: comment_default
-    weight: 20
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -159,29 +137,45 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_city:
+    type: cshs
+    weight: 18
+    region: content
+    settings:
+      parent: '0'
+      level_labels: ''
+      force_deepest: false
+      save_lineage: false
+      hierarchy_depth: 0
+      required_depth: 0
+      none_label: '- Please select -'
+    third_party_settings: {  }
   field_gallery:
     weight: 6
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_image:
     weight: 15
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_imagen_para_slider:
     weight: 16
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_metatag:
-    weight: 122
+    weight: 14
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -208,7 +202,7 @@ content:
     third_party_settings: {  }
     region: content
   field_tags:
-    weight: 18
+    weight: 17
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
@@ -240,7 +234,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -248,21 +242,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 9
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 13
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 10
     region: content
     third_party_settings: {  }
   title:
@@ -283,5 +277,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_city: true
+hidden: {  }

@@ -6,12 +6,11 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main-menu
-    parent: 'main-menu:0:'
-name: 'CI instrumento'
+    available_menus: {  }
+    parent: ''
+name: Instrumento
 type: instrumento
-description: 'Este tipo de contenido se utiliza para crear los instrumentos que componen la Colección de instrumentos del Banco de la República'
+description: 'Este tipo de contenido se utiliza para publicar piezas de la Colección de Instrumentos del Banco de la República.'
 help: ''
 new_revision: false
 preview_mode: 1

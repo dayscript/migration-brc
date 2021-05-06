@@ -6,12 +6,11 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main-menu
-    parent: 'main-menu:0:'
+    available_menus: {  }
+    parent: ''
 name: Publicación
 type: publicacion
-description: 'Son las publicaciones que edita Banrepcultural'
+description: 'Este tipo de contenido se utiliza para Publicaciones de revistas, libros, folletos y más.'
 help: ''
 new_revision: true
 preview_mode: 1

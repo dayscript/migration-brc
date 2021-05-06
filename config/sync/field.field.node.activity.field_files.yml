@@ -20,9 +20,8 @@ default_value_callback: ''
 settings:
   file_directory: activity/attached
   file_extensions: 'txt pdf mp3 m4v mov jpg jpeg tiff gif doc docx xls xlsx ppt png pptx wav mp4 avi m4a'
-  max_filesize: 50MB
-  description_field: false
+  max_filesize: '50 MB'
+  description_field: true
   handler: 'default:file'
   handler_settings: {  }
 field_type: file
-
