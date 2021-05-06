@@ -6,11 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
 name: Plugin
 type: plugin
-description: 'Use este tipo de contenido para la configuración de plugins y APIs de terceros.'
+description: 'Use este tipo de contenido para la configuración de plugins y apis de terceros "Facebook, twiter, Instagram, Youtube, SoundCloud, Whatsapp, Tumblr, Pinterest, Google+, Flickr"'
 help: ''
 new_revision: true
 preview_mode: 1

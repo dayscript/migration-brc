@@ -5,8 +5,8 @@ dependencies: {  }
 name: 186_x_117
 label: 'CM Small 186x117'
 effects:
-  fafe8e01-e9aa-4f73-a262-6c3aa90e6872:
-    uuid: fafe8e01-e9aa-4f73-a262-6c3aa90e6872
+  72a46e5e-b420-4dc5-b03a-bab0ea1f4d1f:
+    uuid: 72a46e5e-b420-4dc5-b03a-bab0ea1f4d1f
     id: image_resize
     weight: 1
     data:

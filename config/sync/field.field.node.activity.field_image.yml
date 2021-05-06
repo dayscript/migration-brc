@@ -1,4 +1,4 @@
-uuid: 578b9b3b-1bc8-44e7-9bde-c28872e6ed5b
+uuid: db1c0f98-f43f-46d6-bfd4-d81fe424d95d
 langcode: es
 status: true
 dependencies:
@@ -12,27 +12,22 @@ field_name: field_image
 entity_type: node
 bundle: activity
 label: 'Imagen principal'
-description: 'Imagen principal de la Actividad, su formato debe ser de 640px de ancho por 400px de alto.'
+description: 'Esta es la imagen principal de la actividad, su formato DEBE ser de 0000px de ancho por 0000px de alto. Su peso máximo es de  512 megabytes, para lo cual se recomienda optimizarla a 72dpi (png o jpg)'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: activity/main
+  file_directory: activity/main-image
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
-  max_resolution: 640x400
-  min_resolution: 640x400
+  max_filesize: '2 mb'
+  max_resolution: 640x500
+  min_resolution: 600x400
   alt_field: true
+  title_field: false
+  default_image: '38190'
   alt_field_required: true
-  title_field: true
-  title_field_required: true
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: 3
-    height: 3
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

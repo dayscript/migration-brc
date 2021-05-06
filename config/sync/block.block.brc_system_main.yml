@@ -1,0 +1,20 @@
+uuid: 3495af98-69f5-45b8-9eaf-22762d9f8a74
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - brc
+id: brc_system_main
+theme: brc
+region: ''
+weight: -10
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

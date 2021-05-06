@@ -1,4 +1,4 @@
-uuid: d732b21b-ae9b-467f-9925-7204c907fdc4
+uuid: ff46c772-3410-45d1-b4e3-01f28c25cd89
 langcode: es
 status: true
 dependencies:
@@ -12,22 +12,22 @@ field_name: field_image
 entity_type: node
 bundle: book
 label: 'Imagen principal'
-description: 'Imagen principal de la Revista Credencial Historia, su formato debe ser de 640px de ancho por 400px de alto.'
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: books/main
+  file_directory: books
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
+  max_filesize: '2 MB'
   max_resolution: 640x400
   min_resolution: 640x400
   alt_field: true
   title_field: true
   default_image: '16837'
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

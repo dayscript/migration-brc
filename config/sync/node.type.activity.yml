@@ -6,12 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: 'main:'
+    parent: 'main-menu:0:'
     available_menus:
       - main
 name: Actividad
 type: activity
-description: "Este tipo de contenido se utiliza para publicar Actividades como exposiciones, conferencias, conciertos y más.\r\n"
+description: "Use <em>actividad</em> para la creación de actividades como exposiciones, conferencias, convocatorias, etc.\r\n\r\n"
 help: ''
 new_revision: true
 preview_mode: 1

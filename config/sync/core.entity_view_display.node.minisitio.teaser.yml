@@ -18,7 +18,6 @@ dependencies:
     - field.field.node.minisitio.field_imagen_para_slider
     - field.field.node.minisitio.field_is_front
     - field.field.node.minisitio.field_lista_de_obras
-    - field.field.node.minisitio.field_metatag
     - field.field.node.minisitio.field_publication_date
     - field.field.node.minisitio.field_subtitle
     - field.field.node.minisitio.field_tags
@@ -61,7 +60,6 @@ hidden:
   field_imagen_para_slider: true
   field_is_front: true
   field_lista_de_obras: true
-  field_metatag: true
   field_publication_date: true
   field_subtitle: true
   field_tags: true

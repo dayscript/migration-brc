@@ -1,4 +1,4 @@
-uuid: be8f8b02-0f85-4e15-a55b-a7c71d866204
+uuid: 4dceaea8-e456-4cef-9bb8-983dca7045a8
 langcode: es
 status: true
 dependencies:
@@ -7,8 +7,6 @@ dependencies:
     - node.type.book
   module:
     - text
-_core:
-  default_config_hash: 718sPNbCWIXxNeDj1kRMyvll4TdMM9sxlzPrShb1dKU
 id: node.book.body
 field_name: body
 entity_type: node

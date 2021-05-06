@@ -6,12 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: 'main:'
+    parent: 'main-menu:0:'
     available_menus:
       - main
 name: Servicio
 type: service
-description: 'Este tipo de contenido se utiliza para publicar Servicios de carácter general o cultural.'
+description: "Use <em>servicio</em> para la creación de servicios de bibliotecas, museos, estadisticas, investigación, etc.\r\n"
 help: ''
 new_revision: true
 preview_mode: 1

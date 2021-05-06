@@ -1,4 +1,4 @@
-uuid: ae1c6a15-bdb4-4d6b-bb69-15a20b2dfcaf
+uuid: 35332c5a-8b33-4879-a6c6-6314e54b1ee0
 langcode: es
 status: true
 dependencies:
@@ -11,16 +11,16 @@ id: node.publicacion.field_archivo_adjunto
 field_name: field_archivo_adjunto
 entity_type: node
 bundle: publicacion
-label: 'Archivos adjuntos'
-description: 'En este campo puede agregar documentos, imágenes, videos o audios adicionales que necesite para acompañar el contenido principal.'
+label: 'Archivo adjunto'
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: publicacion/attached
-  file_extensions: 'txt pdf mp3 m4v mov jpg jpeg tiff gif doc docx xls xlsx ppt png pptx wav mp4 avi m4a'
-  max_filesize: 50MB
+  file_directory: publicacion/files
+  file_extensions: 'txt doc pdf docx'
+  max_filesize: '3 MB'
   description_field: true
   handler: 'default:file'
   handler_settings: {  }

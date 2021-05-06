@@ -1,4 +1,4 @@
-uuid: e21e0d81-73f7-4a0c-85de-449b8a4a93a3
+uuid: fa5cd998-85cb-4e27-9eed-3028e65b98e9
 langcode: es
 status: true
 dependencies:
@@ -23,11 +23,11 @@ settings:
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
-  alt_field: true
+  alt_field: false
+  title_field: false
   default_image: 0
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
-  title_field: false
 field_type: image

@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.instrumento.field_fabricante_instrumento
     - field.field.node.instrumento.field_gallery
     - field.field.node.instrumento.field_materiales_instrumento
-    - field.field.node.instrumento.field_metatag
     - field.field.node.instrumento.field_numero_de_registro
     - field.field.node.instrumento.field_origen
     - field.field.node.instrumento.field_prefijo_fecha_de_creacion
@@ -133,5 +132,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_metatag: true
   langcode: true

@@ -7,8 +7,39 @@ dependencies:
     - taxonomy.vocabulary.tags
   module:
     - color_field
+    - field_group
     - path
     - text
+third_party_settings:
+  field_group:
+    group_general:
+      children:
+        - field_color
+        - name
+        - description
+      parent_name: ''
+      weight: 0
+      label: 'Datos generales'
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-general field-group-tab'
+        required_fields: true
+      format_type: tab
+      region: content
+    group_route_settings:
+      children:
+        - path
+      parent_name: ''
+      weight: 1
+      label: 'Opciones de ruta'
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-route-settings field-group-tab'
+        required_fields: true
+      format_type: tab
+      region: content
 id: taxonomy_term.tags.default
 targetEntityType: taxonomy_term
 bundle: tags

@@ -1,4 +1,4 @@
-uuid: cdb7a34b-ca69-4304-9cc5-c4c815c10a8f
+uuid: 9a6655c6-2e18-4213-9ef6-9fab2aa4d736
 langcode: es
 status: true
 dependencies:
@@ -11,23 +11,23 @@ id: taxonomy_term.tipos_documentales.field_image
 field_name: field_image
 entity_type: taxonomy_term
 bundle: tipos_documentales
-label: Imagen
+label: Imágen
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: taxonomy/tipos_documentales
+  file_directory: ''
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
+  max_filesize: ''
   max_resolution: ''
   min_resolution: ''
-  alt_field: true
+  alt_field: false
+  title_field: false
   default_image: 0
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
-  title_field: false
 field_type: image

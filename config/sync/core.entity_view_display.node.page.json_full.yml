@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.page.field_image
     - field.field.node.page.field_imagen_para_slider
     - field.field.node.page.field_limite_de_inscripciones
-    - field.field.node.page.field_metatag
     - field.field.node.page.field_minisite_type
     - field.field.node.page.field_quote
     - field.field.node.page.field_relation
@@ -145,7 +144,6 @@ hidden:
   field_attached_script: true
   field_gallery: true
   field_limite_de_inscripciones: true
-  field_metatag: true
   field_tags: true
   field_title_form: true
   langcode: true

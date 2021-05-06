@@ -1,4 +1,4 @@
-uuid: 755021da-a5d8-4e91-b720-edd219d40fd8
+uuid: 9f587f57-e88b-46ca-8152-db203aa525d5
 langcode: es
 status: true
 dependencies:
@@ -7,13 +7,11 @@ dependencies:
     - node.type.page
   module:
     - text
-_core:
-  default_config_hash: KgVkxLl_K3E3lvN6CEoWQIDT0V8J4Mv-fVYrAIc7-FE
 id: node.page.body
 field_name: body
 entity_type: node
 bundle: page
-label: Body
+label: Contenido
 description: 'Texto de contenido de esta página básica'
 required: false
 translatable: false

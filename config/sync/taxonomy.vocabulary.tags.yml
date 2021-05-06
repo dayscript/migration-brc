@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
-name: Etiquetas
+name: 'Palabras clave'
 vid: tags
 description: 'Use las palabras clave para agrupar artículos y otros contenidos.'
 weight: -9

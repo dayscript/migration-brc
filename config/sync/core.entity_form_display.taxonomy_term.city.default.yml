@@ -22,12 +22,98 @@ dependencies:
     - field.field.taxonomy_term.city.field_url_ubicacion
     - taxonomy.vocabulary.city
   module:
+    - field_group
     - file
     - metatag
     - office_hours
     - paragraphs
     - path
     - text
+third_party_settings:
+  field_group:
+    group_general_data:
+      children:
+        - field_email
+        - field_horarios
+        - field_telefono
+        - field_resumen
+        - field_tipo_de_espacio
+        - field_area_misional
+        - field_enlace_a_facebook
+        - field_ultimo_ingreso
+        - name
+        - description
+      parent_name: ''
+      weight: 0
+      label: 'Datos Generales'
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-general-data field-group-tab'
+        required_fields: true
+      format_type: tab
+      region: content
+    group_route_settings:
+      children:
+        - path
+      parent_name: ''
+      weight: 5
+      label: 'Opciones de ruta'
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-route-settings field-group-tab'
+        required_fields: true
+      format_type: tab
+      region: content
+    group_localization:
+      children:
+        - field_dir
+        - field_lat
+        - field_lon
+        - field_url_ubicacion
+      parent_name: ''
+      weight: 2
+      label: Ubicación
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: 'group-localization field-group-fieldset'
+        required_fields: true
+        id: ''
+      format_type: tab
+      region: content
+    group_items_menu:
+      children:
+        - field_items_del_submenu
+      parent_name: ''
+      weight: 3
+      label: 'Items de menú'
+      format_settings:
+        label: 'Items de menú'
+        formatter: closed
+        required_fields: true
+        classes: 'group-items-menu field-group-tab'
+        description: ''
+      format_type: tab
+      region: content
+    group_multimedia:
+      children:
+        - field_image
+        - field_imagen_principal
+        - field_gallery
+        - field_archivo_adjunto
+      parent_name: ''
+      weight: 1
+      label: Multimedia
+      format_settings:
+        label: Multimedia
+        formatter: closed
+        required_fields: true
+        classes: 'group-multimedia field-group-tab'
+        description: ''
+      format_type: tab
+      region: content
 id: taxonomy_term.city.default
 targetEntityType: taxonomy_term
 bundle: city

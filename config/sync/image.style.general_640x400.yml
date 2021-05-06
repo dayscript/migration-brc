@@ -5,8 +5,8 @@ dependencies: {  }
 name: general_640x400
 label: 'General 640x400'
 effects:
-  3c82a491-6cb6-4198-a85e-a92cff158467:
-    uuid: 3c82a491-6cb6-4198-a85e-a92cff158467
+  d7972b3f-7664-4222-8d3f-63f1457ae067:
+    uuid: d7972b3f-7664-4222-8d3f-63f1457ae067
     id: image_scale_and_crop
     weight: 1
     data:

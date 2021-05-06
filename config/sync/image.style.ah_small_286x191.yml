@@ -5,8 +5,8 @@ dependencies: {  }
 name: ah_small_286x191
 label: 'AH Small 286x191'
 effects:
-  fa86b632-17ab-4460-a648-fd18bf5e7b78:
-    uuid: fa86b632-17ab-4460-a648-fd18bf5e7b78
+  1516a060-3a63-4cc3-9406-db24add6c77b:
+    uuid: 1516a060-3a63-4cc3-9406-db24add6c77b
     id: image_resize
     weight: 1
     data:

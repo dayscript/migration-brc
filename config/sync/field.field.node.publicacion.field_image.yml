@@ -1,4 +1,4 @@
-uuid: 5293c53c-19cb-4ce8-a74d-9cdc9fbaabf7
+uuid: 0967093e-87bc-4fe2-b7eb-2377ee55ed17
 langcode: es
 status: true
 dependencies:
@@ -12,22 +12,22 @@ field_name: field_image
 entity_type: node
 bundle: publicacion
 label: Portada
-description: 'Portada de la Publicación, su formato debe ser de 512px de ancho por 1000px de alto.'
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: publicacion/main
+  file_directory: publicacion
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
+  max_filesize: '500 KB'
   max_resolution: 512x1000
   min_resolution: 512x100
-  alt_field: true
+  alt_field: false
+  title_field: false
   default_image: '4024'
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
-  title_field: false
 field_type: image

@@ -4,12 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_derechos_de_uso
-    - field.field.user.user.field_metatag
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
-    - metatag
     - path
     - user
 _core:
@@ -31,13 +29,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_metatag:
-    weight: 32
-    settings:
-      sidebar: true
-    third_party_settings: {  }
-    type: metatag_firehose
-    region: content
   language:
     weight: 0
     region: content
@@ -55,7 +46,7 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     type: image_image
-    weight: 31
+    weight: 34
     third_party_settings: {  }
     region: content
 hidden:

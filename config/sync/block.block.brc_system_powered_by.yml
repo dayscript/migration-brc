@@ -1,0 +1,20 @@
+uuid: 2393a67f-4a9b-45f5-a65d-fad7f4113435
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - brc
+id: brc_system_powered_by
+theme: brc
+region: ''
+weight: -11
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

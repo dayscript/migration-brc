@@ -1,4 +1,4 @@
-uuid: a9e432c5-6e06-4b07-a42e-a74eb4176a7d
+uuid: 9559dce8-eae0-4576-b7ba-3ef08522ae00
 langcode: es
 status: true
 dependencies:
@@ -11,23 +11,23 @@ id: taxonomy_term.ca_artista.field_image
 field_name: field_image
 entity_type: taxonomy_term
 bundle: ca_artista
-label: Imagen
+label: Imágen
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: taxonomy/ca_artista
+  file_directory: artista
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
+  max_filesize: ''
   max_resolution: ''
   min_resolution: ''
-  alt_field: true
+  alt_field: false
+  title_field: false
   default_image: 0
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
-  title_field: false
 field_type: image

@@ -1,4 +1,4 @@
-uuid: ecb931d7-f21b-40c6-90b7-352eca71a409
+uuid: 4d132ef9-df2c-4e6a-9287-d6fe53919cc4
 langcode: es
 status: true
 dependencies:
@@ -11,16 +11,16 @@ id: node.book.field_files
 field_name: field_files
 entity_type: node
 bundle: book
-label: 'Archivos adjuntos'
-description: 'En este campo puede agregar documentos, imágenes, videos o audios adicionales que necesite para acompañar el contenido principal.'
+label: Adjunto
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: books/attached
-  file_extensions: 'txt pdf mp3 m4v mov jpg jpeg tiff gif doc docx xls xlsx ppt png pptx wav mp4 avi m4a'
-  max_filesize: 50MB
+  file_directory: books/file-attached
+  file_extensions: 'txt pdf'
+  max_filesize: '5 MB'
   description_field: false
   handler: 'default:file'
   handler_settings: {  }

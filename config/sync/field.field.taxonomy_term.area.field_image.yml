@@ -1,4 +1,4 @@
-uuid: 52c4f37c-21b6-4fe1-b4ea-7ee0c7ae7202
+uuid: 787c220f-81f0-4604-aa4c-8a9109df890b
 langcode: es
 status: true
 dependencies:
@@ -11,7 +11,7 @@ id: taxonomy_term.area.field_image
 field_name: field_image
 entity_type: taxonomy_term
 bundle: area
-label: Imagen
+label: Imágen
 description: ''
 required: false
 translatable: false
@@ -20,14 +20,14 @@ default_value_callback: ''
 settings:
   file_directory: taxonomy/area
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
+  max_filesize: ''
   max_resolution: ''
   min_resolution: ''
   alt_field: true
   title_field: true
   default_image: 0
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

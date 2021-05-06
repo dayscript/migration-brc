@@ -5,8 +5,8 @@ dependencies: {  }
 name: sc_1
 label: 'Slider 1440x415'
 effects:
-  3cdff70b-fcc3-4bf7-aa25-f955b8664bd5:
-    uuid: 3cdff70b-fcc3-4bf7-aa25-f955b8664bd5
+  2f89c59d-6ab8-4883-841b-e2c6a84bbeae:
+    uuid: 2f89c59d-6ab8-4883-841b-e2c6a84bbeae
     id: image_scale_and_crop
     weight: 1
     data:

@@ -1,0 +1,21 @@
+uuid: 3b2391e2-4aff-4144-8e95-6321ab28d5d5
+langcode: es
+status: false
+dependencies:
+  module:
+    - book
+  theme:
+    - tweme
+id: tweme_book_navigation
+theme: tweme
+region: ''
+weight: 0
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: '<none>'
+  provider: book
+  label_display: visible
+  block_mode: 'book pages'
+visibility: {  }

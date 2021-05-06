@@ -1,4 +1,4 @@
-uuid: cba710f7-d002-4ff2-aca8-71784cb7ea52
+uuid: 266e6909-8cc6-4bc3-a5e2-479ee7c5d06e
 langcode: es
 status: true
 dependencies: {  }
@@ -168,6 +168,3 @@ migration_dependencies:
   optional:
     - upgrade_d7_field_instance
     - upgrade_d7_comment_field_instance
-    - upgrade_d7_metatag_field_node
-    - upgrade_d7_metatag_field_instance_node_multimedia
-    - upgrade_d7_metatag_field_instance_widget_settings_node_multimedia

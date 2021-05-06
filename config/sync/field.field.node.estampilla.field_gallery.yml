@@ -1,4 +1,4 @@
-uuid: ad6ae92f-062f-4788-a0ce-51e31f5040d6
+uuid: 3b4030ab-6052-4bed-b174-ce8b2e2decf0
 langcode: es
 status: true
 dependencies:
@@ -18,16 +18,16 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: estampilla/gallery
+  file_directory: coleccion_estampillas/estampilla
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
-  alt_field: true
+  alt_field: false
+  title_field: false
   default_image: '47195'
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
-  title_field: false
 field_type: image

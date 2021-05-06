@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.coleccion_bibliografica.field_gallery
     - field.field.node.coleccion_bibliografica.field_image
     - field.field.node.coleccion_bibliografica.field_material_complementario
-    - field.field.node.coleccion_bibliografica.field_metatag
     - field.field.node.coleccion_bibliografica.field_n_topografico
     - field.field.node.coleccion_bibliografica.field_tags
     - field.field.node.coleccion_bibliografica.field_tema_coleccion_bibliografi
@@ -21,7 +20,6 @@ dependencies:
     - datetime
     - field_group
     - file
-    - metatag
     - path
     - text
 third_party_settings:
@@ -142,13 +140,6 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    region: content
-  field_metatag:
-    weight: 122
-    settings:
-      sidebar: true
-    third_party_settings: {  }
-    type: metatag_firehose
     region: content
   field_n_topografico:
     weight: 6

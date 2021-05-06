@@ -1,4 +1,4 @@
-uuid: 87ae3956-851a-4baa-a4d4-2e13ea609b62
+uuid: c7e6e27b-a794-43ff-9aeb-a7ec7c5ef31c
 langcode: es
 status: true
 dependencies:
@@ -18,16 +18,16 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: books/page
+  file_directory: books/portada
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
+  max_filesize: '2 MB'
   max_resolution: ''
   min_resolution: ''
-  alt_field: true
+  alt_field: false
+  title_field: false
   default_image: '13989'
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
-  title_field: false
 field_type: image

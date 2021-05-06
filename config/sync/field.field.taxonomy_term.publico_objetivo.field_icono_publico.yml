@@ -1,4 +1,4 @@
-uuid: a034286a-d149-43bb-9bf0-51fea4b1e80b
+uuid: c3762fbb-b57e-4cff-9718-37975ec949e2
 langcode: es
 status: true
 dependencies:
@@ -18,9 +18,9 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: taxonomy/publico_objetivo/icon
+  file_directory: taxonomy/public
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
+  max_filesize: '10 KB'
   max_resolution: 800x800
   min_resolution: ''
   alt_field: true
@@ -32,7 +32,7 @@ settings:
     height: null
     uuid: ''
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

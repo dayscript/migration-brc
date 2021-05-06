@@ -1,4 +1,4 @@
-uuid: 4cca945d-309c-4470-9244-5744d19da27c
+uuid: 5a346a2b-db02-462e-9c4e-2d0ad2dcceca
 langcode: es
 status: true
 dependencies:
@@ -11,23 +11,23 @@ id: node.page.field_image
 field_name: field_image
 entity_type: node
 bundle: page
-label: 'Imagen Principal'
-description: 'Imagen principal de la Página básica, su formato debe ser de 640px de ancho por 400px de alto.'
+label: Imágen
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: page/main
+  file_directory: pagina_basica
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
-  max_resolution: 640x400
-  min_resolution: 640x400
+  max_filesize: 5MB
+  max_resolution: ''
+  min_resolution: ''
   alt_field: true
   title_field: true
   default_image: 0
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

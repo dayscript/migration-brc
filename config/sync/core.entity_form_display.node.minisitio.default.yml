@@ -17,34 +17,29 @@ dependencies:
     - field.field.node.minisitio.field_imagen_para_slider
     - field.field.node.minisitio.field_is_front
     - field.field.node.minisitio.field_lista_de_obras
-    - field.field.node.minisitio.field_metatag
     - field.field.node.minisitio.field_publication_date
     - field.field.node.minisitio.field_subtitle
     - field.field.node.minisitio.field_tags
     - field.field.node.minisitio.field_tipo_de_exposici_n
     - field.field.node.minisitio.field_tipo_de_minisitio
     - field.field.node.minisitio.ubication
-    - image.style.thumbnail
     - node.type.minisitio
   module:
     - comment
-    - cshs
     - datetime
     - field_group
     - file
-    - image
-    - metatag
     - path
     - text
 third_party_settings:
   field_group:
     group_general:
       children:
-        - title
-        - field_subtitle
         - body
         - field_publication_date
         - field_is_front
+        - field_subtitle
+        - title
       parent_name: ''
       weight: 0
       label: General
@@ -59,9 +54,9 @@ third_party_settings:
     group_multimedia:
       children:
         - field_image
+        - field_files
         - field_imagen_para_slider
         - field_gallery
-        - field_files
       parent_name: ''
       weight: 1
       label: Multimedia
@@ -79,7 +74,7 @@ third_party_settings:
         - field_tags
         - field_area_misional
       parent_name: ''
-      weight: 4
+      weight: 3
       label: Relaciones
       format_settings:
         formatter: collapsible
@@ -91,16 +86,16 @@ third_party_settings:
       region: content
     group_exposicion:
       children:
-        - field_curador
-        - field_tipo_de_exposici_n
+        - ubication
         - field_car_cter_de_la_exposici_n
         - field_lista_de_obras
-        - field_artistas_en_la_exposici_n
         - field_a_o
         - field_date
-        - ubication
+        - field_curador
+        - field_artistas_en_la_exposici_n
+        - field_tipo_de_exposici_n
       parent_name: ''
-      weight: 3
+      weight: 2
       label: Exposición
       format_settings:
         formatter: collapsible
@@ -127,7 +122,7 @@ content:
     region: content
   comment_node_minisitio:
     type: comment_default
-    weight: 9
+    weight: 20
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -179,34 +174,31 @@ content:
     third_party_settings: {  }
     region: content
   field_files:
-    weight: 10
+    weight: 8
     type: file_generic
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     region: content
   field_gallery:
-    weight: 9
-    type: image_image
+    weight: 11
+    type: file_generic
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_image:
     weight: 7
-    type: image_image
+    type: file_generic
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_imagen_para_slider:
-    weight: 8
-    type: image_image
+    weight: 9
+    type: file_generic
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_is_front:
@@ -223,13 +215,6 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    region: content
-  field_metatag:
-    weight: 12
-    settings:
-      sidebar: true
-    third_party_settings: {  }
-    type: metatag_firehose
     region: content
   field_publication_date:
     weight: 4
@@ -309,19 +294,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  ubication:
-    type: cshs
-    weight: 34
-    region: content
-    settings:
-      parent: '0'
-      level_labels: ''
-      force_deepest: false
-      save_lineage: false
-      hierarchy_depth: 0
-      required_depth: 0
-      none_label: '- Please select -'
-    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 5
@@ -332,4 +304,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  ubication: true

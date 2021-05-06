@@ -23,7 +23,6 @@ dependencies:
     - field.field.node.pieza_arqueologica.field_gallery
     - field.field.node.pieza_arqueologica.field_lugar_de_procedencia
     - field.field.node.pieza_arqueologica.field_material
-    - field.field.node.pieza_arqueologica.field_metatag
     - field.field.node.pieza_arqueologica.field_numero_de_registro
     - field.field.node.pieza_arqueologica.field_periodo
     - field.field.node.pieza_arqueologica.field_region
@@ -70,7 +69,6 @@ hidden:
   field_gallery: true
   field_lugar_de_procedencia: true
   field_material: true
-  field_metatag: true
   field_numero_de_registro: true
   field_periodo: true
   field_region: true

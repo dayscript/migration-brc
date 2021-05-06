@@ -5,8 +5,8 @@ dependencies: {  }
 name: sc_6
 label: 'SC 595x460'
 effects:
-  bd60cd34-56f1-4a5a-987b-aba12eaf3cfd:
-    uuid: bd60cd34-56f1-4a5a-987b-aba12eaf3cfd
+  17db016c-1784-4765-8978-70b3ec27144d:
+    uuid: 17db016c-1784-4765-8978-70b3ec27144d
     id: image_scale_and_crop
     weight: 1
     data:

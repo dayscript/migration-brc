@@ -1,4 +1,4 @@
-uuid: 3e20dde4-a34c-43ba-8a19-150e4526176c
+uuid: 3d5ea4ae-94bf-4c8e-b3ab-a34b37dce44d
 langcode: es
 status: true
 dependencies:
@@ -12,22 +12,22 @@ field_name: field_imagen_para_slider
 entity_type: node
 bundle: minisitio
 label: 'Imagen para slider'
-description: 'Esta imagen se visualizara en el slider del home del portal, debe contar con unas medidas mínimas de 1400px de ancho por 415px de alto o similares en proporción y con resolución HD.'
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: minisitio/slider
+  file_directory: minisitio/image-slider
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
+  max_filesize: '2 mb'
   max_resolution: 1440x415
-  min_resolution: 1400x415
-  alt_field: true
+  min_resolution: 1440x415
+  alt_field: false
+  title_field: false
   default_image: 0
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
-  title_field: false
 field_type: image

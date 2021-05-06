@@ -5,8 +5,8 @@ dependencies: {  }
 name: escalar_y_recortar_300x200
 label: 'Escalar y Recortar 300x200'
 effects:
-  436eaff4-b3a8-4f05-adfa-6b6c03dff6e3:
-    uuid: 436eaff4-b3a8-4f05-adfa-6b6c03dff6e3
+  fea31f10-fc9d-487a-96f2-57c1cadc46e5:
+    uuid: fea31f10-fc9d-487a-96f2-57c1cadc46e5
     id: image_scale_and_crop
     weight: 1
     data:

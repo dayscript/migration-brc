@@ -1,4 +1,4 @@
-uuid: 00e388df-80cc-4498-b10b-7ba7e6d62d5a
+uuid: 995d7279-7d59-478d-8b6b-b6f35f550a61
 langcode: es
 status: true
 dependencies:
@@ -11,16 +11,16 @@ id: node.coleccion_bibliografica.field_archivo_adjunto
 field_name: field_archivo_adjunto
 entity_type: node
 bundle: coleccion_bibliografica
-label: 'Archivos adjuntos'
+label: 'Archivo adjunto'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: coleccion_bibliografica/attached
-  file_extensions: 'txt pdf mp3 m4v mov jpg jpeg tiff gif doc docx xls xlsx ppt png pptx wav mp4 avi m4a'
-  max_filesize: 50MB
+  file_directory: coleccion-bibliografica/file-attached
+  file_extensions: 'txt pdf doc docx xls xslx jpg jpeg'
+  max_filesize: ''
   description_field: false
   handler: 'default:file'
   handler_settings: {  }

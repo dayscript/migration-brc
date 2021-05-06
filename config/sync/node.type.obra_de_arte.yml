@@ -6,11 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
-name: 'Obra de Arte'
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'CA obra'
 type: obra_de_arte
-description: 'Este tipo de contenido se utiliza para publicar piezas que integran la Colección de Arte del Banco de la República.'
+description: 'Piezas de la colección de Arte del banco de la República'
 help: ''
 new_revision: false
 preview_mode: 1

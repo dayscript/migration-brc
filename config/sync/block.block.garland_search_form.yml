@@ -1,0 +1,21 @@
+uuid: f15e7489-8892-4d37-9f1b-8865206a4afb
+langcode: es
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - garland
+id: garland_search_form
+theme: garland
+region: ''
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: ''
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

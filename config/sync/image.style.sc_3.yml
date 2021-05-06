@@ -5,8 +5,8 @@ dependencies: {  }
 name: sc_3
 label: 'SC 300x300'
 effects:
-  01d7ea18-7665-4916-9c74-bb600f8c0cf6:
-    uuid: 01d7ea18-7665-4916-9c74-bb600f8c0cf6
+  608b1088-799b-4b28-9242-37bcae974a1a:
+    uuid: 608b1088-799b-4b28-9242-37bcae974a1a
     id: image_scale_and_crop
     weight: 1
     data:

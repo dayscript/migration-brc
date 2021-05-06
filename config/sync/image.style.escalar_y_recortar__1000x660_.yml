@@ -5,8 +5,8 @@ dependencies: {  }
 name: escalar_y_recortar__1000x660_
 label: 'Escalar y Recortar (1000x660)'
 effects:
-  a3a934d3-35ae-4426-9c28-42618974f77a:
-    uuid: a3a934d3-35ae-4426-9c28-42618974f77a
+  832c7e75-03ee-4bc4-b23e-9e91f15db76c:
+    uuid: 832c7e75-03ee-4bc4-b23e-9e91f15db76c
     id: image_scale_and_crop
     weight: 1
     data:

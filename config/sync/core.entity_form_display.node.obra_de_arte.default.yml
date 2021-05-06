@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.obra_de_arte.field_fecha_creacion_obra
     - field.field.node.obra_de_arte.field_fecha_ingreso_coleccion
     - field.field.node.obra_de_arte.field_gallery
-    - field.field.node.obra_de_arte.field_metatag
     - field.field.node.obra_de_arte.field_numero_de_registro
     - field.field.node.obra_de_arte.field_obra_destacada
     - field.field.node.obra_de_arte.field_prefijo_fecha_de_creacion
@@ -22,31 +21,28 @@ dependencies:
     - field.field.node.obra_de_arte.field_siglo
     - field.field.node.obra_de_arte.field_tags
     - field.field.node.obra_de_arte.field_tecnica
-    - image.style.thumbnail
     - node.type.obra_de_arte
   module:
     - comment
-    - cshs
     - datetime
     - field_group
-    - image
-    - metatag
+    - file
     - path
     - text
 third_party_settings:
   field_group:
     group_general:
       children:
-        - title
         - body
-        - field_numero_de_registro
-        - group_fecha_de_creacion_obra
-        - field_dimensiones
         - field_artista
+        - field_numero_de_registro
         - field_tecnica
+        - field_dimensiones
         - field_denominacion
         - field_serie
         - field_fecha_ingreso_coleccion
+        - title
+        - group_fecha_de_creacion_obra
       parent_name: ''
       weight: 0
       label: General
@@ -74,8 +70,8 @@ third_party_settings:
     group_fecha_de_creacion_obra:
       children:
         - field_prefijo_fecha_de_creacion
-        - field_fecha_creacion_obra
         - field_siglo
+        - field_fecha_creacion_obra
       parent_name: group_general
       weight: 6
       label: 'Fecha de creación de la obra'
@@ -89,12 +85,12 @@ third_party_settings:
       region: content
     group_relaciones:
       children:
-        - field_obra_destacada
         - field_tags
         - field_estado_exhibicion
         - field_city
+        - field_obra_destacada
       parent_name: ''
-      weight: 3
+      weight: 2
       label: Relaciones
       format_settings:
         formatter: closed
@@ -120,7 +116,7 @@ content:
     region: content
   comment_node_obra_de_arte:
     type: comment_default
-    weight: 8
+    weight: 20
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -140,19 +136,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-  field_city:
-    type: cshs
-    weight: 18
-    region: content
-    settings:
-      parent: '0'
-      level_labels: ''
-      force_deepest: false
-      save_lineage: false
-      hierarchy_depth: 0
-      required_depth: 0
-      none_label: '- Please select -'
-    third_party_settings: {  }
   field_denominacion:
     weight: 10
     type: entity_reference_autocomplete
@@ -191,24 +174,16 @@ content:
     region: content
   field_fecha_ingreso_coleccion:
     weight: 12
-    type: datetime_timestamp
+    type: datetime_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_gallery:
     weight: 7
-    type: image_image
+    type: file_generic
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
-    region: content
-  field_metatag:
-    weight: 11
-    settings:
-      sidebar: true
-    third_party_settings: {  }
-    type: metatag_firehose
     region: content
   field_numero_de_registro:
     weight: 5
@@ -325,4 +300,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_city: true

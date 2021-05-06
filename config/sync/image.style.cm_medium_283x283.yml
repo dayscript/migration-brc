@@ -5,8 +5,8 @@ dependencies: {  }
 name: cm_medium_283x283
 label: 'CM Medium 283x283'
 effects:
-  4816fa86-6f34-40f8-b383-7a3a08382c99:
-    uuid: 4816fa86-6f34-40f8-b383-7a3a08382c99
+  1586adfd-9022-4d60-8d4e-5c94eb2942ee:
+    uuid: 1586adfd-9022-4d60-8d4e-5c94eb2942ee
     id: image_resize
     weight: 2
     data:

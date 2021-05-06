@@ -1,4 +1,4 @@
-uuid: 399db0f1-7096-4441-8e19-2e4393949871
+uuid: f5727568-996c-41c4-81c9-56ff0d5f822c
 langcode: es
 status: true
 dependencies:
@@ -11,16 +11,16 @@ id: node.article.field_archivos_para_periodistas
 field_name: field_archivos_para_periodistas
 entity_type: node
 bundle: article
-label: 'Archivos adjuntos para periodistas'
-description: 'En este campo puede agregar documentos, imágenes, videos o audios adicionales exclusivamente para periodistas. Nota: No cargue archivos que no estén autorizados para su publicación o que no se puedan compartir con el público en general.'
+label: 'Archivos para periodistas'
+description: 'Adjunte acá los documentos, imágenes, audios o videos que quiere que sean de acceso EXCLUSIVO para periodistas. No suba archivos que no estén autorizados para divulgación ni archivos que quera compartir con el publico general'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: article/attached
-  file_extensions: 'txt pdf mp3 m4v mov jpg jpeg tiff gif doc docx xls xlsx ppt png pptx wav mp4 avi m4a'
-  max_filesize: 50MB
+  file_directory: prensa
+  file_extensions: 'txt pdf mp3 m4v mov jpg jpeg tiff psd doc docx xls xlsx ppt png pptx wav mp4 avi zip rar ogg ogv'
+  max_filesize: '100 MB'
   description_field: true
   handler: 'default:file'
   handler_settings: {  }

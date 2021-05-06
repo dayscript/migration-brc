@@ -5,8 +5,8 @@ dependencies: {  }
 name: minisitio_1186x340
 label: 'Minisitio 1186x340'
 effects:
-  1f5c0aee-a74e-4950-ace3-948269c31339:
-    uuid: 1f5c0aee-a74e-4950-ace3-948269c31339
+  ee848699-e245-4ee1-a908-4faa8ed7c7c2:
+    uuid: ee848699-e245-4ee1-a908-4faa8ed7c7c2
     id: image_scale_and_crop
     weight: 1
     data:

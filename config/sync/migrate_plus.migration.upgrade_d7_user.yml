@@ -1,4 +1,4 @@
-uuid: 4227e7a2-0955-457f-9f7a-0cf16c6cf539
+uuid: 8241f822-638c-46b5-8d78-2778ed4aa939
 langcode: es
 status: true
 dependencies: {  }
@@ -105,7 +105,4 @@ migration_dependencies:
     - upgrade_user_picture_field_instance
     - upgrade_user_picture_entity_display
     - upgrade_user_picture_entity_form_display
-    - upgrade_d7_metatag_field_user
-    - upgrade_d7_metatag_field_instance_user
-    - upgrade_d7_metatag_field_instance_widget_settings_user
     - upgrade_d7_user_role

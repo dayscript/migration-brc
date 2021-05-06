@@ -1,4 +1,4 @@
-uuid: 43695d6e-eccb-4c1b-a172-018beb831f85
+uuid: e059d2c5-aef1-4d3d-a9da-87b03261d7fc
 langcode: es
 status: true
 dependencies: {  }
@@ -214,6 +214,3 @@ migration_dependencies:
   optional:
     - upgrade_d7_field_instance
     - upgrade_d7_comment_field_instance
-    - upgrade_d7_metatag_field_node
-    - upgrade_d7_metatag_field_instance_node_pieza_arqueologica
-    - upgrade_d7_metatag_field_instance_widget_settings_node_pieza_arqueologica

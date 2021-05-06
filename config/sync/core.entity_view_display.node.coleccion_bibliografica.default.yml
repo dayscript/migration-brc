@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.coleccion_bibliografica.field_gallery
     - field.field.node.coleccion_bibliografica.field_image
     - field.field.node.coleccion_bibliografica.field_material_complementario
-    - field.field.node.coleccion_bibliografica.field_metatag
     - field.field.node.coleccion_bibliografica.field_n_topografico
     - field.field.node.coleccion_bibliografica.field_tags
     - field.field.node.coleccion_bibliografica.field_tema_coleccion_bibliografi
@@ -129,5 +128,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_metatag: true
   langcode: true

@@ -5,8 +5,8 @@ dependencies: {  }
 name: sc_7
 label: 'SC 800x480'
 effects:
-  d4ccefb4-0cf1-4d86-95e0-93cec206a4a9:
-    uuid: d4ccefb4-0cf1-4d86-95e0-93cec206a4a9
+  e36c24ab-cd21-4fba-9a6a-ba43f8ae7cf7:
+    uuid: e36c24ab-cd21-4fba-9a6a-ba43f8ae7cf7
     id: image_scale_and_crop
     weight: 1
     data:

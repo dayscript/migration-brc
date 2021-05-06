@@ -1,4 +1,4 @@
-uuid: 936ec77c-669f-480e-9df3-ff2bc62d51c9
+uuid: 9e7bbb80-b09d-41b2-be6f-12dde8b322ca
 langcode: es
 status: true
 dependencies:
@@ -18,16 +18,16 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: taxonomy/autor_de_articulo
+  file_directory: autor_de_articulo
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
+  max_filesize: '200 KB'
   max_resolution: 500x600
   min_resolution: 100x100
   alt_field: true
   title_field: true
   default_image: 0
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

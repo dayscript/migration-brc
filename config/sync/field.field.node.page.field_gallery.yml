@@ -1,4 +1,4 @@
-uuid: 93c10f6b-08c0-410a-b849-8127f6203ecd
+uuid: 1f539ec2-6c46-461d-b358-5e263fbc6661
 langcode: es
 status: true
 dependencies:
@@ -18,16 +18,16 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: page/gallery
+  file_directory: pagina_basica/gallery
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
-  alt_field: true
+  alt_field: false
+  title_field: false
   default_image: 0
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
-  title_field: false
 field_type: image

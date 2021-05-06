@@ -5,8 +5,8 @@ dependencies: {  }
 name: sc_h100_s
 label: sc_h100_s
 effects:
-  cc578ce0-14b6-49e4-a9b2-def03930474c:
-    uuid: cc578ce0-14b6-49e4-a9b2-def03930474c
+  5f69dda9-ff99-4502-b76e-520655c7d409:
+    uuid: 5f69dda9-ff99-4502-b76e-520655c7d409
     id: image_scale
     weight: 1
     data:

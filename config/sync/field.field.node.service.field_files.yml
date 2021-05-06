@@ -1,4 +1,4 @@
-uuid: c6f640b9-3f7f-4737-aa4f-b7598298d99c
+uuid: 16afdd60-d9bc-4125-a1f5-ff2e451745ab
 langcode: es
 status: true
 dependencies:
@@ -12,15 +12,15 @@ field_name: field_files
 entity_type: node
 bundle: service
 label: 'Archivos adjuntos'
-description: 'En este campo puede agregar documentos, imágenes, videos o audios adicionales que necesite para acompañar el contenido principal.'
+description: 'En este campo puede agrgar documentos, pdfs o imágenes adicionales que requiera para acompañar los textos de contenido principal o delos detalles de las ciudades.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: service/attached
-  file_extensions: 'txt pdf mp3 m4v mov jpg jpeg tiff gif doc docx xls xlsx ppt png pptx wav mp4 avi m4a'
-  max_filesize: 50MB
+  file_directory: service/file-attached
+  file_extensions: 'txt pdf png jpg gif doc xls docx xlsx jpeg'
+  max_filesize: 2MB
   description_field: true
   handler: 'default:file'
   handler_settings: {  }

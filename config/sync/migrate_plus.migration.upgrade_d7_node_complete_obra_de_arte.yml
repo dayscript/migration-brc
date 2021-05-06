@@ -1,4 +1,4 @@
-uuid: 6a6d3c51-2c59-4c8f-ab9f-4b232edaceef
+uuid: 76b1da64-ec1b-49ad-858a-db3b1980384a
 langcode: es
 status: true
 dependencies: {  }
@@ -194,6 +194,3 @@ migration_dependencies:
   optional:
     - upgrade_d7_field_instance
     - upgrade_d7_comment_field_instance
-    - upgrade_d7_metatag_field_node
-    - upgrade_d7_metatag_field_instance_node_obra_de_arte
-    - upgrade_d7_metatag_field_instance_widget_settings_node_obra_de_arte

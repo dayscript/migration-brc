@@ -6,12 +6,13 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
-name: 'Pieza arqueológica'
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'CMO pieza arqueológica'
 type: pieza_arqueologica
-description: 'Este tipo de contenido se utiliza para publicar piezas que integran la Colección Arqueológica del Banco de la República.'
-help: 'Este tipo de contenido se utiliza para publicar piezas que integran la Colección Arqueológica del Banco de la República.'
+description: ''
+help: ''
 new_revision: false
 preview_mode: 1
 display_submitted: true

@@ -5,8 +5,8 @@ dependencies: {  }
 name: seeker_medium
 label: seeker_medium
 effects:
-  70ee01a5-1787-4210-a775-dfef8751ae6c:
-    uuid: 70ee01a5-1787-4210-a775-dfef8751ae6c
+  aa30b5a5-0baf-4a15-9321-9fccc38c454d:
+    uuid: aa30b5a5-0baf-4a15-9321-9fccc38c454d
     id: image_scale_and_crop
     weight: 1
     data:

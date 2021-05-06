@@ -1,4 +1,4 @@
-uuid: bd7e29fc-a87a-405e-87d7-4e21512af0af
+uuid: f01ec068-eba5-469e-be12-44082e8c8db9
 langcode: es
 status: true
 dependencies:
@@ -18,16 +18,16 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: taxonomy/publico_objetivo
+  file_directory: ''
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
+  max_filesize: '2 MB'
   max_resolution: 640x400
   min_resolution: 640x400
   alt_field: true
   title_field: true
   default_image: 0
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

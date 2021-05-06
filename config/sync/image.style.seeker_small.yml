@@ -5,8 +5,8 @@ dependencies: {  }
 name: seeker_small
 label: seeker_small
 effects:
-  a1898c58-45e6-4746-a603-f20902793785:
-    uuid: a1898c58-45e6-4746-a603-f20902793785
+  5e943170-389f-495f-ad5c-caee843936e2:
+    uuid: 5e943170-389f-495f-ad5c-caee843936e2
     id: image_scale_and_crop
     weight: 1
     data:

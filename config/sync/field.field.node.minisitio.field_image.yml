@@ -1,4 +1,4 @@
-uuid: 58f07592-ac11-4653-9f0a-dde9840e2c7e
+uuid: 29eaf9e0-0c8d-423d-836a-23cb9b8e7d5b
 langcode: es
 status: true
 dependencies:
@@ -11,23 +11,23 @@ id: node.minisitio.field_image
 field_name: field_image
 entity_type: node
 bundle: minisitio
-label: 'Imagen principal'
-description: 'Imagen principal del Minisitio, su formato debe ser de 640px de ancho por 400px de alto.'
+label: Imagen
+description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: minisitio/main
+  file_directory: minisitios
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 2MB
-  max_resolution: 640x400
-  min_resolution: 640x400
-  alt_field: true
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  title_field: false
   default_image: 0
   alt_field_required: true
-  title_field_required: true
+  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
-  title_field: false
 field_type: image

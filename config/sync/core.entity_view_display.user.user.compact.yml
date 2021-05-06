@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_derechos_de_uso
-    - field.field.user.user.field_metatag
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -29,6 +28,5 @@ content:
     label: hidden
 hidden:
   field_derechos_de_uso: true
-  field_metatag: true
   langcode: true
   member_for: true

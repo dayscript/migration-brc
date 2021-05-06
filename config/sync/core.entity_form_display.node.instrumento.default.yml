@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.instrumento.field_fabricante_instrumento
     - field.field.node.instrumento.field_gallery
     - field.field.node.instrumento.field_materiales_instrumento
-    - field.field.node.instrumento.field_metatag
     - field.field.node.instrumento.field_numero_de_registro
     - field.field.node.instrumento.field_origen
     - field.field.node.instrumento.field_prefijo_fecha_de_creacion
@@ -22,7 +21,6 @@ dependencies:
     - datetime
     - field_group
     - file
-    - metatag
     - path
     - text
 third_party_settings:
@@ -128,13 +126,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
-  field_metatag:
-    weight: 122
-    settings:
-      sidebar: true
-    third_party_settings: {  }
-    type: metatag_firehose
     region: content
   field_numero_de_registro:
     weight: 4
