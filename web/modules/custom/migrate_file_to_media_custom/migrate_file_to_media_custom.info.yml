@@ -1,0 +1,5 @@
+name: 'Migrate File To Media Custom'
+type: module
+description: 'Migrate file fields to media fields custom.'
+core: 8.x
+package: 'Custom'

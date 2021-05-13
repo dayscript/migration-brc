@@ -5,8 +5,8 @@ dependencies: {  }
 name: '270_180'
 label: '270*180'
 effects:
-  437dd867-d58e-48e5-97bd-5993a23c52a7:
-    uuid: 437dd867-d58e-48e5-97bd-5993a23c52a7
+  35e96ab7-c18d-4dcd-ab2e-3e50aafd1aef:
+    uuid: 35e96ab7-c18d-4dcd-ab2e-3e50aafd1aef
     id: image_scale_and_crop
     weight: 1
     data:

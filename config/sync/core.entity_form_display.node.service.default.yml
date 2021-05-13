@@ -8,9 +8,13 @@ dependencies:
     - field.field.node.service.field_area_misional
     - field.field.node.service.field_content
     - field.field.node.service.field_files
+    - field.field.node.service.field_files_media
     - field.field.node.service.field_icono
+    - field.field.node.service.field_icono_media
     - field.field.node.service.field_image
+    - field.field.node.service.field_image_media
     - field.field.node.service.field_imagen_para_slider
+    - field.field.node.service.field_imagen_para_slider_media
     - field.field.node.service.field_limite_de_inscripciones
     - field.field.node.service.field_p_blico_objetivo
     - field.field.node.service.field_score_order
@@ -25,6 +29,7 @@ dependencies:
     - field_group
     - file
     - image
+    - media_library
     - paragraphs
     - path
     - text
@@ -32,10 +37,10 @@ third_party_settings:
   field_group:
     group_general:
       children:
-        - body
+        - title
         - field_type_service
         - field_subt_tulo
-        - title
+        - body
       parent_name: ''
       weight: 0
       label: General
@@ -48,10 +53,14 @@ third_party_settings:
       region: content
     group_multimedia:
       children:
-        - field_image
-        - field_files
-        - field_imagen_para_slider
         - field_icono
+        - field_image
+        - field_imagen_para_slider
+        - field_files
+        - field_icono_media
+        - field_image_media
+        - field_imagen_para_slider_media
+        - field_files_media
       parent_name: ''
       weight: 1
       label: Multimedia
@@ -64,10 +73,10 @@ third_party_settings:
       region: content
     group_relaciones:
       children:
-        - field_content
-        - field_p_blico_objetivo
         - field_area_misional
+        - field_p_blico_objetivo
         - field_tags
+        - field_content
         - field_score_order
       parent_name: ''
       weight: 2
@@ -81,7 +90,6 @@ third_party_settings:
       region: content
     group_inscriptions:
       children:
-        - field_show_form
         - field_title_form
         - field_limite_de_inscripciones
       parent_name: ''
@@ -117,7 +125,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -128,7 +136,7 @@ content:
     third_party_settings: {  }
     region: content
   field_content:
-    weight: 4
+    weight: 6
     type: entity_reference_paragraphs
     settings:
       title: Párrafo
@@ -146,6 +154,13 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     region: content
+  field_files_media:
+    type: media_library_widget
+    weight: 10
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_icono:
     weight: 3
     type: image_image
@@ -154,18 +169,41 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
+  field_icono_media:
+    type: media_library_widget
+    weight: 7
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_image:
     weight: 4
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_image_media:
+    type: media_library_widget
+    weight: 8
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_imagen_para_slider:
     weight: 5
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider_media:
+    type: media_library_widget
+    weight: 9
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_limite_de_inscripciones:
@@ -177,7 +215,7 @@ content:
     third_party_settings: {  }
     region: content
   field_p_blico_objetivo:
-    weight: 5
+    weight: 4
     type: options_buttons
     settings: {  }
     third_party_settings: {  }
@@ -198,8 +236,8 @@ content:
     third_party_settings: {  }
     region: content
   field_tags:
-    weight: 6
-    type: entity_reference_autocomplete
+    weight: 5
+    type: entity_reference_autocomplete_tags
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -223,14 +261,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 4
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -238,21 +276,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 7
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 8
     region: content
     third_party_settings: {  }
   title:

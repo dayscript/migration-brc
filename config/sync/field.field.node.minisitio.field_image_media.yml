@@ -1,0 +1,24 @@
+uuid: a2dcf40f-8dc5-4cf6-894d-eceac5aef140
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_media
+    - media.type.image
+    - node.type.minisitio
+id: node.minisitio.field_image_media
+field_name: field_image_media
+entity_type: node
+bundle: minisitio
+label: 'Imagen Media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

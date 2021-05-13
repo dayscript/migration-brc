@@ -1,0 +1,35 @@
+uuid: 4ac49097-de0a-4e54-af98-69e7a92e64b6
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_file_to_media_custom
+_core:
+  default_config_hash: x5SV2K1MrZfbVyNhIN6uirTrcRbZs8yh_P05NzsaidA
+id: article_audio_1_media_migration_step2
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: media
+label: 'Noticia Audio 1 Media Migration Mapping'
+source:
+  plugin: 'content_entity:node'
+  bundle: article
+  include_translations: false
+process:
+  nid: nid
+  type:
+    plugin: default_value
+    default_value: article
+  field_archivos_para_periodistas_media:
+    plugin: file_id_lookup
+    source: field_archivos_para_periodistas
+    migration: article_audio_1_media_migration_step1
+    no_stub: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  optional:
+    - article_audio_1_media_migration_step1

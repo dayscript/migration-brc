@@ -11,11 +11,16 @@ dependencies:
     - field.field.node.book.field_book_type
     - field.field.node.book.field_collection
     - field.field.node.book.field_files
+    - field.field.node.book.field_files_media
     - field.field.node.book.field_gallery
+    - field.field.node.book.field_gallery_media
     - field.field.node.book.field_image
+    - field.field.node.book.field_image_media
     - field.field.node.book.field_imagen_para_slider
+    - field.field.node.book.field_imagen_para_slider_media
     - field.field.node.book.field_is_front
     - field.field.node.book.field_portada
+    - field.field.node.book.field_portada_media
     - field.field.node.book.field_publication_date
     - field.field.node.book.field_subtitle
     - node.type.book
@@ -170,4 +175,9 @@ content:
     weight: 101
     region: content
 hidden:
+  field_files_media: true
+  field_gallery_media: true
+  field_image_media: true
+  field_imagen_para_slider_media: true
+  field_portada_media: true
   langcode: true

@@ -9,35 +9,37 @@ dependencies:
     - field.field.node.instrumento.field_dimensiones
     - field.field.node.instrumento.field_fabricante_instrumento
     - field.field.node.instrumento.field_gallery
+    - field.field.node.instrumento.field_gallery_media
     - field.field.node.instrumento.field_materiales_instrumento
     - field.field.node.instrumento.field_numero_de_registro
     - field.field.node.instrumento.field_origen
     - field.field.node.instrumento.field_prefijo_fecha_de_creacion
     - field.field.node.instrumento.field_tags
     - field.field.node.instrumento.field_tipo_de_instrumento
+    - image.style.thumbnail
     - node.type.instrumento
   module:
     - comment
     - datetime
     - field_group
-    - file
+    - image
+    - media_library
     - path
     - text
 third_party_settings:
   field_group:
     group_general:
       children:
+        - title
         - body
         - field_numero_de_registro
-        - field_dimensiones
         - field_tipo_de_instrumento
-        - field_origen
-        - field_gallery
-        - field_tags
+        - group_fecha_creacion_instrumento
         - field_fabricante_instrumento
         - field_materiales_instrumento
-        - title
-        - group_fecha_creacion_instrumento
+        - field_dimensiones
+        - field_origen
+        - field_tags
       parent_name: ''
       weight: 0
       label: General
@@ -53,7 +55,7 @@ third_party_settings:
         - field_prefijo_fecha_de_creacion
         - field_a_o_de_creaci_n
       parent_name: group_general
-      weight: 6
+      weight: 1
       label: 'Fecha de creación del instrumento'
       format_settings:
         formatter: collapsible
@@ -63,13 +65,28 @@ third_party_settings:
         id: ''
       format_type: fieldset
       region: content
+    group_multimedia:
+      children:
+        - field_gallery
+        - field_gallery_media
+      parent_name: ''
+      weight: 1
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Multimedia
 id: node.instrumento.default
 targetEntityType: node
 bundle: instrumento
 mode: default
 content:
   body:
-    weight: 2
+    weight: -4
     type: text_textarea_with_summary
     settings:
       rows: 9
@@ -86,7 +103,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -97,37 +114,6 @@ content:
     third_party_settings: {  }
     region: content
   field_dimensiones:
-    weight: 9
-    type: string_textfield
-    settings:
-      size: 20
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_fabricante_instrumento:
-    weight: 7
-    type: string_textfield
-    settings:
-      size: 20
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_gallery:
-    weight: 3
-    type: file_generic
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    region: content
-  field_materiales_instrumento:
-    weight: 8
-    type: string_textfield
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_numero_de_registro:
     weight: 4
     type: string_textfield
     settings:
@@ -135,8 +121,47 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_fabricante_instrumento:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    weight: -3
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_gallery_media:
+    type: media_library_widget
+    weight: -2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_materiales_instrumento:
+    weight: 3
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_numero_de_registro:
+    weight: -1
+    type: string_textfield
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   field_origen:
-    weight: 10
+    weight: 5
     type: string_textfield
     settings:
       size: 60
@@ -152,8 +177,8 @@ content:
     third_party_settings: {  }
     region: content
   field_tags:
-    weight: 11
-    type: entity_reference_autocomplete
+    weight: 6
+    type: entity_reference_autocomplete_tags
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -162,7 +187,7 @@ content:
     third_party_settings: {  }
     region: content
   field_tipo_de_instrumento:
-    weight: 5
+    weight: 0
     type: options_select
     settings: {  }
     third_party_settings: {  }
@@ -176,7 +201,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -184,21 +209,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -211,7 +236,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60

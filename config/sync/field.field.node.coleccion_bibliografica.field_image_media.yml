@@ -1,0 +1,24 @@
+uuid: 4cef3fec-ed6f-46d8-8aac-c2552f1e1a43
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_media
+    - media.type.image
+    - node.type.coleccion_bibliografica
+id: node.coleccion_bibliografica.field_image_media
+field_name: field_image_media
+entity_type: node
+bundle: coleccion_bibliografica
+label: 'Imagen principal Media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

@@ -24,7 +24,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_metatag:
-    weight: 101
+    weight: 103
     settings:
       sidebar: true
     third_party_settings: {  }

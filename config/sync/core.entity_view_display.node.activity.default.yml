@@ -12,10 +12,14 @@ dependencies:
     - field.field.node.activity.field_description
     - field.field.node.activity.field_disponibilidad
     - field.field.node.activity.field_files
+    - field.field.node.activity.field_files_media
     - field.field.node.activity.field_gallery
+    - field.field.node.activity.field_gallery_media
     - field.field.node.activity.field_horarios
     - field.field.node.activity.field_image
+    - field.field.node.activity.field_image_media
     - field.field.node.activity.field_imagen_para_slider
+    - field.field.node.activity.field_imagen_para_slider_media
     - field.field.node.activity.field_limite_de_inscripciones
     - field.field.node.activity.field_metatag
     - field.field.node.activity.field_p_blico_objetivo
@@ -152,6 +156,10 @@ hidden:
   field_city: true
   field_description: true
   field_disponibilidad: true
+  field_files_media: true
+  field_gallery_media: true
+  field_image_media: true
+  field_imagen_para_slider_media: true
   field_limite_de_inscripciones: true
   field_metatag: true
   field_p_blico_objetivo: true

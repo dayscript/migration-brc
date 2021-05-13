@@ -5,8 +5,8 @@ dependencies: {  }
 name: hca_h200
 label: hca_h200
 effects:
-  cfcb771b-c981-454b-9175-03c96559181f:
-    uuid: cfcb771b-c981-454b-9175-03c96559181f
+  6361e9fd-71f6-44dd-9601-31d7e62e323f:
+    uuid: 6361e9fd-71f6-44dd-9601-31d7e62e323f
     id: image_scale
     weight: 1
     data:

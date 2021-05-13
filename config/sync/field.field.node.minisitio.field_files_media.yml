@@ -1,0 +1,24 @@
+uuid: ba1047c9-7bf2-4e54-b960-cc968eeb085d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files_media
+    - media.type.document
+    - node.type.minisitio
+id: node.minisitio.field_files_media
+field_name: field_files_media
+entity_type: node
+bundle: minisitio
+label: 'Archivos adjuntos Media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+field_type: entity_reference

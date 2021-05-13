@@ -5,8 +5,8 @@ dependencies: {  }
 name: destacado_570x570
 label: 'Destacado 570x570'
 effects:
-  2c9359b6-3398-4d7d-87f6-7a2ef8e23c5e:
-    uuid: 2c9359b6-3398-4d7d-87f6-7a2ef8e23c5e
+  b1daaa8c-8152-474e-a308-d6babac96f0f:
+    uuid: b1daaa8c-8152-474e-a308-d6babac96f0f
     id: image_scale_and_crop
     weight: 1
     data:

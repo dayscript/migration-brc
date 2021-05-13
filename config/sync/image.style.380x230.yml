@@ -5,8 +5,8 @@ dependencies: {  }
 name: 380x230
 label: 380x230
 effects:
-  69930d8d-deb0-44d1-87b5-31841d76b410:
-    uuid: 69930d8d-deb0-44d1-87b5-31841d76b410
+  df91100c-435e-42a1-8144-e3d26ddcf262:
+    uuid: df91100c-435e-42a1-8144-e3d26ddcf262
     id: image_scale_and_crop
     weight: 1
     data:

@@ -1,0 +1,35 @@
+uuid: 8df3714e-eee6-4908-8b55-8379a805df58
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_file_to_media_custom
+_core:
+  default_config_hash: UQFtOpQwFBcTFtw1h69F2pqdB7Du1maW1WU3UbfWXEs
+id: book_slider_media_migration_step2
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: media
+label: 'RCH Slider Media Migration Mapping'
+source:
+  plugin: 'content_entity:node'
+  bundle: book
+  include_translations: false
+process:
+  nid: nid
+  type:
+    plugin: default_value
+    default_value: book
+  field_imagen_para_slider_media:
+    plugin: file_id_lookup
+    source: field_imagen_para_slider
+    migration: book_slider_media_migration_step1
+    no_stub: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  optional:
+    - book_slider_media_migration_step1

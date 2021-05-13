@@ -5,8 +5,8 @@ dependencies: {  }
 name: noticias_2
 label: Noticias
 effects:
-  a5159d66-6ba8-4cd3-9ae0-5a88eef94a1d:
-    uuid: a5159d66-6ba8-4cd3-9ae0-5a88eef94a1d
+  11ba6ca3-1129-4a15-92a4-16905502ab9e:
+    uuid: 11ba6ca3-1129-4a15-92a4-16905502ab9e
     id: image_scale_and_crop
     weight: 2
     data:

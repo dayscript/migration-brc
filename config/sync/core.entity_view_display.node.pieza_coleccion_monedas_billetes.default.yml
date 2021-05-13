@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.pieza_coleccion_monedas_billetes.field_fecha_de_emision
     - field.field.node.pieza_coleccion_monedas_billetes.field_fecha_de_ingreso_a_la_cole
     - field.field.node.pieza_coleccion_monedas_billetes.field_gallery
+    - field.field.node.pieza_coleccion_monedas_billetes.field_gallery_media
     - field.field.node.pieza_coleccion_monedas_billetes.field_impresor
     - field.field.node.pieza_coleccion_monedas_billetes.field_numero_de_registro
     - field.field.node.pieza_coleccion_monedas_billetes.field_obra_destacada
@@ -139,4 +140,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_gallery_media: true
   langcode: true

@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.obra_de_arte.field_fecha_creacion_obra
     - field.field.node.obra_de_arte.field_fecha_ingreso_coleccion
     - field.field.node.obra_de_arte.field_gallery
+    - field.field.node.obra_de_arte.field_gallery_media
     - field.field.node.obra_de_arte.field_numero_de_registro
     - field.field.node.obra_de_arte.field_obra_destacada
     - field.field.node.obra_de_arte.field_prefijo_fecha_de_creacion
@@ -186,4 +187,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_gallery_media: true
   langcode: true

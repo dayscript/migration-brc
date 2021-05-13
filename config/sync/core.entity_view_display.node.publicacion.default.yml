@@ -9,10 +9,12 @@ dependencies:
     - field.field.node.publicacion.field_ano_publicacion
     - field.field.node.publicacion.field_ano_publicacion_
     - field.field.node.publicacion.field_archivo_adjunto
+    - field.field.node.publicacion.field_archivo_adjunto_media
     - field.field.node.publicacion.field_author
     - field.field.node.publicacion.field_disponibilidad
     - field.field.node.publicacion.field_editorial
     - field.field.node.publicacion.field_image
+    - field.field.node.publicacion.field_image_media
     - field.field.node.publicacion.field_isbn
     - field.field.node.publicacion.field_numero_de_paginas
     - field.field.node.publicacion.field_precio_de_venta
@@ -153,4 +155,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_archivo_adjunto_media: true
+  field_image_media: true
   langcode: true

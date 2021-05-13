@@ -46,7 +46,7 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     type: image_image
-    weight: 34
+    weight: 36
     third_party_settings: {  }
     region: content
 hidden:

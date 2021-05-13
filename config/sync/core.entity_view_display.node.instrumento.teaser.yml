@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.instrumento.field_dimensiones
     - field.field.node.instrumento.field_fabricante_instrumento
     - field.field.node.instrumento.field_gallery
+    - field.field.node.instrumento.field_gallery_media
     - field.field.node.instrumento.field_materiales_instrumento
     - field.field.node.instrumento.field_numero_de_registro
     - field.field.node.instrumento.field_origen
@@ -44,6 +45,7 @@ hidden:
   field_dimensiones: true
   field_fabricante_instrumento: true
   field_gallery: true
+  field_gallery_media: true
   field_materiales_instrumento: true
   field_numero_de_registro: true
   field_origen: true

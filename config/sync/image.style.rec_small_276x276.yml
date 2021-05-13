@@ -5,8 +5,8 @@ dependencies: {  }
 name: rec_small_276x276
 label: 'REC Small 276x276'
 effects:
-  6ef9b4fe-6823-44a0-914a-f97eb1793761:
-    uuid: 6ef9b4fe-6823-44a0-914a-f97eb1793761
+  1ee15218-84cd-4a35-889d-3d42544d5f08:
+    uuid: 1ee15218-84cd-4a35-889d-3d42544d5f08
     id: image_resize
     weight: 1
     data:

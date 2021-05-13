@@ -5,8 +5,8 @@ dependencies: {  }
 name: ed_small_386x386
 label: 'ED Small 386x386'
 effects:
-  482b7a4b-1266-4197-b33d-c077c8d43789:
-    uuid: 482b7a4b-1266-4197-b33d-c077c8d43789
+  fede077f-dabc-446e-8bd5-9523144a6c36:
+    uuid: fede077f-dabc-446e-8bd5-9523144a6c36
     id: image_resize
     weight: 1
     data:

@@ -1,0 +1,7 @@
+migrate_media_fields_custom.migrate_media_fields_custom:
+  path: '/migrate-media-fields-custom'
+  defaults:
+    _controller: '\Drupal\migrate_media_fields_custom\Controller\MigrateController::media'
+    _title: 'Migrate media fields D7-D8 custom.'
+  requirements:
+    _permission: 'access content'

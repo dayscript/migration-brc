@@ -12,9 +12,13 @@ dependencies:
     - field.field.node.minisitio.field_curador
     - field.field.node.minisitio.field_date
     - field.field.node.minisitio.field_files
+    - field.field.node.minisitio.field_files_media
     - field.field.node.minisitio.field_gallery
+    - field.field.node.minisitio.field_gallery_media
     - field.field.node.minisitio.field_image
+    - field.field.node.minisitio.field_image_media
     - field.field.node.minisitio.field_imagen_para_slider
+    - field.field.node.minisitio.field_imagen_para_slider_media
     - field.field.node.minisitio.field_is_front
     - field.field.node.minisitio.field_lista_de_obras
     - field.field.node.minisitio.field_publication_date
@@ -23,23 +27,26 @@ dependencies:
     - field.field.node.minisitio.field_tipo_de_exposici_n
     - field.field.node.minisitio.field_tipo_de_minisitio
     - field.field.node.minisitio.ubication
+    - image.style.thumbnail
     - node.type.minisitio
   module:
     - comment
     - datetime
     - field_group
     - file
+    - image
+    - media_library
     - path
     - text
 third_party_settings:
   field_group:
     group_general:
       children:
+        - title
+        - field_subtitle
         - body
         - field_publication_date
         - field_is_front
-        - field_subtitle
-        - title
       parent_name: ''
       weight: 0
       label: General
@@ -54,9 +61,13 @@ third_party_settings:
     group_multimedia:
       children:
         - field_image
-        - field_files
         - field_imagen_para_slider
         - field_gallery
+        - field_files
+        - field_image_media
+        - field_imagen_para_slider_media
+        - field_gallery_media
+        - field_files_media
       parent_name: ''
       weight: 1
       label: Multimedia
@@ -86,14 +97,14 @@ third_party_settings:
       region: content
     group_exposicion:
       children:
-        - ubication
+        - field_curador
+        - field_tipo_de_exposici_n
         - field_car_cter_de_la_exposici_n
         - field_lista_de_obras
+        - field_artistas_en_la_exposici_n
         - field_a_o
         - field_date
-        - field_curador
-        - field_artistas_en_la_exposici_n
-        - field_tipo_de_exposici_n
+        - ubication
       parent_name: ''
       weight: 2
       label: Exposición
@@ -174,31 +185,62 @@ content:
     third_party_settings: {  }
     region: content
   field_files:
-    weight: 8
+    weight: 10
     type: file_generic
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     region: content
+  field_files_media:
+    type: media_library_widget
+    weight: 14
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_gallery:
-    weight: 11
-    type: file_generic
+    weight: 9
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_gallery_media:
+    type: media_library_widget
+    weight: 13
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_image:
     weight: 7
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_image_media:
+    type: media_library_widget
+    weight: 11
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_imagen_para_slider:
-    weight: 9
-    type: file_generic
+    weight: 8
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider_media:
+    type: media_library_widget
+    weight: 12
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_is_front:
@@ -232,7 +274,7 @@ content:
     region: content
   field_tags:
     weight: 25
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -254,14 +296,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 4
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -276,7 +318,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 10
     region: content
     third_party_settings: {  }
   sticky:
@@ -294,6 +336,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  ubication:
+    type: entity_reference_autocomplete_tags
+    weight: 34
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 5
@@ -304,5 +356,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  ubication: true
+hidden: {  }

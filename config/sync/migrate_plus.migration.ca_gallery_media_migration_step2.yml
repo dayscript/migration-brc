@@ -1,0 +1,35 @@
+uuid: 9a95fe2f-aeb6-484a-b292-6c1c30a0b356
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_file_to_media_custom
+_core:
+  default_config_hash: kjUt12I8c6kpYTYHlDhRa4OP7EzU3Z2mMNfEG0iAWf8
+id: ca_gallery_media_migration_step2
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: media
+label: 'CA Gallery Media Migration Mapping'
+source:
+  plugin: 'content_entity:node'
+  bundle: obra_de_arte
+  include_translations: false
+process:
+  nid: nid
+  type:
+    plugin: default_value
+    default_value: obra_de_arte
+  field_gallery_media:
+    plugin: file_id_lookup
+    source: field_gallery
+    migration: ca_gallery_media_migration_step1
+    no_stub: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  optional:
+    - ca_gallery_media_migration_step1

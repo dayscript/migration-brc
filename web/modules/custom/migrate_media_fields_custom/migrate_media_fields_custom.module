@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains migrate_media_fields_custom.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function migrate_media_fields_custom_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the migrate_media_fields_custom module.
+    case 'help.page.migrate_media_fields_custom':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Migrate media fields D7-D8 custom.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function migrate_media_fields_custom_theme() {
+  return [
+    'migrate_media_fields_custom' => [
+      'render element' => 'children',
+    ],
+  ];
+}

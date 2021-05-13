@@ -8,43 +8,43 @@ dependencies:
     - field.field.node.publicacion.field_ano_publicacion
     - field.field.node.publicacion.field_ano_publicacion_
     - field.field.node.publicacion.field_archivo_adjunto
+    - field.field.node.publicacion.field_archivo_adjunto_media
     - field.field.node.publicacion.field_author
     - field.field.node.publicacion.field_disponibilidad
     - field.field.node.publicacion.field_editorial
     - field.field.node.publicacion.field_image
+    - field.field.node.publicacion.field_image_media
     - field.field.node.publicacion.field_isbn
     - field.field.node.publicacion.field_numero_de_paginas
     - field.field.node.publicacion.field_precio_de_venta
     - field.field.node.publicacion.field_tipo_de_publicacion
     - field.field.node.publicacion.field_url_publicacion
+    - image.style.thumbnail
     - node.type.publicacion
   module:
     - comment
-    - datetime
     - field_group
     - file
+    - image
+    - media_library
     - path
     - text
 third_party_settings:
   field_group:
     group_general:
       children:
+        - title
         - body
-        - field_image
-        - field_isbn
-        - field_precio_de_venta
-        - field_numero_de_paginas
-        - field_editorial
         - field_tipo_de_publicacion
+        - field_precio_de_venta
+        - field_editorial
+        - field_numero_de_paginas
+        - field_isbn
         - field_disponibilidad
         - field_ano_publicacion
+        - field_ano_publicacion_
         - field_author
         - field_url_publicacion
-        - field_ano_publicacion_
-        - field_archivo_adjunto
-        - title
-        - path
-        - xmlsitemap
       parent_name: ''
       weight: 0
       label: General
@@ -55,6 +55,23 @@ third_party_settings:
         required_fields: true
       format_type: tab
       region: content
+    group_multimedia:
+      children:
+        - field_image
+        - field_archivo_adjunto
+        - field_image_media
+        - field_archivo_adjunto_media
+      parent_name: ''
+      weight: 1
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Multimedia
 id: node.publicacion.default
 targetEntityType: node
 bundle: publicacion
@@ -78,7 +95,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -92,15 +109,22 @@ content:
     region: content
   field_ano_publicacion_:
     weight: 12
-    type: datetime_default
+    type: datetime_timestamp
     settings: {  }
     third_party_settings: {  }
     region: content
   field_archivo_adjunto:
-    weight: 14
+    weight: 5
     type: file_generic
     settings:
       progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_archivo_adjunto_media:
+    type: media_library_widget
+    weight: 7
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_author:
@@ -127,9 +151,17 @@ content:
     region: content
   field_image:
     weight: 4
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_image_media:
+    type: media_library_widget
+    weight: 6
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_isbn:
@@ -170,14 +202,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 3
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -185,21 +217,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 6
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
@@ -212,7 +244,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60

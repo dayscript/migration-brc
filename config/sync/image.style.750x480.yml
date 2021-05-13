@@ -5,8 +5,8 @@ dependencies: {  }
 name: 750x480
 label: 'Detalle de actividad(750x480)'
 effects:
-  a3400075-a704-44d5-aeff-fc673db4a5d5:
-    uuid: a3400075-a704-44d5-aeff-fc673db4a5d5
+  62e99090-5022-4faf-88b7-031d906123a4:
+    uuid: 62e99090-5022-4faf-88b7-031d906123a4
     id: image_scale_and_crop
     weight: 1
     data:

@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.pieza_arqueologica.field_estilo
     - field.field.node.pieza_arqueologica.field_forma
     - field.field.node.pieza_arqueologica.field_gallery
+    - field.field.node.pieza_arqueologica.field_gallery_media
     - field.field.node.pieza_arqueologica.field_lugar_de_procedencia
     - field.field.node.pieza_arqueologica.field_material
     - field.field.node.pieza_arqueologica.field_numero_de_registro
@@ -27,26 +28,26 @@ dependencies:
     - field.field.node.pieza_arqueologica.field_region
     - field.field.node.pieza_arqueologica.field_representaci_n
     - field.field.node.pieza_arqueologica.field_tags
+    - image.style.thumbnail
     - node.type.pieza_arqueologica
   module:
     - comment
     - field_group
-    - file
+    - image
+    - media_library
     - path
     - text
 third_party_settings:
   field_group:
     group_general:
       children:
+        - title
+        - field_cmo_tipo_de_pieza
+        - field_apodo_o_nombre_si_lo_tiene
         - body
         - field_numero_de_registro
-        - field_gallery
         - field_dimensiones
-        - field_peso
         - field_tags
-        - field_apodo_o_nombre_si_lo_tiene
-        - field_cmo_tipo_de_pieza
-        - title
         - group_caracteristicas
         - group_contexto
         - group_material
@@ -64,18 +65,17 @@ third_party_settings:
       region: content
     group_caracteristicas:
       children:
+        - field_cmo_funcion
+        - field_forma
+        - field_representaci_n
         - field_region
         - field_estilo
         - field_periodo
         - field_cmo_fecha_periodo
-        - field_cmo_funcion
-        - field_forma
-        - field_representaci_n
       parent_name: group_general
       weight: 58
       label: 'Descripción general'
       format_settings:
-        label: 'Descripción general'
         formatter: collapsible
         required_fields: true
         id: ''
@@ -92,7 +92,6 @@ third_party_settings:
       weight: 59
       label: 'Procedencia y contexto de hallazgo'
       format_settings:
-        label: 'Procedencia y contexto de hallazgo'
         formatter: collapsible
         required_fields: true
         id: ''
@@ -102,8 +101,8 @@ third_party_settings:
       region: content
     group_material:
       children:
-        - field_cmo_tecnica
         - field_material
+        - field_cmo_tecnica
       parent_name: group_general
       weight: 60
       label: 'Material y técnica de manufactura'
@@ -117,8 +116,8 @@ third_party_settings:
       region: content
     group_ubicacion:
       children:
-        - field_city
         - field_estado_exhibicion
+        - field_city
       parent_name: group_general
       weight: 62
       label: Ubicación
@@ -132,8 +131,8 @@ third_party_settings:
       region: content
     group_derechos:
       children:
-        - field_derechos_de_uso
         - field_cmo_fotografo
+        - field_derechos_de_uso
       parent_name: group_general
       weight: 63
       label: Derechos
@@ -145,6 +144,21 @@ third_party_settings:
         id: ''
       format_type: fieldset
       region: content
+    group_multimedia:
+      children:
+        - field_gallery
+        - field_gallery_media
+      parent_name: ''
+      weight: 1
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Multimedia
 id: node.pieza_arqueologica.default
 targetEntityType: node
 bundle: pieza_arqueologica
@@ -168,7 +182,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -180,6 +194,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_city:
+    type: entity_reference_autocomplete_tags
+    weight: 48
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_cmo_descripcion_hallazgo:
     weight: 21
     type: string_textarea
@@ -198,7 +222,7 @@ content:
     region: content
   field_cmo_fotografo:
     weight: 60
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -266,9 +290,17 @@ content:
     region: content
   field_gallery:
     weight: 57
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_gallery_media:
+    type: media_library_widget
+    weight: 58
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_lugar_de_procedencia:
@@ -313,7 +345,7 @@ content:
     region: content
   field_tags:
     weight: 56
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -323,7 +355,7 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 1
+    weight: 2
     region: content
     settings:
       include_locked: true
@@ -338,7 +370,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
@@ -352,7 +384,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -365,7 +397,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -373,5 +405,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_city: true
+hidden: {  }

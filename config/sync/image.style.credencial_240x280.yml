@@ -5,8 +5,8 @@ dependencies: {  }
 name: credencial_240x280
 label: 'Credencial 240x280'
 effects:
-  637ad299-95fb-4f20-8749-3c58719e57f8:
-    uuid: 637ad299-95fb-4f20-8749-3c58719e57f8
+  5a8f27b3-4ae6-4707-9eda-6b3896358995:
+    uuid: 5a8f27b3-4ae6-4707-9eda-6b3896358995
     id: image_resize
     weight: 1
     data:

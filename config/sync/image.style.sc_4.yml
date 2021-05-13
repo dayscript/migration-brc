@@ -5,8 +5,8 @@ dependencies: {  }
 name: sc_4
 label: 'SC 50x50'
 effects:
-  10393604-01ef-44e1-9e83-bcf074d97c64:
-    uuid: 10393604-01ef-44e1-9e83-bcf074d97c64
+  dc3ae7d2-fe26-4a0a-bf70-0f4776699450:
+    uuid: dc3ae7d2-fe26-4a0a-bf70-0f4776699450
     id: image_scale_and_crop
     weight: 1
     data:

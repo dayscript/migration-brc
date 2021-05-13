@@ -5,8 +5,8 @@ dependencies: {  }
 name: slider_small_1263x364
 label: 'Slider Small 1263x364'
 effects:
-  c829dbee-83ca-42ab-821f-377035fc13a0:
-    uuid: c829dbee-83ca-42ab-821f-377035fc13a0
+  76780d04-03d0-4bed-851e-921aa564cd3a:
+    uuid: 76780d04-03d0-4bed-851e-921aa564cd3a
     id: image_resize
     weight: 1
     data:

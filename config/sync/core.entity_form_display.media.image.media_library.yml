@@ -4,7 +4,14 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.image.field_media_author
+    - field.field.media.image.field_media_divulgation
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_license
+    - field.field.media.image.field_media_longdesc
+    - field.field.media.image.field_media_rights
+    - field.field.media.image.field_media_source
+    - field.field.media.image.field_media_tags
     - image.style.thumbnail
     - media.type.image
   module:
@@ -33,6 +40,13 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_media_author: true
+  field_media_divulgation: true
+  field_media_license: true
+  field_media_longdesc: true
+  field_media_rights: true
+  field_media_source: true
+  field_media_tags: true
   name: true
   path: true
   status: true

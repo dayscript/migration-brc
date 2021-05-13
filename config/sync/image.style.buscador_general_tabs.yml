@@ -5,8 +5,8 @@ dependencies: {  }
 name: buscador_general_tabs
 label: 'Buscador General Tabs'
 effects:
-  1eae6b9e-aa83-45dd-9be6-aeaa409814ed:
-    uuid: 1eae6b9e-aa83-45dd-9be6-aeaa409814ed
+  40b7c310-bc5e-4088-99de-feaebeeeac75:
+    uuid: 40b7c310-bc5e-4088-99de-feaebeeeac75
     id: image_scale
     weight: 1
     data:

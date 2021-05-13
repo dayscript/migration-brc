@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.pieza_arqueologica.field_estilo
     - field.field.node.pieza_arqueologica.field_forma
     - field.field.node.pieza_arqueologica.field_gallery
+    - field.field.node.pieza_arqueologica.field_gallery_media
     - field.field.node.pieza_arqueologica.field_lugar_de_procedencia
     - field.field.node.pieza_arqueologica.field_material
     - field.field.node.pieza_arqueologica.field_numero_de_registro
@@ -236,4 +237,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_gallery_media: true
   langcode: true

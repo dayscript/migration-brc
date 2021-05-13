@@ -10,33 +10,35 @@ dependencies:
     - field.field.node.pieza_coleccion_monedas_billetes.field_fecha_de_emision
     - field.field.node.pieza_coleccion_monedas_billetes.field_fecha_de_ingreso_a_la_cole
     - field.field.node.pieza_coleccion_monedas_billetes.field_gallery
+    - field.field.node.pieza_coleccion_monedas_billetes.field_gallery_media
     - field.field.node.pieza_coleccion_monedas_billetes.field_impresor
     - field.field.node.pieza_coleccion_monedas_billetes.field_numero_de_registro
     - field.field.node.pieza_coleccion_monedas_billetes.field_obra_destacada
     - field.field.node.pieza_coleccion_monedas_billetes.field_sufijo_valor
     - field.field.node.pieza_coleccion_monedas_billetes.field_tags
     - field.field.node.pieza_coleccion_monedas_billetes.field_tipo_de_pieza
+    - image.style.thumbnail
     - node.type.pieza_coleccion_monedas_billetes
   module:
     - datetime
     - field_group
-    - file
+    - image
+    - media_library
     - path
     - text
 third_party_settings:
   field_group:
     group_general:
       children:
+        - title
         - body
         - field_tipo_de_pieza
-        - field_gallery
-        - field_tags
-        - field_dimensiones
         - field_denominacion_numismatica
         - field_sufijo_valor
-        - title
-        - group_ingreso
+        - field_dimensiones
+        - field_tags
         - group_emision
+        - group_ingreso
       parent_name: ''
       weight: 0
       label: General
@@ -53,7 +55,7 @@ third_party_settings:
         - field_numero_de_registro
         - field_obra_destacada
       parent_name: group_general
-      weight: 10
+      weight: 3
       label: 'Ingreso a la colección'
       format_settings:
         formatter: collapsible
@@ -66,10 +68,10 @@ third_party_settings:
     group_emision:
       children:
         - field_fecha_de_emision
-        - field_emisor
         - field_impresor
+        - field_emisor
       parent_name: group_general
-      weight: 9
+      weight: 2
       label: 'Datos de emisión'
       format_settings:
         formatter: collapsible
@@ -79,13 +81,28 @@ third_party_settings:
         id: ''
       format_type: fieldset
       region: content
+    group_multimedia:
+      children:
+        - field_gallery
+        - field_gallery_media
+      parent_name: ''
+      weight: 1
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Multimedia
 id: node.pieza_coleccion_monedas_billetes.default
 targetEntityType: node
 bundle: pieza_coleccion_monedas_billetes
 mode: default
 content:
   body:
-    weight: 5
+    weight: -4
     type: text_textarea_with_summary
     settings:
       rows: 9
@@ -96,12 +113,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_denominacion_numismatica:
-    weight: 3
+    weight: -2
     type: string_textfield
     settings:
       size: 10
@@ -109,7 +126,7 @@ content:
     third_party_settings: {  }
     region: content
   field_dimensiones:
-    weight: 7
+    weight: 0
     type: string_textfield
     settings:
       size: 10
@@ -136,9 +153,17 @@ content:
     region: content
   field_gallery:
     weight: 6
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_gallery_media:
+    type: media_library_widget
+    weight: 7
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_impresor:
@@ -165,14 +190,14 @@ content:
     third_party_settings: {  }
     region: content
   field_sufijo_valor:
-    weight: 4
+    weight: -1
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_tags:
-    weight: 8
-    type: entity_reference_autocomplete
+    weight: 1
+    type: entity_reference_autocomplete_tags
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -181,7 +206,7 @@ content:
     third_party_settings: {  }
     region: content
   field_tipo_de_pieza:
-    weight: 2
+    weight: -3
     type: options_select
     settings: {  }
     third_party_settings: {  }
@@ -195,7 +220,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -203,21 +228,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 8
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -230,7 +255,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60

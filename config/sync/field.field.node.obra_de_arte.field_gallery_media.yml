@@ -1,0 +1,24 @@
+uuid: 6d580da2-776f-45f4-b89d-c692a80a219e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery_media
+    - media.type.image
+    - node.type.obra_de_arte
+id: node.obra_de_arte.field_gallery_media
+field_name: field_gallery_media
+entity_type: node
+bundle: obra_de_arte
+label: 'Galería de imágenes Media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

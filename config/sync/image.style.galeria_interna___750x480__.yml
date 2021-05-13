@@ -5,8 +5,8 @@ dependencies: {  }
 name: galeria_interna___750x480__
 label: 'Galeria Interna ( 750x480 )'
 effects:
-  a93f9951-809a-4387-8a98-c7877adadcf7:
-    uuid: a93f9951-809a-4387-8a98-c7877adadcf7
+  0ede7e7b-394c-4802-897b-5c44fd6266d9:
+    uuid: 0ede7e7b-394c-4802-897b-5c44fd6266d9
     id: image_scale
     weight: 2
     data:

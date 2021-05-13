@@ -5,8 +5,8 @@ dependencies: {  }
 name: cb_home
 label: 'CB Home'
 effects:
-  0b1e6f31-4d47-4984-a2b9-de394c6b908b:
-    uuid: 0b1e6f31-4d47-4984-a2b9-de394c6b908b
+  597ade86-968c-4266-95c5-5a416b521c1a:
+    uuid: 597ade86-968c-4266-95c5-5a416b521c1a
     id: image_scale
     weight: 1
     data:

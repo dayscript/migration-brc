@@ -7,11 +7,16 @@ dependencies:
     - field.field.node.page.comment_node_page
     - field.field.node.page.field_attached_script
     - field.field.node.page.field_audio
+    - field.field.node.page.field_audio_media
     - field.field.node.page.field_autor
     - field.field.node.page.field_files
+    - field.field.node.page.field_files_media
     - field.field.node.page.field_gallery
+    - field.field.node.page.field_gallery_media
     - field.field.node.page.field_image
+    - field.field.node.page.field_image_media
     - field.field.node.page.field_imagen_para_slider
+    - field.field.node.page.field_imagen_para_slider_media
     - field.field.node.page.field_limite_de_inscripciones
     - field.field.node.page.field_minisite_type
     - field.field.node.page.field_quote
@@ -21,11 +26,14 @@ dependencies:
     - field.field.node.page.field_title_form
     - field.field.node.page.field_video_embed
     - field.field.node.page.ubication
+    - image.style.thumbnail
     - node.type.page
   module:
     - comment
     - field_group
     - file
+    - image
+    - media_library
     - path
     - text
     - video_embed_field
@@ -33,9 +41,9 @@ third_party_settings:
   field_group:
     group_general:
       children:
-        - body
-        - field_subtitle
         - title
+        - field_subtitle
+        - body
       parent_name: ''
       weight: 0
       label: General
@@ -48,12 +56,12 @@ third_party_settings:
       region: content
     group_related:
       children:
-        - field_quote
-        - field_autor
-        - field_relation
-        - field_minisite_type
         - ubication
         - field_tags
+        - field_relation
+        - field_minisite_type
+        - field_quote
+        - field_autor
       parent_name: ''
       weight: 2
       label: Relaciones
@@ -67,12 +75,17 @@ third_party_settings:
     group_multimedia:
       children:
         - field_image
+        - field_imagen_para_slider
+        - field_audio
         - field_video_embed
         - field_files
-        - field_audio
-        - field_imagen_para_slider
         - field_gallery
         - field_attached_script
+        - field_image_media
+        - field_imagen_para_slider_media
+        - field_gallery_media
+        - field_audio_media
+        - field_files_media
       parent_name: ''
       weight: 1
       label: Multimedia
@@ -86,7 +99,6 @@ third_party_settings:
     group_inscriptions:
       children:
         - field_title_form
-        - field_show_form
         - field_limite_de_inscripciones
       parent_name: ''
       weight: 3
@@ -143,8 +155,15 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     region: content
+  field_audio_media:
+    type: media_library_widget
+    weight: 16
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_autor:
-    weight: 14
+    weight: 22
     type: string_textfield
     settings:
       size: 60
@@ -158,25 +177,56 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     region: content
+  field_files_media:
+    type: media_library_widget
+    weight: 17
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_gallery:
     weight: 11
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_gallery_media:
+    type: media_library_widget
+    weight: 15
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_image:
     weight: 6
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_image_media:
+    type: media_library_widget
+    weight: 13
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_imagen_para_slider:
     weight: 7
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider_media:
+    type: media_library_widget
+    weight: 14
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_limite_de_inscripciones:
@@ -188,13 +238,13 @@ content:
     third_party_settings: {  }
     region: content
   field_minisite_type:
-    weight: 12
+    weight: 20
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_quote:
-    weight: 13
+    weight: 21
     type: string_textfield
     settings:
       size: 60
@@ -202,7 +252,7 @@ content:
     third_party_settings: {  }
     region: content
   field_relation:
-    weight: 11
+    weight: 19
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
@@ -220,8 +270,8 @@ content:
     third_party_settings: {  }
     region: content
   field_tags:
-    weight: 10
-    type: entity_reference_autocomplete
+    weight: 18
+    type: entity_reference_autocomplete_tags
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -252,7 +302,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -267,7 +317,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 10
     region: content
     third_party_settings: {  }
   sticky:
@@ -285,6 +335,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  ubication:
+    type: entity_reference_autocomplete_tags
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 5
@@ -295,5 +355,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden:
-  ubication: true
+hidden: {  }

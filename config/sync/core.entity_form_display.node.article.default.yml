@@ -8,6 +8,8 @@ dependencies:
     - field.field.node.article.comment_node_article
     - field.field.node.article.field_album_flickr
     - field.field.node.article.field_archivo_adjunto
+    - field.field.node.article.field_archivo_adjunto_media
+    - field.field.node.article.field_archivos_para_period_media
     - field.field.node.article.field_archivos_para_periodistas
     - field.field.node.article.field_area_misional
     - field.field.node.article.field_autor_del_art_culo
@@ -15,20 +17,27 @@ dependencies:
     - field.field.node.article.field_categoria_de_noticia
     - field.field.node.article.field_city
     - field.field.node.article.field_files
+    - field.field.node.article.field_files_media
     - field.field.node.article.field_gallery
+    - field.field.node.article.field_gallery_media
     - field.field.node.article.field_image
+    - field.field.node.article.field_image_media
     - field.field.node.article.field_imagen_para_slider
+    - field.field.node.article.field_imagen_para_slider_media
     - field.field.node.article.field_p_blico_objetivo
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_sumario
     - field.field.node.article.field_tags
     - field.field.node.article.field_tome_nota
+    - image.style.thumbnail
     - node.type.article
   module:
     - comment
     - datetime
     - field_group
     - file
+    - image
+    - media_library
     - path
     - text
 third_party_settings:
@@ -36,11 +45,17 @@ third_party_settings:
     group_multimedia:
       children:
         - field_image
-        - field_files
         - field_imagen_para_slider
-        - field_archivos_para_periodistas
         - field_gallery
         - field_archivo_adjunto
+        - field_files
+        - field_archivos_para_periodistas
+        - field_image_media
+        - field_imagen_para_slider_media
+        - field_gallery_media
+        - field_archivo_adjunto_media
+        - field_files_media
+        - field_archivos_para_period_media
       parent_name: ''
       weight: 2
       label: Multimedia
@@ -54,14 +69,14 @@ third_party_settings:
       region: content
     group_relaciones:
       children:
-        - field_tags
-        - field_area_misional
         - field_city
-        - field_autor_del_art_culo
-        - field_categoria_de_noticia
+        - field_area_misional
         - field_p_blico_objetivo
-        - field_album_flickr
+        - field_categoria_de_noticia
         - field_boletin_destacado
+        - field_album_flickr
+        - field_autor_del_art_culo
+        - field_tags
       parent_name: ''
       weight: 1
       label: Relaciones
@@ -75,11 +90,11 @@ third_party_settings:
       region: content
     group_generales:
       children:
+        - title
+        - field_sumario
         - body
         - field_tome_nota
         - field_publication_date
-        - field_sumario
-        - title
       parent_name: ''
       weight: 0
       label: Generales
@@ -110,7 +125,7 @@ content:
     region: content
   comment:
     type: comment_default
-    weight: 20
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -122,12 +137,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_album_flickr:
-    weight: 20
+    weight: 22
     type: string_textfield
     settings:
       size: 60
@@ -141,6 +156,20 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     region: content
+  field_archivo_adjunto_media:
+    type: media_library_widget
+    weight: 14
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_archivos_para_period_media:
+    type: media_library_widget
+    weight: 16
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_archivos_para_periodistas:
     weight: 10
     type: file_generic
@@ -149,30 +178,40 @@ content:
     third_party_settings: {  }
     region: content
   field_area_misional:
-    weight: 15
+    weight: 18
     type: options_buttons
     settings: {  }
     third_party_settings: {  }
     region: content
   field_autor_del_art_culo:
-    weight: 22
+    weight: 23
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_boletin_destacado:
-    weight: 19
+    weight: 21
     type: boolean_checkbox
     settings:
       display_label: true
     third_party_settings: {  }
     region: content
   field_categoria_de_noticia:
-    weight: 18
+    weight: 20
     type: options_buttons
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_city:
+    type: entity_reference_autocomplete_tags
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_files:
     weight: 9
     type: file_generic
@@ -180,29 +219,60 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     region: content
+  field_files_media:
+    type: media_library_widget
+    weight: 15
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_gallery:
     weight: 7
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_gallery_media:
+    type: media_library_widget
+    weight: 13
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_image:
     weight: 5
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_image_media:
+    type: media_library_widget
+    weight: 11
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_imagen_para_slider:
     weight: 6
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider_media:
+    type: media_library_widget
+    weight: 12
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_p_blico_objetivo:
-    weight: 16
+    weight: 19
     type: options_buttons
     settings: {  }
     third_party_settings: {  }
@@ -222,8 +292,8 @@ content:
     third_party_settings: {  }
     region: content
   field_tags:
-    weight: 21
-    type: entity_reference_autocomplete
+    weight: 24
+    type: entity_reference_autocomplete_tags
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -241,14 +311,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 3
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -256,21 +326,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 6
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
@@ -283,7 +353,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS
@@ -291,5 +361,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden:
-  field_city: true
+hidden: {  }

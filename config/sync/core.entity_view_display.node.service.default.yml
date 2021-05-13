@@ -9,9 +9,13 @@ dependencies:
     - field.field.node.service.field_area_misional
     - field.field.node.service.field_content
     - field.field.node.service.field_files
+    - field.field.node.service.field_files_media
     - field.field.node.service.field_icono
+    - field.field.node.service.field_icono_media
     - field.field.node.service.field_image
+    - field.field.node.service.field_image_media
     - field.field.node.service.field_imagen_para_slider
+    - field.field.node.service.field_imagen_para_slider_media
     - field.field.node.service.field_limite_de_inscripciones
     - field.field.node.service.field_p_blico_objetivo
     - field.field.node.service.field_score_order
@@ -164,4 +168,8 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_files_media: true
+  field_icono_media: true
+  field_image_media: true
+  field_imagen_para_slider_media: true
   langcode: true

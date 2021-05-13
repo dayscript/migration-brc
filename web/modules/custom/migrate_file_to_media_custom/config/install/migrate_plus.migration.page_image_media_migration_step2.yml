@@ -1,0 +1,35 @@
+uuid: 0bdb9f1c-1fac-4bc2-9d89-0403e9ff22e0
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_file_to_media_custom
+_core:
+  default_config_hash: c4aVERG65S4x2WsT2QfhSc9-zQVx2rjjb8CXy54SdX4
+id: page_image_media_migration_step2
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: media
+label: 'Página básica Image Media Migration Mapping'
+source:
+  plugin: 'content_entity:node'
+  bundle: page
+  include_translations: false
+process:
+  nid: nid
+  type:
+    plugin: default_value
+    default_value: page
+  field_image_media:
+    plugin: file_id_lookup
+    source: field_image
+    migration: page_image_media_migration_step1
+    no_stub: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  optional:
+    - page_image_media_migration_step1

@@ -6,9 +6,12 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.coleccion_bibliografica.body
     - field.field.node.coleccion_bibliografica.field_archivo_adjunto
+    - field.field.node.coleccion_bibliografica.field_archivo_adjunto_media
     - field.field.node.coleccion_bibliografica.field_date_coleccion
     - field.field.node.coleccion_bibliografica.field_gallery
+    - field.field.node.coleccion_bibliografica.field_gallery_media
     - field.field.node.coleccion_bibliografica.field_image
+    - field.field.node.coleccion_bibliografica.field_image_media
     - field.field.node.coleccion_bibliografica.field_material_complementario
     - field.field.node.coleccion_bibliografica.field_n_topografico
     - field.field.node.coleccion_bibliografica.field_tags
@@ -40,9 +43,12 @@ content:
     region: content
 hidden:
   field_archivo_adjunto: true
+  field_archivo_adjunto_media: true
   field_date_coleccion: true
   field_gallery: true
+  field_gallery_media: true
   field_image: true
+  field_image_media: true
   field_material_complementario: true
   field_n_topografico: true
   field_tags: true

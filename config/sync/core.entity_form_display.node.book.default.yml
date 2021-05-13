@@ -10,31 +10,39 @@ dependencies:
     - field.field.node.book.field_book_type
     - field.field.node.book.field_collection
     - field.field.node.book.field_files
+    - field.field.node.book.field_files_media
     - field.field.node.book.field_gallery
+    - field.field.node.book.field_gallery_media
     - field.field.node.book.field_image
+    - field.field.node.book.field_image_media
     - field.field.node.book.field_imagen_para_slider
+    - field.field.node.book.field_imagen_para_slider_media
     - field.field.node.book.field_is_front
     - field.field.node.book.field_portada
+    - field.field.node.book.field_portada_media
     - field.field.node.book.field_publication_date
     - field.field.node.book.field_subtitle
+    - image.style.thumbnail
     - node.type.book
   module:
     - comment
     - datetime
     - field_group
     - file
+    - image
+    - media_library
     - path
     - text
 third_party_settings:
   field_group:
     group_general:
       children:
+        - title
+        - field_subtitle
         - body
         - field_publication_date
         - field_author
         - field_is_front
-        - field_subtitle
-        - title
       parent_name: ''
       weight: 0
       label: General
@@ -49,10 +57,15 @@ third_party_settings:
     group_multimedia:
       children:
         - field_image
-        - field_files
         - field_imagen_para_slider
         - field_gallery
         - field_portada
+        - field_files
+        - field_image_media
+        - field_imagen_para_slider_media
+        - field_gallery_media
+        - field_portada_media
+        - field_files_media
       parent_name: ''
       weight: 1
       label: Multimedia
@@ -66,8 +79,8 @@ third_party_settings:
       region: content
     group_related:
       children:
-        - field_book_related
         - field_book_type
+        - field_book_related
         - field_collection
         - path
       parent_name: ''
@@ -106,7 +119,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -143,31 +156,62 @@ content:
     third_party_settings: {  }
     region: content
   field_files:
-    weight: 14
-    type: file_generic
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    region: content
-  field_gallery:
-    weight: 16
-    type: file_generic
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    region: content
-  field_image:
-    weight: 13
-    type: file_generic
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    region: content
-  field_imagen_para_slider:
     weight: 17
     type: file_generic
     settings:
       progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_files_media:
+    type: media_library_widget
+    weight: 22
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    weight: 15
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_gallery_media:
+    type: media_library_widget
+    weight: 20
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 13
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_image_media:
+    type: media_library_widget
+    weight: 18
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider:
+    weight: 14
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider_media:
+    type: media_library_widget
+    weight: 19
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_is_front:
@@ -178,10 +222,18 @@ content:
     third_party_settings: {  }
     region: content
   field_portada:
-    weight: 15
-    type: file_generic
+    weight: 16
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_portada_media:
+    type: media_library_widget
+    weight: 21
+    settings:
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_publication_date:
@@ -200,7 +252,7 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 3
     region: content
     settings:
       include_locked: true
@@ -215,21 +267,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 6
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
@@ -242,7 +294,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS

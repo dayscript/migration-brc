@@ -1,0 +1,35 @@
+uuid: b7aba237-365c-4b78-9174-552f3d80e2b3
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_file_to_media_custom
+_core:
+  default_config_hash: ca4e8HxyS6b51iSLb8kEiUoxn3RqqAECbWwlbwBX-QI
+id: multimedia_gallery_media_migration_step2
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: media
+label: 'Multimedia Gallery Media Migration Mapping'
+source:
+  plugin: 'content_entity:node'
+  bundle: multimedia
+  include_translations: false
+process:
+  nid: nid
+  type:
+    plugin: default_value
+    default_value: multimedia
+  field_gallery_media:
+    plugin: file_id_lookup
+    source: field_gallery
+    migration: multimedia_gallery_media_migration_step1
+    no_stub: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  optional:
+    - multimedia_gallery_media_migration_step1

@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.estampilla.field_fecha_de_creaci_n
     - field.field.node.estampilla.field_fecha_de_creaci_n_completa
     - field.field.node.estampilla.field_gallery
+    - field.field.node.estampilla.field_gallery_media
     - field.field.node.estampilla.field_numero_de_registro
     - field.field.node.estampilla.field_scott
     - field.field.node.estampilla.field_servicio_estampilla
@@ -50,6 +51,7 @@ hidden:
   field_fecha_de_creaci_n: true
   field_fecha_de_creaci_n_completa: true
   field_gallery: true
+  field_gallery_media: true
   field_numero_de_registro: true
   field_scott: true
   field_servicio_estampilla: true

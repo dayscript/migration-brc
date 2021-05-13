@@ -8,19 +8,23 @@ dependencies:
     - field.field.node.multimedia.field_area_misional
     - field.field.node.multimedia.field_city
     - field.field.node.multimedia.field_gallery
+    - field.field.node.multimedia.field_gallery_media
     - field.field.node.multimedia.field_image
+    - field.field.node.multimedia.field_image_media
     - field.field.node.multimedia.field_imagen_para_slider
+    - field.field.node.multimedia.field_imagen_para_slider_media
     - field.field.node.multimedia.field_p_blico_objetivo
     - field.field.node.multimedia.field_plugin
     - field.field.node.multimedia.field_subtitle
     - field.field.node.multimedia.field_tags
     - field.field.node.multimedia.field_url_multimedia
     - field.field.node.multimedia.field_video_embed
+    - image.style.thumbnail
     - node.type.multimedia
   module:
     - comment
     - field_group
-    - file
+    - image
     - path
     - text
     - video_embed_field
@@ -28,9 +32,9 @@ third_party_settings:
   field_group:
     group_general:
       children:
-        - body
-        - field_subtitle
         - title
+        - field_subtitle
+        - body
       parent_name: ''
       weight: 0
       label: General
@@ -43,12 +47,16 @@ third_party_settings:
       region: content
     group_multimedia:
       children:
-        - field_video_embed
         - field_image
         - field_imagen_para_slider
-        - field_plugin
+        - field_gallery
         - field_url_multimedia
+        - field_video_embed
+        - field_plugin
         - group_video
+        - field_image_media
+        - field_imagen_para_slider_media
+        - field_gallery_media
       parent_name: ''
       weight: 1
       label: Multimedia
@@ -62,9 +70,9 @@ third_party_settings:
     group_relaciones:
       children:
         - field_area_misional
-        - field_tags
         - field_p_blico_objetivo
         - field_city
+        - field_tags
       parent_name: ''
       weight: 2
       label: Relaciones
@@ -78,49 +86,12 @@ third_party_settings:
     group_video:
       children: {  }
       parent_name: group_multimedia
-      weight: 20
+      weight: 21
       label: Video
       format_settings:
         formatter: closed
         description: ''
         classes: 'group-video field-group-tab'
-        required_fields: true
-      format_type: tab
-      region: content
-    group_target_public:
-      children: {  }
-      parent_name: ''
-      weight: 9
-      label: 'Publico objetivo'
-      format_settings:
-        formatter: closed
-        description: ''
-        classes: 'group-target-public field-group-htab'
-        required_fields: true
-      format_type: tab
-      region: content
-    group_misional_area:
-      children: {  }
-      parent_name: ''
-      weight: 6
-      label: 'Área Misional'
-      format_settings:
-        formatter: closed
-        description: ''
-        classes: ''
-        required_fields: true
-      format_type: tab
-      region: content
-    group_gallery:
-      children:
-        - field_gallery
-      parent_name: ''
-      weight: 3
-      label: Galeria
-      format_settings:
-        formatter: closed
-        description: ''
-        classes: 'group-gallery field-group-tab'
         required_fields: true
       format_type: tab
       region: content
@@ -147,7 +118,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -159,7 +130,7 @@ content:
     region: content
   field_city:
     weight: 17
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -168,24 +139,57 @@ content:
     third_party_settings: {  }
     region: content
   field_gallery:
-    weight: 6
-    type: file_generic
+    weight: 17
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_gallery_media:
+    type: entity_reference_autocomplete
+    weight: 24
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_image:
     weight: 15
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_image_media:
+    type: entity_reference_autocomplete
+    weight: 22
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_imagen_para_slider:
     weight: 16
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider_media:
+    type: entity_reference_autocomplete
+    weight: 23
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_p_blico_objetivo:
@@ -195,7 +199,7 @@ content:
     third_party_settings: {  }
     region: content
   field_plugin:
-    weight: 19
+    weight: 20
     type: options_buttons
     settings: {  }
     third_party_settings: {  }
@@ -210,7 +214,7 @@ content:
     region: content
   field_tags:
     weight: 18
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -219,7 +223,7 @@ content:
     third_party_settings: {  }
     region: content
   field_url_multimedia:
-    weight: 17
+    weight: 18
     type: string_textfield
     settings:
       size: 60
@@ -227,21 +231,21 @@ content:
     third_party_settings: {  }
     region: content
   field_video_embed:
-    weight: 18
+    weight: 19
     type: video_embed_field_textfield
     settings: {  }
     third_party_settings: {  }
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 6
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 12
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -249,14 +253,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 8
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 12
     region: content
     third_party_settings: {  }
   sticky:
@@ -276,7 +280,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60

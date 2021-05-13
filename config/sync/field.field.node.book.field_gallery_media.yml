@@ -1,0 +1,24 @@
+uuid: 9b77d359-fd4f-4458-b233-2f894c229433
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery_media
+    - media.type.image
+    - node.type.book
+id: node.book.field_gallery_media
+field_name: field_gallery_media
+entity_type: node
+bundle: book
+label: 'Galeria Media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

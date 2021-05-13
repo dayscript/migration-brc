@@ -1,0 +1,24 @@
+uuid: 7f9ee187-648d-4a7d-a7b4-2399bb1f05fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery_media
+    - media.type.image
+    - node.type.instrumento
+id: node.instrumento.field_gallery_media
+field_name: field_gallery_media
+entity_type: node
+bundle: instrumento
+label: 'Galeria Media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference
