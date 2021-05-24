@@ -18,7 +18,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: publicacion/files
+  file_directory: publicacion/attached
   file_extensions: 'txt doc pdf docx'
   max_filesize: '3 MB'
   description_field: true

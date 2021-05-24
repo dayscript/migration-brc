@@ -18,16 +18,16 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: ubicacion/main-image
+  file_directory:  taxonomy/city/image
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '500 KB'
   max_resolution: ''
   min_resolution: 640x400
-  alt_field: false
-  title_field: false
+  alt_field: true
+  title_field: true
   default_image: '16246'
   alt_field_required: true
-  title_field_required: false
+  title_field_required: true
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

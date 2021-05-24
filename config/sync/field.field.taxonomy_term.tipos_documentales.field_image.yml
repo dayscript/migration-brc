@@ -11,23 +11,23 @@ id: taxonomy_term.tipos_documentales.field_image
 field_name: field_image
 entity_type: taxonomy_term
 bundle: tipos_documentales
-label: Imágen
+label: 'Imagen principal'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: ''
+  file_directory: taxonomy/tipos_documentales
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
-  alt_field: false
-  title_field: false
+  alt_field: true
+  title_field: true
   default_image: 0
   alt_field_required: true
-  title_field_required: false
+  title_field_required: true
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

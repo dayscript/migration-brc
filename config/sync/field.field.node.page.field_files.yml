@@ -18,7 +18,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: pagina_basica/file-attached
+  file_directory: page/attached
   file_extensions: 'txt pdf doc xls docs docx jpg png xlsx jpeg'
   max_filesize: 5MB
   description_field: false

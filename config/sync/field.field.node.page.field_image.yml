@@ -11,14 +11,14 @@ id: node.page.field_image
 field_name: field_image
 entity_type: node
 bundle: page
-label: Imágen
+label: 'Imagen principal'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: pagina_basica
+  file_directory: page/image
   file_extensions: 'png gif jpg jpeg'
   max_filesize: 5MB
   max_resolution: ''
@@ -27,7 +27,7 @@ settings:
   title_field: true
   default_image: 0
   alt_field_required: true
-  title_field_required: false
+  title_field_required: true
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

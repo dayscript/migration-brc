@@ -12,7 +12,7 @@ field_name: field_fuente_de_la_imagen
 entity_type: file
 bundle: image
 label: 'Fuente de la imagen'
-description: 'Cuál es el or+igen de la imágen. de dónde se obtuvo o qué archivo o publicación fue la fuente.'
+description: 'Cuál es el origen de la Imagen. de dónde se obtuvo o qué archivo o publicación fue la fuente.'
 required: false
 translatable: false
 default_value: {  }

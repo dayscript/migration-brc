@@ -18,7 +18,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: prensa/adjuntos
+  file_directory: article/attached
   file_extensions: 'txt mov mp3 doc pdf docx mp4 xls xlsx ppt jpg mpg png gif tiff wav m4a'
   max_filesize: '200 MB'
   description_field: true

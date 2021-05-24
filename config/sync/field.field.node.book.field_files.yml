@@ -18,7 +18,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: books/file-attached
+  file_directory: book/attached
   file_extensions: 'txt pdf'
   max_filesize: '5 MB'
   description_field: false

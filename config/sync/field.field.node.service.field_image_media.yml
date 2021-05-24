@@ -10,7 +10,7 @@ id: node.service.field_image_media
 field_name: field_image_media
 entity_type: node
 bundle: service
-label: 'Imagen Media'
+label: 'Imagen principal Media'
 description: ''
 required: false
 translatable: true

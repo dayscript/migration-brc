@@ -11,7 +11,7 @@ id: user.user.field_derechos_de_uso
 field_name: field_derechos_de_uso
 entity_type: user
 bundle: user
-label: 'Permiso de uso de imágenes'
+label: 'Permiso de uso de Imagenes'
 description: 'Qué tipo de imagenes puede ver el usuario en el media browser'
 required: true
 translatable: false

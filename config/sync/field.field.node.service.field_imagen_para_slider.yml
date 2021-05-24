@@ -12,22 +12,22 @@ field_name: field_imagen_para_slider
 entity_type: node
 bundle: service
 label: 'Imagen para slider'
-description: 'Esta imágen se usa para los servicios que quieran destacarse en los Homes de centros culturales'
+description: 'Esta Imagen se usa para los servicios que quieran destacarse en los Homes de centros culturales'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: service/image-slider
+  file_directory: service/slider
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '2 MB'
   max_resolution: ''
   min_resolution: 1440x415
-  alt_field: false
-  title_field: false
+  alt_field: true
+  title_field: true
   default_image: '3745'
   alt_field_required: true
-  title_field_required: false
+  title_field_required: true
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

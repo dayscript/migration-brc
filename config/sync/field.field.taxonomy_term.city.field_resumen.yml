@@ -10,7 +10,7 @@ field_name: field_resumen
 entity_type: taxonomy_term
 bundle: city
 label: Resumen
-description: 'Este texto aparecerá en la primera imágen del slider - 350 caracteres máximo'
+description: 'Este texto aparecerá en la primera imagen del slider - 350 caracteres máximo'
 required: true
 translatable: false
 default_value: {  }

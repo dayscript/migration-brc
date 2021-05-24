@@ -18,7 +18,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: minisitios/file-attached
+  file_directory: minisitio/attached
   file_extensions: 'txt pdf png jpg doc sls xslx docx jpeg'
   max_filesize: '50 MB'
   description_field: true

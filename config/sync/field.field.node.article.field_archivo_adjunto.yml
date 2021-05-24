@@ -12,13 +12,13 @@ field_name: field_archivo_adjunto
 entity_type: node
 bundle: article
 label: 'Archivos adjuntos'
-description: 'Archivos de imágenes, logos, PDFs y otros, que se vayan a insertar dentro del cuerpo del contenido.'
+description: 'Archivos de Imagenes, logos, PDFs y otros, que se vayan a insertar dentro del cuerpo del contenido.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: prensa/adjuntos
+  file_directory: article/attached
   file_extensions: 'txt mov mp3 doc pdf docx mp4 xls xlsx ppt jpg mpg png gif tiff wav m4a'
   max_filesize: '50 MB'
   description_field: true

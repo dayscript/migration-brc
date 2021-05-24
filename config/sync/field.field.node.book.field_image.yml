@@ -18,7 +18,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: books
+  file_directory: book/image
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '2 MB'
   max_resolution: 640x400
@@ -27,7 +27,7 @@ settings:
   title_field: true
   default_image: '16837'
   alt_field_required: true
-  title_field_required: false
+  title_field_required: true
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

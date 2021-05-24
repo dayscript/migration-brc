@@ -18,7 +18,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: coleccion-bibliografica/file-attached
+  file_directory: coleccion_bibliografica/attached
   file_extensions: 'txt pdf doc docx xls xslx jpg jpeg'
   max_filesize: ''
   description_field: false

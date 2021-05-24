@@ -18,16 +18,16 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: multimedia/main-image
+  file_directory: multimedia/image
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '1 MB'
   max_resolution: 860x400
   min_resolution: 500x350
-  alt_field: false
-  title_field: false
+  alt_field: true
+  title_field: true
   default_image: 0
   alt_field_required: true
-  title_field_required: false
+  title_field_required: true
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

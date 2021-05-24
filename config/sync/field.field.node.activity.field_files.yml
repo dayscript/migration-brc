@@ -18,10 +18,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: activity/file-attached
+  file_directory: activity/attached
   file_extensions: 'txt pdf doc xls docx jpg png gif mp3'
   max_filesize: '250 MB'
-  description_field: false
+  description_field: true
   handler: 'default:file'
   handler_settings: {  }
 field_type: file

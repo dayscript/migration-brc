@@ -20,11 +20,11 @@ source:
     name: user_picture
     settings:
       file_extensions: 'png gif jpg jpeg'
-      alt_field: false
-      title_field: false
+      alt_field: true
+      title_field: true
       min_resolution: ''
-      alt_field_required: false
-      title_field_required: false
+      alt_field_required: true
+      title_field_required: true
 process:
   entity_type:
     -

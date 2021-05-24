@@ -11,7 +11,7 @@ id: taxonomy_term.area.field_image
 field_name: field_image
 entity_type: taxonomy_term
 bundle: area
-label: Imágen
+label: 'Imagen principal'
 description: ''
 required: false
 translatable: false
@@ -27,7 +27,7 @@ settings:
   title_field: true
   default_image: 0
   alt_field_required: true
-  title_field_required: false
+  title_field_required: true
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

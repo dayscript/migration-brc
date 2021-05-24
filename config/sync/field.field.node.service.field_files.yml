@@ -18,7 +18,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: service/file-attached
+  file_directory: service/attached
   file_extensions: 'txt pdf png jpg gif doc xls docx xlsx jpeg'
   max_filesize: 2MB
   description_field: true

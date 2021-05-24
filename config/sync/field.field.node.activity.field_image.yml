@@ -18,16 +18,16 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: activity/main-image
+  file_directory: activity/image
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '2 mb'
   max_resolution: 640x500
   min_resolution: 600x400
   alt_field: true
-  title_field: false
+  title_field: true
   default_image: '38190'
   alt_field_required: true
-  title_field_required: false
+  title_field_required: true
   handler: 'default:file'
   handler_settings: {  }
 field_type: image
