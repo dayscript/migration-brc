@@ -1,8 +1,0 @@
-uuid: 25b8aaf8-60de-4e73-9ac7-171df71649a5
-langcode: es
-status: true
-dependencies: {  }
-name: CMO-Región
-vid: cmo_region
-description: 'Piezas arqueológicas de la colección del Museo del Oro: región del hallazgo'
-weight: 0

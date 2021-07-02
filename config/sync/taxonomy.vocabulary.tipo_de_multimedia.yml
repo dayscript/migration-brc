@@ -1,8 +1,0 @@
-uuid: 71a3803f-fe58-4ae9-8570-7788c2bfe7e5
-langcode: es
-status: true
-dependencies: {  }
-name: 'Tipo de multimedia'
-vid: tipo_de_multimedia
-description: 'clasifica en galeria o video '
-weight: 7

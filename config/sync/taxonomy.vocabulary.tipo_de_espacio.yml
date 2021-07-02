@@ -1,8 +1,0 @@
-uuid: 14f93b11-d1e0-416f-947d-499b947af3c2
-langcode: es
-status: true
-dependencies: {  }
-name: 'Tipo de espacio'
-vid: tipo_de_espacio
-description: 'Tipos de espacios de la taxonomía ubicación'
-weight: 10

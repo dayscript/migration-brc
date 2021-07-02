@@ -1,8 +1,0 @@
-uuid: ce8e3779-2426-4c00-8cfb-a13b739458a9
-langcode: es
-status: true
-dependencies: {  }
-name: 'Tipo de pagina basica'
-vid: tipo_de_pagina_basica
-description: 'Se usa para contruir la URL y definir la presentación de las pagins basicas. Escoja si es seccion, proyecto, exposición o libro'
-weight: 10

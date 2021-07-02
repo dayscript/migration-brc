@@ -1,8 +1,0 @@
-uuid: 5a4dc0fd-a83b-4f91-b543-6a9c9fd10d18
-langcode: es
-status: true
-dependencies: {  }
-id: menu-fotter-menu
-label: 'Fotter Menu'
-description: ''
-locked: false

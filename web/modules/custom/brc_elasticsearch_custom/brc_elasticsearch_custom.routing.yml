@@ -1,0 +1,32 @@
+brc_elasticsearch_custom.configuration:
+  path: '/elasticsearch/configuration'
+  defaults:
+    _form: 'Drupal\brc_elasticsearch_custom\Form\ElasticsearchSettingsForm'
+    _title: 'Elasticsearch configuration'
+  requirements:
+    _permission: 'access content'
+
+brc_elasticsearch_custom.drupal:
+  path: '/elasticsearch/indexing'
+  defaults:
+    _form: 'Drupal\brc_elasticsearch_custom\Form\ElasticsearchIndexingForm'
+    _title: 'Elasticsearch indexing'
+  requirements:
+    _permission: 'access content'
+
+brc_elasticsearch_custom.feeds:
+  path: '/api/elasticsearch'
+  defaults:
+    _controller: '\Drupal\brc_elasticsearch_custom\Controller\ElasticsearchController::elastic'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+brc_elasticsearch_custom.taxonomys:
+  path: '/api/views/taxonomy/elasticsearch'
+  defaults:
+    _controller: '\Drupal\brc_elasticsearch_custom\Controller\ElasticsearchController::taxonomys'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+

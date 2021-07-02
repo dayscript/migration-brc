@@ -1,0 +1,5 @@
+name: 'Banrepcultural Elasticsearch Custom'
+type: module
+description: 'Banrepcultural Elasticsearch custom.'
+core: 8.x
+package: 'Custom'

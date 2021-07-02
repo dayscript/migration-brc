@@ -1,0 +1,9 @@
+{
+    "name": "brc_elasticsearch_custom",
+    "type": "drupal-module",
+    "description": "Banrepcultural Elasticsearch custom.",
+    "minimum-stability": "dev",
+    "require": {
+        "elasticsearch/elasticsearch": "^7.0"
+    }
+}

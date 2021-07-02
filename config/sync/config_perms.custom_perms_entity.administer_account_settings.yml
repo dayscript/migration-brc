@@ -1,9 +1,0 @@
-uuid: 0fa10d71-be0e-4f83-bbb8-b048ade6070d
-langcode: es
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: G3RasgGpLT7MiDfwt1phJQ229-nSxEF7TVbk-QrirXU
-id: administer_account_settings
-label: 'Administer account settings'
-route: entity.user.admin_form

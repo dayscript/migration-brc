@@ -1,0 +1,7 @@
+brc_custom.fullnode:
+  path: '/api/brc/fullnode'
+  defaults:
+    _controller: '\Drupal\brc_custom\Controller\BrcCustomController::fullNode'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'

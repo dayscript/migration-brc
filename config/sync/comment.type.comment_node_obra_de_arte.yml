@@ -1,8 +1,0 @@
-uuid: 6cc27183-b510-4c08-819d-388e7ddd070f
-langcode: es
-status: true
-dependencies: {  }
-id: comment_node_obra_de_arte
-label: 'CA obra comment'
-target_entity_type_id: node
-description: null

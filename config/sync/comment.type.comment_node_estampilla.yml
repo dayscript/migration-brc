@@ -1,8 +1,0 @@
-uuid: 681aa16b-7007-4e85-ad3a-662c2f87f649
-langcode: es
-status: true
-dependencies: {  }
-id: comment_node_estampilla
-label: 'CF estampilla comment'
-target_entity_type_id: node
-description: null

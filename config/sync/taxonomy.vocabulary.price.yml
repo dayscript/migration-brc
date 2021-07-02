@@ -1,8 +1,0 @@
-uuid: 08ececb5-0cd2-434a-9e90-24c1362a86e4
-langcode: es
-status: true
-dependencies: {  }
-name: Tarifa
-vid: price
-description: 'Valor de la entrada al evento'
-weight: 5

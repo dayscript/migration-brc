@@ -1,0 +1,23 @@
+brc_social_media_feeds_custom.configuration:
+  path: '/social_feeds/configuration'
+  defaults:
+    _form: 'Drupal\brc_social_media_feeds_custom\Form\SocialFeedsSettingsForm'
+    _title: 'Social Feeds configuration'
+  requirements:
+    _permission: 'access content'
+
+brc_social_media_feeds_custom.feeds:
+  path: '/api/social_feeds'
+  defaults:
+    _controller: '\Drupal\brc_social_media_feeds_custom\Controller\SocialFeedsController::feeds'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+brc_social_media_feeds_custom.json:
+  path: '/api/social_feeds_json'
+  defaults:
+    _controller: '\Drupal\brc_social_media_feeds_custom\Controller\SocialFeedsController::feedsJson'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'

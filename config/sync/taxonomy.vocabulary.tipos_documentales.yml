@@ -1,8 +1,0 @@
-uuid: b4e77fb5-a815-49a9-bd9e-21e1dcdb70bd
-langcode: es
-status: true
-dependencies: {  }
-name: 'Tipos documentales'
-vid: tipos_documentales
-description: 'Tipos de documentos de las Colecciones bibliográficas'
-weight: 8

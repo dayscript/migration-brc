@@ -1,0 +1,5 @@
+name: 'Banrepcultural Social Media Feeds Custom'
+type: module
+description: 'Banrepcultural social media feeds custom.'
+core: 8.x
+package: 'Custom'

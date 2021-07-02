@@ -1,8 +1,0 @@
-uuid: 8ba01886-b45f-4ca4-a9e3-a86de231aa4a
-langcode: es
-status: true
-dependencies: {  }
-name: 'Tipo de actividad'
-vid: type_activity
-description: 'Tipos de eventos'
-weight: -7

@@ -1,8 +1,0 @@
-uuid: 163f46f8-9624-42ff-83c9-4d55c70a53c7
-langcode: es
-status: true
-dependencies: {  }
-name: CMO-Representación
-vid: cmo_representaci_n
-description: 'Representación de piezas de colección Museo del Oro'
-weight: 0

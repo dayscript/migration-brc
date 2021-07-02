@@ -1,8 +1,0 @@
-uuid: 27fa5c86-e7ca-4311-9503-999375e42258
-langcode: es
-status: true
-dependencies: {  }
-id: menu-middle-menu
-label: 'Middle Menu'
-description: 'Muestra los links del menu ubicado en el medio de la pagina'
-locked: false

@@ -1,8 +1,0 @@
-uuid: cda8d9bb-0fc9-4f13-937a-fd8fb70374a8
-langcode: es
-status: true
-dependencies: {  }
-id: t9UQ7FvqR0wMQMnd5n2XukH0kM9liAM9wOhfSLRl2qw
-label: 'http://migrationbrc.local'
-context:
-  language: es

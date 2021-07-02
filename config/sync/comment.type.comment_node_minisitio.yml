@@ -1,8 +1,0 @@
-uuid: 0c70e3f1-3f08-44b6-810f-7fc7de82e209
-langcode: es
-status: true
-dependencies: {  }
-id: comment_node_minisitio
-label: 'Minisitio comment'
-target_entity_type_id: node
-description: null

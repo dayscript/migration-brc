@@ -1,8 +1,0 @@
-uuid: 034c76db-e2e1-4f86-814c-24b0fb294f3d
-langcode: es
-status: true
-dependencies: {  }
-name: 'Categoria de noticia'
-vid: categoria_de_noticia
-description: 'Temática general o blog asociado de una noticia'
-weight: 1

@@ -1,8 +1,0 @@
-uuid: 7390f110-840f-4752-8402-d6723c029723
-langcode: es
-status: true
-dependencies: {  }
-name: 'Tipo de publicación'
-vid: tipo_de_publicacion
-description: ''
-weight: 9

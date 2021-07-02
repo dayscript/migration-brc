@@ -1,8 +1,0 @@
-uuid: 7796f873-5cea-4e46-9d55-146b5f57a58f
-langcode: es
-status: true
-dependencies: {  }
-id: comment_node_date
-label: 'Fecha comment'
-target_entity_type_id: node
-description: null

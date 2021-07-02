@@ -1,8 +1,0 @@
-uuid: b6a31526-a7bd-461f-88fd-a01f811c33cc
-langcode: es
-status: true
-dependencies: {  }
-name: CMO-Funcion
-vid: cmo_funcion
-description: 'Piezas arqueológicas de la colección del Museo del Oro'
-weight: 0

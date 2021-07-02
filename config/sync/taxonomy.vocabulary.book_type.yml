@@ -1,8 +1,0 @@
-uuid: e09fa691-3037-46b0-941c-8b531368488f
-langcode: es
-status: true
-dependencies: {  }
-name: 'Tipo de libro'
-vid: book_type
-description: 'Clasifica libros, revistas etc'
-weight: 10

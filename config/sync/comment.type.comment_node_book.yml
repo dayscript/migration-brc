@@ -1,8 +1,0 @@
-uuid: e2f33102-3d15-48b6-a546-f5c93ab11570
-langcode: es
-status: true
-dependencies: {  }
-id: comment_node_book
-label: 'Revista Credencial Historia comment'
-target_entity_type_id: node
-description: null

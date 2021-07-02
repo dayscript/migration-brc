@@ -1,8 +1,0 @@
-uuid: a0204dc4-75b6-481e-bc6d-7c19cb3bc163
-langcode: es
-status: true
-dependencies: {  }
-name: 'Tipo de servicio'
-vid: tipe_service
-description: 'Tipos de servicio'
-weight: 10

@@ -1,8 +1,0 @@
-uuid: 787f77e6-a7ed-40e4-ab5c-189b3aec4f17
-langcode: es
-status: true
-dependencies: {  }
-name: 'CBM Emisor'
-vid: cbm_emisor
-description: ''
-weight: 0

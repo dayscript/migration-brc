@@ -1,8 +1,0 @@
-uuid: e2cfea42-c51c-4a05-be4e-6e6fac965487
-langcode: es
-status: true
-dependencies: {  }
-name: 'Autor de artículo Credencial Historia'
-vid: autor
-description: 'Listado de autores de la revista Credencial Historia'
-weight: -5

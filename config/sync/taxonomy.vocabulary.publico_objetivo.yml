@@ -1,8 +1,0 @@
-uuid: 550e6b1e-d124-4eda-88f8-439a6442a814
-langcode: es
-status: true
-dependencies: {  }
-name: 'Público Objetivo'
-vid: publico_objetivo
-description: 'A quién se dirige la actividad'
-weight: -8

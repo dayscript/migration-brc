@@ -1,0 +1,10 @@
+{
+	"name": "drupal/brc_social_media_feeds_custom",
+	"type": "drupal-module",
+	"description":  "Banrepcultural social media feeds custom",
+    "minimum-stability": "dev",
+    "require": {
+        "j7mbo/twitter-api-php": "^1.0",
+        "google/apiclient": "~2.0"
+    }
+}

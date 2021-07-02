@@ -1,0 +1,5 @@
+name: 'Banrepcultural Custom'
+type: module
+description: 'Banrepcultural custom.'
+core: 8.x
+package: 'Custom'

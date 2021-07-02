@@ -1,0 +1,89 @@
+<?php
+
+/**
+ * @file
+ * Contains brc_elasticsearch_custom.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+function brc_elasticsearch_custom_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the brc_elasticsearch_custom module.
+    case 'help.page.brc_elasticsearch_custom':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Configuration page the <a href=":link">Elasticsearch</a> module.', [':link' => 'elasticsearch/configuration']) . '</p>';
+      $output .= '<p>' . t('Indexing page the <a href=":link">Elasticsearch</a> module.', [':link' => 'elasticsearch/indexing']) . '</p>';
+      $output .= '<p>' . t('<a href=":link">API Elasticsearch</a>', [':link' => 'api/elasticsearch']) . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function brc_elasticsearch_custom_theme() {
+  return [
+    'brc_elasticsearch_custom' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+function brc_elasticsearch_custom_entity_insert(EntityInterface $entity) {
+  $commonFunction = \Drupal::service('brc_elasticsearch_custom.manager');
+  switch ($entity->getEntityTypeId()) {
+    case 'node':
+      $response = $commonFunction->indexingProcessDoc('node', 'create', $entity->id(), null);
+      break;
+    case 'taxonomy_term':
+      $response = $commonFunction->indexingProcessDoc('node', 'create', $entity->id(), null);
+      break;
+  }
+  $log = $commonFunction->translateLog($response, $log);
+  if($log['successful'] == 1) {
+    drupal_set_message('El nodo se ha creado en Elasticsearch.');
+  }
+  if($log['failed'] == 1) {
+    drupal_set_message('Hubo un problema al crear el nodo en Elasticsearch.');
+  }
+}
+
+function brc_elasticsearch_custom_entity_update(EntityInterface $entity) {
+  $commonFunction = \Drupal::service('brc_elasticsearch_custom.manager');
+  switch ($entity->getEntityTypeId()) {
+    case 'node':
+      $response = $commonFunction->indexingProcessDoc('node', 'create', $entity->id(), null);
+      break;
+    case 'taxonomy_term':
+      $response = $commonFunction->indexingProcessDoc('node', 'create', $entity->id(), null);
+      break;
+  }
+  $log = $commonFunction->translateLog($response, $log);
+  if($log['successful'] == 1) {
+    drupal_set_message('El nodo se ha actualizado en Elasticsearch.');
+  }
+  if($log['failed'] == 1) {
+    drupal_set_message('Hubo un problema al actualizar el nodo en Elasticsearch.');
+  }
+}
+
+function brc_elasticsearch_custom_entity_delete(EntityInterface $entity) {
+  $commonFunction = \Drupal::service('brc_elasticsearch_custom.manager');
+  switch ($entity->getEntityTypeId()) {
+    case 'node':
+      $response = $commonFunction->indexingProcessDoc('node', 'delete', $entity->id(), null);
+      break;
+    case 'taxonomy_term':
+      $response = $commonFunction->indexingProcessDoc('node', 'delete', $entity->id(), null);
+      break;
+  }
+  $log = $commonFunction->translateLog($response, $log);
+  if($log['successful'] == 1) {
+    drupal_set_message('El nodo se ha eliminado en Elasticsearch.');
+  }
+  if($log['failed'] == 1) {
+    drupal_set_message('Hubo un problema al eliminar el nodo en Elasticsearch.');
+  }
+}

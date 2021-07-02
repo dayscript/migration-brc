@@ -1,8 +1,0 @@
-uuid: e641a2b2-d33f-43e6-86e7-ef8747eb21ae
-langcode: es
-status: true
-dependencies: {  }
-id: comment_node_publicacion
-label: 'Publicación comment'
-target_entity_type_id: node
-description: null

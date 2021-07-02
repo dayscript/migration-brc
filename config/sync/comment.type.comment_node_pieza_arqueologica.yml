@@ -1,8 +1,0 @@
-uuid: c42eaaff-f2ba-44cf-af79-cbf088cc1527
-langcode: es
-status: true
-dependencies: {  }
-id: comment_node_pieza_arqueologica
-label: 'CMO pieza arqueológica comment'
-target_entity_type_id: node
-description: null

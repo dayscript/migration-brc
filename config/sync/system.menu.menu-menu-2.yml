@@ -1,8 +1,0 @@
-uuid: 10570982-ee70-4771-b3c0-e7a7d34595ac
-langcode: es
-status: true
-dependencies: {  }
-id: menu-menu-2
-label: 'Menu 2'
-description: 'Se usa en caso de agregar un nuevo menu'
-locked: false

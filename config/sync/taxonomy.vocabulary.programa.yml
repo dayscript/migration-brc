@@ -1,8 +1,0 @@
-uuid: 2815b130-75bd-4115-adef-39f766554c55
-langcode: es
-status: true
-dependencies: {  }
-name: Programa
-vid: programa
-description: 'Programa permanente al que pertenece la actividad'
-weight: -1

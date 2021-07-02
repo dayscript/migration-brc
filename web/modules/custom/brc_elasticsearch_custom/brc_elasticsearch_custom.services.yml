@@ -1,0 +1,3 @@
+services:
+  brc_elasticsearch_custom.manager:
+    class: Drupal\brc_elasticsearch_custom\ElasticsearchManager

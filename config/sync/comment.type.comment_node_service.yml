@@ -1,8 +1,0 @@
-uuid: 7779cff9-8a2f-4ba3-8763-25debd52c2c1
-langcode: es
-status: true
-dependencies: {  }
-id: comment_node_service
-label: 'Servicio comment'
-target_entity_type_id: node
-description: null

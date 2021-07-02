@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains brc_custom.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function brc_custom_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the brc_custom module.
+    case 'help.page.brc_custom':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Banrepcultural custom.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function brc_custom_theme() {
+  return [
+    'brc_custom' => [
+      'render element' => 'children',
+    ],
+  ];
+}

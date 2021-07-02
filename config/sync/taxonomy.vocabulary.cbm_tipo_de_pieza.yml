@@ -1,8 +1,0 @@
-uuid: 41098035-115a-4b22-b04e-75d8ebfd58b3
-langcode: es
-status: true
-dependencies: {  }
-name: 'CBM Tipo de pieza'
-vid: cbm_tipo_de_pieza
-description: ''
-weight: 0

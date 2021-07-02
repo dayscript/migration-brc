@@ -1,8 +1,0 @@
-uuid: b2f50a6b-db05-4056-a12a-c3f86c088acd
-langcode: es
-status: true
-dependencies: {  }
-name: 'Autor de noticia'
-vid: autor_de_articulo
-description: 'Nombre de quién redacta una noticia, reseña, blog, boletín de prensa...'
-weight: -4

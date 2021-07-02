@@ -1,8 +1,0 @@
-uuid: 576722c3-ccb4-41cd-b229-6b9437fbb390
-langcode: es
-status: true
-dependencies: {  }
-id: menu-menu-front
-label: menu-front
-description: 'Este menu se muestra en el front del portal'
-locked: false
