@@ -1,0 +1,19 @@
+uuid: 7c5c8281-ea56-4bc9-9d95-b2797dc60292
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bucaramanga_cc_servicios
+label: 'Bucaramanga - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

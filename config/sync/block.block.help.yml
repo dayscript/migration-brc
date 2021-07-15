@@ -1,0 +1,20 @@
+uuid: f107615f-5401-4db1-926d-a578665673b2
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - adminimal_theme
+id: help
+theme: adminimal_theme
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

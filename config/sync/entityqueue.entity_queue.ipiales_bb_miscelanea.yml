@@ -1,0 +1,23 @@
+uuid: 807ef80c-c562-4024-a6bd-7965232d7f60
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ipiales_bb_miscelanea
+label: 'Ipiales - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

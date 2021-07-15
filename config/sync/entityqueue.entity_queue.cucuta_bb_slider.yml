@@ -1,0 +1,25 @@
+uuid: fd2eb620-881d-41f5-a9b5-be3a39608a70
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cucuta_bb_slider
+label: 'Cúcuta - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

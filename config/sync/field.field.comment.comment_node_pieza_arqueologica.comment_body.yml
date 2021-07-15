@@ -1,0 +1,21 @@
+uuid: fae58358-b2dc-420b-8722-30c27e5507d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_pieza_arqueologica
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_pieza_arqueologica.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_pieza_arqueologica
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

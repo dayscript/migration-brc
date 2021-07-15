@@ -1,0 +1,21 @@
+uuid: 1c8727d4-45d6-41b6-8da4-24bd032cdbc3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_service
+label: 'Content - Servicio'
+type: 'canonical_entities:node'
+pattern: 'servicios/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      service: service
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

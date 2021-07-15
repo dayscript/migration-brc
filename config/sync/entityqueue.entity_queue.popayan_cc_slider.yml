@@ -1,0 +1,25 @@
+uuid: b1ca0a6e-af5d-4d1d-8d93-b6c5960fe91f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: popayan_cc_slider
+label: 'Popayán - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

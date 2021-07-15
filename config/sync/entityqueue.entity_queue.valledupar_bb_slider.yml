@@ -1,0 +1,25 @@
+uuid: 5d92f348-994a-4014-810d-404a10c542b7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: valledupar_bb_slider
+label: 'Valledupar - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

@@ -1,0 +1,19 @@
+uuid: 6adef050-d9f2-42a7-ab84-6591474c479e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: honda_cc_servicios
+label: 'Honda - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

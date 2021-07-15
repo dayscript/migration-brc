@@ -1,0 +1,172 @@
+uuid: f9131f32-4c8b-4dda-9321-ee7502f5deda
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_activity.default
+    - field.field.node.activity.body
+    - field.field.node.activity.comment_node_activity
+    - field.field.node.activity.field_area_misional
+    - field.field.node.activity.field_city
+    - field.field.node.activity.field_date
+    - field.field.node.activity.field_description
+    - field.field.node.activity.field_disponibilidad
+    - field.field.node.activity.field_files
+    - field.field.node.activity.field_files_media
+    - field.field.node.activity.field_gallery
+    - field.field.node.activity.field_gallery_media
+    - field.field.node.activity.field_horarios
+    - field.field.node.activity.field_image
+    - field.field.node.activity.field_image_media
+    - field.field.node.activity.field_imagen_para_slider
+    - field.field.node.activity.field_imagen_para_slider_media
+    - field.field.node.activity.field_limite_de_inscripciones
+    - field.field.node.activity.field_metatag
+    - field.field.node.activity.field_p_blico_objetivo
+    - field.field.node.activity.field_price
+    - field.field.node.activity.field_sumario
+    - field.field.node.activity.field_tags
+    - field.field.node.activity.field_title_form
+    - field.field.node.activity.field_tome_nota
+    - field.field.node.activity.field_type_activity
+    - node.type.activity
+  module:
+    - comment
+    - datetime_range
+    - file
+    - image
+    - office_hours
+    - text
+    - user
+id: node.activity.default
+targetEntityType: node
+bundle: activity
+mode: default
+content:
+  body:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_activity:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_date:
+    label: above
+    weight: 7
+    type: daterange_plain
+    settings:
+      timezone_override: ''
+      separator: '-'
+    third_party_settings: {  }
+    region: content
+  field_files:
+    label: above
+    weight: 11
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    label: above
+    weight: 28
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: content
+  field_horarios:
+    label: above
+    weight: 8
+    type: office_hours
+    settings:
+      compress: false
+      grouped: false
+      current_status:
+        position: hide
+        open_text: 'Currently open!'
+        closed_text: 'Currently closed'
+      timezone_field: ''
+      day_format: long
+      time_format: G
+      show_closed: all
+      closed_format: Closed
+      separator:
+        days: '<br />'
+        grouped_days: ' - '
+        day_hours: ': '
+        hours_hours: '-'
+        more_hours: ', '
+      schema:
+        enabled: false
+      office_hours_first_day: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    label: above
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider:
+    label: above
+    weight: 5
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_sumario:
+    label: above
+    weight: 3
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    label: above
+    weight: 12
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_area_misional: true
+  field_city: true
+  field_description: true
+  field_disponibilidad: true
+  field_files_media: true
+  field_gallery_media: true
+  field_image_media: true
+  field_imagen_para_slider_media: true
+  field_limite_de_inscripciones: true
+  field_metatag: true
+  field_p_blico_objetivo: true
+  field_price: true
+  field_title_form: true
+  field_tome_nota: true
+  field_type_activity: true
+  langcode: true

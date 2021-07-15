@@ -1,0 +1,25 @@
+uuid: a86ce19c-b50b-4ee1-870b-2d1126cf7dd5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: valledupar_cc_recomendados
+label: 'Valledupar - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

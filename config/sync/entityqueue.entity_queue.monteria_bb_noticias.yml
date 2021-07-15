@@ -1,0 +1,19 @@
+uuid: 46cbb792-30d5-4bf8-b6d8-7358169a7acb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: monteria_bb_noticias
+label: 'Montería - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

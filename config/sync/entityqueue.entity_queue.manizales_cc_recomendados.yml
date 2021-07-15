@@ -1,0 +1,25 @@
+uuid: 257b6f84-8995-4a18-8291-7528284dcb1e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: manizales_cc_recomendados
+label: 'Manizales - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

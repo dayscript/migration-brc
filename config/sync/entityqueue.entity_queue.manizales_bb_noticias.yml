@@ -1,0 +1,19 @@
+uuid: 7bc4a10f-743a-4f92-8cca-f2b9f233a14f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: manizales_bb_noticias
+label: 'Manizales - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

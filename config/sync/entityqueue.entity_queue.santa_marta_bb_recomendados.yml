@@ -1,0 +1,25 @@
+uuid: de309a67-28d0-43cf-9409-3f313542f502
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_bb_recomendados
+label: 'Santa Marta - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

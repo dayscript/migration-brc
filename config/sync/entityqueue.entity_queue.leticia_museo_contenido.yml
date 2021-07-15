@@ -1,0 +1,24 @@
+uuid: 17fe5bd8-ef94-4496-ad18-71b52477d676
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_museo_contenido
+label: 'Leticia - Museo - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

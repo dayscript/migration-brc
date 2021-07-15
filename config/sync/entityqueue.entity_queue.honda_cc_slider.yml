@@ -1,0 +1,25 @@
+uuid: dd245f36-5413-4f85-ab24-9421addc9e6b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: honda_cc_slider
+label: 'Honda - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

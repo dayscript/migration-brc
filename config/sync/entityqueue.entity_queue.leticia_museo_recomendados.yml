@@ -1,0 +1,25 @@
+uuid: c7ec6684-d2fa-4fd5-bf7c-a9468a96c8a7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_museo_recomendados
+label: 'Leticia - Museo - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

@@ -1,0 +1,25 @@
+uuid: ce2a10a2-0386-4659-9738-469974013e31
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: tunja_bb_slider
+label: 'Tunja - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

@@ -1,0 +1,25 @@
+uuid: 82dcef2a-4d20-48e5-9112-effa5eb1db63
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_museo_arte_slider
+label: 'Bogota - Museo Arte - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

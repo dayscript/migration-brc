@@ -1,0 +1,19 @@
+uuid: 3c5bdf3d-823e-4203-85f7-49eec28b35c6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bucaramanga_bb_noticias
+label: 'Bucaramanga - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

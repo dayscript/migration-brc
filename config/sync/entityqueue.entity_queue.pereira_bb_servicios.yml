@@ -1,0 +1,19 @@
+uuid: db1e1283-e505-4e0d-8fd0-e1343285c797
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pereira_bb_servicios
+label: 'Pereira - Biblioteca - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

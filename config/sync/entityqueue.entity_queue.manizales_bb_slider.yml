@@ -1,0 +1,25 @@
+uuid: a6a991aa-90d9-441b-8519-63d3ed7609fc
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: manizales_bb_slider
+label: 'Manizales - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

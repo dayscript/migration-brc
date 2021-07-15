@@ -1,0 +1,19 @@
+uuid: 27ad20c7-8e43-4b5a-b5c0-e3e4e644de24
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_email
+    - paragraphs.paragraphs_type.representante_agrupacion
+id: paragraph.representante_agrupacion.field_email
+field_name: field_email
+entity_type: paragraph
+bundle: representante_agrupacion
+label: 'Correo electrónico de contacto'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

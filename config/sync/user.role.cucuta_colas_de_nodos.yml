@@ -1,0 +1,11 @@
+uuid: 2f75722f-a709-4c83-9119-4cebdc1110bf
+langcode: es
+status: true
+dependencies: {  }
+id: cucuta_colas_de_nodos
+label: 'Cúcuta - colas de nodos'
+weight: 21
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

@@ -1,0 +1,21 @@
+uuid: fdd1ac04-7afb-48d9-8274-b5b2515a6c67
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: biblioteca_virtual_hemeroteca
+label: 'Biblioteca Virtual - Hemeroteca'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - multimedia
+      - article
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 6

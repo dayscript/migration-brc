@@ -1,0 +1,19 @@
+uuid: 6dcf7940-e534-407d-a02f-e2417c2dd742
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: neiva_bb_noticias
+label: 'Neiva - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

@@ -1,0 +1,25 @@
+uuid: e1f9cc2c-efb3-401a-b1cb-1dc9f8ce6c21
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cali_museo_recomendados
+label: 'Cali - Museo - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

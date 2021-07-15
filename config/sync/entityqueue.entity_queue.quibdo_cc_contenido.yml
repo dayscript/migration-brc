@@ -1,0 +1,24 @@
+uuid: 70f8e935-a927-4f6e-aa34-a4225b45627d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: quibdo_cc_contenido
+label: 'Quibdó - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

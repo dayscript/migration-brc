@@ -1,0 +1,19 @@
+uuid: 50de8033-a99f-4cf1-8443-4cd9b7f80eeb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: buenaventura_cc_noticias
+label: 'Buenaventura - Centro Cultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

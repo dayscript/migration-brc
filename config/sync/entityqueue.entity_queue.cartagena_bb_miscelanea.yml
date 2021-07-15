@@ -1,0 +1,23 @@
+uuid: abed7f49-03b4-40e5-8f7c-e5eab45f041b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_bb_miscelanea
+label: 'Cartagena - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

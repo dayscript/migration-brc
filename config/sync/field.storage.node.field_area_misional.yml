@@ -1,0 +1,20 @@
+uuid: a1ea4d35-0181-4c4f-a33f-abe0f4c38f2c
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_area_misional
+field_name: field_area_misional
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

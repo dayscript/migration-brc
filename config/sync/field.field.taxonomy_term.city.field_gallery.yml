@@ -1,0 +1,33 @@
+uuid: 61069775-db2a-44e7-a5b6-31f6503cf6a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_gallery
+    - taxonomy.vocabulary.city
+  module:
+    - image
+id: taxonomy_term.city.field_gallery
+field_name: field_gallery
+entity_type: taxonomy_term
+bundle: city
+label: Galeria
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ubicacion/gallery
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  title_field: false
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,69 @@
+uuid: 36d2c279-e248-4598-be2a-e93170074665
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.price.field_metatag
+    - field.field.taxonomy_term.price.field_style
+    - taxonomy.vocabulary.price
+  module:
+    - metatag
+    - path
+    - text
+id: taxonomy_term.price.default
+targetEntityType: taxonomy_term
+bundle: price
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_metatag:
+    weight: 104
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_style:
+    weight: 1
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+hidden: {  }

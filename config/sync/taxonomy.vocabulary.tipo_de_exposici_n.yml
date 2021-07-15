@@ -1,0 +1,8 @@
+uuid: 9449e0cb-2fed-4154-956b-690e155f7da9
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de Exposición'
+vid: tipo_de_exposici_n
+description: ''
+weight: 0

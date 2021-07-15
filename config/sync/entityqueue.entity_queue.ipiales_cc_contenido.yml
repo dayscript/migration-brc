@@ -1,0 +1,24 @@
+uuid: e3772307-4f56-4ba2-ab49-554a4c5fa0d2
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ipiales_cc_contenido
+label: 'Ipiales - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

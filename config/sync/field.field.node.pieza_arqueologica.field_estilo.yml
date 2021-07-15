@@ -1,0 +1,26 @@
+uuid: 942e1954-1d8f-4baf-bc2f-ce7acf2ac33a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estilo
+    - node.type.pieza_arqueologica
+    - taxonomy.vocabulary.cmo_estilo
+id: node.pieza_arqueologica.field_estilo
+field_name: field_estilo
+entity_type: node
+bundle: pieza_arqueologica
+label: Estilo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      cmo_estilo: cmo_estilo
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,25 @@
+uuid: d25fe29e-eac8-40ac-97f6-acb7b0b9113f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_museo_slider
+label: 'Leticia - Museo - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

@@ -1,0 +1,27 @@
+uuid: a836279e-e4b7-41df-97e3-bda168f14af8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_fuente_de_la_imagen
+    - taxonomy.vocabulary.fuente_de_la_imagen
+  module:
+    - file
+id: file.image.field_fuente_de_la_imagen
+field_name: field_fuente_de_la_imagen
+entity_type: file
+bundle: image
+label: 'Fuente de la imagen'
+description: 'Cuál es el or+igen de la imágen. de dónde se obtuvo o qué archivo o publicación fue la fuente.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      fuente_de_la_imagen: fuente_de_la_imagen
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,25 @@
+uuid: a0614f6e-2627-4049-9ada-c7be53f8a882
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: girardot_cc_slider
+label: 'Girardot - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

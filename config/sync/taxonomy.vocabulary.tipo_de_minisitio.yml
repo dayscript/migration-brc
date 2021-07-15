@@ -1,0 +1,8 @@
+uuid: dcf00cd4-d9e5-4eb1-85f4-ffe158212269
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de minisitio'
+vid: tipo_de_minisitio
+description: 'Proyectos, programas o exposición'
+weight: 0

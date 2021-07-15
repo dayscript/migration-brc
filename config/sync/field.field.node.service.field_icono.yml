@@ -1,0 +1,38 @@
+uuid: 313a6d85-2b99-4585-82d0-b82ffbd36856
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icono
+    - node.type.service
+  module:
+    - image
+id: node.service.field_icono
+field_name: field_icono
+entity_type: node
+bundle: service
+label: Ícono
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: service/icon
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '100 kb'
+  max_resolution: 800x800
+  min_resolution: 50x50
+  alt_field: true
+  title_field: true
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

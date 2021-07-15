@@ -1,0 +1,10 @@
+uuid: d17189f7-d519-41b8-9b88-9cfa88b9646e
+langcode: es
+status: true
+dependencies: {  }
+id: content
+label: Content
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_content'
+behavior_plugins: {  }

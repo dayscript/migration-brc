@@ -1,0 +1,25 @@
+uuid: b3f99d45-41cd-455a-86b5-5b17c3d72eb8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: barranquilla_bb_slider
+label: 'Barranquilla - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

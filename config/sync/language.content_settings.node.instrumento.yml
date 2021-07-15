@@ -1,0 +1,11 @@
+uuid: e9d10e55-f0fa-4be0-a1a3-19da6268d335
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.instrumento
+id: node.instrumento
+target_entity_type_id: node
+target_bundle: instrumento
+default_langcode: site_default
+language_alterable: false

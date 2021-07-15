@@ -1,0 +1,38 @@
+uuid: 5032222f-19f8-4343-be35-206b1fde1335
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.estudios_solistas.field_instituci_n_musical
+    - field.field.paragraph.estudios_solistas.field_profesor_es_de_instrumento
+    - field.field.paragraph.estudios_solistas.field_si_no_est_matriculado_en_u
+    - paragraphs.paragraphs_type.estudios_solistas
+id: paragraph.estudios_solistas.default
+targetEntityType: paragraph
+bundle: estudios_solistas
+mode: default
+content:
+  field_instituci_n_musical:
+    label: above
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_profesor_es_de_instrumento:
+    label: above
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_si_no_est_matriculado_en_u:
+    label: above
+    weight: 1
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

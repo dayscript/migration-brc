@@ -1,0 +1,19 @@
+uuid: e065f95a-f75d-4f13-ab1d-342868fff725
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: popayan_cc_noticias
+label: 'Popayán - Centro Cultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

@@ -1,0 +1,19 @@
+uuid: b1be249b-594a-411d-af01-daef94b54ff6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_museo_arte_noticias
+label: 'Bogota - Museo Arte - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

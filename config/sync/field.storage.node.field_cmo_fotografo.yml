@@ -1,0 +1,20 @@
+uuid: 98a63799-7416-4ddf-a8b8-6350e6821c22
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_cmo_fotografo
+field_name: field_cmo_fotografo
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+uuid: 847131e6-b9ec-4b38-8649-2fe56e264485
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_area_misional
+    - node.type.minisitio
+    - taxonomy.vocabulary.area
+id: node.minisitio.field_area_misional
+field_name: field_area_misional
+entity_type: node
+bundle: minisitio
+label: 'Area misional'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    tid: '37202'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      area: area
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

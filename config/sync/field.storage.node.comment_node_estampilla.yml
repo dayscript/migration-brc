@@ -1,0 +1,20 @@
+uuid: 78a731e4-934e-4529-8461-e79aaa807a95
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_estampilla
+field_name: comment_node_estampilla
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_estampilla
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

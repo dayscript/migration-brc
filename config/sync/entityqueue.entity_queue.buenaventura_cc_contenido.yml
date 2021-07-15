@@ -1,0 +1,24 @@
+uuid: 4f4b2cac-dcfc-4d15-a54b-c29db435f68e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: buenaventura_cc_contenido
+label: 'Buenaventura - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

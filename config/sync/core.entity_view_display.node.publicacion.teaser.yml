@@ -1,0 +1,61 @@
+uuid: 0b96699d-84c4-418a-8fec-7b7ae5171c9a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.publicacion.body
+    - field.field.node.publicacion.comment_node_publicacion
+    - field.field.node.publicacion.field_ano_publicacion
+    - field.field.node.publicacion.field_ano_publicacion_
+    - field.field.node.publicacion.field_archivo_adjunto
+    - field.field.node.publicacion.field_archivo_adjunto_media
+    - field.field.node.publicacion.field_author
+    - field.field.node.publicacion.field_disponibilidad
+    - field.field.node.publicacion.field_editorial
+    - field.field.node.publicacion.field_image
+    - field.field.node.publicacion.field_image_media
+    - field.field.node.publicacion.field_isbn
+    - field.field.node.publicacion.field_numero_de_paginas
+    - field.field.node.publicacion.field_precio_de_venta
+    - field.field.node.publicacion.field_tipo_de_publicacion
+    - field.field.node.publicacion.field_url_publicacion
+    - node.type.publicacion
+  module:
+    - text
+    - user
+id: node.publicacion.teaser
+targetEntityType: node
+bundle: publicacion
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_publicacion: true
+  field_ano_publicacion: true
+  field_ano_publicacion_: true
+  field_archivo_adjunto: true
+  field_archivo_adjunto_media: true
+  field_author: true
+  field_disponibilidad: true
+  field_editorial: true
+  field_image: true
+  field_image_media: true
+  field_isbn: true
+  field_numero_de_paginas: true
+  field_precio_de_venta: true
+  field_tipo_de_publicacion: true
+  field_url_publicacion: true
+  langcode: true

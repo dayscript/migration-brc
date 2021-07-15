@@ -1,0 +1,24 @@
+uuid: 12269c13-e0b8-4361-b299-d5f89a76e6bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery_media
+    - media.type.image
+    - node.type.activity
+id: node.activity.field_gallery_media
+field_name: field_gallery_media
+entity_type: node
+bundle: activity
+label: 'Galería de imágenes Media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

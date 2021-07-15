@@ -1,0 +1,11 @@
+uuid: 0b1f8f63-e4cd-4470-9406-e2ac0893970f
+langcode: es
+status: true
+dependencies: {  }
+id: girardot_colas_de_nodos
+label: 'Girardot - colas de nodos'
+weight: 23
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

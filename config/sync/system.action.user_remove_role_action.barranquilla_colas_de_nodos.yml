@@ -1,0 +1,14 @@
+uuid: 409575c2-b5ce-46f1-b197-5371c769e398
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.barranquilla_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.barranquilla_colas_de_nodos
+label: 'Elimina el rol Barranquilla - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: barranquilla_colas_de_nodos

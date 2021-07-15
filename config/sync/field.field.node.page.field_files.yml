@@ -1,0 +1,27 @@
+uuid: 79472d95-4ffb-48a5-879c-f36db12bf2dc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.page
+  module:
+    - file
+id: node.page.field_files
+field_name: field_files
+entity_type: node
+bundle: page
+label: 'Archivo adjunto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: pagina_basica/file-attached
+  file_extensions: 'txt pdf doc xls docs docx jpg png xlsx jpeg'
+  max_filesize: 5MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

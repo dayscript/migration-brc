@@ -1,0 +1,19 @@
+uuid: f9a88939-f7b1-4140-8275-5bc8da84de4f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_ingreso_coleccion
+    - node.type.obra_de_arte
+id: node.obra_de_arte.field_fecha_ingreso_coleccion
+field_name: field_fecha_ingreso_coleccion
+entity_type: node
+bundle: obra_de_arte
+label: 'Fecha de ingreso a la colección'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

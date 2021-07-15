@@ -1,0 +1,43 @@
+uuid: 0b7dbde6-c515-41fb-912a-eebf8068a06c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.prop_href
+    - node.type.activity
+    - node.type.article
+    - node.type.book
+    - node.type.multimedia
+    - node.type.page
+    - node.type.plugin
+    - node.type.service
+id: node.plugin.prop_href
+field_name: prop_href
+entity_type: node
+bundle: plugin
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      activity: activity
+      article: article
+      librarie: librarie
+      collections: collections
+      book: book
+      multimedia: multimedia
+      museum: museum
+      page: page
+      service: service
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

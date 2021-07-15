@@ -1,0 +1,11 @@
+uuid: f9687bc2-5d6e-4f7d-a134-42eee9fbf3ff
+langcode: es
+status: true
+dependencies: {  }
+id: bogota_colas_de_nodos
+label: 'Bogotá - colas de nodos'
+weight: 16
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

@@ -1,0 +1,18 @@
+uuid: 2eabd846-f4eb-4fdb-9f55-6e448627bcc8
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'usuario autenticado'
+weight: 44
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'administer entityform types'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use text format filtered_html'
+  - 'view files'

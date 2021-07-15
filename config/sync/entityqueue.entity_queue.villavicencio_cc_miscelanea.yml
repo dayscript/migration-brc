@@ -1,0 +1,23 @@
+uuid: 75ed71d7-947b-46de-a630-ff9df5b35c3a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: villavicencio_cc_miscelanea
+label: 'Villavicencio - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

@@ -1,0 +1,25 @@
+uuid: 3dcf1c47-f645-472a-8834-af0dbf8dc299
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ipiales_cc_slider
+label: 'Ipiales - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

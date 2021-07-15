@@ -1,0 +1,19 @@
+uuid: eaad536a-dff5-4842-9668-57817cab1c94
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: san_andres_bb_servicios
+label: 'San Andres - Biblioteca - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

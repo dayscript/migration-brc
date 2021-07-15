@@ -1,0 +1,25 @@
+uuid: ffd1403c-f5c8-43ff-9ea4-f72223ef699c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bucaramanga_cc_slider
+label: 'Bucaramanga - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

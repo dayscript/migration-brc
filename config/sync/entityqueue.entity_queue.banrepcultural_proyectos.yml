@@ -1,0 +1,21 @@
+uuid: eab27c5f-8fbc-4aeb-a7f4-793b5e62db8e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: banrepcultural_proyectos
+label: 'Banrepcultural - Proyectos'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - multimedia
+      - article
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 6

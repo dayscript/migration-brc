@@ -1,0 +1,23 @@
+uuid: 45bb371c-5040-4457-bd11-54d23c71a8dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_available_menu
+    - node.type.plugin
+id: node.plugin.field_available_menu
+field_name: field_available_menu
+entity_type: node
+bundle: plugin
+label: '¿Disponible como menú?'
+description: 'Marque esta casilla para mostrar este contenido en los menús'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Si
+  off_label: 'No'
+field_type: boolean

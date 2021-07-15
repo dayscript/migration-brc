@@ -1,0 +1,11 @@
+uuid: 132839dd-a4f6-46c2-8a25-6c78415780b2
+langcode: es
+status: true
+dependencies: {  }
+id: florencia_colas_de_nodos
+label: 'Florencia - colas de nodos'
+weight: 22
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

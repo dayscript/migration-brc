@@ -1,0 +1,19 @@
+uuid: ad15ad69-dbb5-471d-a014-97b2a9ae6f32
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: valledupar_cc_servicios
+label: 'Valledupar - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

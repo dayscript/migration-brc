@@ -1,0 +1,19 @@
+uuid: e6cac28e-ef3a-4aea-9698-3444d574e349
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_form
+    - node.type.activity
+id: node.activity.field_title_form
+field_name: field_title_form
+entity_type: node
+bundle: activity
+label: 'Título de Formulario'
+description: 'Título de formulario para mostrar en la actividad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

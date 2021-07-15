@@ -1,0 +1,25 @@
+uuid: 7e1ee387-aa5c-4621-a644-987a1cdfc300
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: barranquilla_cc_slider
+label: 'Barranquilla - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

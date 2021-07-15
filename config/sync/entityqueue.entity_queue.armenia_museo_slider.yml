@@ -1,0 +1,25 @@
+uuid: 68d807e5-1739-4f10-8522-70c6383ba0a1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_museo_slider
+label: 'Armenia - Museo - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

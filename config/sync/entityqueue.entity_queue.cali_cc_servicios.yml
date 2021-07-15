@@ -1,0 +1,19 @@
+uuid: b533d1bb-8765-42d7-bf5b-cc8d06cc7c4f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cali_cc_servicios
+label: 'Cali - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

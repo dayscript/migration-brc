@@ -1,0 +1,19 @@
+uuid: 151c048c-693c-47fb-b7af-217f658d66fe
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ipiales_cc_servicios
+label: 'Ipiales - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

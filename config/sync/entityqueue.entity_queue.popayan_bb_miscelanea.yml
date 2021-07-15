@@ -1,0 +1,23 @@
+uuid: 652d6445-fcb8-4bc6-8f3b-e56dfe915ba4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: popayan_bb_miscelanea
+label: 'Popayán - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

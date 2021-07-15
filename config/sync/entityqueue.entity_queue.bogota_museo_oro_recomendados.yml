@@ -1,0 +1,25 @@
+uuid: a1a29dde-7655-4d56-be92-39c6f345c92e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_museo_oro_recomendados
+label: 'Bogota - Museo Oro - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

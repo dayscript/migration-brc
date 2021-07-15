@@ -1,0 +1,25 @@
+uuid: 536995b0-a817-46f2-8d06-378ba94b6f71
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: banrepcultural_recomendados
+label: 'Banrepcultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

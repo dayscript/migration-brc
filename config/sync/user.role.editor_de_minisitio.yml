@@ -1,0 +1,9 @@
+uuid: a7673e7b-5cc7-413e-8617-f8c6fc8e541e
+langcode: es
+status: true
+dependencies: {  }
+id: editor_de_minisitio
+label: 'Editor de minisitio'
+weight: 5
+is_admin: null
+permissions: {  }

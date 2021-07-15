@@ -1,0 +1,19 @@
+uuid: 963293c0-bc43-406d-b73b-2785460a30f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_curador
+    - node.type.minisitio
+id: node.minisitio.field_curador
+field_name: field_curador
+entity_type: node
+bundle: minisitio
+label: Curador
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

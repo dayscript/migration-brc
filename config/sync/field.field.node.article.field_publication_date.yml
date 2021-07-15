@@ -1,0 +1,21 @@
+uuid: 7e6b41d6-9a33-405a-a1dc-42c8170511ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.article
+  module:
+    - datetime
+id: node.article.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: article
+label: 'Fecha de la noticia'
+description: 'Ingrese acá la fecha de la noticia en caso de que no coincida con la fecha de creación del nodo. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

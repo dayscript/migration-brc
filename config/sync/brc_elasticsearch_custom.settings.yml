@@ -1,0 +1,5553 @@
+indices:
+  1:
+    ip: localhost
+    port: '9200'
+    name: banrepcultural
+    index: banrepcultural
+    doc: node
+    oaipmh: 0
+  2:
+    ip: localhost
+    port: '9200'
+    name: enciclopedia
+    index: enciclopedia_banrepcultural_content_first
+    doc: page
+    oaipmh: 0
+  3:
+    ip: localhost
+    port: '9200'
+    name: 'babel ojs'
+    index: babelojs
+    doc: node
+    oaipmh: 1
+categories:
+  node:
+    mapping:
+      activity:
+        type: 1
+        name: Actividad
+        score: '4'
+      article:
+        type: 1
+        name: Noticia
+        score: '4'
+      book:
+        type: 1
+        name: 'Revista Credencial Historia'
+        score: '4'
+      coleccion_bibliografica:
+        type: 1
+        name: 'Colección Bibliográfica'
+        score: '4'
+      date:
+        type: 0
+        name: ''
+        score: ''
+      estampilla:
+        type: 1
+        name: 'Colección Filatélica'
+        score: '4'
+      instrumento:
+        type: 1
+        name: 'Colección de Instrumentos'
+        score: '4'
+      minisitio:
+        type: 1
+        name: Minisitio
+        score: '4'
+      multimedia:
+        type: 1
+        name: Multimedia
+        score: '4'
+      obra_de_arte:
+        type: 1
+        name: 'Colección de Arte'
+        score: '4'
+      page:
+        type: 1
+        name: Página
+        score: '4'
+      pieza_arqueologica:
+        type: 1
+        name: 'Colección Arqueológica'
+        score: '4'
+      pieza_coleccion_monedas_billetes:
+        type: 1
+        name: 'Colección de Billetes y monedas'
+        score: '4'
+      plugin:
+        type: 0
+        name: ''
+        score: ''
+      publicacion:
+        type: 1
+        name: Publicación
+        score: '4'
+      service:
+        type: 1
+        name: Servicio
+        score: '4'
+    endpoint:
+      1:
+        indice: banrepcultural
+        name: banrepcultural.org
+        endpoint: banrepcultural.org
+  taxonomy:
+    mapping:
+      area:
+        type: 0
+        name: 'Área misional'
+        score: ''
+      autor:
+        type: 0
+        name: 'Autor de artículo Credencial Historia'
+        score: ''
+      autor_de_articulo:
+        type: 0
+        name: 'Autor de noticia'
+        score: ''
+      autor_de_imagen:
+        type: 0
+        name: 'Autor de imagen'
+        score: ''
+      book_collection:
+        type: 0
+        name: 'Temas de Credencial historia'
+        score: ''
+      book_type:
+        type: 0
+        name: 'Tipo de libro'
+        score: ''
+      ca_artista:
+        type: 0
+        name: 'CA - Artista'
+        score: ''
+      ca_denominacion:
+        type: 0
+        name: 'CA - Denominación'
+        score: ''
+      ca_serie:
+        type: 0
+        name: 'CA - Serie'
+        score: ''
+      ca_siglo:
+        type: 0
+        name: 'CA - Siglo'
+        score: ''
+      ca_tecnica:
+        type: 0
+        name: 'CA - Técnica'
+        score: ''
+      caracter_exposicion:
+        type: 0
+        name: Caracter-exposicion
+        score: ''
+      categoria_de_noticia:
+        type: 0
+        name: 'Categoria de noticia'
+        score: ''
+      cbm_emisor:
+        type: 0
+        name: 'CBM Emisor'
+        score: ''
+      cbm_tipo_de_pieza:
+        type: 0
+        name: 'CBM Tipo de pieza'
+        score: ''
+      cf_autor:
+        type: 0
+        name: 'CF - País'
+        score: ''
+      cf_tipo:
+        type: 0
+        name: 'CF Tipo'
+        score: ''
+      ci_tipo_de_instrumento:
+        type: 0
+        name: 'CI - Tipo de instrumento'
+        score: ''
+      city:
+        type: 1
+        name: 'Centro cultural, museo, biblioteca'
+        score: '4'
+      ciudades:
+        type: 0
+        name: Ciudades
+        score: ''
+      cmo_estilo:
+        type: 0
+        name: CMO-Estilo
+        score: ''
+      cmo_forma:
+        type: 0
+        name: CMO-Forma
+        score: ''
+      cmo_fotografos:
+        type: 0
+        name: CMO-Fotógrafos
+        score: ''
+      cmo_funcion:
+        type: 0
+        name: CMO-Funcion
+        score: ''
+      cmo_material:
+        type: 0
+        name: CMO-Material
+        score: ''
+      cmo_periodo:
+        type: 0
+        name: CMO-Periodo
+        score: ''
+      cmo_region:
+        type: 0
+        name: CMO-Región
+        score: ''
+      cmo_representaci_n:
+        type: 0
+        name: CMO-Representación
+        score: ''
+      cmo_t_cnica:
+        type: 0
+        name: CMO-Técnica
+        score: ''
+      derechos_de_uso:
+        type: 0
+        name: 'Derechos de uso'
+        score: ''
+      disponibilidad:
+        type: 0
+        name: Disponibilidad
+        score: ''
+      editorial:
+        type: 0
+        name: Editorial
+        score: ''
+      fuente_de_la_imagen:
+        type: 0
+        name: 'Fuente de la imagen'
+        score: ''
+      items_de_submenu:
+        type: 0
+        name: 'Items de submenu'
+        score: ''
+      price:
+        type: 0
+        name: Tarifa
+        score: ''
+      programa:
+        type: 0
+        name: Programa
+        score: ''
+      publico_objetivo:
+        type: 0
+        name: 'Público Objetivo'
+        score: ''
+      sufijo_valor:
+        type: 0
+        name: 'Sufijo valor'
+        score: ''
+      tags:
+        type: 0
+        name: 'Palabras clave'
+        score: ''
+      temas_de_coleccion_bibliografi:
+        type: 0
+        name: 'Temas de colección bibliográfica'
+        score: ''
+      tipe_service:
+        type: 0
+        name: 'Tipo de servicio'
+        score: ''
+      tipo_de_espacio:
+        type: 0
+        name: 'Tipo de espacio'
+        score: ''
+      tipo_de_exposici_n:
+        type: 0
+        name: 'Tipo de Exposición'
+        score: ''
+      tipo_de_minisitio:
+        type: 0
+        name: 'Tipo de minisitio'
+        score: ''
+      tipo_de_multimedia:
+        type: 0
+        name: 'Tipo de multimedia'
+        score: ''
+      tipo_de_pagina_basica:
+        type: 0
+        name: 'Tipo de pagina basica'
+        score: ''
+      tipo_de_publicacion:
+        type: 0
+        name: 'Tipo de publicación'
+        score: ''
+      tipos_documentales:
+        type: 0
+        name: 'Tipos documentales'
+        score: ''
+      type_activity:
+        type: 0
+        name: 'Tipo de actividad'
+        score: ''
+    endpoint:
+      1:
+        indice: banrepcultural
+        name: banrepcultural.org
+        endpoint: banrepcultural.org
+  mediawiki:
+    mapping:
+      enciclopedia:
+        type: 1
+        name: Enciclopedia
+        score: '3'
+    endpoint:
+      1:
+        indice: enciclopedia_banrepcultural_content_first
+        name: Enciclopedia
+        endpoint: 'https://enciclopedia.banrepcultural.org'
+  babel:
+    mapping:
+      p17054coll24:
+        type: 1
+        name: 'Acción Cultural Popular - Radio Sutatenza'
+        score: '2'
+      p17054coll28:
+        type: 1
+        name: 'Asamblea Nacional Constituyente - 1991'
+        score: '3'
+      p17054coll21:
+        type: 1
+        name: 'Biodiversidad región andina central de Colombia'
+        score: '3'
+      p17054coll8:
+        type: 1
+        name: 'Biblioteca Básica de los Pueblos Indígenas de Colombia'
+        score: '2'
+      p17054coll7:
+        type: 1
+        name: 'Biblioteca de Literatura Afrocolombiana'
+        score: '2'
+      p17054coll9:
+        type: 1
+        name: 'Biblioteca Familiar Colombiana'
+        score: '2'
+      p17054coll6:
+        type: 1
+        name: 'Biblioteca Popular de Cultura Colombiana'
+        score: '2'
+      p17054coll27:
+        type: 0
+        name: 'Bibliografías de pesca BID-CMAR'
+        score: ''
+      p17054coll13:
+        type: 1
+        name: 'Cartografía histórica'
+        score: '3'
+      cinep:
+        type: 1
+        name: 'Centro de Investigación y Educación Popular - Programa Por la Paz (Cinep - PPP)'
+        score: '2'
+      p17054coll11:
+        type: 1
+        name: 'Centro de Memorias Orales'
+        score: '3'
+      p17054coll4:
+        type: 1
+        name: 'Centro de Memoria Paz y Reconciliación'
+        score: '2'
+      p17054coll2:
+        type: 1
+        name: 'Centro Nacional de Memoria Histórica'
+        score: '2'
+      hidalgos:
+        type: 1
+        name: 'Colección de láminas cigarrillos Hidalgos'
+        score: '3'
+      p17054coll17:
+        type: 1
+        name: 'Colección Patrimonio Arquitectónico de Manizales'
+        score: '3'
+      colombia_comp:
+        type: 1
+        name: 'Colombia se compone'
+        score: '2'
+      p17054coll1:
+        type: 1
+        name: 'Comisión Colombiana del Océano'
+        score: '2'
+      p17054coll31:
+        type: 1
+        name: DeJusticia
+        score: '2'
+      p17054coll5:
+        type: 1
+        name: 'Fundación de investigaciones arqueológicas nacionales - Monografías'
+        score: '2'
+      p17054coll14:
+        type: 1
+        name: 'Fundación Ética Mundial'
+        score: '1'
+      p17054coll29:
+        type: 1
+        name: 'Guías de estudio - BanRepcultural'
+        score: '3'
+      p17054coll19:
+        type: 1
+        name: 'Colección fotográfica - Gumersindo Cuéllar'
+        score: '3'
+      p17054coll26:
+        type: 1
+        name: 'Hemeroteca Digital Histórica'
+        score: '2'
+      p17054coll30:
+        type: 1
+        name: 'Histórico de conciertos del Banco de la República - OPUS'
+        score: '3'
+      p17054coll16:
+        type: 1
+        name: 'Impresiones de un viaje a América 1870-1884'
+        score: '3'
+      p17054coll15:
+        type: 1
+        name: 'Leer el Caribe'
+        score: '3'
+      p17054coll3:
+        type: 1
+        name: 'Libro al viento'
+        score: '2'
+      p17054coll10:
+        type: 1
+        name: 'Obras generales'
+        score: '3'
+      p17054coll12:
+        type: 1
+        name: 'Observatorio de discriminación racial'
+        score: '2'
+      seaflower:
+        type: 1
+        name: 'Peces comunes en las zonas coralinas del Seaflower'
+        score: '3'
+      p17054coll25:
+        type: 1
+        name: 'Podcast y otras producciones de audio - BanrepCultural'
+        score: '2'
+      p17054coll20:
+        type: 1
+        name: 'Proyectos digitales - Biblioteca Virtual'
+        score: '3'
+      p17054coll18:
+        type: 1
+        name: 'Publicaciones - Banco de la República'
+        score: '3'
+      p17054coll22:
+        type: 1
+        name: 'Servicio Nacional de Aprendizaje - Sena'
+        score: '2'
+      p17054coll23:
+        type: 1
+        name: 'Tesis y artículos académicos'
+        score: '2'
+      hernan_diaz:
+        type: 0
+        name: 'Colección fotográfica - Hernán Díaz'
+        score: ''
+    endpoint:
+      1:
+        indice: babelojs
+        name: Babel
+        endpoint: 'http://babel.banrepcultural.org/oai/oai.php'
+  ojs:
+    mapping:
+      banrep:
+        type: 0
+        name: 'Revista del Banco de la República'
+        score: ''
+      banrep_ned:
+        type: 1
+        name: 'Nota editorial'
+        score: '3'
+      banrep_myc:
+        type: 1
+        name: 'Moneda y cambios'
+        score: '3'
+      banrep_ec:
+        type: 1
+        name: 'Economía cafetera'
+        score: '3'
+      banrep_pac:
+        type: 1
+        name: 'Patrimonio cultural'
+        score: '3'
+      banrep_pec:
+        type: 1
+        name: 'Política económica'
+        score: '3'
+      banrep_segb:
+        type: 1
+        name: 'Seguridad bancaria'
+        score: '3'
+      banrep_em:
+        type: 1
+        name: 'Economía monetaria'
+        score: '3'
+      banrep_en:
+        type: 1
+        name: 'Economía nacional'
+        score: '3'
+      banrep_pmo:
+        type: 1
+        name: 'Política monetaria'
+        score: '3'
+      banrep_pin:
+        type: 1
+        name: 'Política internacional'
+        score: '3'
+      banrep_ct:
+        type: 1
+        name: 'Ciencia y tecnología'
+        score: '3'
+      banrep_sc:
+        type: 1
+        name: 'Sección cultural'
+        score: '3'
+      banrep_ecor:
+        type: 1
+        name: 'Economía regional'
+        score: '3'
+      banrep_ecoin:
+        type: 1
+        name: 'Economía internacional'
+        score: '3'
+      banrep_art:
+        type: 1
+        name: Artículos
+        score: '3'
+      banrep_act:
+        type: 1
+        name: Actualidad
+        score: '3'
+      banrep_tejur:
+        type: 1
+        name: 'Temas jurídicos'
+        score: '3'
+      banrep_leg:
+        type: 1
+        name: Legislación
+        score: '3'
+      banrep_inf:
+        type: 1
+        name: 'Informes al Congreso de la República'
+        score: '3'
+      banrep_est:
+        type: 1
+        name: Estadísticas
+        score: '3'
+      banrep_ef:
+        type: 1
+        name: 'Estados financieros del Banco de la República'
+        score: '3'
+      driver:
+        type: 0
+        name: ''
+        score: ''
+      boletin_cultural:
+        type: 0
+        name: 'Boletín Cultural y Bibliográfico'
+        score: ''
+      boletin_cultural_pre:
+        type: 1
+        name: Preliminares
+        score: '3'
+      boletin_cultural_poe:
+        type: 1
+        name: Poemas
+        score: '3'
+      boletin_cultural_art:
+        type: 1
+        name: Artículos
+        score: '3'
+      boletin_cultural_rsn:
+        type: 1
+        name: Reseñas
+        score: '3'
+      boletin_cultural_var:
+        type: 1
+        name: Varia
+        score: '3'
+      boletin_cultural_rrc:
+        type: 1
+        name: 'Rescates, réplicas y contrarréplicas'
+        score: '3'
+      boletin_cultural_blaa:
+        type: 1
+        name: 'De la Blaa'
+        score: '3'
+      boletin_cultural_otros:
+        type: 1
+        name: 'Otras secciones'
+        score: '3'
+      boletin_cultural_ext:
+        type: 1
+        name: 'Extras web'
+        score: '3'
+      boletin_cultural_ilus:
+        type: 1
+        name: Ilustraciones
+        score: '3'
+      boletin_cultural_arq:
+        type: 1
+        name: Arquitectura
+        score: '3'
+      boletin_cultural_taa:
+        type: 1
+        name: 'Tiros al aire'
+        score: '3'
+      emisor:
+        type: 0
+        name: 'Reportes del Emisor'
+        score: ''
+      emisor_art:
+        type: 1
+        name: Artículos
+        score: '3'
+      ec_fundedresources:
+        type: 0
+        name: EC_fundedresources
+        score: ''
+      fian:
+        type: 0
+        name: 'Boletín de Arqueología de la Fian'
+        score: ''
+      fian_art:
+        type: 1
+        name: Artículos
+        score: '3'
+      reporte_mercado_laboral:
+        type: 0
+        name: 'Reportes del Mercado Laboral'
+        score: ''
+      reporte_mercado_laboral_art:
+        type: 1
+        name: Artículos
+        score: '3'
+      bmo:
+        type: 0
+        name: 'Boletín Museo del Oro'
+        score: ''
+      bmo_car:
+        type: 1
+        name: Carátula
+        score: '3'
+      bmo_art:
+        type: 1
+        name: Artículos
+        score: '3'
+      bmo_pieza:
+        type: 1
+        name: 'Pieza del Museo'
+        score: '3'
+      bmo_not:
+        type: 1
+        name: 'Noticias del Museo'
+        score: '3'
+      bmo_inv:
+        type: 1
+        name: 'Avances de investigación'
+        score: '3'
+      bmo_rsn:
+        type: 1
+        name: Reseñas
+        score: '3'
+      bmo_om:
+        type: 1
+        name: 'Otras miradas'
+        score: '3'
+      bmo_nb:
+        type: 1
+        name: 'Noticias del Museo'
+        score: '3'
+    endpoint:
+      1:
+        indice: babelojs
+        name: 'Revista del Banco de la República'
+        endpoint: 'https://publicaciones.banrepcultural.org/index.php/banrep/oai'
+      2:
+        indice: babelojs
+        name: 'Boletín cultural y bibliográfico'
+        endpoint: 'https://publicaciones.banrepcultural.org/index.php/boletin_cultural/oai'
+      3:
+        indice: babelojs
+        name: 'Reportes del emisor'
+        endpoint: 'https://publicaciones.banrepcultural.org/index.php/emisor/oai'
+      4:
+        indice: babelojs
+        name: 'Boletín arqueología de la FIAN'
+        endpoint: 'https://publicaciones.banrepcultural.org/index.php/fian/oai'
+      5:
+        indice: babelojs
+        name: 'Reportes del mercado laboral'
+        endpoint: 'https://publicaciones.banrepcultural.org/index.php/reporte-mercado-laboral/oai'
+      6:
+        indice: babelojs
+        name: 'Boletín del Museo del oro'
+        endpoint: 'https://publicaciones.banrepcultural.org/index.php/bmo/oai'
+  makemake:
+    mapping:
+      makemake:
+        type: 1
+        name: 'Make make - Libros infantiles'
+        score: '3'
+    endpoint:
+      1:
+        indice: banrepcultural
+        name: 'Make make - Libros infantiles'
+        endpoint: ''
+seekers:
+  general: 'Buscador general'
+  general_pages: 'Exposiciones y proyectos'
+  general_collections: 'Colecciones digitales'
+  general_activity: Actividades
+  general_article: Noticias
+  general_multimedia: Videos
+  general_others: 'Otros contenidos'
+  general_biblioteca_virtual: 'Biblioteca virtual'
+  general_mediawiki: Enciclopedia
+  general_makemake: 'Make make'
+  node_category_activity: Actividad
+  node_category_article: Noticia
+  node_category_book: 'Revista Credencial Historia'
+  node_category_coleccion_bibliografica: 'Colección Bibliográfica'
+  node_category_estampilla: 'Colección Filatélica'
+  node_category_instrumento: 'Colección de Instrumentos'
+  node_category_minisitio: Minisitio
+  node_category_multimedia: Multimedia
+  node_category_obra_de_arte: 'Colección de Arte'
+  node_category_page: Página
+  node_category_pieza_arqueologica: 'Colección Arqueológica'
+  node_category_pieza_coleccion_monedas_billetes: 'Colección de Billetes y monedas'
+  node_category_publicacion: Publicación
+  node_category_service: Servicio
+  taxonomy_category_city: 'Centro cultural, museo, biblioteca'
+  mediawiki_category_mediawiki: Enciclopedia
+  babel_category_babel: Babel
+  ojs_category_ojs: 'Revista del Banco de la República'
+  makemake_category_makemake: 'Make make - Libros infantiles'
+sconfig:
+  general:
+    node:
+      type:
+        activity: activity
+        article: article
+        book: book
+        coleccion_bibliografica: coleccion_bibliografica
+        estampilla: estampilla
+        instrumento: instrumento
+        minisitio: minisitio
+        multimedia: multimedia
+        obra_de_arte: obra_de_arte
+        page: page
+        pieza_arqueologica: pieza_arqueologica
+        pieza_coleccion_monedas_billetes: pieza_coleccion_monedas_billetes
+        publicacion: publicacion
+        service: service
+      container:
+        abstract:
+          field: 1
+        area:
+          field: 0
+        author:
+          field: 1
+        available:
+          field: 0
+        body:
+          field: 1
+        book:
+          field: 0
+        category:
+          field: 1
+        changed:
+          field: 0
+        city:
+          field: 1
+        city_place:
+          field: 1
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 1
+        subtitle:
+          field: 1
+        summary:
+          field: 1
+        tags:
+          field: 1
+        title:
+          field: 1
+        technique:
+          field: 0
+        type:
+          field: 0
+    taxonomy:
+      type:
+        city: city
+      container:
+        body:
+          field: 1
+        category:
+          field: 1
+        nid:
+          field: 0
+        path:
+          field: 0
+        summary:
+          field: 1
+        status:
+          field: 0
+        title:
+          field: 1
+        type:
+          field: 0
+    mediawiki:
+      type:
+        enciclopedia: enciclopedia
+      container:
+        text:
+          field: 1
+        title:
+          field: 1
+    babel:
+      type:
+        p17054coll24: p17054coll24
+        p17054coll28: p17054coll28
+        p17054coll21: p17054coll21
+        p17054coll8: p17054coll8
+        p17054coll7: p17054coll7
+        p17054coll9: p17054coll9
+        p17054coll6: p17054coll6
+        p17054coll13: p17054coll13
+        cinep: cinep
+        p17054coll11: p17054coll11
+        p17054coll4: p17054coll4
+        p17054coll2: p17054coll2
+        hidalgos: hidalgos
+        p17054coll17: p17054coll17
+        colombia_comp: colombia_comp
+        p17054coll1: p17054coll1
+        p17054coll31: p17054coll31
+        p17054coll5: p17054coll5
+        p17054coll14: p17054coll14
+        p17054coll29: p17054coll29
+        p17054coll19: p17054coll19
+        p17054coll26: p17054coll26
+        p17054coll30: p17054coll30
+        p17054coll16: p17054coll16
+        p17054coll15: p17054coll15
+        p17054coll3: p17054coll3
+        p17054coll10: p17054coll10
+        p17054coll12: p17054coll12
+        seaflower: seaflower
+        p17054coll25: p17054coll25
+        p17054coll20: p17054coll20
+        p17054coll18: p17054coll18
+        p17054coll22: p17054coll22
+        p17054coll23: p17054coll23
+      container:
+        title:
+          field: 1
+        author:
+          field: 1
+        tags:
+          field: 1
+        body:
+          field: 1
+        date:
+          field: 0
+        category:
+          field: 1
+        subcategory:
+          field: 1
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 1
+        created:
+          field: 0
+        changed:
+          field: 0
+    ojs:
+      type:
+        banrep_ned: banrep_ned
+        banrep_myc: banrep_myc
+        banrep_ec: banrep_ec
+        banrep_pac: banrep_pac
+        banrep_pec: banrep_pec
+        banrep_segb: banrep_segb
+        banrep_em: banrep_em
+        banrep_en: banrep_en
+        banrep_pmo: banrep_pmo
+        banrep_pin: banrep_pin
+        banrep_ct: banrep_ct
+        banrep_sc: banrep_sc
+        banrep_ecor: banrep_ecor
+        banrep_ecoin: banrep_ecoin
+        banrep_art: banrep_art
+        banrep_act: banrep_act
+        banrep_tejur: banrep_tejur
+        banrep_leg: banrep_leg
+        banrep_inf: banrep_inf
+        banrep_est: banrep_est
+        banrep_ef: banrep_ef
+        boletin_cultural_pre: boletin_cultural_pre
+        boletin_cultural_poe: boletin_cultural_poe
+        boletin_cultural_art: boletin_cultural_art
+        boletin_cultural_rsn: boletin_cultural_rsn
+        boletin_cultural_var: boletin_cultural_var
+        boletin_cultural_rrc: boletin_cultural_rrc
+        boletin_cultural_blaa: boletin_cultural_blaa
+        boletin_cultural_otros: boletin_cultural_otros
+        boletin_cultural_ext: boletin_cultural_ext
+        boletin_cultural_ilus: boletin_cultural_ilus
+        boletin_cultural_arq: boletin_cultural_arq
+        boletin_cultural_taa: boletin_cultural_taa
+        emisor_art: emisor_art
+        fian_art: fian_art
+        reporte_mercado_laboral_art: reporte_mercado_laboral_art
+        bmo_car: bmo_car
+        bmo_art: bmo_art
+        bmo_pieza: bmo_pieza
+        bmo_not: bmo_not
+        bmo_inv: bmo_inv
+        bmo_rsn: bmo_rsn
+        bmo_om: bmo_om
+        bmo_nb: bmo_nb
+      container:
+        title:
+          field: 1
+        author:
+          field: 1
+        tags:
+          field: 1
+        body:
+          field: 1
+        date:
+          field: 0
+        category:
+          field: 1
+        subcategory:
+          field: 1
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 1
+        created:
+          field: 0
+        changed:
+          field: 0
+    makemake:
+      type:
+        makemake: makemake
+      container:
+        title:
+          field: 1
+        author:
+          field: 1
+        tags:
+          field: 1
+        body:
+          field: 1
+        date:
+          field: 0
+        category:
+          field: 1
+        subcategory:
+          field: 1
+        nid:
+          field: 0
+        path:
+          field: 0
+        image:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 1
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: '0'
+      size: '24'
+      image_style: ''
+  general_pages:
+    node:
+      type:
+        minisitio: minisitio
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 1
+        area:
+          field: 0
+        author:
+          field: 1
+        available:
+          field: 0
+        body:
+          field: 1
+        book:
+          field: 0
+        category:
+          field: 1
+        changed:
+          field: 0
+        city:
+          field: 1
+        city_place:
+          field: 1
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 1
+        subtitle:
+          field: 1
+        summary:
+          field: 1
+        tags:
+          field: 1
+        title:
+          field: 1
+        technique:
+          field: 0
+        type:
+          field: 0
+    taxonomy:
+      type:
+        city: 0
+      container:
+        body:
+          field: 0
+        category:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        summary:
+          field: 0
+        status:
+          field: 0
+        title:
+          field: 0
+        type:
+          field: 0
+    mediawiki:
+      type:
+        enciclopedia: 0
+      container:
+        text:
+          field: 0
+        title:
+          field: 0
+    babel:
+      type:
+        p17054coll24: 0
+        p17054coll28: 0
+        p17054coll21: 0
+        p17054coll8: 0
+        p17054coll7: 0
+        p17054coll9: 0
+        p17054coll6: 0
+        p17054coll13: 0
+        cinep: 0
+        p17054coll11: 0
+        p17054coll4: 0
+        p17054coll2: 0
+        hidalgos: 0
+        p17054coll17: 0
+        colombia_comp: 0
+        p17054coll1: 0
+        p17054coll31: 0
+        p17054coll5: 0
+        p17054coll14: 0
+        p17054coll29: 0
+        p17054coll19: 0
+        p17054coll26: 0
+        p17054coll30: 0
+        p17054coll16: 0
+        p17054coll15: 0
+        p17054coll3: 0
+        p17054coll10: 0
+        p17054coll12: 0
+        seaflower: 0
+        p17054coll25: 0
+        p17054coll20: 0
+        p17054coll18: 0
+        p17054coll22: 0
+        p17054coll23: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    ojs:
+      type:
+        banrep_ned: 0
+        banrep_myc: 0
+        banrep_ec: 0
+        banrep_pac: 0
+        banrep_pec: 0
+        banrep_segb: 0
+        banrep_em: 0
+        banrep_en: 0
+        banrep_pmo: 0
+        banrep_pin: 0
+        banrep_ct: 0
+        banrep_sc: 0
+        banrep_ecor: 0
+        banrep_ecoin: 0
+        banrep_art: 0
+        banrep_act: 0
+        banrep_tejur: 0
+        banrep_leg: 0
+        banrep_inf: 0
+        banrep_est: 0
+        banrep_ef: 0
+        boletin_cultural_pre: 0
+        boletin_cultural_poe: 0
+        boletin_cultural_art: 0
+        boletin_cultural_rsn: 0
+        boletin_cultural_var: 0
+        boletin_cultural_rrc: 0
+        boletin_cultural_blaa: 0
+        boletin_cultural_otros: 0
+        boletin_cultural_ext: 0
+        boletin_cultural_ilus: 0
+        boletin_cultural_arq: 0
+        boletin_cultural_taa: 0
+        emisor_art: 0
+        fian_art: 0
+        reporte_mercado_laboral_art: 0
+        bmo_car: 0
+        bmo_art: 0
+        bmo_pieza: 0
+        bmo_not: 0
+        bmo_inv: 0
+        bmo_rsn: 0
+        bmo_om: 0
+        bmo_nb: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    makemake:
+      type:
+        makemake: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        image:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: '0'
+      size: '24'
+      image_style: ''
+  general_collections:
+    node:
+      type:
+        book: book
+        coleccion_bibliografica: coleccion_bibliografica
+        estampilla: estampilla
+        instrumento: instrumento
+        obra_de_arte: obra_de_arte
+        pieza_arqueologica: pieza_arqueologica
+        pieza_coleccion_monedas_billetes: pieza_coleccion_monedas_billetes
+        activity: 0
+        article: 0
+        minisitio: 0
+        multimedia: 0
+        page: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 1
+        available:
+          field: 0
+        body:
+          field: 1
+        book:
+          field: 0
+        category:
+          field: 1
+        changed:
+          field: 0
+        city:
+          field: 1
+        city_place:
+          field: 1
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 1
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 1
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 1
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 1
+        subtitle:
+          field: 1
+        summary:
+          field: 1
+        tags:
+          field: 1
+        title:
+          field: 1
+        technique:
+          field: 1
+        type:
+          field: 0
+    taxonomy:
+      type:
+        city: 0
+      container:
+        body:
+          field: 0
+        category:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        summary:
+          field: 0
+        status:
+          field: 0
+        title:
+          field: 0
+        type:
+          field: 0
+    mediawiki:
+      type:
+        enciclopedia: enciclopedia
+      container:
+        text:
+          field: 1
+        title:
+          field: 1
+    babel:
+      type:
+        p17054coll24: p17054coll24
+        p17054coll28: p17054coll28
+        p17054coll21: p17054coll21
+        p17054coll8: p17054coll8
+        p17054coll7: p17054coll7
+        p17054coll9: p17054coll9
+        p17054coll6: p17054coll6
+        p17054coll13: p17054coll13
+        cinep: cinep
+        p17054coll11: p17054coll11
+        p17054coll4: p17054coll4
+        p17054coll2: p17054coll2
+        hidalgos: hidalgos
+        p17054coll17: p17054coll17
+        colombia_comp: colombia_comp
+        p17054coll1: p17054coll1
+        p17054coll31: p17054coll31
+        p17054coll5: p17054coll5
+        p17054coll14: p17054coll14
+        p17054coll29: p17054coll29
+        p17054coll19: p17054coll19
+        p17054coll26: p17054coll26
+        p17054coll30: p17054coll30
+        p17054coll16: p17054coll16
+        p17054coll15: p17054coll15
+        p17054coll3: p17054coll3
+        p17054coll10: p17054coll10
+        p17054coll12: p17054coll12
+        seaflower: seaflower
+        p17054coll25: p17054coll25
+        p17054coll20: p17054coll20
+        p17054coll18: p17054coll18
+        p17054coll22: p17054coll22
+        p17054coll23: p17054coll23
+      container:
+        title:
+          field: 1
+        author:
+          field: 1
+        tags:
+          field: 1
+        body:
+          field: 1
+        date:
+          field: 0
+        category:
+          field: 1
+        subcategory:
+          field: 1
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 1
+        type:
+          field: 0
+        type_name:
+          field: 1
+        created:
+          field: 0
+        changed:
+          field: 0
+    ojs:
+      type:
+        banrep_ned: banrep_ned
+        banrep_myc: banrep_myc
+        banrep_ec: banrep_ec
+        banrep_pac: banrep_pac
+        banrep_pec: banrep_pec
+        banrep_segb: banrep_segb
+        banrep_em: banrep_em
+        banrep_en: banrep_en
+        banrep_pmo: banrep_pmo
+        banrep_pin: banrep_pin
+        banrep_ct: banrep_ct
+        banrep_sc: banrep_sc
+        banrep_ecor: banrep_ecor
+        banrep_ecoin: banrep_ecoin
+        banrep_art: banrep_art
+        banrep_act: banrep_act
+        banrep_tejur: banrep_tejur
+        banrep_leg: banrep_leg
+        banrep_inf: banrep_inf
+        banrep_est: banrep_est
+        banrep_ef: banrep_ef
+        boletin_cultural_pre: boletin_cultural_pre
+        boletin_cultural_poe: boletin_cultural_poe
+        boletin_cultural_art: boletin_cultural_art
+        boletin_cultural_rsn: boletin_cultural_rsn
+        boletin_cultural_var: boletin_cultural_var
+        boletin_cultural_rrc: boletin_cultural_rrc
+        boletin_cultural_blaa: boletin_cultural_blaa
+        boletin_cultural_otros: boletin_cultural_otros
+        boletin_cultural_ext: boletin_cultural_ext
+        boletin_cultural_ilus: boletin_cultural_ilus
+        boletin_cultural_arq: boletin_cultural_arq
+        boletin_cultural_taa: boletin_cultural_taa
+        emisor_art: emisor_art
+        fian_art: fian_art
+        reporte_mercado_laboral_art: reporte_mercado_laboral_art
+        bmo_car: bmo_car
+        bmo_art: bmo_art
+        bmo_pieza: bmo_pieza
+        bmo_not: bmo_not
+        bmo_inv: bmo_inv
+        bmo_rsn: bmo_rsn
+        bmo_om: bmo_om
+        bmo_nb: bmo_nb
+      container:
+        title:
+          field: 1
+        author:
+          field: 1
+        tags:
+          field: 1
+        body:
+          field: 1
+        date:
+          field: 0
+        category:
+          field: 1
+        subcategory:
+          field: 1
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 1
+        type:
+          field: 0
+        type_name:
+          field: 1
+        created:
+          field: 0
+        changed:
+          field: 0
+    makemake:
+      type:
+        makemake: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        image:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: '0'
+      size: '24'
+      image_style: ''
+  general_activity:
+    node:
+      type:
+        activity: activity
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 1
+        area:
+          field: 1
+        author:
+          field: 1
+        available:
+          field: 0
+        body:
+          field: 1
+        book:
+          field: 0
+        category:
+          field: 1
+        changed:
+          field: 0
+        city:
+          field: 1
+        city_place:
+          field: 1
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 1
+        public:
+          field: 1
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 1
+        subtitle:
+          field: 1
+        summary:
+          field: 1
+        tags:
+          field: 1
+        title:
+          field: 1
+        technique:
+          field: 0
+        type:
+          field: 0
+    taxonomy:
+      type:
+        city: 0
+      container:
+        body:
+          field: 0
+        category:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        summary:
+          field: 0
+        status:
+          field: 0
+        title:
+          field: 0
+        type:
+          field: 0
+    mediawiki:
+      type:
+        enciclopedia: 0
+      container:
+        text:
+          field: 0
+        title:
+          field: 0
+    babel:
+      type:
+        p17054coll24: 0
+        p17054coll28: 0
+        p17054coll21: 0
+        p17054coll8: 0
+        p17054coll7: 0
+        p17054coll9: 0
+        p17054coll6: 0
+        p17054coll13: 0
+        cinep: 0
+        p17054coll11: 0
+        p17054coll4: 0
+        p17054coll2: 0
+        hidalgos: 0
+        p17054coll17: 0
+        colombia_comp: 0
+        p17054coll1: 0
+        p17054coll31: 0
+        p17054coll5: 0
+        p17054coll14: 0
+        p17054coll29: 0
+        p17054coll19: 0
+        p17054coll26: 0
+        p17054coll30: 0
+        p17054coll16: 0
+        p17054coll15: 0
+        p17054coll3: 0
+        p17054coll10: 0
+        p17054coll12: 0
+        seaflower: 0
+        p17054coll25: 0
+        p17054coll20: 0
+        p17054coll18: 0
+        p17054coll22: 0
+        p17054coll23: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    ojs:
+      type:
+        banrep_ned: 0
+        banrep_myc: 0
+        banrep_ec: 0
+        banrep_pac: 0
+        banrep_pec: 0
+        banrep_segb: 0
+        banrep_em: 0
+        banrep_en: 0
+        banrep_pmo: 0
+        banrep_pin: 0
+        banrep_ct: 0
+        banrep_sc: 0
+        banrep_ecor: 0
+        banrep_ecoin: 0
+        banrep_art: 0
+        banrep_act: 0
+        banrep_tejur: 0
+        banrep_leg: 0
+        banrep_inf: 0
+        banrep_est: 0
+        banrep_ef: 0
+        boletin_cultural_pre: 0
+        boletin_cultural_poe: 0
+        boletin_cultural_art: 0
+        boletin_cultural_rsn: 0
+        boletin_cultural_var: 0
+        boletin_cultural_rrc: 0
+        boletin_cultural_blaa: 0
+        boletin_cultural_otros: 0
+        boletin_cultural_ext: 0
+        boletin_cultural_ilus: 0
+        boletin_cultural_arq: 0
+        boletin_cultural_taa: 0
+        emisor_art: 0
+        fian_art: 0
+        reporte_mercado_laboral_art: 0
+        bmo_car: 0
+        bmo_art: 0
+        bmo_pieza: 0
+        bmo_not: 0
+        bmo_inv: 0
+        bmo_rsn: 0
+        bmo_om: 0
+        bmo_nb: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    makemake:
+      type:
+        makemake: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        image:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: '0'
+      size: '24'
+      image_style: ''
+  general_article:
+    node:
+      type:
+        article: article
+        activity: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 1
+        area:
+          field: 1
+        author:
+          field: 1
+        available:
+          field: 0
+        body:
+          field: 1
+        book:
+          field: 0
+        category:
+          field: 1
+        changed:
+          field: 0
+        city:
+          field: 1
+        city_place:
+          field: 1
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 1
+        subtitle:
+          field: 1
+        summary:
+          field: 1
+        tags:
+          field: 1
+        title:
+          field: 1
+        technique:
+          field: 0
+        type:
+          field: 0
+    taxonomy:
+      type:
+        city: 0
+      container:
+        body:
+          field: 0
+        category:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        summary:
+          field: 0
+        status:
+          field: 0
+        title:
+          field: 0
+        type:
+          field: 0
+    mediawiki:
+      type:
+        enciclopedia: 0
+      container:
+        text:
+          field: 0
+        title:
+          field: 0
+    babel:
+      type:
+        p17054coll24: 0
+        p17054coll28: 0
+        p17054coll21: 0
+        p17054coll8: 0
+        p17054coll7: 0
+        p17054coll9: 0
+        p17054coll6: 0
+        p17054coll13: 0
+        cinep: 0
+        p17054coll11: 0
+        p17054coll4: 0
+        p17054coll2: 0
+        hidalgos: 0
+        p17054coll17: 0
+        colombia_comp: 0
+        p17054coll1: 0
+        p17054coll31: 0
+        p17054coll5: 0
+        p17054coll14: 0
+        p17054coll29: 0
+        p17054coll19: 0
+        p17054coll26: 0
+        p17054coll30: 0
+        p17054coll16: 0
+        p17054coll15: 0
+        p17054coll3: 0
+        p17054coll10: 0
+        p17054coll12: 0
+        seaflower: 0
+        p17054coll25: 0
+        p17054coll20: 0
+        p17054coll18: 0
+        p17054coll22: 0
+        p17054coll23: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    ojs:
+      type:
+        banrep_ned: 0
+        banrep_myc: 0
+        banrep_ec: 0
+        banrep_pac: 0
+        banrep_pec: 0
+        banrep_segb: 0
+        banrep_em: 0
+        banrep_en: 0
+        banrep_pmo: 0
+        banrep_pin: 0
+        banrep_ct: 0
+        banrep_sc: 0
+        banrep_ecor: 0
+        banrep_ecoin: 0
+        banrep_art: 0
+        banrep_act: 0
+        banrep_tejur: 0
+        banrep_leg: 0
+        banrep_inf: 0
+        banrep_est: 0
+        banrep_ef: 0
+        boletin_cultural_pre: 0
+        boletin_cultural_poe: 0
+        boletin_cultural_art: 0
+        boletin_cultural_rsn: 0
+        boletin_cultural_var: 0
+        boletin_cultural_rrc: 0
+        boletin_cultural_blaa: 0
+        boletin_cultural_otros: 0
+        boletin_cultural_ext: 0
+        boletin_cultural_ilus: 0
+        boletin_cultural_arq: 0
+        boletin_cultural_taa: 0
+        emisor_art: 0
+        fian_art: 0
+        reporte_mercado_laboral_art: 0
+        bmo_car: 0
+        bmo_art: 0
+        bmo_pieza: 0
+        bmo_not: 0
+        bmo_inv: 0
+        bmo_rsn: 0
+        bmo_om: 0
+        bmo_nb: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    makemake:
+      type:
+        makemake: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        image:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: '0'
+      size: '24'
+      image_style: ''
+  general_multimedia:
+    node:
+      type:
+        multimedia: multimedia
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 1
+        author:
+          field: 1
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 1
+        changed:
+          field: 0
+        city:
+          field: 1
+        city_place:
+          field: 1
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 1
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 1
+        title:
+          field: 1
+        technique:
+          field: 0
+        type:
+          field: 0
+    taxonomy:
+      type:
+        city: 0
+      container:
+        body:
+          field: 0
+        category:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        summary:
+          field: 0
+        status:
+          field: 0
+        title:
+          field: 0
+        type:
+          field: 0
+    mediawiki:
+      type:
+        enciclopedia: 0
+      container:
+        text:
+          field: 0
+        title:
+          field: 0
+    babel:
+      type:
+        p17054coll24: 0
+        p17054coll28: 0
+        p17054coll21: 0
+        p17054coll8: 0
+        p17054coll7: 0
+        p17054coll9: 0
+        p17054coll6: 0
+        p17054coll13: 0
+        cinep: 0
+        p17054coll11: 0
+        p17054coll4: 0
+        p17054coll2: 0
+        hidalgos: 0
+        p17054coll17: 0
+        colombia_comp: 0
+        p17054coll1: 0
+        p17054coll31: 0
+        p17054coll5: 0
+        p17054coll14: 0
+        p17054coll29: 0
+        p17054coll19: 0
+        p17054coll26: 0
+        p17054coll30: 0
+        p17054coll16: 0
+        p17054coll15: 0
+        p17054coll3: 0
+        p17054coll10: 0
+        p17054coll12: 0
+        seaflower: 0
+        p17054coll25: 0
+        p17054coll20: 0
+        p17054coll18: 0
+        p17054coll22: 0
+        p17054coll23: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    ojs:
+      type:
+        banrep_ned: 0
+        banrep_myc: 0
+        banrep_ec: 0
+        banrep_pac: 0
+        banrep_pec: 0
+        banrep_segb: 0
+        banrep_em: 0
+        banrep_en: 0
+        banrep_pmo: 0
+        banrep_pin: 0
+        banrep_ct: 0
+        banrep_sc: 0
+        banrep_ecor: 0
+        banrep_ecoin: 0
+        banrep_art: 0
+        banrep_act: 0
+        banrep_tejur: 0
+        banrep_leg: 0
+        banrep_inf: 0
+        banrep_est: 0
+        banrep_ef: 0
+        boletin_cultural_pre: 0
+        boletin_cultural_poe: 0
+        boletin_cultural_art: 0
+        boletin_cultural_rsn: 0
+        boletin_cultural_var: 0
+        boletin_cultural_rrc: 0
+        boletin_cultural_blaa: 0
+        boletin_cultural_otros: 0
+        boletin_cultural_ext: 0
+        boletin_cultural_ilus: 0
+        boletin_cultural_arq: 0
+        boletin_cultural_taa: 0
+        emisor_art: 0
+        fian_art: 0
+        reporte_mercado_laboral_art: 0
+        bmo_car: 0
+        bmo_art: 0
+        bmo_pieza: 0
+        bmo_not: 0
+        bmo_inv: 0
+        bmo_rsn: 0
+        bmo_om: 0
+        bmo_nb: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    makemake:
+      type:
+        makemake: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        image:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: '0'
+      size: '24'
+      image_style: ''
+  general_others:
+    node:
+      type:
+        page: page
+        publicacion: publicacion
+        service: service
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 1
+        author:
+          field: 1
+        available:
+          field: 0
+        body:
+          field: 1
+        book:
+          field: 0
+        category:
+          field: 1
+        changed:
+          field: 0
+        city:
+          field: 1
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 1
+        subtitle:
+          field: 1
+        summary:
+          field: 1
+        tags:
+          field: 1
+        title:
+          field: 1
+        technique:
+          field: 0
+        type:
+          field: 0
+    taxonomy:
+      type:
+        city: city
+      container:
+        body:
+          field: 1
+        category:
+          field: 1
+        nid:
+          field: 0
+        path:
+          field: 0
+        summary:
+          field: 0
+        status:
+          field: 0
+        title:
+          field: 1
+        type:
+          field: 0
+    mediawiki:
+      type:
+        enciclopedia: 0
+      container:
+        text:
+          field: 0
+        title:
+          field: 0
+    babel:
+      type:
+        p17054coll24: 0
+        p17054coll28: 0
+        p17054coll21: 0
+        p17054coll8: 0
+        p17054coll7: 0
+        p17054coll9: 0
+        p17054coll6: 0
+        p17054coll13: 0
+        cinep: 0
+        p17054coll11: 0
+        p17054coll4: 0
+        p17054coll2: 0
+        hidalgos: 0
+        p17054coll17: 0
+        colombia_comp: 0
+        p17054coll1: 0
+        p17054coll31: 0
+        p17054coll5: 0
+        p17054coll14: 0
+        p17054coll29: 0
+        p17054coll19: 0
+        p17054coll26: 0
+        p17054coll30: 0
+        p17054coll16: 0
+        p17054coll15: 0
+        p17054coll3: 0
+        p17054coll10: 0
+        p17054coll12: 0
+        seaflower: 0
+        p17054coll25: 0
+        p17054coll20: 0
+        p17054coll18: 0
+        p17054coll22: 0
+        p17054coll23: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    ojs:
+      type:
+        banrep_ned: 0
+        banrep_myc: 0
+        banrep_ec: 0
+        banrep_pac: 0
+        banrep_pec: 0
+        banrep_segb: 0
+        banrep_em: 0
+        banrep_en: 0
+        banrep_pmo: 0
+        banrep_pin: 0
+        banrep_ct: 0
+        banrep_sc: 0
+        banrep_ecor: 0
+        banrep_ecoin: 0
+        banrep_art: 0
+        banrep_act: 0
+        banrep_tejur: 0
+        banrep_leg: 0
+        banrep_inf: 0
+        banrep_est: 0
+        banrep_ef: 0
+        boletin_cultural_pre: 0
+        boletin_cultural_poe: 0
+        boletin_cultural_art: 0
+        boletin_cultural_rsn: 0
+        boletin_cultural_var: 0
+        boletin_cultural_rrc: 0
+        boletin_cultural_blaa: 0
+        boletin_cultural_otros: 0
+        boletin_cultural_ext: 0
+        boletin_cultural_ilus: 0
+        boletin_cultural_arq: 0
+        boletin_cultural_taa: 0
+        emisor_art: 0
+        fian_art: 0
+        reporte_mercado_laboral_art: 0
+        bmo_car: 0
+        bmo_art: 0
+        bmo_pieza: 0
+        bmo_not: 0
+        bmo_inv: 0
+        bmo_rsn: 0
+        bmo_om: 0
+        bmo_nb: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    makemake:
+      type:
+        makemake: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        image:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: '0'
+      size: '24'
+      image_style: ''
+  general_biblioteca_virtual:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    taxonomy:
+      type:
+        city: 0
+      container:
+        body:
+          field: 0
+        category:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        summary:
+          field: 0
+        status:
+          field: 0
+        title:
+          field: 0
+        type:
+          field: 0
+    mediawiki:
+      type:
+        enciclopedia: 0
+      container:
+        text:
+          field: 0
+        title:
+          field: 0
+    babel:
+      type:
+        p17054coll24: p17054coll24
+        p17054coll28: p17054coll28
+        p17054coll21: p17054coll21
+        p17054coll8: p17054coll8
+        p17054coll7: p17054coll7
+        p17054coll9: p17054coll9
+        p17054coll6: p17054coll6
+        p17054coll13: p17054coll13
+        cinep: cinep
+        p17054coll11: p17054coll11
+        p17054coll4: p17054coll4
+        p17054coll2: p17054coll2
+        hidalgos: hidalgos
+        p17054coll17: p17054coll17
+        colombia_comp: colombia_comp
+        p17054coll1: p17054coll1
+        p17054coll31: p17054coll31
+        p17054coll5: p17054coll5
+        p17054coll14: p17054coll14
+        p17054coll29: p17054coll29
+        p17054coll19: p17054coll19
+        p17054coll26: p17054coll26
+        p17054coll30: p17054coll30
+        p17054coll16: p17054coll16
+        p17054coll15: p17054coll15
+        p17054coll3: p17054coll3
+        p17054coll10: p17054coll10
+        p17054coll12: p17054coll12
+        seaflower: seaflower
+        p17054coll25: p17054coll25
+        p17054coll20: p17054coll20
+        p17054coll18: p17054coll18
+        p17054coll22: p17054coll22
+        p17054coll23: p17054coll23
+      container:
+        title:
+          field: 1
+        author:
+          field: 1
+        tags:
+          field: 1
+        body:
+          field: 1
+        date:
+          field: 0
+        category:
+          field: 1
+        subcategory:
+          field: 1
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 1
+        type:
+          field: 0
+        type_name:
+          field: 1
+        created:
+          field: 0
+        changed:
+          field: 0
+    ojs:
+      type:
+        banrep_ned: banrep_ned
+        banrep_myc: banrep_myc
+        banrep_ec: banrep_ec
+        banrep_pac: banrep_pac
+        banrep_pec: banrep_pec
+        banrep_segb: banrep_segb
+        banrep_em: banrep_em
+        banrep_en: banrep_en
+        banrep_pmo: banrep_pmo
+        banrep_pin: banrep_pin
+        banrep_ct: banrep_ct
+        banrep_sc: banrep_sc
+        banrep_ecor: banrep_ecor
+        banrep_ecoin: banrep_ecoin
+        banrep_art: banrep_art
+        banrep_act: banrep_act
+        banrep_tejur: banrep_tejur
+        banrep_leg: banrep_leg
+        banrep_inf: banrep_inf
+        banrep_est: banrep_est
+        banrep_ef: banrep_ef
+        boletin_cultural_pre: boletin_cultural_pre
+        boletin_cultural_poe: boletin_cultural_poe
+        boletin_cultural_art: boletin_cultural_art
+        boletin_cultural_rsn: boletin_cultural_rsn
+        boletin_cultural_var: boletin_cultural_var
+        boletin_cultural_rrc: boletin_cultural_rrc
+        boletin_cultural_blaa: boletin_cultural_blaa
+        boletin_cultural_otros: boletin_cultural_otros
+        boletin_cultural_ext: boletin_cultural_ext
+        boletin_cultural_ilus: boletin_cultural_ilus
+        boletin_cultural_arq: boletin_cultural_arq
+        boletin_cultural_taa: boletin_cultural_taa
+        emisor_art: emisor_art
+        fian_art: fian_art
+        reporte_mercado_laboral_art: reporte_mercado_laboral_art
+        bmo_car: bmo_car
+        bmo_art: bmo_art
+        bmo_pieza: bmo_pieza
+        bmo_not: bmo_not
+        bmo_inv: bmo_inv
+        bmo_rsn: bmo_rsn
+        bmo_om: bmo_om
+        bmo_nb: 0
+      container:
+        title:
+          field: 1
+        author:
+          field: 1
+        tags:
+          field: 1
+        body:
+          field: 1
+        date:
+          field: 0
+        category:
+          field: 1
+        subcategory:
+          field: 1
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 1
+        type:
+          field: 0
+        type_name:
+          field: 1
+        created:
+          field: 0
+        changed:
+          field: 0
+    makemake:
+      type:
+        makemake: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        image:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: '0'
+      size: '24'
+      image_style: ''
+  general_mediawiki:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    taxonomy:
+      type:
+        city: 0
+      container:
+        body:
+          field: 0
+        category:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        summary:
+          field: 0
+        status:
+          field: 0
+        title:
+          field: 0
+        type:
+          field: 0
+    mediawiki:
+      type:
+        enciclopedia: enciclopedia
+      container:
+        text:
+          field: 1
+        title:
+          field: 1
+    babel:
+      type:
+        p17054coll24: 0
+        p17054coll28: 0
+        p17054coll21: 0
+        p17054coll8: 0
+        p17054coll7: 0
+        p17054coll9: 0
+        p17054coll6: 0
+        p17054coll13: 0
+        cinep: 0
+        p17054coll11: 0
+        p17054coll4: 0
+        p17054coll2: 0
+        hidalgos: 0
+        p17054coll17: 0
+        colombia_comp: 0
+        p17054coll1: 0
+        p17054coll31: 0
+        p17054coll5: 0
+        p17054coll14: 0
+        p17054coll29: 0
+        p17054coll19: 0
+        p17054coll26: 0
+        p17054coll30: 0
+        p17054coll16: 0
+        p17054coll15: 0
+        p17054coll3: 0
+        p17054coll10: 0
+        p17054coll12: 0
+        seaflower: 0
+        p17054coll25: 0
+        p17054coll20: 0
+        p17054coll18: 0
+        p17054coll22: 0
+        p17054coll23: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    ojs:
+      type:
+        banrep_ned: 0
+        banrep_myc: 0
+        banrep_ec: 0
+        banrep_pac: 0
+        banrep_pec: 0
+        banrep_segb: 0
+        banrep_em: 0
+        banrep_en: 0
+        banrep_pmo: 0
+        banrep_pin: 0
+        banrep_ct: 0
+        banrep_sc: 0
+        banrep_ecor: 0
+        banrep_ecoin: 0
+        banrep_art: 0
+        banrep_act: 0
+        banrep_tejur: 0
+        banrep_leg: 0
+        banrep_inf: 0
+        banrep_est: 0
+        banrep_ef: 0
+        boletin_cultural_pre: 0
+        boletin_cultural_poe: 0
+        boletin_cultural_art: 0
+        boletin_cultural_rsn: 0
+        boletin_cultural_var: 0
+        boletin_cultural_rrc: 0
+        boletin_cultural_blaa: 0
+        boletin_cultural_otros: 0
+        boletin_cultural_ext: 0
+        boletin_cultural_ilus: 0
+        boletin_cultural_arq: 0
+        boletin_cultural_taa: 0
+        emisor_art: 0
+        fian_art: 0
+        reporte_mercado_laboral_art: 0
+        bmo_car: 0
+        bmo_art: 0
+        bmo_pieza: 0
+        bmo_not: 0
+        bmo_inv: 0
+        bmo_rsn: 0
+        bmo_om: 0
+        bmo_nb: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    makemake:
+      type:
+        makemake: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        image:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: '0'
+      size: '24'
+      image_style: ''
+  general_makemake:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    taxonomy:
+      type:
+        city: 0
+      container:
+        body:
+          field: 0
+        category:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        summary:
+          field: 0
+        status:
+          field: 0
+        title:
+          field: 0
+        type:
+          field: 0
+    mediawiki:
+      type:
+        enciclopedia: 0
+      container:
+        text:
+          field: 0
+        title:
+          field: 0
+    babel:
+      type:
+        p17054coll24: 0
+        p17054coll28: 0
+        p17054coll21: 0
+        p17054coll8: 0
+        p17054coll7: 0
+        p17054coll9: 0
+        p17054coll6: 0
+        p17054coll13: 0
+        cinep: 0
+        p17054coll11: 0
+        p17054coll4: 0
+        p17054coll2: 0
+        hidalgos: 0
+        p17054coll17: 0
+        colombia_comp: 0
+        p17054coll1: 0
+        p17054coll31: 0
+        p17054coll5: 0
+        p17054coll14: 0
+        p17054coll29: 0
+        p17054coll19: 0
+        p17054coll26: 0
+        p17054coll30: 0
+        p17054coll16: 0
+        p17054coll15: 0
+        p17054coll3: 0
+        p17054coll10: 0
+        p17054coll12: 0
+        seaflower: 0
+        p17054coll25: 0
+        p17054coll20: 0
+        p17054coll18: 0
+        p17054coll22: 0
+        p17054coll23: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    ojs:
+      type:
+        banrep_ned: 0
+        banrep_myc: 0
+        banrep_ec: 0
+        banrep_pac: 0
+        banrep_pec: 0
+        banrep_segb: 0
+        banrep_em: 0
+        banrep_en: 0
+        banrep_pmo: 0
+        banrep_pin: 0
+        banrep_ct: 0
+        banrep_sc: 0
+        banrep_ecor: 0
+        banrep_ecoin: 0
+        banrep_art: 0
+        banrep_act: 0
+        banrep_tejur: 0
+        banrep_leg: 0
+        banrep_inf: 0
+        banrep_est: 0
+        banrep_ef: 0
+        boletin_cultural_pre: 0
+        boletin_cultural_poe: 0
+        boletin_cultural_art: 0
+        boletin_cultural_rsn: 0
+        boletin_cultural_var: 0
+        boletin_cultural_rrc: 0
+        boletin_cultural_blaa: 0
+        boletin_cultural_otros: 0
+        boletin_cultural_ext: 0
+        boletin_cultural_ilus: 0
+        boletin_cultural_arq: 0
+        boletin_cultural_taa: 0
+        emisor_art: 0
+        fian_art: 0
+        reporte_mercado_laboral_art: 0
+        bmo_car: 0
+        bmo_art: 0
+        bmo_pieza: 0
+        bmo_not: 0
+        bmo_inv: 0
+        bmo_rsn: 0
+        bmo_om: 0
+        bmo_nb: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    makemake:
+      type:
+        makemake: makemake
+      container:
+        title:
+          field: 1
+        author:
+          field: 1
+        tags:
+          field: 1
+        body:
+          field: 1
+        date:
+          field: 0
+        category:
+          field: 1
+        subcategory:
+          field: 1
+        nid:
+          field: 0
+        path:
+          field: 0
+        image:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 1
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: '0'
+      size: '24'
+      image_style: ''
+  node_category_activity:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_article:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_book:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_coleccion_bibliografica:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_estampilla:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_instrumento:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_minisitio:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_multimedia:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_obra_de_arte:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_page:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_pieza_arqueologica:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_pieza_coleccion_monedas_billetes:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_publicacion:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  node_category_service:
+    node:
+      type:
+        activity: 0
+        article: 0
+        book: 0
+        coleccion_bibliografica: 0
+        estampilla: 0
+        instrumento: 0
+        minisitio: 0
+        multimedia: 0
+        obra_de_arte: 0
+        page: 0
+        pieza_arqueologica: 0
+        pieza_coleccion_monedas_billetes: 0
+        publicacion: 0
+        service: 0
+      container:
+        abstract:
+          field: 0
+        area:
+          field: 0
+        author:
+          field: 0
+        available:
+          field: 0
+        body:
+          field: 0
+        book:
+          field: 0
+        category:
+          field: 0
+        changed:
+          field: 0
+        city:
+          field: 0
+        city_place:
+          field: 0
+        created:
+          field: 0
+        date:
+          field: 0
+        date_collection:
+          field: 0
+        date_end:
+          field: 0
+        date_full:
+          field: 0
+        display:
+          field: 0
+        editorial:
+          field: 0
+        featured:
+          field: 0
+        function:
+          field: 0
+        hour:
+          field: 0
+        image:
+          field: 0
+        isbn:
+          field: 0
+        material:
+          field: 0
+        modality:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        path_external:
+          field: 0
+        period:
+          field: 0
+        prefix:
+          field: 0
+        price:
+          field: 0
+        public:
+          field: 0
+        region:
+          field: 0
+        registry_number:
+          field: 0
+        score_order:
+          field: 0
+        status:
+          field: 0
+        style:
+          field: 0
+        subcategory:
+          field: 0
+        subtitle:
+          field: 0
+        summary:
+          field: 0
+        tags:
+          field: 0
+        title:
+          field: 0
+        technique:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  taxonomy_category_city:
+    taxonomy:
+      type:
+        city: 0
+      container:
+        body:
+          field: 0
+        category:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        summary:
+          field: 0
+        status:
+          field: 0
+        title:
+          field: 0
+        type:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  mediawiki_category_mediawiki:
+    mediawiki:
+      type:
+        enciclopedia: 0
+      container:
+        text:
+          field: 0
+        title:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  babel_category_babel:
+    babel:
+      type:
+        p17054coll24: 0
+        p17054coll28: 0
+        p17054coll21: 0
+        p17054coll8: 0
+        p17054coll7: 0
+        p17054coll9: 0
+        p17054coll6: 0
+        p17054coll13: 0
+        cinep: 0
+        p17054coll11: 0
+        p17054coll4: 0
+        p17054coll2: 0
+        hidalgos: 0
+        p17054coll17: 0
+        colombia_comp: 0
+        p17054coll1: 0
+        p17054coll31: 0
+        p17054coll5: 0
+        p17054coll14: 0
+        p17054coll29: 0
+        p17054coll19: 0
+        p17054coll26: 0
+        p17054coll30: 0
+        p17054coll16: 0
+        p17054coll15: 0
+        p17054coll3: 0
+        p17054coll10: 0
+        p17054coll12: 0
+        seaflower: 0
+        p17054coll25: 0
+        p17054coll20: 0
+        p17054coll18: 0
+        p17054coll22: 0
+        p17054coll23: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  ojs_category_ojs:
+    ojs:
+      type:
+        banrep_ned: 0
+        banrep_myc: 0
+        banrep_ec: 0
+        banrep_pac: 0
+        banrep_pec: 0
+        banrep_segb: 0
+        banrep_em: 0
+        banrep_en: 0
+        banrep_pmo: 0
+        banrep_pin: 0
+        banrep_ct: 0
+        banrep_sc: 0
+        banrep_ecor: 0
+        banrep_ecoin: 0
+        banrep_art: 0
+        banrep_act: 0
+        banrep_tejur: 0
+        banrep_leg: 0
+        banrep_inf: 0
+        banrep_est: 0
+        banrep_ef: 0
+        boletin_cultural_pre: 0
+        boletin_cultural_poe: 0
+        boletin_cultural_art: 0
+        boletin_cultural_rsn: 0
+        boletin_cultural_var: 0
+        boletin_cultural_rrc: 0
+        boletin_cultural_blaa: 0
+        boletin_cultural_otros: 0
+        boletin_cultural_ext: 0
+        boletin_cultural_ilus: 0
+        boletin_cultural_arq: 0
+        boletin_cultural_taa: 0
+        emisor_art: 0
+        fian_art: 0
+        reporte_mercado_laboral_art: 0
+        bmo_car: 0
+        bmo_art: 0
+        bmo_pieza: 0
+        bmo_not: 0
+        bmo_inv: 0
+        bmo_rsn: 0
+        bmo_om: 0
+        bmo_nb: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        city_place:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''
+  makemake_category_makemake:
+    makemake:
+      type:
+        makemake: 0
+      container:
+        title:
+          field: 0
+        author:
+          field: 0
+        tags:
+          field: 0
+        body:
+          field: 0
+        date:
+          field: 0
+        category:
+          field: 0
+        subcategory:
+          field: 0
+        nid:
+          field: 0
+        path:
+          field: 0
+        image:
+          field: 0
+        type:
+          field: 0
+        type_name:
+          field: 0
+        created:
+          field: 0
+        changed:
+          field: 0
+    config:
+      from: ''
+      size: ''
+      image_style: ''

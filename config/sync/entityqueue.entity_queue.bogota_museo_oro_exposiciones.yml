@@ -1,0 +1,22 @@
+uuid: 105445a6-74a5-4e10-900c-076c6d1499f5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_museo_oro_exposiciones
+label: 'Bogota - Museo Oro - Exposiciones'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

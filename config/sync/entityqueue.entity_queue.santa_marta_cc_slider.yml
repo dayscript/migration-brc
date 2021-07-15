@@ -1,0 +1,25 @@
+uuid: 70851cab-9028-4abc-995a-41f133f73977
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_cc_slider
+label: 'Santa Marta - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

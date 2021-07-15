@@ -1,0 +1,23 @@
+uuid: 5edd0295-fb24-41f7-8fe1-4a1c09e2afe3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: monteria_bb_miscelanea
+label: 'Montería - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

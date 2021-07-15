@@ -1,0 +1,26 @@
+uuid: 5a4e7680-5e8c-4c88-ad3f-232554f942af
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria_de_noticia
+    - node.type.article
+    - taxonomy.vocabulary.categoria_de_noticia
+id: node.article.field_categoria_de_noticia
+field_name: field_categoria_de_noticia
+entity_type: node
+bundle: article
+label: 'Categoría de noticia'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      categoria_de_noticia: categoria_de_noticia
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

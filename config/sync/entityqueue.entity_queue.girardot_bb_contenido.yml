@@ -1,0 +1,24 @@
+uuid: 1bbee752-3b02-482d-842f-809655750caa
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: girardot_bb_contenido
+label: 'Girardot - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

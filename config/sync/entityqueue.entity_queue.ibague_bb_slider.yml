@@ -1,0 +1,25 @@
+uuid: 765cdd76-4ca4-493c-8029-67517c7a189b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ibague_bb_slider
+label: 'Ibagué - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

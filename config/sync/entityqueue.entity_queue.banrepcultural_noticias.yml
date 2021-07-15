@@ -1,0 +1,19 @@
+uuid: b4138d2f-5929-4e82-bf7e-29a9273c134d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: banrepcultural_noticias
+label: 'Banrepcultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

@@ -1,0 +1,19 @@
+uuid: 023b979d-d533-44e8-a0d5-7b140055499b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: biblioteca_virtual_servicios
+label: 'Biblioteca Virtual - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

@@ -1,0 +1,350 @@
+uuid: 1ba04018-63dc-4828-ab15-1d84387e29c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.minisitio.body
+    - field.field.node.minisitio.comment_node_minisitio
+    - field.field.node.minisitio.field_a_o
+    - field.field.node.minisitio.field_area_misional
+    - field.field.node.minisitio.field_artistas_en_la_exposici_n
+    - field.field.node.minisitio.field_car_cter_de_la_exposici_n
+    - field.field.node.minisitio.field_curador
+    - field.field.node.minisitio.field_date
+    - field.field.node.minisitio.field_files
+    - field.field.node.minisitio.field_files_media
+    - field.field.node.minisitio.field_gallery
+    - field.field.node.minisitio.field_gallery_media
+    - field.field.node.minisitio.field_image
+    - field.field.node.minisitio.field_image_media
+    - field.field.node.minisitio.field_imagen_para_slider
+    - field.field.node.minisitio.field_imagen_para_slider_media
+    - field.field.node.minisitio.field_is_front
+    - field.field.node.minisitio.field_lista_de_obras
+    - field.field.node.minisitio.field_publication_date
+    - field.field.node.minisitio.field_subtitle
+    - field.field.node.minisitio.field_tags
+    - field.field.node.minisitio.field_tipo_de_exposici_n
+    - field.field.node.minisitio.field_tipo_de_minisitio
+    - field.field.node.minisitio.ubication
+    - node.type.minisitio
+  module:
+    - comment
+    - datetime
+    - field_group
+    - file
+    - media_library
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_general:
+      children:
+        - body
+        - field_publication_date
+        - field_is_front
+        - field_subtitle
+        - title
+      parent_name: ''
+      weight: 0
+      label: General
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: 'group-general field-group-fieldset'
+        required_fields: true
+        id: ''
+      format_type: tab
+      region: content
+    group_multimedia:
+      children:
+        - field_image
+        - field_files
+        - field_imagen_para_slider
+        - field_gallery
+      parent_name: ''
+      weight: 1
+      label: Multimedia
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: 'group-multimedia field-group-fieldset'
+        required_fields: true
+        id: ''
+      format_type: tab
+      region: content
+    group_relaciones:
+      children:
+        - field_tipo_de_minisitio
+        - field_tags
+        - field_area_misional
+      parent_name: ''
+      weight: 3
+      label: Relaciones
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: 'group-relaciones field-group-fieldset'
+        required_fields: true
+        id: ''
+      format_type: tab
+      region: content
+    group_exposicion:
+      children:
+        - ubication
+        - field_car_cter_de_la_exposici_n
+        - field_lista_de_obras
+        - field_a_o
+        - field_date
+        - field_curador
+        - field_artistas_en_la_exposici_n
+        - field_tipo_de_exposici_n
+      parent_name: ''
+      weight: 2
+      label: Exposición
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: 'group-exposicion field-group-fieldset'
+        required_fields: true
+        id: ''
+      format_type: tab
+      region: content
+id: node.minisitio.default
+targetEntityType: node
+bundle: minisitio
+mode: default
+content:
+  body:
+    weight: 3
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment_node_minisitio:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_a_o:
+    weight: 32
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_area_misional:
+    weight: 26
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_artistas_en_la_exposici_n:
+    weight: 31
+    type: string_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_car_cter_de_la_exposici_n:
+    weight: 29
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_curador:
+    weight: 27
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date:
+    weight: 33
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_files:
+    weight: 8
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_files_media:
+    type: media_library_widget
+    weight: 14
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    weight: 11
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_gallery_media:
+    type: media_library_widget
+    weight: 13
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 7
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_image_media:
+    type: media_library_widget
+    weight: 11
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider:
+    weight: 9
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider_media:
+    type: media_library_widget
+    weight: 12
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_is_front:
+    weight: 6
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_lista_de_obras:
+    weight: 30
+    type: string_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_publication_date:
+    weight: 4
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_subtitle:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 50
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 25
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tipo_de_exposici_n:
+    weight: 28
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tipo_de_minisitio:
+    weight: 24
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 10
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  ubication:
+    weight: 34
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: 6b30b8a4-7ec5-4f97-8c73-c62dd537df3b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cali_museo_slider
+label: 'Cali - Museo - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

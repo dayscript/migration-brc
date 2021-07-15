@@ -1,0 +1,19 @@
+uuid: 6d3446b8-691b-41dd-b258-02fb4d853fe5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: villavicencio_bb_noticias
+label: 'Villavicencio - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

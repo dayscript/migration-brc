@@ -1,0 +1,33 @@
+uuid: e28e5470-a861-456e-a5f2-3f2d641a0417
+langcode: es
+status: true
+dependencies: {  }
+id: upgrade_d7_field_collection_type
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Paragraphs - Field Collection type configuration'
+source:
+  plugin: d7_field_collection_type
+  add_description: true
+process:
+  id:
+    -
+      plugin: get
+      source: bundle
+  label:
+    -
+      plugin: get
+      source: name
+  description:
+    -
+      plugin: get
+      source: description
+destination:
+  plugin: 'entity:paragraphs_type'
+migration_dependencies:
+  required: {  }
+  optional: {  }

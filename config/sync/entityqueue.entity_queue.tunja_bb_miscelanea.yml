@@ -1,0 +1,23 @@
+uuid: 1714737b-2826-4883-8bc3-937449ea2b5e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: tunja_bb_miscelanea
+label: 'Tunja - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

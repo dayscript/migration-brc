@@ -1,0 +1,19 @@
+uuid: ea4304b3-5118-4706-8ce2-df5a8daddbac
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_museo_servicios
+label: 'Leticia - Museo - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

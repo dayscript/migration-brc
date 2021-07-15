@@ -1,0 +1,8 @@
+uuid: 8828d9f2-15a7-4272-b87a-9861390877b1
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-1
+label: social-menu
+description: 'Se usa en caso de agregar un nuevo menu'
+locked: false

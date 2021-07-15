@@ -1,0 +1,14 @@
+allowed_types:
+  - activity
+  - minisitio
+  - multimedia
+  - page
+  - book
+  - service
+block:
+  navigation:
+    mode: 'book pages'
+child_type: book
+_core:
+  default_config_hash: i-_2TVi6FUEAqBgNRJkt6aaYmiw1k_LTrXzJS6wlZ4U
+langcode: es

@@ -1,0 +1,23 @@
+uuid: af4d6767-375e-4867-b2c8-64be257a93cc
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: buenaventura_bb_miscelanea
+label: 'Buenaventura - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

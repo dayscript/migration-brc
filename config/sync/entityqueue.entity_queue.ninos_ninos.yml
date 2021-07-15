@@ -1,0 +1,27 @@
+uuid: ced8d853-9829-4897-84eb-f0bb1f17f2ab
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ninos_ninos
+label: 'Biblioteca Virtual - Niños'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      multimedia: multimedia
+      article: article
+      page: page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 6
+  act_as_queue: false
+  reverse: false

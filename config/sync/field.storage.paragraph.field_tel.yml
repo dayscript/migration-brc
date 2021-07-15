@@ -1,0 +1,21 @@
+uuid: e9477e13-b761-4e4d-877d-2544add06667
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_tel
+field_name: field_tel
+entity_type: paragraph
+type: string
+settings:
+  max_length: 12
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

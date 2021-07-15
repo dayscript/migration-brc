@@ -1,0 +1,23 @@
+uuid: 99595e02-1ca4-425f-9715-7463691c6e5f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: monteria_cc_miscelanea
+label: 'Montería - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

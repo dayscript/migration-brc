@@ -1,0 +1,23 @@
+uuid: 7c94b097-ef13-43db-81c1-fe63ad665cea
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: medellin_cc_miscelanea
+label: 'Medellín - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

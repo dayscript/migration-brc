@@ -1,0 +1,25 @@
+uuid: b7c5eda7-4e31-4b5c-a4c3-93d50839bd1d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: girardot_bb_recomendados
+label: 'Girardot - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

@@ -1,0 +1,21 @@
+uuid: 15c6525f-8276-4384-9132-2bacd050ce0e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: biblioteca_virtual_proyectos
+label: 'Biblioteca Virtual - Proyectos'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - multimedia
+      - article
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 6

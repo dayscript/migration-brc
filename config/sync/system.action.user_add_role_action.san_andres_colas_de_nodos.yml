@@ -1,0 +1,14 @@
+uuid: ae53c2e6-842f-4045-8f8e-7731b5e54eaf
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.san_andres_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.san_andres_colas_de_nodos
+label: 'Añade el rol San Andrés - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: san_andres_colas_de_nodos

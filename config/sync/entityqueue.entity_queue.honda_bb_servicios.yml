@@ -1,0 +1,19 @@
+uuid: 017ceccf-d78a-457f-9684-1f6f6e7f9d23
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: honda_bb_servicios
+label: 'Honda - Biblioteca - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

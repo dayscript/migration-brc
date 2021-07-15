@@ -1,0 +1,19 @@
+uuid: 37ed602d-2706-48d8-a099-ec8f4d4f246f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pasto_museo_noticias
+label: 'Pasto - Museo - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

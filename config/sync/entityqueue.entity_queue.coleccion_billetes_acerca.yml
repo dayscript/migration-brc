@@ -1,0 +1,27 @@
+uuid: da2be9b1-3ba6-498c-b515-36951eefa42e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: coleccion_billetes_acerca
+label: 'Colección de Billetes - Acerca de'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      multimedia: multimedia
+      article: article
+      page: page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

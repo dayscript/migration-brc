@@ -1,0 +1,14 @@
+uuid: 24be4ce1-e720-472c-b150-b768c17d82e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.neiva_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.neiva_colas_de_nodos
+label: 'Añade el rol Neiva - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: neiva_colas_de_nodos

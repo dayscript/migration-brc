@@ -1,0 +1,11 @@
+uuid: 5da433c0-d149-45df-9d60-e3034aea2f62
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pieza_arqueologica
+id: node.pieza_arqueologica
+target_entity_type_id: node
+target_bundle: pieza_arqueologica
+default_langcode: site_default
+language_alterable: false

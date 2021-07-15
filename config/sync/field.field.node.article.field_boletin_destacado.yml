@@ -1,0 +1,23 @@
+uuid: 24c361ca-4c72-44e8-bbd7-996dda6c1034
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_boletin_destacado
+    - node.type.article
+id: node.article.field_boletin_destacado
+field_name: field_boletin_destacado
+entity_type: node
+bundle: article
+label: 'Boletín destacado'
+description: 'Seleccionar para Artículos con Categoría de noticia: BOLETÍN DE PRENSA'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

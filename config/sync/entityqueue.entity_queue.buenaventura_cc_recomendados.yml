@@ -1,0 +1,25 @@
+uuid: 5493507a-64de-4457-84f3-0273d301c178
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: buenaventura_cc_recomendados
+label: 'Buenaventura - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

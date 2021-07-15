@@ -1,0 +1,19 @@
+uuid: ac3a9b21-10ec-4972-a373-9687d60bc621
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: florencia_cc_noticias
+label: 'Florencia - Centro Cultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

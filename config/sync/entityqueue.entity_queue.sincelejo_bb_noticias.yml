@@ -1,0 +1,19 @@
+uuid: 6b5a8480-72d4-4aa6-a4fa-75a7e4f3ec6e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: sincelejo_bb_noticias
+label: 'Sincelejo - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

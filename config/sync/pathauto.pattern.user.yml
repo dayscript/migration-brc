@@ -1,0 +1,14 @@
+uuid: bbf13b88-168c-44a1-a232-bb625b24174f
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user
+label: 'User - default'
+type: 'canonical_entities:user'
+pattern: 'usuarios/[user:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

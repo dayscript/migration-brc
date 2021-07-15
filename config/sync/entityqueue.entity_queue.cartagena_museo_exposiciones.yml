@@ -1,0 +1,22 @@
+uuid: c6e1f6b1-0506-4881-8ca5-31fc98ee87e7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_museo_exposiciones
+label: 'Cartagena - Museo - Exposiciones'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

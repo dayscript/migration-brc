@@ -1,0 +1,19 @@
+uuid: 98f2dd2a-0253-44a7-9fe0-16ea7b4e0faa
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: buenaventura_bb_servicios
+label: 'Buenaventura - Biblioteca - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

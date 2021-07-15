@@ -1,0 +1,24 @@
+uuid: 739393fa-d7de-4fba-87cd-b9881632e03a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_bb_contenido
+label: 'Cartagena - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,24 @@
+uuid: 62623276-300e-4914-a898-01d33f1e96d5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_cc_contenido
+label: 'Armenia - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,28 @@
+uuid: d8cb5f10-d37e-4710-8c87-9e0f708ccc50
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.activity
+    - taxonomy.vocabulary.price
+id: node.activity.field_price
+field_name: field_price
+entity_type: node
+bundle: activity
+label: Tarifa
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    tid: '29'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      price: price
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,33 @@
+uuid: ddc9a458-f7fe-47ab-9fa6-f4384de6e1e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tipe_service.field_icono
+    - taxonomy.vocabulary.tipe_service
+  module:
+    - image
+    - text
+id: taxonomy_term.tipe_service.default
+targetEntityType: taxonomy_term
+bundle: tipe_service
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_icono:
+    label: above
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

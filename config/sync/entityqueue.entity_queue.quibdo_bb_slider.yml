@@ -1,0 +1,25 @@
+uuid: 7c1ae7e5-7c64-42f8-bf55-b26b1c796917
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: quibdo_bb_slider
+label: 'Quibdó - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

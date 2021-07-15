@@ -1,0 +1,19 @@
+uuid: 612631c9-772b-4df7-b02c-27a318c34e02
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cucuta_bb_noticias
+label: 'Cúcuta - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

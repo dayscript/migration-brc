@@ -1,0 +1,26 @@
+uuid: 277953f6-f8d8-48ff-a1aa-7d2ed3462271
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_instrumento
+    - node.type.instrumento
+    - taxonomy.vocabulary.ci_tipo_de_instrumento
+id: node.instrumento.field_tipo_de_instrumento
+field_name: field_tipo_de_instrumento
+entity_type: node
+bundle: instrumento
+label: 'Tipo de instrumento'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      ci_tipo_de_instrumento: ci_tipo_de_instrumento
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,26 @@
+uuid: 0988c3e0-5b9b-4807-97e2-a449b34658f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.page
+    - taxonomy.vocabulary.tags
+id: node.page.field_tags
+field_name: field_tags
+entity_type: node
+bundle: page
+label: Etiquetas
+description: 'Incluya las palabras clave separadas por coma ","'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tags: tags
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

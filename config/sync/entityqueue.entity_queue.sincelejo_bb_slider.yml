@@ -1,0 +1,25 @@
+uuid: 926a5720-d368-44c9-aff5-a52c7bfa23c5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: sincelejo_bb_slider
+label: 'Sincelejo - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

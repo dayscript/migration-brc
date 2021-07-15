@@ -1,0 +1,24 @@
+uuid: c7672ce7-6c32-40ff-a25b-df89a459e3b2
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_museo_contenido
+label: 'Armenia - Museo - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

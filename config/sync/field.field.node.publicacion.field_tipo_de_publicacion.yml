@@ -1,0 +1,28 @@
+uuid: 7412c578-1e43-4118-9b0e-673ff4103705
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_publicacion
+    - node.type.publicacion
+    - taxonomy.vocabulary.tipo_de_publicacion
+id: node.publicacion.field_tipo_de_publicacion
+field_name: field_tipo_de_publicacion
+entity_type: node
+bundle: publicacion
+label: 'Tipo de publicacion'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    tid: '36974'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tipo_de_publicacion: tipo_de_publicacion
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

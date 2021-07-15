@@ -1,0 +1,27 @@
+uuid: 3b5447e0-5bcd-497d-8a96-a72419b56fb4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_derechos_de_uso
+    - taxonomy.vocabulary.derechos_de_uso
+  module:
+    - user
+id: user.user.field_derechos_de_uso
+field_name: field_derechos_de_uso
+entity_type: user
+bundle: user
+label: 'Permiso de uso de imágenes'
+description: 'Qué tipo de imagenes puede ver el usuario en el media browser'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      derechos_de_uso: derechos_de_uso
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

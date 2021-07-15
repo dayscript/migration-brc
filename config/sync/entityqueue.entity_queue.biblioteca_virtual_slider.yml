@@ -1,0 +1,25 @@
+uuid: 983b7893-7bfd-4b10-852d-1256a1346920
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: biblioteca_virtual_slider
+label: 'Biblioteca Virtual - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

@@ -1,0 +1,14 @@
+uuid: 346b6d08-3b6f-4b4b-bf21-08c800d64d57
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_de_actividades
+  module:
+    - user
+id: user_remove_role_action.administrador_de_actividades
+label: 'Elimina el rol Administrador de actividades al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrador_de_actividades

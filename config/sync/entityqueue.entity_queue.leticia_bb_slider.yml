@@ -1,0 +1,25 @@
+uuid: 339ca8f4-f7e9-473c-9455-dd7dec823692
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_bb_slider
+label: 'Leticia - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

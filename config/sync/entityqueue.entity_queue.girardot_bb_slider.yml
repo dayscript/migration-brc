@@ -1,0 +1,25 @@
+uuid: a9063e4e-65c0-4b4a-922d-581f2afcdcc4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: girardot_bb_slider
+label: 'Girardot - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

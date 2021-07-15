@@ -1,0 +1,39 @@
+uuid: 16a91ae1-b720-4ee6-9f9e-a014e9a1e26a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.plugin.body
+    - field.field.node.plugin.comment_node_plugin
+    - field.field.node.plugin.field_available_menu
+    - field.field.node.plugin.icon
+    - field.field.node.plugin.prop_href
+    - node.type.plugin
+  module:
+    - text
+    - user
+id: node.plugin.teaser
+targetEntityType: node
+bundle: plugin
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_plugin: true
+  field_available_menu: true
+  icon: true
+  langcode: true
+  prop_href: true

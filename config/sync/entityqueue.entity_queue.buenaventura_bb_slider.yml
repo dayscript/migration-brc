@@ -1,0 +1,25 @@
+uuid: d13fa101-39e0-4a62-affb-08d4a520a9bf
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: buenaventura_bb_slider
+label: 'Buenaventura - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

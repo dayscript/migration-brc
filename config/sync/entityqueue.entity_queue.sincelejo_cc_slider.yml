@@ -1,0 +1,25 @@
+uuid: 4c58dcde-6032-4a29-8598-5125c80eb396
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: sincelejo_cc_slider
+label: 'Sincelejo - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

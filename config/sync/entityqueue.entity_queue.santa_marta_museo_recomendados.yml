@@ -1,0 +1,25 @@
+uuid: 7f3cb6f2-ebd8-4a77-8812-859e38e07953
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_museo_recomendados
+label: 'Santa Marta - Museo - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

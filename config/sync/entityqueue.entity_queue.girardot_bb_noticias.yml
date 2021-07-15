@@ -1,0 +1,19 @@
+uuid: cbcd44a8-100d-4e59-ae58-85a1eaa4b90d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: girardot_bb_noticias
+label: 'Girardot - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

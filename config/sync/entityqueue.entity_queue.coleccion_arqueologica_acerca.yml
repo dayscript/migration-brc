@@ -1,0 +1,27 @@
+uuid: 972cd69f-5f79-4bf0-b5af-8f4c8dfcdd1d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: coleccion_arqueologica_acerca
+label: 'Colección Arqueológica - Acerca de'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      multimedia: multimedia
+      article: article
+      page: page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

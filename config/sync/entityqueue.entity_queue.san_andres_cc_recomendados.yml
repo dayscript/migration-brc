@@ -1,0 +1,25 @@
+uuid: a00ab0ce-91b0-4fc0-9da7-b16cf2f29aad
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: san_andres_cc_recomendados
+label: 'San Andres - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

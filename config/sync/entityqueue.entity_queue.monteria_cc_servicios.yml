@@ -1,0 +1,19 @@
+uuid: 00a8348c-7868-4409-99db-d2266d889c58
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: monteria_cc_servicios
+label: 'Montería - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

@@ -211,7 +211,7 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
     return $terms;
   }
 
-  public function indexingApi($category, $type, $operation) {
+  public function indexingApi($category, $type, $operation, $returnresult = false) {
     $log = ['total' => 0, 'successful' => 0, 'failed' => 0, 'error' => []];
     
     switch ($category) {
@@ -242,12 +242,21 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
             }
             fclose($handle);
         }else {
-          drupal_set_message('Verifique que el archivo "makemake.csv" exista en "sites/default/files/import/" o cárguelo nuevamente.', 'error');
+          $msj = 'Verifique que el archivo "makemake.csv" exista en "sites/default/files/import/" o cárguelo nuevamente.';
+          if($returnresult){
+            return $msj;
+          }else {
+            drupal_set_message($msj, 'error');
+          }
         }
         break;
     }
-    
-    drupal_set_message('Documentos procesados: ' . $log['total'] . ', exitosos: ' . $log['successful'] . ', han fallado: ' .  $log['failed']);
+    $msj = 'Documentos procesados: ' . $log['total'] . ', exitosos: ' . $log['successful'] . ', han fallado: ' .  $log['failed'];
+    if($returnresult){
+      return $msj;
+    }else {
+      drupal_set_message($msj);
+    }
   }
 
   public function indexingProcessDoc($category, $operation, $nid, $data = null) {

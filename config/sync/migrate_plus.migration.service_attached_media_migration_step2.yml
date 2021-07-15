@@ -1,0 +1,35 @@
+uuid: 8021b95d-3767-4f50-8a23-26ff1463026f
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_file_to_media_custom
+_core:
+  default_config_hash: Oa38q0_yclp57GDQbSaumUWKjHc0bIZsgr_Zxr6FSNA
+id: service_attached_media_migration_step2
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: media
+label: 'Servicio Attached Media Migration Mapping'
+source:
+  plugin: 'content_entity:node'
+  bundle: service
+  include_translations: false
+process:
+  nid: nid
+  type:
+    plugin: default_value
+    default_value: service
+  field_files_media:
+    plugin: file_id_lookup
+    source: field_files
+    migration: service_attached_media_migration_step1
+    no_stub: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  optional:
+    - service_attached_media_migration_step1

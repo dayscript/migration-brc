@@ -1,0 +1,22 @@
+uuid: 7372f04e-cab7-481d-ab33-4024966ee675
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ninos_destacados
+label: 'Niños - Destacados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

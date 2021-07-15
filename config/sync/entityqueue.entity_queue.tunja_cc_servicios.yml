@@ -1,0 +1,19 @@
+uuid: bb7c93c1-2466-467c-ae4d-8d6bc184490b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: tunja_cc_servicios
+label: 'Tunja - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

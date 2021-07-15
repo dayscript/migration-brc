@@ -1,0 +1,14 @@
+uuid: 66620492-2d5b-4022-98ba-070b4e1cd81a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.riohacha_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.riohacha_colas_de_nodos
+label: 'Elimina el rol Riohacha - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: riohacha_colas_de_nodos

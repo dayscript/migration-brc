@@ -1,0 +1,18 @@
+uuid: 2c4107ba-f947-4bcf-8ff1-bf1a2118a68a
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_fecha_muerte
+field_name: field_fecha_muerte
+entity_type: taxonomy_term
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 71fdcf48-faf2-47e6-b253-196764f42571
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_museo_botero_destacados
+label: 'Bogota - Museo Botero - Destacados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,19 @@
+uuid: 3e102c2f-925d-43ed-93b7-efc426a506c8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ninos_multimedia
+label: 'Niños - Multimedia'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - multimedia
+queue_settings:
+  min_size: 0
+  max_size: 6

@@ -1,0 +1,19 @@
+uuid: 63c2ed93-2f22-4b02-95c9-733de07f2cfd
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: villavicencio_bb_servicios
+label: 'Villavicencio - Biblioteca - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

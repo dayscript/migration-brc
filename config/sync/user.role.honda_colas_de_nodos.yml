@@ -1,0 +1,11 @@
+uuid: cbecd231-1258-46a4-96dd-e4c72695c7ec
+langcode: es
+status: true
+dependencies: {  }
+id: honda_colas_de_nodos
+label: 'Honda - colas de nodos'
+weight: 24
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

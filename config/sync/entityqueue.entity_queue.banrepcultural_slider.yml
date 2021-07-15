@@ -1,0 +1,25 @@
+uuid: cd0c8e5d-8538-4b78-9a0c-ec4491df2ea3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: banrepcultural_slider
+label: 'Banrepcultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

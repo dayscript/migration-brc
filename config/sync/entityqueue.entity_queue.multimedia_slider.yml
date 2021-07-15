@@ -1,0 +1,25 @@
+uuid: 469f7b7e-df69-4d5f-ae9c-b2b6532e49d8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: multimedia_slider
+label: 'Multimedia - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

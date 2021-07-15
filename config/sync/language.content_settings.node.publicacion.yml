@@ -1,0 +1,11 @@
+uuid: 26cfa3e3-ee2d-4fe1-9dd0-0acd32e29f2c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.publicacion
+id: node.publicacion
+target_entity_type_id: node
+target_bundle: publicacion
+default_langcode: site_default
+language_alterable: false

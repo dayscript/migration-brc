@@ -1,0 +1,218 @@
+uuid: dccc68d2-81dc-4a90-8f63-381a114764a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_minisitio.default
+    - field.field.node.minisitio.body
+    - field.field.node.minisitio.comment_node_minisitio
+    - field.field.node.minisitio.field_a_o
+    - field.field.node.minisitio.field_area_misional
+    - field.field.node.minisitio.field_artistas_en_la_exposici_n
+    - field.field.node.minisitio.field_car_cter_de_la_exposici_n
+    - field.field.node.minisitio.field_curador
+    - field.field.node.minisitio.field_date
+    - field.field.node.minisitio.field_files
+    - field.field.node.minisitio.field_files_media
+    - field.field.node.minisitio.field_gallery
+    - field.field.node.minisitio.field_gallery_media
+    - field.field.node.minisitio.field_image
+    - field.field.node.minisitio.field_image_media
+    - field.field.node.minisitio.field_imagen_para_slider
+    - field.field.node.minisitio.field_imagen_para_slider_media
+    - field.field.node.minisitio.field_is_front
+    - field.field.node.minisitio.field_lista_de_obras
+    - field.field.node.minisitio.field_publication_date
+    - field.field.node.minisitio.field_subtitle
+    - field.field.node.minisitio.field_tags
+    - field.field.node.minisitio.field_tipo_de_exposici_n
+    - field.field.node.minisitio.field_tipo_de_minisitio
+    - field.field.node.minisitio.ubication
+    - node.type.minisitio
+  module:
+    - comment
+    - datetime
+    - file
+    - image
+    - options
+    - text
+    - user
+id: node.minisitio.default
+targetEntityType: node
+bundle: minisitio
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_minisitio:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_a_o:
+    label: above
+    weight: 20
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_area_misional:
+    label: above
+    weight: 12
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_artistas_en_la_exposici_n:
+    label: above
+    weight: 23
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_car_cter_de_la_exposici_n:
+    label: above
+    weight: 18
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_curador:
+    label: above
+    weight: 22
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_date:
+    label: above
+    weight: 21
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_files:
+    label: above
+    weight: 6
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    label: above
+    weight: 9
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    label: above
+    weight: 5
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_imagen_para_slider:
+    label: above
+    weight: 8
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_is_front:
+    label: above
+    weight: 4
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_lista_de_obras:
+    label: above
+    weight: 19
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publication_date:
+    label: above
+    weight: 2
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_subtitle:
+    label: above
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    label: above
+    weight: 11
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tipo_de_exposici_n:
+    label: above
+    weight: 24
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tipo_de_minisitio:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  ubication:
+    label: above
+    weight: 14
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_files_media: true
+  field_gallery_media: true
+  field_image_media: true
+  field_imagen_para_slider_media: true
+  langcode: true

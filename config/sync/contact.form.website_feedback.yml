@@ -1,0 +1,12 @@
+uuid: 91c684e7-f4a2-40a5-a5e0-051d55d82b7b
+langcode: es
+status: true
+dependencies: {  }
+id: website_feedback
+label: 'Website feedback'
+recipients:
+  - jcorrego@dayscript.com
+reply: ''
+weight: 0
+message: null
+redirect: null

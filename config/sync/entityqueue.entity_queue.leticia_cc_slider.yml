@@ -1,0 +1,25 @@
+uuid: 03d73dba-179c-4523-b85b-bd03ff6fe27b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_cc_slider
+label: 'Leticia - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

@@ -1,0 +1,24 @@
+uuid: 6935c0c8-2efa-4a5c-8c72-b1755a72fbd7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: manizales_bb_contenido
+label: 'Manizales - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

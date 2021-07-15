@@ -1,0 +1,22 @@
+uuid: ab055a58-187d-4cf9-80aa-7e67ce21f53e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_activity
+label: 'Content - Actividad'
+type: 'canonical_entities:node'
+pattern: '[node:field_city:0:entity]/actividad/[node:title]'
+selection_criteria:
+  bc850437-3ed2-4555-ac5e-a39a3824edfe:
+    id: node_type
+    bundles:
+      activity: activity
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bc850437-3ed2-4555-ac5e-a39a3824edfe
+selection_logic: and
+weight: 0
+relationships: {  }

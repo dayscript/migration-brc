@@ -1,0 +1,42 @@
+uuid: 68c9c61c-138a-4f3a-9de2-69565ee97230
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_relation
+    - node.type.activity
+    - node.type.article
+    - node.type.book
+    - node.type.multimedia
+    - node.type.page
+    - node.type.service
+id: node.page.field_relation
+field_name: field_relation
+entity_type: node
+bundle: page
+label: Relación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      activity: activity
+      article: article
+      librarie: librarie
+      collections: collections
+      book: book
+      multimedia: multimedia
+      museum: museum
+      page: page
+      service: service
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

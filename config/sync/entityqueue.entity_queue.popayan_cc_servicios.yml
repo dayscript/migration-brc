@@ -1,0 +1,19 @@
+uuid: 4f2bd8f6-5500-4687-b77a-3e07fb0bf90f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: popayan_cc_servicios
+label: 'Popayán - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

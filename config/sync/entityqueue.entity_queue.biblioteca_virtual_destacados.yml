@@ -1,0 +1,22 @@
+uuid: 65ea0ea8-b2a9-413e-b03c-c6623d44d4b6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: biblioteca_virtual_destacados
+label: 'Biblioteca Virtual - Destacados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

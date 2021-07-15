@@ -1,0 +1,19 @@
+uuid: ec6ea18b-f71b-4705-87eb-ba97125459f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_limite_de_inscripciones
+    - node.type.activity
+id: node.activity.field_limite_de_inscripciones
+field_name: field_limite_de_inscripciones
+entity_type: node
+bundle: activity
+label: 'Límite de inscripciones'
+description: 'El número máximo de inscripciones que puede tener la actividad. Dejar vació para inscripciones ilimitadas.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

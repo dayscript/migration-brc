@@ -1,0 +1,14 @@
+uuid: 43497076-f3f9-4367-8cd5-0860eac596bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.cartagena_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.cartagena_colas_de_nodos
+label: 'Elimina el rol Cartagena - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: cartagena_colas_de_nodos

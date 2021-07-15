@@ -1,0 +1,14 @@
+uuid: 8b27dd4f-00c3-4943-9922-4f7990c17aa7
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.ipiales_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.ipiales_colas_de_nodos
+label: 'Añade el rol Ipiales - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ipiales_colas_de_nodos

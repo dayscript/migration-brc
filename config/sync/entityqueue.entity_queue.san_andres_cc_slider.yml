@@ -1,0 +1,25 @@
+uuid: 40b4b8e5-2510-4d65-b0e2-ecc62ca22474
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: san_andres_cc_slider
+label: 'San Andres - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

@@ -1,0 +1,19 @@
+uuid: 3bc1d5de-060f-4701-8480-ed4126df3e44
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_numero_identificacion
+    - paragraphs.paragraphs_type.informaci_n_de_los_acompa_
+id: paragraph.informaci_n_de_los_acompa_.field_numero_identificacion
+field_name: field_numero_identificacion
+entity_type: paragraph
+bundle: informaci_n_de_los_acompa_
+label: 'Numero Identificación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

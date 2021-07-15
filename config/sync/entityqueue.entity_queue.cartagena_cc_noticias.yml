@@ -1,0 +1,19 @@
+uuid: 0bee8461-9e1a-4490-9bc1-d6b65301c48c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_cc_noticias
+label: 'Cartagena - Centro Cultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

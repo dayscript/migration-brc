@@ -1,0 +1,25 @@
+uuid: 7ac1bda0-8fc2-4053-b714-8ecf7a385e84
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_bb_slider
+label: 'Armenia - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

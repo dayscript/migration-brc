@@ -1,0 +1,26 @@
+uuid: b5d5dd72-a695-4616-8b3e-0f5a9d2425ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.obra_de_arte
+    - taxonomy.vocabulary.tags
+id: node.obra_de_arte.field_tags
+field_name: field_tags
+entity_type: node
+bundle: obra_de_arte
+label: Etiquetas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tags: tags
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

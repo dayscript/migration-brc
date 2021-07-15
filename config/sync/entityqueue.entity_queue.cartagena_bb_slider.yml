@@ -1,0 +1,25 @@
+uuid: e2afde90-6ec1-470b-9605-4cc76c7e14c0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_bb_slider
+label: 'Cartagena - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

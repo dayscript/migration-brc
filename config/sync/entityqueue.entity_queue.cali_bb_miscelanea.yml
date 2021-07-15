@@ -1,0 +1,23 @@
+uuid: 57a9f57d-7a82-4c9a-8ef3-b52311df6ee3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cali_bb_miscelanea
+label: 'Cali - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

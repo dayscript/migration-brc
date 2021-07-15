@@ -1,0 +1,8 @@
+uuid: c6226052-eb61-44c0-a8ad-864ea9769254
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_activity
+label: 'Actividad comment'
+target_entity_type_id: node
+description: null

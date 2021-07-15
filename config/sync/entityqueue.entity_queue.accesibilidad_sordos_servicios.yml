@@ -1,0 +1,19 @@
+uuid: e56a5dac-073e-44f1-bf8f-12aef1e75c8d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: accesibilidad_sordos_servicios
+label: 'Accesibilidad - Sordos - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

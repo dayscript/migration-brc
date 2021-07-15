@@ -1,0 +1,23 @@
+uuid: d34620f0-23b6-4185-ba3b-ec310f908a33
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pereira_bb_miscelanea
+label: 'Pereira - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

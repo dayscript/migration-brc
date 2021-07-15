@@ -1,0 +1,19 @@
+uuid: a0197d98-6987-4eee-a9a4-f5373240ca7f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_numero_identificacion
+    - paragraphs.paragraphs_type.integrantes_agrupacion
+id: paragraph.integrantes_agrupacion.field_numero_identificacion
+field_name: field_numero_identificacion
+entity_type: paragraph
+bundle: integrantes_agrupacion
+label: 'Numero Identificacion'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

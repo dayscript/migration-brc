@@ -1,0 +1,25 @@
+uuid: cc842f49-e8a4-4b1f-8f17-1111ff39ba3b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: riohacha_bb_slider
+label: 'Riohacha - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

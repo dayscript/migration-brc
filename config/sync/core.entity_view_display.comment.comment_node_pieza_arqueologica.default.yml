@@ -1,0 +1,28 @@
+uuid: 2762fc8b-d325-46e9-be60-2fdea47655dc
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_pieza_arqueologica
+    - field.field.comment.comment_node_pieza_arqueologica.comment_body
+  module:
+    - text
+id: comment.comment_node_pieza_arqueologica.default
+targetEntityType: comment
+bundle: comment_node_pieza_arqueologica
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

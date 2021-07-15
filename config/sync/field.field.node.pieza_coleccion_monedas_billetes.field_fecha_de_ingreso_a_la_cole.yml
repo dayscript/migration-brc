@@ -1,0 +1,21 @@
+uuid: 428e5519-5e40-4382-a778-1e4e3f4ac66d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_de_ingreso_a_la_cole
+    - node.type.pieza_coleccion_monedas_billetes
+  module:
+    - datetime
+id: node.pieza_coleccion_monedas_billetes.field_fecha_de_ingreso_a_la_cole
+field_name: field_fecha_de_ingreso_a_la_cole
+entity_type: node
+bundle: pieza_coleccion_monedas_billetes
+label: 'Fecha de ingreso a la coleccion'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

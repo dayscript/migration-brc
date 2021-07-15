@@ -1,0 +1,22 @@
+uuid: ed56d1e0-1db7-4c03-b6bf-2e7090996b3d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_museo_destacados
+label: 'Armenia - Museo - Destacados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,24 @@
+uuid: fbba1dbb-9e06-4812-9b0b-7759863a059f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_gomez_contenido
+label: 'Bogota - Casa Gómez - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

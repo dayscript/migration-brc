@@ -1,0 +1,8 @@
+uuid: 519a7857-1429-4212-898b-40bbb1506b56
+langcode: es
+status: true
+dependencies: {  }
+name: CMO-Forma
+vid: cmo_forma
+description: 'Forma de las piezas de Colección Museo del Oro'
+weight: 0

@@ -1,0 +1,18 @@
+uuid: 2054a14c-858b-4051-925d-a2fa585bff0c
+langcode: es
+status: true
+dependencies:
+  theme:
+    - adminimal_theme
+id: pagetitle
+theme: adminimal_theme
+region: header
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

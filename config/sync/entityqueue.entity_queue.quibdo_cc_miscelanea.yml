@@ -1,0 +1,23 @@
+uuid: 58b96ace-94ab-40fa-bb69-4f17a8c8bfd5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: quibdo_cc_miscelanea
+label: 'Quibdó - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

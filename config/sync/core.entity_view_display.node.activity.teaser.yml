@@ -1,0 +1,71 @@
+uuid: a1e09655-305b-4652-b387-375af06af1ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.activity.body
+    - field.field.node.activity.comment_node_activity
+    - field.field.node.activity.field_area_misional
+    - field.field.node.activity.field_city
+    - field.field.node.activity.field_date
+    - field.field.node.activity.field_description
+    - field.field.node.activity.field_disponibilidad
+    - field.field.node.activity.field_files
+    - field.field.node.activity.field_files_media
+    - field.field.node.activity.field_gallery
+    - field.field.node.activity.field_gallery_media
+    - field.field.node.activity.field_horarios
+    - field.field.node.activity.field_image
+    - field.field.node.activity.field_image_media
+    - field.field.node.activity.field_imagen_para_slider
+    - field.field.node.activity.field_imagen_para_slider_media
+    - field.field.node.activity.field_limite_de_inscripciones
+    - field.field.node.activity.field_metatag
+    - field.field.node.activity.field_p_blico_objetivo
+    - field.field.node.activity.field_price
+    - field.field.node.activity.field_sumario
+    - field.field.node.activity.field_tags
+    - field.field.node.activity.field_title_form
+    - field.field.node.activity.field_tome_nota
+    - field.field.node.activity.field_type_activity
+    - node.type.activity
+  module:
+    - user
+id: node.activity.teaser
+targetEntityType: node
+bundle: activity
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_activity: true
+  field_area_misional: true
+  field_city: true
+  field_date: true
+  field_description: true
+  field_disponibilidad: true
+  field_files: true
+  field_files_media: true
+  field_gallery: true
+  field_gallery_media: true
+  field_horarios: true
+  field_image: true
+  field_image_media: true
+  field_imagen_para_slider: true
+  field_imagen_para_slider_media: true
+  field_limite_de_inscripciones: true
+  field_metatag: true
+  field_p_blico_objetivo: true
+  field_price: true
+  field_sumario: true
+  field_tags: true
+  field_title_form: true
+  field_tome_nota: true
+  field_type_activity: true
+  langcode: true

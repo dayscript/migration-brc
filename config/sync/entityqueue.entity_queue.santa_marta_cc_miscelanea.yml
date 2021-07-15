@@ -1,0 +1,23 @@
+uuid: ae579ed9-ca8d-41c4-a2b8-763617263383
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_cc_miscelanea
+label: 'Santa Marta - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

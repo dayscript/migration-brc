@@ -1,0 +1,24 @@
+uuid: 70848838-b646-4da0-adb1-073e9b77045d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: buenaventura_bb_contenido
+label: 'Buenaventura - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

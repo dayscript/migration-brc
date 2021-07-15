@@ -1,0 +1,22 @@
+uuid: a64fe702-676e-405b-89ec-c439809e8ed7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_museo_destacados
+label: 'Santa Marta - Museo - Destacados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

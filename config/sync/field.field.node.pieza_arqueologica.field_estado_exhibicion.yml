@@ -1,0 +1,21 @@
+uuid: 503f75ac-1afe-4c28-9d58-c44878f87012
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado_exhibicion
+    - node.type.pieza_arqueologica
+  module:
+    - options
+id: node.pieza_arqueologica.field_estado_exhibicion
+field_name: field_estado_exhibicion
+entity_type: node
+bundle: pieza_arqueologica
+label: 'En exhibición'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

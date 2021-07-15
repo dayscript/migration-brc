@@ -1,0 +1,19 @@
+uuid: 4f31d1fd-2760-46f2-a504-ec42ae4343ff
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_profesor_es_de_instrumento
+    - paragraphs.paragraphs_type.estudios_solistas
+id: paragraph.estudios_solistas.field_profesor_es_de_instrumento
+field_name: field_profesor_es_de_instrumento
+entity_type: paragraph
+bundle: estudios_solistas
+label: 'Profesor(es) de instrumento actual(es). Si actualmente no estudia con un profesor escriba No aplica:'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: 7eb75476-7ccf-4ff9-9e3a-64f2d6b14895
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.buenaventura_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.buenaventura_colas_de_nodos
+label: 'Elimina el rol Buenaventura  - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: buenaventura_colas_de_nodos

@@ -1,0 +1,25 @@
+uuid: 6a4cac64-b70c-4fc6-9a06-dd2836eef08a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_bb_slider
+label: 'Bogota - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

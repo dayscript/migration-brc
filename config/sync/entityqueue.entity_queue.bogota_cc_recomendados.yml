@@ -1,0 +1,25 @@
+uuid: 98b9c48e-e036-47d8-bfd9-8f763858663c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_cc_recomendados
+label: 'Bogota - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

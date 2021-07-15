@@ -1,0 +1,24 @@
+uuid: b0fa4587-124b-49a4-ae5f-1ab8b3ae7af8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: medellin_bb_contenido
+label: 'Medellín - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

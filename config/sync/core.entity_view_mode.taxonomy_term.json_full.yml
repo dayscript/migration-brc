@@ -1,0 +1,10 @@
+uuid: 364f112f-cbdf-4d32-a190-147ea2d7026c
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.json_full
+label: json_full
+targetEntityType: taxonomy_term
+cache: true

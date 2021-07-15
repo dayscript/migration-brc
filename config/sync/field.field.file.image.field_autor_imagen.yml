@@ -1,0 +1,27 @@
+uuid: a0fdd9e5-7f0f-44ad-a181-0abd7deaaee2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_autor_imagen
+    - taxonomy.vocabulary.autor_de_imagen
+  module:
+    - file
+id: file.image.field_autor_imagen
+field_name: field_autor_imagen
+entity_type: file
+bundle: image
+label: Autor-imagen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      autor_de_imagen: autor_de_imagen
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 1a2d68c4-4adf-4055-b685-9e4a2c415590
+langcode: es
+status: true
+dependencies: {  }
+name: 'CF - País'
+vid: cf_autor
+description: 'Artista que diseño la estampilla'
+weight: 0

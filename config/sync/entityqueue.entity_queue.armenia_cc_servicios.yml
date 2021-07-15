@@ -1,0 +1,19 @@
+uuid: ca423f89-7033-49f4-977f-678922db44ea
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_cc_servicios
+label: 'Armenia - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

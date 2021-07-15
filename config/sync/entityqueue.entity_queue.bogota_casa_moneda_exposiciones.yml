@@ -1,0 +1,22 @@
+uuid: 967e3b3f-8a61-4c0e-91c2-a50ff03696f0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_moneda_exposiciones
+label: 'Bogota - Casa Moneda - Exposiciones'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,25 @@
+uuid: 4ffd5f3f-8fec-4f2b-b9b2-27c06423d773
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_cc_recomendados
+label: 'Santa Marta - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

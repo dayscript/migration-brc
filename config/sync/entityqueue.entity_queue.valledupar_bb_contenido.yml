@@ -1,0 +1,24 @@
+uuid: 11bbd3a7-a78b-4412-ac8d-966fb938208d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: valledupar_bb_contenido
+label: 'Valledupar - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

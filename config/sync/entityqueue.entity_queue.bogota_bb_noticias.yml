@@ -1,0 +1,19 @@
+uuid: c7eaa3a7-b1c1-4798-ab9f-0880f3256008
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_bb_noticias
+label: 'Bogota - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

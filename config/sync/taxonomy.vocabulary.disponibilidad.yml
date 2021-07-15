@@ -1,0 +1,8 @@
+uuid: eb65b135-e2a1-4781-a22b-98b8aa1aea6d
+langcode: es
+status: true
+dependencies: {  }
+name: Disponibilidad
+vid: disponibilidad
+description: 'Para cupos de actividades o publicaciones a laventa'
+weight: 3

@@ -1,0 +1,25 @@
+uuid: b192fc55-2606-4979-a656-2399b503e654
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_bb_recomendados
+label: 'Armenia - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

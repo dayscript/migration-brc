@@ -1,0 +1,8 @@
+uuid: 35a10c9c-0fa7-4be3-94e3-dcce30f93e30
+langcode: es
+status: true
+dependencies: {  }
+name: 'CF Tipo'
+vid: cf_tipo
+description: ''
+weight: 0

@@ -1,0 +1,19 @@
+uuid: da554c10-ed3b-4ce7-ac61-9049577ddae8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_gomez_servicios
+label: 'Bogota - Casa Gómez - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

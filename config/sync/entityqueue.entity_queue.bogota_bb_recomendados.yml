@@ -1,0 +1,25 @@
+uuid: 57c85fa5-52dd-4654-a761-90f1e3015b97
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_bb_recomendados
+label: 'Bogota - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

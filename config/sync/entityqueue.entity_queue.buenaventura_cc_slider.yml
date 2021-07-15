@@ -1,0 +1,25 @@
+uuid: f74f7084-5a73-4814-abe5-bcaca138b500
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: buenaventura_cc_slider
+label: 'Buenaventura - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

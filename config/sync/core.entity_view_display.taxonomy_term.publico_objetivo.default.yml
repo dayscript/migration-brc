@@ -1,0 +1,45 @@
+uuid: 4495cc1b-65e8-423d-8812-c6a41154a9a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.publico_objetivo.field_icono_publico
+    - field.field.taxonomy_term.publico_objetivo.field_imagen_principal
+    - field.field.taxonomy_term.publico_objetivo.field_metatag
+    - taxonomy.vocabulary.publico_objetivo
+  module:
+    - image
+    - text
+id: taxonomy_term.publico_objetivo.default
+targetEntityType: taxonomy_term
+bundle: publico_objetivo
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_icono_publico:
+    label: above
+    weight: 2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_imagen_principal:
+    label: above
+    weight: 1
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_metatag: true
+  langcode: true

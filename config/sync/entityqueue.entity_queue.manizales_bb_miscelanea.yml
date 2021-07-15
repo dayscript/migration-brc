@@ -1,0 +1,23 @@
+uuid: e29a6b26-399a-4746-a753-55e5f097dc9e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: manizales_bb_miscelanea
+label: 'Manizales - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

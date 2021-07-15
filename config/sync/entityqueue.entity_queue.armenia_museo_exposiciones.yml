@@ -1,0 +1,22 @@
+uuid: 8b6ee179-064c-45ff-8d6e-0ab8bdb4e31d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_museo_exposiciones
+label: 'Armenia - Museo - Exposiciones'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

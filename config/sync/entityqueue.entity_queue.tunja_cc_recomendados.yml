@@ -1,0 +1,25 @@
+uuid: 816e0da7-3a3b-4f5e-8042-4f77239ac0f1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: tunja_cc_recomendados
+label: 'Tunja - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

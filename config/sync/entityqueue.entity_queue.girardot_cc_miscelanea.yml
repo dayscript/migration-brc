@@ -1,0 +1,23 @@
+uuid: f4817f20-372f-425c-bce9-2870bc7fb1b2
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: girardot_cc_miscelanea
+label: 'Girardot - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

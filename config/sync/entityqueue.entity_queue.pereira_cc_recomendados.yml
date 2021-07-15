@@ -1,0 +1,25 @@
+uuid: 627f3904-fa1e-46d3-991c-999a679ed796
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pereira_cc_recomendados
+label: 'Pereira - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

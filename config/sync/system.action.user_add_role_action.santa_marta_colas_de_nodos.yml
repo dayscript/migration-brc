@@ -1,0 +1,14 @@
+uuid: b08e909c-e493-4c54-afe0-8213cf2b9ef6
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.santa_marta_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.santa_marta_colas_de_nodos
+label: 'Añade el rol Santa Marta - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: santa_marta_colas_de_nodos

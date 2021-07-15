@@ -1,0 +1,24 @@
+uuid: 4ea73710-0555-41fc-959a-9d0b45cb2756
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ibague_bb_contenido
+label: 'Ibagué - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

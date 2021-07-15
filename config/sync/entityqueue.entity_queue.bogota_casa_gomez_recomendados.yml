@@ -1,0 +1,25 @@
+uuid: 137f1ff3-9ba5-4673-af0c-3d1dad329409
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_gomez_recomendados
+label: 'Bogota - Casa Gómez - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

@@ -1,0 +1,23 @@
+uuid: c8e6ebfa-b612-40ce-876b-28c26c8353b8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cali_museo_miscelanea
+label: 'Cali - Museo - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

@@ -1,0 +1,14 @@
+uuid: 4713588c-e779-47f3-8b63-fd1d7952d233
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador_de_actividades
+  module:
+    - user
+id: user_add_role_action.administrador_de_actividades
+label: 'Añade el rol Administrador de actividades al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administrador_de_actividades

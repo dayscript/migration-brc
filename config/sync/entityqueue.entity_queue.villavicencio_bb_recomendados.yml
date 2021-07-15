@@ -1,0 +1,25 @@
+uuid: 966b2379-a95b-4dbf-a9aa-e24c9450e7e6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: villavicencio_bb_recomendados
+label: 'Villavicencio - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

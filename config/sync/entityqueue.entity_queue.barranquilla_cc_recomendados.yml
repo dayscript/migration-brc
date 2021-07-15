@@ -1,0 +1,25 @@
+uuid: 5195a750-9dce-411e-b3d7-7d224b46f1b6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: barranquilla_cc_recomendados
+label: 'Barranquilla - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

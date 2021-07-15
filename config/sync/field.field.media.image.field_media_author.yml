@@ -1,0 +1,29 @@
+uuid: 5d30f42d-5b36-48c3-a665-4ade9f88fb3b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_author
+    - media.type.image
+    - taxonomy.vocabulary.autor_de_imagen
+id: media.image.field_media_author
+field_name: field_media_author
+entity_type: media
+bundle: image
+label: Autor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      autor_de_imagen: autor_de_imagen
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

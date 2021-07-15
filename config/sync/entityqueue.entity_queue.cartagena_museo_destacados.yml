@@ -1,0 +1,22 @@
+uuid: abb82618-121c-428a-a455-f968ff3783eb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_museo_destacados
+label: 'Cartagena - Museo - Destacados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

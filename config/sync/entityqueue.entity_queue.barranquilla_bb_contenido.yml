@@ -1,0 +1,24 @@
+uuid: 22f87b8b-dea7-41f4-90b5-bfc2b5110dec
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: barranquilla_bb_contenido
+label: 'Barranquilla - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

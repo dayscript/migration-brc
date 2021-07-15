@@ -1,5 +1,12 @@
 brc_custom.fullnode:
-  path: '/api/brc/fullnode'
+  path: '/api/brc/full-node'
+  defaults:
+    _controller: '\Drupal\brc_custom\Controller\BrcCustomController::fullNode'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+brc_custom.booknode:
+  path: '/api/brc/book-node'
   defaults:
     _controller: '\Drupal\brc_custom\Controller\BrcCustomController::fullNode'
   methods:  [GET]

@@ -1,0 +1,19 @@
+uuid: a613c7c2-5e82-4d29-871d-fe40439300d2
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_museo_noticias
+label: 'Armenia - Museo - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

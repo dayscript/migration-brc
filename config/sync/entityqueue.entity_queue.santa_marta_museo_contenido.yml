@@ -1,0 +1,24 @@
+uuid: 12ce4e9f-17ac-43a2-bad1-e4b3bfd5223a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_museo_contenido
+label: 'Santa Marta - Museo - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

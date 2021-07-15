@@ -1,0 +1,25 @@
+uuid: 25b84f16-cc97-4e62-a7d2-7ed630691001
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: medellin_bb_slider
+label: 'Medellín - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

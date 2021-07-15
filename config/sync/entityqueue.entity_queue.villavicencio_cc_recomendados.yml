@@ -1,0 +1,25 @@
+uuid: d4ffab1d-ce14-466a-8b31-f0d409788a70
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: villavicencio_cc_recomendados
+label: 'Villavicencio - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

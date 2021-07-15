@@ -1,0 +1,21 @@
+uuid: 7046be77-fbff-4ba6-a485-79c6124180af
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: banrepcultural_ninos
+label: 'Banrepcultural - Niños'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - multimedia
+      - article
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 6

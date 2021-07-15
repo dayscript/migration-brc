@@ -1,0 +1,19 @@
+uuid: 5c184088-ffb3-4359-9c6e-5fdf66f54c4d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_cc_servicios
+label: 'Santa Marta - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

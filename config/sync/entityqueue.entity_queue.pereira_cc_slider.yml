@@ -1,0 +1,25 @@
+uuid: 693c8c5d-93a4-47cd-8c3d-46d1c2436907
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pereira_cc_slider
+label: 'Pereira - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

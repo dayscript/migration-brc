@@ -1,0 +1,19 @@
+uuid: 1f6fe347-c881-4697-bc47-6c770fa3d569
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_cc_servicios
+label: 'Leticia - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

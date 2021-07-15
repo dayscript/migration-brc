@@ -1,0 +1,35 @@
+uuid: 8cd21f0f-8baf-4d05-b716-4ece1edf4065
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_file_to_media_custom
+_core:
+  default_config_hash: Di00ckiniSWjCEGvs6qRXdvBY9V1W6E3M34LHzopXsU
+id: minisitio_gallery_media_migration_step2
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: media
+label: 'Minisitio Gallery Media Migration Mapping'
+source:
+  plugin: 'content_entity:node'
+  bundle: minisitio
+  include_translations: false
+process:
+  nid: nid
+  type:
+    plugin: default_value
+    default_value: minisitio
+  field_gallery_media:
+    plugin: file_id_lookup
+    source: field_gallery
+    migration: minisitio_gallery_media_migration_step1
+    no_stub: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  optional:
+    - minisitio_gallery_media_migration_step1

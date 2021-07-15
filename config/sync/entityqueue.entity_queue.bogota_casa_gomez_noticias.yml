@@ -1,0 +1,19 @@
+uuid: 0a003dc4-7f10-4b87-af28-93c7e2339c8b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_gomez_noticias
+label: 'Bogota - Casa Gómez - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

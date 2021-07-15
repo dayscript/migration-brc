@@ -1,0 +1,26 @@
+uuid: 4d221e83-933f-46e6-a83a-c1df50f5c73c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_exposici_n
+    - node.type.minisitio
+    - taxonomy.vocabulary.tipo_de_exposici_n
+id: node.minisitio.field_tipo_de_exposici_n
+field_name: field_tipo_de_exposici_n
+entity_type: node
+bundle: minisitio
+label: 'Tipo de exposición'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tipo_de_exposici_n: tipo_de_exposici_n
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

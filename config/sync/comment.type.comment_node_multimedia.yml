@@ -1,0 +1,8 @@
+uuid: 9a030af6-71b5-448d-95bf-b978d6662d07
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_multimedia
+label: 'Multimedia comment'
+target_entity_type_id: node
+description: null

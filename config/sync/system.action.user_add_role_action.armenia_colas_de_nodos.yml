@@ -1,0 +1,14 @@
+uuid: 603be1ab-f030-4b13-b7a5-1bbd3f652a00
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.armenia_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.armenia_colas_de_nodos
+label: 'Añade el rol Armenia - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: armenia_colas_de_nodos

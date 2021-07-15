@@ -1,0 +1,21 @@
+uuid: 2e9fd8d3-cc53-48bc-b278-f75f5588feec
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_book
+label: 'Content - Revista Credencial Historia'
+type: 'canonical_entities:node'
+pattern: 'biblioteca-virtual/[node:book:parents:join-path]/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      book: book
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

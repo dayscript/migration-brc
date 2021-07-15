@@ -1,0 +1,19 @@
+uuid: b7eededf-d657-42af-b3fc-6bc51da019a9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: florencia_cc_servicios
+label: 'Florencia - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

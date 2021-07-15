@@ -1,0 +1,19 @@
+uuid: 83b918cc-fdc4-4534-9663-4d7c8c8d891f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: banrepcultural_multimedia
+label: 'Banrepcultural - Multimedia'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - multimedia
+queue_settings:
+  min_size: 0
+  max_size: 6

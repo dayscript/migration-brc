@@ -1,0 +1,28 @@
+uuid: fc5c68ff-12ec-4bcd-818c-fa08f2ef2242
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_obra_de_arte
+    - field.field.comment.comment_node_obra_de_arte.comment_body
+  module:
+    - text
+id: comment.comment_node_obra_de_arte.default
+targetEntityType: comment
+bundle: comment_node_obra_de_arte
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

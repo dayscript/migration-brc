@@ -1,0 +1,24 @@
+uuid: d15ef53a-0b4a-4f28-9d14-a43b856945ae
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: manizales_cc_contenido
+label: 'Manizales - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,25 @@
+uuid: db4b981d-ce38-42b7-871b-1dc5f024d23b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_bb_recomendados
+label: 'Cartagena - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

@@ -1,0 +1,25 @@
+uuid: 467213c3-0b46-4611-b0d1-398a5e28a184
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pasto_cc_slider
+label: 'Pasto - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

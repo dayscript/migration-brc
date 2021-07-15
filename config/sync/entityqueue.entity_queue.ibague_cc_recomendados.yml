@@ -1,0 +1,25 @@
+uuid: 1cba6206-4934-49f5-a3a4-2075901f0f48
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ibague_cc_recomendados
+label: 'Ibagué - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

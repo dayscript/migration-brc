@@ -1,0 +1,24 @@
+uuid: 5898c10c-2802-47f5-bdd6-a37872ced3e3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: monteria_cc_contenido
+label: 'Montería - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

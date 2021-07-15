@@ -1,0 +1,25 @@
+uuid: a95fb223-30ca-47b3-93a5-945c7da1c3c6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: buenaventura_bb_recomendados
+label: 'Buenaventura - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

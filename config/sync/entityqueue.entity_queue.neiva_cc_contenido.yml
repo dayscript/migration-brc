@@ -1,0 +1,24 @@
+uuid: 655a491e-bc98-467f-8014-5bfa5781811b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: neiva_cc_contenido
+label: 'Neiva - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

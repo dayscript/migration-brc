@@ -1,0 +1,14 @@
+uuid: 6825d2cc-f639-4bf2-98f5-6b2c84c390e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.ibague_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.ibague_colas_de_nodos
+label: 'Añade el rol Ibagué - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ibague_colas_de_nodos

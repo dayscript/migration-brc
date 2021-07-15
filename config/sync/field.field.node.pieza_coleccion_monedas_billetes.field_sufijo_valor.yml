@@ -1,0 +1,26 @@
+uuid: a356e94f-51fa-4986-9c98-304ff36eec92
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sufijo_valor
+    - node.type.pieza_coleccion_monedas_billetes
+    - taxonomy.vocabulary.sufijo_valor
+id: node.pieza_coleccion_monedas_billetes.field_sufijo_valor
+field_name: field_sufijo_valor
+entity_type: node
+bundle: pieza_coleccion_monedas_billetes
+label: 'Sufijo valor'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      sufijo_valor: sufijo_valor
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

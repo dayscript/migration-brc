@@ -1,0 +1,25 @@
+uuid: aa106d9f-a92e-455c-8185-601844a2423a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cali_bb_slider
+label: 'Cali - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

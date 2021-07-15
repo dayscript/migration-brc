@@ -1,0 +1,33 @@
+uuid: 07e6f626-cdfa-4198-89a5-1661c705f28d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_para_slider
+    - node.type.service
+  module:
+    - image
+id: node.service.field_imagen_para_slider
+field_name: field_imagen_para_slider
+entity_type: node
+bundle: service
+label: 'Imagen para slider'
+description: 'Esta imágen se usa para los servicios que quieran destacarse en los Homes de centros culturales'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: service/image-slider
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '2 MB'
+  max_resolution: ''
+  min_resolution: 1440x415
+  alt_field: false
+  title_field: false
+  default_image: '3745'
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

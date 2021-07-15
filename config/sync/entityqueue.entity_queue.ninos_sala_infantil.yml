@@ -1,0 +1,21 @@
+uuid: 15087aa0-4f7e-400d-8fe5-ebc41c8f132c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ninos_sala_infantil
+label: 'Niños - Sala Infantil'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - multimedia
+      - article
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 6

@@ -1,0 +1,19 @@
+uuid: 991f3d53-fcf5-414b-b0e9-cb56a2e7c8d8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_bb_servicios
+label: 'Cartagena - Biblioteca - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

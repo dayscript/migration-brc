@@ -1,0 +1,25 @@
+uuid: 50e3014c-8536-4b7c-8e73-ae809c94b8cb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_museo_recomendados
+label: 'Cartagena - Museo - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

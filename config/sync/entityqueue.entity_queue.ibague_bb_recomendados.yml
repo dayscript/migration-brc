@@ -1,0 +1,25 @@
+uuid: 811afa2f-deba-429a-a648-c4f2862dec08
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ibague_bb_recomendados
+label: 'Ibagué - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

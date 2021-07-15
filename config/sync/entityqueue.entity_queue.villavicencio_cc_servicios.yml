@@ -1,0 +1,19 @@
+uuid: ffa8c7be-2723-4601-9635-de3c84f47a97
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: villavicencio_cc_servicios
+label: 'Villavicencio - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

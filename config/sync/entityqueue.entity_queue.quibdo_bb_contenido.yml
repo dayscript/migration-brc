@@ -1,0 +1,24 @@
+uuid: 5ade14e0-5ea9-405a-918d-392a8de0a085
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: quibdo_bb_contenido
+label: 'Quibdó - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

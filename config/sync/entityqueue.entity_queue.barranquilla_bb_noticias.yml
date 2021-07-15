@@ -1,0 +1,19 @@
+uuid: e52b88c5-4214-4a1e-8492-b8f52ff21f9f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: barranquilla_bb_noticias
+label: 'Barranquilla - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

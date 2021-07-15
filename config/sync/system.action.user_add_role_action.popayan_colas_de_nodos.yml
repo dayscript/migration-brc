@@ -1,0 +1,14 @@
+uuid: 57fe6433-9612-4a9c-a9b2-f74ac772b6f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.popayan_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.popayan_colas_de_nodos
+label: 'Añade el rol Popayán - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: popayan_colas_de_nodos

@@ -1,0 +1,20 @@
+uuid: e6029faa-ce00-4890-a258-5cd932a38637
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_derechos_de_uso
+field_name: field_derechos_de_uso
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

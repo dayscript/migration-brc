@@ -1,0 +1,25 @@
+uuid: 89220079-5af5-43ac-a07e-1d2e978d3032
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: sincelejo_cc_recomendados
+label: 'Sincelejo - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

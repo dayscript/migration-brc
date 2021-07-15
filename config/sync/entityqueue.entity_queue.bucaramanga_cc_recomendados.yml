@@ -1,0 +1,25 @@
+uuid: 85647a41-6010-437d-b469-3473d19e1610
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bucaramanga_cc_recomendados
+label: 'Bucaramanga - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

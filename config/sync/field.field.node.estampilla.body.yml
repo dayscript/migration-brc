@@ -1,0 +1,23 @@
+uuid: 6ebdde4d-c1b7-4927-95f2-94e2413eff65
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.estampilla
+  module:
+    - text
+id: node.estampilla.body
+field_name: body
+entity_type: node
+bundle: estampilla
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

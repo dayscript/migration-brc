@@ -1,0 +1,241 @@
+uuid: 48291d37-154d-438d-82db-3166db015144
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_pieza_arqueologica.default
+    - field.field.node.pieza_arqueologica.body
+    - field.field.node.pieza_arqueologica.comment_node_pieza_arqueologica
+    - field.field.node.pieza_arqueologica.field_apodo_o_nombre_si_lo_tiene
+    - field.field.node.pieza_arqueologica.field_city
+    - field.field.node.pieza_arqueologica.field_cmo_descripcion_hallazgo
+    - field.field.node.pieza_arqueologica.field_cmo_fecha_periodo
+    - field.field.node.pieza_arqueologica.field_cmo_fotografo
+    - field.field.node.pieza_arqueologica.field_cmo_funcion
+    - field.field.node.pieza_arqueologica.field_cmo_sitio
+    - field.field.node.pieza_arqueologica.field_cmo_tecnica
+    - field.field.node.pieza_arqueologica.field_cmo_tipo_de_pieza
+    - field.field.node.pieza_arqueologica.field_derechos_de_uso
+    - field.field.node.pieza_arqueologica.field_dimensiones
+    - field.field.node.pieza_arqueologica.field_estado_exhibicion
+    - field.field.node.pieza_arqueologica.field_estilo
+    - field.field.node.pieza_arqueologica.field_forma
+    - field.field.node.pieza_arqueologica.field_gallery
+    - field.field.node.pieza_arqueologica.field_gallery_media
+    - field.field.node.pieza_arqueologica.field_lugar_de_procedencia
+    - field.field.node.pieza_arqueologica.field_material
+    - field.field.node.pieza_arqueologica.field_numero_de_registro
+    - field.field.node.pieza_arqueologica.field_periodo
+    - field.field.node.pieza_arqueologica.field_region
+    - field.field.node.pieza_arqueologica.field_representaci_n
+    - field.field.node.pieza_arqueologica.field_tags
+    - node.type.pieza_arqueologica
+  module:
+    - comment
+    - image
+    - options
+    - text
+    - user
+id: node.pieza_arqueologica.default
+targetEntityType: node
+bundle: pieza_arqueologica
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_pieza_arqueologica:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_apodo_o_nombre_si_lo_tiene:
+    label: above
+    weight: 21
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_city:
+    label: above
+    weight: 22
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_cmo_descripcion_hallazgo:
+    label: above
+    weight: 27
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cmo_fecha_periodo:
+    label: above
+    weight: 25
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_cmo_fotografo:
+    label: above
+    weight: 29
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_cmo_funcion:
+    label: above
+    weight: 30
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_cmo_sitio:
+    label: above
+    weight: 26
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_cmo_tecnica:
+    label: above
+    weight: 9
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_cmo_tipo_de_pieza:
+    label: above
+    weight: 24
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_derechos_de_uso:
+    label: above
+    weight: 28
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_dimensiones:
+    label: above
+    weight: 10
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_estado_exhibicion:
+    label: above
+    weight: 23
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_estilo:
+    label: above
+    weight: 3
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_forma:
+    label: above
+    weight: 31
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    label: above
+    weight: 4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_lugar_de_procedencia:
+    label: above
+    weight: 13
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_material:
+    label: above
+    weight: 19
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_numero_de_registro:
+    label: above
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_periodo:
+    label: above
+    weight: 5
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_region:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_representaci_n:
+    label: above
+    weight: 32
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    label: above
+    weight: 18
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_gallery_media: true
+  langcode: true

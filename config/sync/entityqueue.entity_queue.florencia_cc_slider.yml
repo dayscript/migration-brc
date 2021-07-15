@@ -1,0 +1,25 @@
+uuid: 4a0384de-9b8f-4e21-b8e8-956212e69ff9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: florencia_cc_slider
+label: 'Florencia - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

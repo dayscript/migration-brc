@@ -1,0 +1,25 @@
+uuid: dddb856b-4074-4aee-a22f-ff6d88405ddf
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_gomez_slider
+label: 'Bogota - Casa Gómez - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

@@ -1,0 +1,19 @@
+uuid: 52938dab-ef8e-43f0-b6c5-bd6cf80a30ec
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_museo_arte_servicios
+label: 'Bogota - Museo Arte - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

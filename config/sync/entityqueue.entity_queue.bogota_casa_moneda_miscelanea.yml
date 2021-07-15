@@ -1,0 +1,23 @@
+uuid: bdd71dd8-ad7e-426f-b021-6c27ef0b9a02
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_moneda_miscelanea
+label: 'Bogota - Casa Moneda - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

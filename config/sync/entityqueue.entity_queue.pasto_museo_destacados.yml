@@ -1,0 +1,22 @@
+uuid: 3f1e9f54-7e13-4723-b5ba-38960d9be6ee
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pasto_museo_destacados
+label: 'Pasto - Museo - Destacados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

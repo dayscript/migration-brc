@@ -1,0 +1,19 @@
+uuid: be17da19-a79c-4bf9-b692-f24d836beec9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: actividad_musical_servicios
+label: 'Actividad Musical - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

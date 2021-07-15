@@ -1,0 +1,19 @@
+uuid: 33a172e0-c020-41e7-9a29-e72246e2ed29
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: villavicencio_cc_noticias
+label: 'Villavicencio - Centro Cultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

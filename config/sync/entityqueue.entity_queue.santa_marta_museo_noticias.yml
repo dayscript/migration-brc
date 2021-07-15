@@ -1,0 +1,19 @@
+uuid: 5d1e4c5c-b5f9-4bf8-b9e8-9c01ef2b5b18
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_museo_noticias
+label: 'Santa Marta - Museo - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

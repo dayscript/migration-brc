@@ -1,0 +1,23 @@
+uuid: 127cdccf-e37b-45bc-aac4-f35f8463e029
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_gomez_miscelanea
+label: 'Bogota - Casa Gómez - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

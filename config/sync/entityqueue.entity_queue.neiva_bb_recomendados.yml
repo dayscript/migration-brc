@@ -1,0 +1,25 @@
+uuid: 62c51758-ddc8-4453-b13a-82706b20878c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: neiva_bb_recomendados
+label: 'Neiva - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

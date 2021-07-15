@@ -1,0 +1,19 @@
+uuid: ab715bad-79d7-4786-8176-b9634e8a0070
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: quibdo_cc_noticias
+label: 'Quibdó - Centro Cultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

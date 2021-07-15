@@ -1,0 +1,8 @@
+uuid: f8a60aa7-2173-4a11-a2d0-40e6528d1161
+langcode: es
+status: true
+dependencies: {  }
+name: 'Temas de Credencial historia'
+vid: book_collection
+description: 'Usela para clasificar numeros de Credencial Historia por temas'
+weight: 10

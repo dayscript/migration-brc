@@ -1,0 +1,23 @@
+uuid: 4a4b861c-a867-4c94-b794-523463407bd0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: sincelejo_bb_miscelanea
+label: 'Sincelejo - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

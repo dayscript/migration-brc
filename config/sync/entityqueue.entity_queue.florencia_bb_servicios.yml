@@ -1,0 +1,19 @@
+uuid: 5d050671-15e7-4088-9db6-a66bc44657e3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: florencia_bb_servicios
+label: 'Florencia - Biblioteca - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

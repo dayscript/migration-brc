@@ -1,0 +1,24 @@
+uuid: a98f9161-e1eb-48de-8a87-75669a4fae7b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: tunja_cc_contenido
+label: 'Tunja - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

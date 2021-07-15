@@ -1,0 +1,19 @@
+uuid: 4c20fae8-7833-422b-95c5-3d24cea1afca
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cali_museo_noticias
+label: 'Cali - Museo - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

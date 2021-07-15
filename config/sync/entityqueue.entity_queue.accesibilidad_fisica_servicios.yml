@@ -1,0 +1,19 @@
+uuid: b710d3f3-b561-4dd5-8baa-82e63f65d4b0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: accesibilidad_fisica_servicios
+label: 'Accesibilidad - Discapacidad Física - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

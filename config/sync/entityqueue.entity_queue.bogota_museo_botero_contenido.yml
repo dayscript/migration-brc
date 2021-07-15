@@ -1,0 +1,24 @@
+uuid: b3fd343e-064c-4a46-8019-1b7d9b7a3bd6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_museo_botero_contenido
+label: 'Bogota - Museo Botero - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,19 @@
+uuid: 1da9409f-3b0e-483f-9c6f-71647596d9fd
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_cc_servicios
+label: 'Cartagena - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

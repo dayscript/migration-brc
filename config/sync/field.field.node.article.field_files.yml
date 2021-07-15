@@ -1,0 +1,27 @@
+uuid: cf3b1c8f-b8ea-4a4b-b2ff-a8845922feb8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.article
+  module:
+    - file
+id: node.article.field_files
+field_name: field_files
+entity_type: node
+bundle: article
+label: 'Boletín de prensa'
+description: 'Solo para Artículos que también sean BOLETÍN DE PRENSA'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: prensa/adjuntos
+  file_extensions: 'txt mov mp3 doc pdf docx mp4 xls xlsx ppt jpg mpg png gif tiff wav m4a'
+  max_filesize: '200 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

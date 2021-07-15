@@ -1,0 +1,23 @@
+uuid: 14fad0b4-0039-4d46-a479-b4b5a115d569
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: tunja_cc_miscelanea
+label: 'Tunja - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

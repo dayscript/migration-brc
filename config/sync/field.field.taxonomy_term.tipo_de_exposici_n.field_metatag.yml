@@ -1,0 +1,21 @@
+uuid: caa01f36-a11f-4a71-8b5a-c7442cba88f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_metatag
+    - taxonomy.vocabulary.tipo_de_exposici_n
+  module:
+    - metatag
+id: taxonomy_term.tipo_de_exposici_n.field_metatag
+field_name: field_metatag
+entity_type: taxonomy_term
+bundle: tipo_de_exposici_n
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

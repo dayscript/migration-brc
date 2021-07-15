@@ -1,0 +1,23 @@
+uuid: 77ec464c-c039-47fc-8064-188d064fd099
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: san_andres_cc_miscelanea
+label: 'San Andres - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

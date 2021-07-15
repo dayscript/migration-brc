@@ -1,0 +1,35 @@
+uuid: a8176622-147b-499c-8a80-daff4dec0da9
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_file_to_media_custom
+_core:
+  default_config_hash: A2D6ARXYRBRnL1u1kKpZ5gHZ0OmhQS0IsR6lhjlXYe8
+id: article_gallery_media_migration_step2
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: media
+label: 'Noticia Gallery Media Migration Mapping'
+source:
+  plugin: 'content_entity:node'
+  bundle: article
+  include_translations: false
+process:
+  nid: nid
+  type:
+    plugin: default_value
+    default_value: article
+  field_gallery_media:
+    plugin: file_id_lookup
+    source: field_gallery
+    migration: article_gallery_media_migration_step1
+    no_stub: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  optional:
+    - article_gallery_media_migration_step1

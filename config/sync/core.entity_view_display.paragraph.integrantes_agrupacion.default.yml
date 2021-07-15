@@ -1,0 +1,86 @@
+uuid: 54d03980-d586-48fa-a0ec-d25b3644073e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.integrantes_agrupacion.field_birth_year
+    - field.field.paragraph.integrantes_agrupacion.field_email
+    - field.field.paragraph.integrantes_agrupacion.field_firstname
+    - field.field.paragraph.integrantes_agrupacion.field_form_city
+    - field.field.paragraph.integrantes_agrupacion.field_lastname
+    - field.field.paragraph.integrantes_agrupacion.field_numero_identificacion
+    - field.field.paragraph.integrantes_agrupacion.field_tel
+    - field.field.paragraph.integrantes_agrupacion.field_tipo_de_documento
+    - paragraphs.paragraphs_type.integrantes_agrupacion
+  module:
+    - options
+id: paragraph.integrantes_agrupacion.default
+targetEntityType: paragraph
+bundle: integrantes_agrupacion
+mode: default
+content:
+  field_birth_year:
+    label: above
+    weight: 2
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_email:
+    label: above
+    weight: 8
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_firstname:
+    label: above
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_form_city:
+    label: above
+    weight: 5
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_lastname:
+    label: above
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_numero_identificacion:
+    label: above
+    weight: 4
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_tel:
+    label: above
+    weight: 7
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_tipo_de_documento:
+    label: above
+    weight: 3
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

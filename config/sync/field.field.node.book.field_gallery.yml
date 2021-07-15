@@ -1,0 +1,33 @@
+uuid: 880fbdf5-e3f6-4e35-8c21-10ac421100b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery
+    - node.type.book
+  module:
+    - image
+id: node.book.field_gallery
+field_name: field_gallery
+entity_type: node
+bundle: book
+label: Galeria
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: books/gallery
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '2 mb'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  title_field: false
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

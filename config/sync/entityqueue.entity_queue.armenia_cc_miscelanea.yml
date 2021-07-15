@@ -1,0 +1,23 @@
+uuid: b1abb3f6-a4ee-4bef-b72b-180b0d1c7858
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_cc_miscelanea
+label: 'Armenia - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

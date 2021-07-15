@@ -1,0 +1,19 @@
+uuid: d4ad1bb5-a4b2-4165-ad9f-8c6e96d29cef
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pasto_cc_noticias
+label: 'Pasto - Centro Cultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

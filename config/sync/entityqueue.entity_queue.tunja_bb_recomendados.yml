@@ -1,0 +1,25 @@
+uuid: 53c39803-d2cc-4a1c-916b-7f2e3d3c1f43
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: tunja_bb_recomendados
+label: 'Tunja - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

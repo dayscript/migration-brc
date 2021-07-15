@@ -1,0 +1,26 @@
+uuid: 7e4cbc5a-220e-445a-b78a-ad54f53f73ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_lugar_muerte
+    - taxonomy.vocabulary.ca_artista
+    - taxonomy.vocabulary.ciudades
+id: taxonomy_term.ca_artista.field_lugar_muerte
+field_name: field_lugar_muerte
+entity_type: taxonomy_term
+bundle: ca_artista
+label: 'Lugar Muerte'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      ciudades: ciudades
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

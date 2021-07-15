@@ -1,0 +1,25 @@
+uuid: 8af6711a-b319-4c8d-a6f7-3f0ecea69eb8
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ipiales_bb_recomendados
+label: 'Ipiales - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

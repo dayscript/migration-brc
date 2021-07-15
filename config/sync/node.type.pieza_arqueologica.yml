@@ -1,0 +1,18 @@
+uuid: 5fcf4fac-6456-4b39-ade0-8e25f06fd080
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'CMO pieza arqueológica'
+type: pieza_arqueologica
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

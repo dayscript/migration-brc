@@ -1,0 +1,19 @@
+uuid: 635173b9-8ad7-464e-889d-6059d571700b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: quibdo_bb_servicios
+label: 'Quibdó - Biblioteca - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

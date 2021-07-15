@@ -1,0 +1,19 @@
+uuid: 5af681bc-cc9b-4bc3-b25e-89a2da581640
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: biblioteca_virtual_noticias
+label: 'Biblioteca Virtual - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

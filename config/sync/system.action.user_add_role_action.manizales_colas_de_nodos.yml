@@ -1,0 +1,14 @@
+uuid: 48c56dd4-f684-4c70-bbcd-cd539060a407
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.manizales_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.manizales_colas_de_nodos
+label: 'Añade el rol Manizales - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: manizales_colas_de_nodos

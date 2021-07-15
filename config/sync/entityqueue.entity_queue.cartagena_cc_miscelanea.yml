@@ -1,0 +1,23 @@
+uuid: dcf7fe93-8c6e-4238-b5e5-418684afb994
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_cc_miscelanea
+label: 'Cartagena - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

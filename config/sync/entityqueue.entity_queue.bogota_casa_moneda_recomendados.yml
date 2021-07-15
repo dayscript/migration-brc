@@ -1,0 +1,25 @@
+uuid: 68ef3ca2-86ab-48cc-8585-6a0b789a0143
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_moneda_recomendados
+label: 'Bogota - Casa Moneda - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

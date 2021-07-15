@@ -1,0 +1,21 @@
+uuid: 44cd0202-9cb6-4669-86cf-74f78a3d589b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tipo_de_documento
+    - paragraphs.paragraphs_type.informaci_n_de_los_acompa_
+  module:
+    - options
+id: paragraph.informaci_n_de_los_acompa_.field_tipo_de_documento
+field_name: field_tipo_de_documento
+entity_type: paragraph
+bundle: informaci_n_de_los_acompa_
+label: 'Tipo de documento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

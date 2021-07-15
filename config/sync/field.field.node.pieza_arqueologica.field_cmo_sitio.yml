@@ -1,0 +1,19 @@
+uuid: 5749eb39-088d-4775-9aeb-96805e1e4866
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cmo_sitio
+    - node.type.pieza_arqueologica
+id: node.pieza_arqueologica.field_cmo_sitio
+field_name: field_cmo_sitio
+entity_type: node
+bundle: pieza_arqueologica
+label: Sitio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

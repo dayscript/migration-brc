@@ -1,0 +1,19 @@
+uuid: c6ab7845-51aa-4479-aac6-cc34f639b37b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: actividad_musical_noticias
+label: 'Actividad Musical - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

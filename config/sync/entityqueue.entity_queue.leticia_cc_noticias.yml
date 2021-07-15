@@ -1,0 +1,19 @@
+uuid: 1f00a0a7-ba5f-4a27-900a-40c261d88734
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_cc_noticias
+label: 'Leticia - Centro Cultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

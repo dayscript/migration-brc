@@ -1,0 +1,25 @@
+uuid: 1f20811a-ec2b-4ca1-b2ec-c448746b1041
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: barranquilla_bb_recomendados
+label: 'Barranquilla - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

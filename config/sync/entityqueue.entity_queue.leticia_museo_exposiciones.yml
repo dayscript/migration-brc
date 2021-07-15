@@ -1,0 +1,22 @@
+uuid: 9cc85221-2e63-4ca1-a1fb-32c0985b34a1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_museo_exposiciones
+label: 'Leticia - Museo - Exposiciones'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

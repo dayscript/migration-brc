@@ -1,0 +1,24 @@
+uuid: d41e7c07-553e-49cf-9fce-4d9cd197c6f0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cucuta_bb_contenido
+label: 'Cúcuta - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

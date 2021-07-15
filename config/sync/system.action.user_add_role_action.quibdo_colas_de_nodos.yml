@@ -1,0 +1,14 @@
+uuid: 34714b6a-620a-4420-9196-2c0621162e04
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.quibdo_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.quibdo_colas_de_nodos
+label: 'Añade el rol Quibdó - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: quibdo_colas_de_nodos

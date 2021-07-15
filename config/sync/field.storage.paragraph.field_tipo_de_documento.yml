@@ -1,0 +1,33 @@
+uuid: 176b7181-af33-413c-8b66-fce336b176ce
+langcode: und
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_tipo_de_documento
+field_name: field_tipo_de_documento
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: T.I
+    -
+      value: '2'
+      label: C.C
+    -
+      value: '3'
+      label: C.E
+    -
+      value: '4'
+      label: Pasaporte
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

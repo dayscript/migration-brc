@@ -1,0 +1,23 @@
+uuid: acffa048-6955-4628-b9dc-d8fc4c5bf59c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_bb_miscelanea
+label: 'Armenia - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

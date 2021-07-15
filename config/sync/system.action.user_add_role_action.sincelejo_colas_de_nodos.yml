@@ -1,0 +1,14 @@
+uuid: ad27c678-df02-41c9-a56d-cf1616b5d71e
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.sincelejo_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.sincelejo_colas_de_nodos
+label: 'Añade el rol Sincelejo - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: sincelejo_colas_de_nodos

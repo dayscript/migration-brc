@@ -1,0 +1,23 @@
+uuid: 71ceb62d-064b-4999-9c2a-5ac8340616da
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: florencia_cc_miscelanea
+label: 'Florencia - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

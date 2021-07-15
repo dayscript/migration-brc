@@ -1,0 +1,25 @@
+uuid: 74288457-5764-4d96-9edd-ff4f14b95564
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_museo_slider
+label: 'Cartagena - Museo - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

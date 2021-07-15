@@ -1,0 +1,25 @@
+uuid: f4e762d2-5543-48ca-b729-1ef8e3e59948
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: riohacha_cc_slider
+label: 'Riohacha - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

@@ -1,0 +1,22 @@
+uuid: bcc90cb0-d2b1-4d77-b4fe-2905a69c8118
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_museo_destacados
+label: 'Leticia - Museo - Destacados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,23 @@
+uuid: c83ab7da-302a-49a2-b545-03660fe49e0d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: honda_bb_miscelanea
+label: 'Honda - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

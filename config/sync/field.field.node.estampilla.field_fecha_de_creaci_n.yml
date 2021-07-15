@@ -1,0 +1,21 @@
+uuid: 9de536eb-c2d1-4d7d-b9c7-547727ad84a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_de_creaci_n
+    - node.type.estampilla
+  module:
+    - datetime
+id: node.estampilla.field_fecha_de_creaci_n
+field_name: field_fecha_de_creaci_n
+entity_type: node
+bundle: estampilla
+label: 'Fecha de emisión'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,25 @@
+uuid: 1a590cb0-1ebe-4d7c-a667-473a319ff430
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_museo_botero_slider
+label: 'Bogota - Museo Botero - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

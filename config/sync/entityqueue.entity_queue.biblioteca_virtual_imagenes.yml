@@ -1,0 +1,21 @@
+uuid: 7170f1ba-6bdd-4400-adc1-4e0eb6a327e1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: biblioteca_virtual_imagenes
+label: 'Biblioteca Virtual - Imágenes'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - multimedia
+      - article
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 6

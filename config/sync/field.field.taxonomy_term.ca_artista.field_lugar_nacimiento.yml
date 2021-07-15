@@ -1,0 +1,26 @@
+uuid: ca97b4c9-1bf8-41df-903c-aeec153c1e73
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_lugar_nacimiento
+    - taxonomy.vocabulary.ca_artista
+    - taxonomy.vocabulary.ciudades
+id: taxonomy_term.ca_artista.field_lugar_nacimiento
+field_name: field_lugar_nacimiento
+entity_type: taxonomy_term
+bundle: ca_artista
+label: 'Lugar Nacimiento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      ciudades: ciudades
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

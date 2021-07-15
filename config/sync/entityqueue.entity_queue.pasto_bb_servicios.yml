@@ -1,0 +1,19 @@
+uuid: e89c4072-aca6-4fbc-b433-723e6378afd1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pasto_bb_servicios
+label: 'Pasto - Biblioteca - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

@@ -11,7 +11,7 @@ use Drupal\brc_elasticsearch_custom\ElasticsearchManagerInterface;
  */
 class ElasticsearchSettingsForm extends ConfigFormBase {
 
-  protected $indices = 1;
+  protected $indices = 3;
   protected $commonFunction;
 
   public function __construct(ElasticsearchManagerInterface $interface) {
@@ -62,7 +62,7 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
       '#type'       => 'container',
       '#attributes' => ['id' => 'indices-container'],
     ];
-    $this->indices = !empty($config->get('indices')) ? count($config->get('indices')) : 1;
+    //$this->indices = !empty($config->get('indices')) ? count($config->get('indices')) : 1;
     for ($i = 1; $i <= $this->indices; $i++) {
       $form['indices']['container']['index'][$i] = [
         '#type' => 'details',
@@ -104,7 +104,7 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
     $form['indices']['container']['actions'] = [
       '#type' => 'actions',
     ];
-    $form['indices']['container']['actions']['add_item'] = [
+    /*$form['indices']['container']['actions']['add_item'] = [
       '#type'   => 'submit',
       '#value'  => $this->t('Agregar más'),
       '#submit' => ['::indicesAddMore'],
@@ -124,7 +124,7 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
           'wrapper'  => 'indices-container',
         ],
       ];
-    }
+    }*/
 
     $form['categories']['container'] = [
       '#type'       => 'container',
@@ -273,21 +273,21 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
     return $form;//parent::buildForm($form, $form_state);
   }
 
-  public function indicesAddMore(array $form, FormStateInterface $form_state) {
+  /*public function indicesAddMore(array $form, FormStateInterface $form_state) {
     $this->indices++;
     $form_state->setRebuild();
-  }
+  }*/
 
-  public function indicesRemoveMore(array $form, FormStateInterface $form_state) {
+  /*public function indicesRemoveMore(array $form, FormStateInterface $form_state) {
     if ($this->indices > 1) {
       $this->indices--;
     }
     $form_state->setRebuild();
-  }
+  }*/
 
-  public function indicesAddMoreCallback(array $form, FormStateInterface $form_state) {
+  /*public function indicesAddMoreCallback(array $form, FormStateInterface $form_state) {
     return $form['indices']['container'];
-  }
+  }*/
 
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $config = $this->configFactory->getEditable('brc_elasticsearch_custom.settings');

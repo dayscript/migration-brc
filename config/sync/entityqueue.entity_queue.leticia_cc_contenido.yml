@@ -1,0 +1,24 @@
+uuid: 76fb63b0-d7bd-4929-90e6-0be87ac1fc8a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_cc_contenido
+label: 'Leticia - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,24 @@
+uuid: e22fa3ae-76ce-4422-a8e1-6173c1bc9b7f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: medellin_cc_contenido
+label: 'Medellín - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

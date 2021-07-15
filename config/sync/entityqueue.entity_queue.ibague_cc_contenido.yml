@@ -1,0 +1,24 @@
+uuid: 040919cd-1ce7-49f5-8552-04ad7dec2bde
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ibague_cc_contenido
+label: 'Ibagué - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

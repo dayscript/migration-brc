@@ -1,0 +1,8 @@
+uuid: 7d2092cc-d369-4622-b70f-063fc0f866fc
+langcode: es
+status: true
+dependencies: {  }
+name: 'CA - Técnica'
+vid: ca_tecnica
+description: ''
+weight: 0

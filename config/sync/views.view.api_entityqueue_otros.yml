@@ -1,0 +1,1926 @@
+uuid: f3fc743b-0b2b-4d11-8be1-d8475b8a0f8b
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.actividad_musical_sala_concierto
+    - entityqueue.entity_queue.actividad_musical_sala_de_musica
+    - entityqueue.entity_queue.banrepcultural_multimedia
+    - entityqueue.entity_queue.banrepcultural_ninos
+    - entityqueue.entity_queue.banrepcultural_proyectos
+    - entityqueue.entity_queue.biblioteca_virtual_cartografia
+    - entityqueue.entity_queue.biblioteca_virtual_colecciones
+    - entityqueue.entity_queue.biblioteca_virtual_hemeroteca
+    - entityqueue.entity_queue.biblioteca_virtual_imagenes
+    - entityqueue.entity_queue.biblioteca_virtual_proyectos
+    - entityqueue.entity_queue.biblioteca_virtual_recursos
+    - entityqueue.entity_queue.biblioteca_virtual_revistas
+    - entityqueue.entity_queue.biblioteca_virtual_tesis
+    - entityqueue.entity_queue.biblioteca_virtual_textos
+    - entityqueue.entity_queue.coleccion_arqueologica_acerca
+    - entityqueue.entity_queue.coleccion_arte_acerca
+    - entityqueue.entity_queue.coleccion_billetes_acerca
+    - entityqueue.entity_queue.coleccion_estampillas_acerca
+    - entityqueue.entity_queue.coleccion_instrumentos_acerca
+    - entityqueue.entity_queue.ninos_interactivos
+    - entityqueue.entity_queue.ninos_multimedia
+    - entityqueue.entity_queue.ninos_ninos
+    - entityqueue.entity_queue.ninos_sala_infantil
+    - field.storage.node.body
+    - field.storage.node.field_image_media
+  module:
+    - brc_custom
+    - entityqueue
+    - node
+    - rest
+    - serialization
+    - text
+    - user
+id: api_entityqueue_otros
+label: 'Api - Entityqueue - Otros'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Aplicar
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: mini
+        options:
+          items_per_page: 10
+          offset: 0
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
+      style:
+        type: serializer
+      row:
+        type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: title
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: body
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_image_media:
+          id: field_image_media
+          table: node__field_image_media
+          field: field_image_media
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: image
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_id
+          settings: {  }
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        view_node:
+          id: view_node
+          table: node
+          field: view_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: path
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: vista
+          output_url_as_text: true
+          absolute: false
+          entity_type: node
+          plugin_id: entity_link
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+      sorts:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: actividad_musical_sala_concierto
+          entity_type: node
+          plugin_id: entity_queue
+      arguments: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_sala_concierto'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_1:
+    display_plugin: rest_export
+    id: rest_export_1
+    display_title: 'Actividad Musical - Sala de Conciertos'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: api/actividad-musical/sala-de-conciertos
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: actividad_musical_sala_concierto
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: actividad_musical_sala_concierto
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_sala_concierto'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_10:
+    display_plugin: rest_export
+    id: rest_export_10
+    display_title: 'Biblioteca Virtual - Proyectos'
+    position: 10
+    display_options:
+      display_extenders: {  }
+      path: api/biblioteca-virtual/proyectos
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: biblioteca_virtual_proyectos
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: biblioteca_virtual_proyectos
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.biblioteca_virtual_proyectos'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_11:
+    display_plugin: rest_export
+    id: rest_export_11
+    display_title: 'Biblioteca Virtual - Recursos Electrónicos'
+    position: 12
+    display_options:
+      display_extenders: {  }
+      path: api/biblioteca-virtual/recursos-electronicos
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: biblioteca_virtual_recursos
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: biblioteca_virtual_recursos
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.biblioteca_virtual_recursos'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_12:
+    display_plugin: rest_export
+    id: rest_export_12
+    display_title: 'Biblioteca Virtual - Revistas'
+    position: 13
+    display_options:
+      display_extenders: {  }
+      path: api/biblioteca-virtual/revistas
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: biblioteca_virtual_revistas
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: biblioteca_virtual_revistas
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.biblioteca_virtual_revistas'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_13:
+    display_plugin: rest_export
+    id: rest_export_13
+    display_title: 'Biblioteca Virtual - Tesis Y Artículos'
+    position: 14
+    display_options:
+      display_extenders: {  }
+      path: api/biblioteca-virtual/tesis-y-articulos
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: biblioteca_virtual_tesis
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: biblioteca_virtual_tesis
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.biblioteca_virtual_tesis'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_14:
+    display_plugin: rest_export
+    id: rest_export_14
+    display_title: 'Biblioteca Virtual - Textos'
+    position: 15
+    display_options:
+      display_extenders: {  }
+      path: api/biblioteca-virtual/textos
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: biblioteca_virtual_textos
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: biblioteca_virtual_textos
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.biblioteca_virtual_textos'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_15:
+    display_plugin: rest_export
+    id: rest_export_15
+    display_title: 'Colección Arqueológica - Acerca'
+    position: 16
+    display_options:
+      display_extenders: {  }
+      path: api/coleccion-arqueologica/acerca
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: coleccion_arqueologica_acerca
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: coleccion_arqueologica_acerca
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.coleccion_arqueologica_acerca'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_16:
+    display_plugin: rest_export
+    id: rest_export_16
+    display_title: 'Colección de Arte - Acerca'
+    position: 17
+    display_options:
+      display_extenders: {  }
+      path: api/coleccion-arte/acerca
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: coleccion_arte_acerca
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: coleccion_arte_acerca
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.coleccion_arte_acerca'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_17:
+    display_plugin: rest_export
+    id: rest_export_17
+    display_title: 'Colección de Billetes - Acerca'
+    position: 18
+    display_options:
+      display_extenders: {  }
+      path: api/coleccion-billetes/acerca
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: coleccion_billetes_acerca
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: coleccion_billetes_acerca
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.coleccion_billetes_acerca'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_18:
+    display_plugin: rest_export
+    id: rest_export_18
+    display_title: 'Colección de Estampillas - Acerca'
+    position: 19
+    display_options:
+      display_extenders: {  }
+      path: api/coleccion-estampillas/acerca
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: coleccion_estampillas_acerca
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: coleccion_estampillas_acerca
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.coleccion_estampillas_acerca'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_19:
+    display_plugin: rest_export
+    id: rest_export_19
+    display_title: 'Colección de Instrumentos - Acerca'
+    position: 20
+    display_options:
+      display_extenders: {  }
+      path: api/coleccion-instrumentos/acerca
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: coleccion_instrumentos_acerca
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: coleccion_instrumentos_acerca
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.coleccion_instrumentos_acerca'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_2:
+    display_plugin: rest_export
+    id: rest_export_2
+    display_title: 'Actividad Musical - Sala de Música'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: api/actividad-musical/sala-de-musica
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: actividad_musical_sala_de_musica
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: actividad_musical_sala_de_musica
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_sala_de_musica'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_20:
+    display_plugin: rest_export
+    id: rest_export_20
+    display_title: 'Niños - Multimedia'
+    position: 21
+    display_options:
+      display_extenders: {  }
+      path: api/ninos/multimedia
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: ninos_multimedia
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: ninos_multimedia
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.ninos_multimedia'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_21:
+    display_plugin: rest_export
+    id: rest_export_21
+    display_title: 'Niños - Interactivos'
+    position: 22
+    display_options:
+      display_extenders: {  }
+      path: api/ninos/interactivos
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: ninos_interactivos
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: ninos_interactivos
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.ninos_interactivos'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_22:
+    display_plugin: rest_export
+    id: rest_export_22
+    display_title: 'Biblioteca Virtual - Niños'
+    position: 11
+    display_options:
+      display_extenders: {  }
+      path: api/biblioteca-virtual/para-ninos-y-jovenes
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: ninos_ninos
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+      display_description: ''
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: ninos_ninos
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.ninos_ninos'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_23:
+    display_plugin: rest_export
+    id: rest_export_23
+    display_title: 'Niños - Sala Infantil'
+    position: 23
+    display_options:
+      display_extenders: {  }
+      path: api/ninos/sala-infantil
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: ninos_sala_infantil
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: ninos_sala_infantil
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.ninos_sala_infantil'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_3:
+    display_plugin: rest_export
+    id: rest_export_3
+    display_title: 'Banrepcultural - Multimedia'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      path: api/banrepcultural/multimedia
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: banrepcultural_multimedia
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: banrepcultural_multimedia
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.banrepcultural_multimedia'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_4:
+    display_plugin: rest_export
+    id: rest_export_4
+    display_title: 'Banrepcultural - Niños'
+    position: 4
+    display_options:
+      display_extenders: {  }
+      path: api/banrepcultural/para-ninos-y-jovenes
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: banrepcultural_ninos
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: banrepcultural_ninos
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.banrepcultural_ninos'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_5:
+    display_plugin: rest_export
+    id: rest_export_5
+    display_title: 'Banrepcultural - Proyectos'
+    position: 5
+    display_options:
+      display_extenders: {  }
+      path: api/banrepcultural/proyectos
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: banrepcultural_proyectos
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: banrepcultural_proyectos
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.banrepcultural_proyectos'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_6:
+    display_plugin: rest_export
+    id: rest_export_6
+    display_title: 'Biblioteca Virtual - Cartografía'
+    position: 6
+    display_options:
+      display_extenders: {  }
+      path: api/biblioteca-virtual/cartografia
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: biblioteca_virtual_cartografia
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: biblioteca_virtual_cartografia
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.biblioteca_virtual_cartografia'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_7:
+    display_plugin: rest_export
+    id: rest_export_7
+    display_title: 'Biblioteca Virtual - Colecciones Digitales'
+    position: 7
+    display_options:
+      display_extenders: {  }
+      path: api/biblioteca-virtual/colecciones-digitales
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: biblioteca_virtual_colecciones
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: biblioteca_virtual_colecciones
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.biblioteca_virtual_colecciones'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_8:
+    display_plugin: rest_export
+    id: rest_export_8
+    display_title: 'Biblioteca Virtual - Hemeroteca'
+    position: 8
+    display_options:
+      display_extenders: {  }
+      path: api/biblioteca-virtual/hemeroteca
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: biblioteca_virtual_hemeroteca
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: biblioteca_virtual_hemeroteca
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.biblioteca_virtual_hemeroteca'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_9:
+    display_plugin: rest_export
+    id: rest_export_9
+    display_title: 'Biblioteca Virtual - Imágenes'
+    position: 9
+    display_options:
+      display_extenders: {  }
+      path: api/biblioteca-virtual/imagenes
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: biblioteca_virtual_imagenes
+          entity_type: node
+          plugin_id: entity_queue
+      defaults:
+        relationships: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: biblioteca_virtual_imagenes
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.biblioteca_virtual_imagenes'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data

@@ -1,0 +1,19 @@
+uuid: 9c911ced-4b47-46b4-a192-7957bde81952
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_profesor_es_actual_es_de_l
+    - paragraphs.paragraphs_type.datos_de_la_agrupaci_n
+id: paragraph.datos_de_la_agrupaci_n.field_profesor_es_actual_es_de_l
+field_name: field_profesor_es_actual_es_de_l
+entity_type: paragraph
+bundle: datos_de_la_agrupaci_n
+label: 'Profesor(es) actual(es) de la agrupación (director del ensamble o de la cátedra de ensamble). '
+description: 'Si actualmente no estudia con un profesor escriba No aplica.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

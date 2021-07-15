@@ -1,0 +1,24 @@
+uuid: 221f6b3a-911d-4f0c-8754-4607b81ad91a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_museo_oro_contenido
+label: 'Bogota - Museo Oro - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

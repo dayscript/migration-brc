@@ -1,0 +1,11 @@
+uuid: 46d6e7b1-3d45-4226-9421-8eda88ba9588
+langcode: es
+status: true
+dependencies: {  }
+id: neiva_colas_de_nodos
+label: 'Neiva - colas de nodos'
+weight: 31
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

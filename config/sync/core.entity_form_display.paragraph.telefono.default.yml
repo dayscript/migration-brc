@@ -1,0 +1,40 @@
+uuid: 3abdbf11-70d5-4769-bd7c-bf42f3908a64
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.telefono.field_ext
+    - field.field.paragraph.telefono.field_indic
+    - field.field.paragraph.telefono.field_tel
+    - paragraphs.paragraphs_type.telefono
+id: paragraph.telefono.default
+targetEntityType: paragraph
+bundle: telefono
+mode: default
+content:
+  field_ext:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_indic:
+    weight: 0
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tel:
+    weight: 1
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

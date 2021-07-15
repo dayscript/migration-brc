@@ -1,0 +1,24 @@
+uuid: be4b4936-d049-412f-811f-27a72509fdd2
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: popayan_cc_contenido
+label: 'Popayán - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

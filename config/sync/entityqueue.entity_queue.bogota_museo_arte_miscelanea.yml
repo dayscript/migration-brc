@@ -1,0 +1,23 @@
+uuid: ac94f382-048a-44b2-9da6-317fbe62ee25
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_museo_arte_miscelanea
+label: 'Bogota - Museo Arte - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

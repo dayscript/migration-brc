@@ -1,0 +1,68 @@
+uuid: c59c8b44-681b-43c3-8e21-bf30dc206c00
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.json_full
+    - field.field.file.image.field_autor_imagen
+    - field.field.file.image.field_derechos_de_uso
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+    - field.field.file.image.field_files
+    - field.field.file.image.field_fuente_de_la_imagen
+    - field.field.file.image.field_longdesc
+    - field.field.file.image.field_tags
+    - field.field.file.image.field_uso_permitido_para_divulga
+  module:
+    - file
+id: file.image.json_full
+targetEntityType: file
+bundle: image
+mode: json_full
+content:
+  field_autor_imagen:
+    label: above
+    weight: 1
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_derechos_de_uso:
+    label: above
+    weight: 4
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_files:
+    label: above
+    weight: 5
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_fuente_de_la_imagen:
+    label: above
+    weight: 3
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_file_image_alt_text: true
+  field_file_image_title_text: true
+  field_longdesc: true
+  field_uso_permitido_para_divulga: true
+  langcode: true

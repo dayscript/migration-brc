@@ -1,0 +1,19 @@
+uuid: e88875f5-8e3e-40c3-a7f4-64b7b1c9916b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: valledupar_cc_noticias
+label: 'Valledupar - Centro Cultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

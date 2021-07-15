@@ -1,0 +1,170 @@
+uuid: dd4d6734-8323-4789-be36-44efebeafaf1
+langcode: es
+status: true
+dependencies: {  }
+id: upgrade_d7_node_complete_publicacion
+class: Drupal\node\Plugin\migrate\D7NodeTranslation
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node complete (Publicación)'
+source:
+  plugin: d7_node_complete
+  node_type: publicacion
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  content_translation_source:
+    -
+      plugin: get
+      source: source_langcode
+  comment_node_publicacion/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_image:
+    -
+      plugin: sub_process
+      source: field_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_isbn:
+    -
+      plugin: get
+      source: field_isbn
+  field_precio_de_venta:
+    -
+      plugin: get
+      source: field_precio_de_venta
+  field_numero_de_paginas:
+    -
+      plugin: get
+      source: field_numero_de_paginas
+  field_editorial:
+    -
+      plugin: sub_process
+      source: field_editorial
+      process:
+        target_id: tid
+  field_tipo_de_publicacion:
+    -
+      plugin: sub_process
+      source: field_tipo_de_publicacion
+      process:
+        target_id: tid
+  field_disponibilidad:
+    -
+      plugin: sub_process
+      source: field_disponibilidad
+      process:
+        target_id: tid
+  field_ano_publicacion:
+    -
+      plugin: get
+      source: field_ano_publicacion
+  field_author:
+    -
+      plugin: sub_process
+      source: field_author
+      process:
+        target_id: tid
+  field_url_publicacion:
+    -
+      plugin: get
+      source: field_url_publicacion
+  field_ano_publicacion_:
+    -
+      plugin: sub_process
+      source: field_ano_publicacion_
+      process:
+        value:
+          plugin: format_date
+          from_format: U
+          to_format: Y-01-01
+          source: value
+  field_archivo_adjunto:
+    -
+      plugin: sub_process
+      source: field_archivo_adjunto
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_metatag:
+    -
+      plugin: d7_metatag_entities
+      source: pseudo_metatag_entities
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: publicacion
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+    - upgrade_language
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

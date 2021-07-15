@@ -1,0 +1,11 @@
+uuid: 43988bc9-a20f-414c-84bf-40be78a4115a
+langcode: es
+status: true
+dependencies: {  }
+id: medellin_colas_de_nodos
+label: 'Medellín - colas de nodos'
+weight: 29
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'manipulate queues'

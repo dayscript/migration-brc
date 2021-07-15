@@ -1,0 +1,19 @@
+uuid: 4e112cbb-b3e6-4386-913c-b833c5974f73
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ipiales_bb_servicios
+label: 'Ipiales - Biblioteca - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

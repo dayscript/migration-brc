@@ -1,0 +1,8 @@
+uuid: 08907c05-faca-4711-a48d-708f15e481bc
+langcode: es
+status: true
+dependencies: {  }
+name: CMO-Periodo
+vid: cmo_periodo
+description: 'Piezas arqueológicas de la colección del Museo del Oro'
+weight: 0

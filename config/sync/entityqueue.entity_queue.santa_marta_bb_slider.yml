@@ -1,0 +1,25 @@
+uuid: 16a79877-c4c5-4870-8f19-d8aa5dc9c6ae
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_bb_slider
+label: 'Santa Marta - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

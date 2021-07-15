@@ -1,0 +1,26 @@
+uuid: faf5aabe-a722-4b60-b37c-8e5bdfba0405
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_pieza
+    - node.type.pieza_coleccion_monedas_billetes
+    - taxonomy.vocabulary.cbm_tipo_de_pieza
+id: node.pieza_coleccion_monedas_billetes.field_tipo_de_pieza
+field_name: field_tipo_de_pieza
+entity_type: node
+bundle: pieza_coleccion_monedas_billetes
+label: 'Tipo de pieza'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      cbm_tipo_de_pieza: cbm_tipo_de_pieza
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

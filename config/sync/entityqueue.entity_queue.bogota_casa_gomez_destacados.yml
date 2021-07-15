@@ -1,0 +1,22 @@
+uuid: 59062538-dd23-447b-9648-c061e0edc575
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_gomez_destacados
+label: 'Bogota - Casa Gómez - Destacados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

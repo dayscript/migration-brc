@@ -1,0 +1,19 @@
+uuid: b1c75a4c-182a-4d18-af8f-589293b1e20e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bucaramanga_cc_noticias
+label: 'Bucaramanga - Centro Cultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

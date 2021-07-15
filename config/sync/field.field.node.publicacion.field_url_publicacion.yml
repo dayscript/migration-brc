@@ -1,0 +1,19 @@
+uuid: 157db6b0-b06e-42f3-936e-b51bc62a5f9d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_publicacion
+    - node.type.publicacion
+id: node.publicacion.field_url_publicacion
+field_name: field_url_publicacion
+entity_type: node
+bundle: publicacion
+label: 'URL publicación'
+description: 'URL de las publicaciones que están disponibles en babel'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

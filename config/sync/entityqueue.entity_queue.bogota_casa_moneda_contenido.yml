@@ -1,0 +1,24 @@
+uuid: 2e950704-e1f8-4931-8146-9ec182ade9e9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_moneda_contenido
+label: 'Bogota - Casa Moneda - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,19 @@
+uuid: 7a1b2b8c-a95b-41d7-9061-9d2b544d9798
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cali_museo_servicios
+label: 'Cali - Museo - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

@@ -1,0 +1,21 @@
+uuid: eefe4d82-2d9a-4ef7-b3b8-12d6cbaa4e44
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: biblioteca_virtual_tesis
+label: 'Biblioteca Virtual - Tesis Y Artículos'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - multimedia
+      - article
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 6

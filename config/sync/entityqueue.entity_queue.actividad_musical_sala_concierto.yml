@@ -1,0 +1,19 @@
+uuid: 4b50de1b-cf48-4a2d-bf79-8689944d5afb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: actividad_musical_sala_concierto
+label: 'Actividad Musical - Sala De Conciertos'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+queue_settings:
+  min_size: 0
+  max_size: 6

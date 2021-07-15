@@ -1,0 +1,19 @@
+uuid: 03041a3d-ab42-4d39-945d-d11db489c4f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_form_city
+    - paragraphs.paragraphs_type.integrantes_agrupacion
+id: paragraph.integrantes_agrupacion.field_form_city
+field_name: field_form_city
+entity_type: paragraph
+bundle: integrantes_agrupacion
+label: Ciudad
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

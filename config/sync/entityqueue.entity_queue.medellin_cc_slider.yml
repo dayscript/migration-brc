@@ -1,0 +1,25 @@
+uuid: cfb14e7e-42ac-4913-a364-347bc2aa11fd
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: medellin_cc_slider
+label: 'Medellín - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

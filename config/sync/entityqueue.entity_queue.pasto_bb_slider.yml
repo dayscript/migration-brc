@@ -1,0 +1,25 @@
+uuid: a864120e-9127-4b3a-aea2-57e2efe1ebf4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pasto_bb_slider
+label: 'Pasto - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

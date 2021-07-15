@@ -1,0 +1,23 @@
+uuid: 420e8ee2-b50c-4e77-aa49-4c781f497309
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pieza_arqueologica
+  module:
+    - text
+id: node.pieza_arqueologica.body
+field_name: body
+entity_type: node
+bundle: pieza_arqueologica
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

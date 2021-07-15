@@ -1,0 +1,19 @@
+uuid: 83222fc5-3daa-4d27-88fe-ae8d78c1adc5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: quibdo_bb_noticias
+label: 'Quibdó - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

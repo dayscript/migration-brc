@@ -1,0 +1,8 @@
+uuid: 393167a3-7b21-4f0c-bc60-141aec76bbc2
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_plugin
+label: 'Plugin comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,19 @@
+uuid: 03e9957d-3365-46b1-993f-de8c3ec9206b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pereira_cc_servicios
+label: 'Pereira - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

@@ -1,0 +1,19 @@
+uuid: e1c800f4-001f-45ea-b397-9d9a50c61367
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_museo_servicios
+label: 'Cartagena - Museo - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

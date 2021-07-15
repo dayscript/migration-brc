@@ -1,0 +1,35 @@
+uuid: a2ed1d63-e407-4f21-b207-d915f00c2ada
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tipos_documentales.field_image
+    - field.field.taxonomy_term.tipos_documentales.field_metatag
+    - taxonomy.vocabulary.tipos_documentales
+  module:
+    - image
+    - text
+id: taxonomy_term.tipos_documentales.default
+targetEntityType: taxonomy_term
+bundle: tipos_documentales
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    label: above
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_metatag: true
+  langcode: true

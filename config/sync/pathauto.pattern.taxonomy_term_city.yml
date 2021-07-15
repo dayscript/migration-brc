@@ -1,0 +1,22 @@
+uuid: 8957ae5c-3002-43da-a1dc-0054c8b08c95
+langcode: es
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_term_city
+label: 'Taxonomy term - Ubicación'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:field-tipo-de-espacio:root:parents-all]'
+selection_criteria:
+  -
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      city: city
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+selection_logic: and
+weight: 0
+relationships: {  }

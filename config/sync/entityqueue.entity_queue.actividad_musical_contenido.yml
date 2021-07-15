@@ -1,0 +1,24 @@
+uuid: d41aa6c3-aba6-41cd-8dda-3af72dc35fb7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: actividad_musical_contenido
+label: 'Actividad Musical - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,25 @@
+uuid: d0de0b5a-e987-44bd-b9f9-cccf41bb4671
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_museo_slider
+label: 'Santa Marta - Museo - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

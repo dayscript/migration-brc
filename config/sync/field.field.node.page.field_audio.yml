@@ -1,0 +1,27 @@
+uuid: dc3e3bc0-c7a4-424b-bc08-380e1424550f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audio
+    - node.type.page
+  module:
+    - file
+id: node.page.field_audio
+field_name: field_audio
+entity_type: node
+bundle: page
+label: Audio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: multimedia
+  file_extensions: 'mp3 wav ogg m4v mov mpeg avi'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

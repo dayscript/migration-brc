@@ -1,0 +1,23 @@
+uuid: ff94de6b-e927-4d33-b0a2-a0607c2839d4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ibague_bb_miscelanea
+label: 'Ibagué - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

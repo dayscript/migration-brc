@@ -1,0 +1,23 @@
+uuid: 36561416-0361-477d-9292-3f6bd790b54d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_museo_miscelanea
+label: 'Armenia - Museo - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

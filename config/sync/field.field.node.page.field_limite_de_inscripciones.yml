@@ -1,0 +1,19 @@
+uuid: 3b9ff0b6-a104-4831-8877-9bf50f65ef29
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_limite_de_inscripciones
+    - node.type.page
+id: node.page.field_limite_de_inscripciones
+field_name: field_limite_de_inscripciones
+entity_type: node
+bundle: page
+label: 'Límite de inscripciones'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

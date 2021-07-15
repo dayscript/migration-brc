@@ -1,0 +1,25 @@
+uuid: ff04206b-d3c5-4869-bc43-82a333dc3846
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: neiva_cc_slider
+label: 'Neiva - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

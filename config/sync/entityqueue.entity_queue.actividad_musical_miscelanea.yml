@@ -1,0 +1,23 @@
+uuid: b553a970-7f00-4758-9a5c-add599edcff5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: actividad_musical_miscelanea
+label: 'Actividad Musical - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

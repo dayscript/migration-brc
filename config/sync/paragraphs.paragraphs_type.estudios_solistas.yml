@@ -1,0 +1,10 @@
+uuid: adcf48fa-151a-42c3-9557-15e273a37c40
+langcode: es
+status: true
+dependencies: {  }
+id: estudios_solistas
+label: 'Estudios solistas'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_estudios_solistas'
+behavior_plugins: {  }

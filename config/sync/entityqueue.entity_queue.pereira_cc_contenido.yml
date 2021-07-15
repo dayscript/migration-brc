@@ -1,0 +1,24 @@
+uuid: eb2f85f7-12be-4d40-b434-a120b928da79
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pereira_cc_contenido
+label: 'Pereira - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

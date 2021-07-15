@@ -1,0 +1,24 @@
+uuid: 358db9f9-951d-4402-8177-230a6ded781a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_para_slider_media
+    - media.type.image
+    - node.type.article
+id: node.article.field_imagen_para_slider_media
+field_name: field_imagen_para_slider_media
+entity_type: node
+bundle: article
+label: 'Imagen para slider Media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

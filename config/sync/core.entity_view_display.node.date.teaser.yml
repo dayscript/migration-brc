@@ -1,0 +1,33 @@
+uuid: 2810b79e-b15a-4894-9fb2-81822b77ce01
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.date.body
+    - field.field.node.date.comment_node_date
+    - node.type.date
+  module:
+    - text
+    - user
+id: node.date.teaser
+targetEntityType: node
+bundle: date
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_date: true
+  langcode: true

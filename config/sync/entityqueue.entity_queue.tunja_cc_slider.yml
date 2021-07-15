@@ -1,0 +1,25 @@
+uuid: 78cd9229-24fb-471c-bc08-db958570a0d5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: tunja_cc_slider
+label: 'Tunja - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

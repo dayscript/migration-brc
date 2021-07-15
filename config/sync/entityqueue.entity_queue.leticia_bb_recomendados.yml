@@ -1,0 +1,25 @@
+uuid: 2aeb9f09-960f-4fbd-ad84-e56103c3e4fa
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_bb_recomendados
+label: 'Leticia - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

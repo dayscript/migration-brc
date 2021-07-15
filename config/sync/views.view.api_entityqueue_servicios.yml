@@ -1,0 +1,4337 @@
+uuid: 2e9efe99-4a73-48f3-ab07-ef12cf88bc9d
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.actividad_musical_servicios
+    - field.storage.node.body
+    - field.storage.node.field_image_media
+  module:
+    - brc_custom
+    - entityqueue
+    - node
+    - rest
+    - serialization
+    - text
+    - user
+id: api_entityqueue_servicios
+label: 'Api - Entityqueue - Servicios'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Aplicar
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: mini
+        options:
+          items_per_page: 10
+          offset: 0
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
+      style:
+        type: serializer
+      row:
+        type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: title
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: body
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_image_media:
+          id: field_image_media
+          table: node__field_image_media
+          field: field_image_media
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: image
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_id
+          settings: {  }
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        view_node:
+          id: view_node
+          table: node
+          field: view_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: path
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: vista
+          output_url_as_text: true
+          absolute: false
+          entity_type: node
+          plugin_id: entity_link
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+      sorts:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: actividad_musical_servicios
+          entity_type: node
+          plugin_id: entity_queue
+      arguments: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_1:
+    display_plugin: rest_export
+    id: rest_export_1
+    display_title: 'Accesibilidad - Discapacidad Física'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: api/accesibilidad/discapacidad-fisica/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: accesibilidad_fisica_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_10:
+    display_plugin: rest_export
+    id: rest_export_10
+    display_title: 'Barranquilla - Centro Cultural'
+    position: 10
+    display_options:
+      display_extenders: {  }
+      path: api/barranquilla/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: barranquilla_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_11:
+    display_plugin: rest_export
+    id: rest_export_11
+    display_title: 'Biblioteca Virtual'
+    position: 11
+    display_options:
+      display_extenders: {  }
+      path: api/biblioteca-virtual/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: biblioteca_virtual_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_12:
+    display_plugin: rest_export
+    id: rest_export_12
+    display_title: 'Bogota - Biblioteca'
+    position: 12
+    display_options:
+      display_extenders: {  }
+      path: api/bogota/biblioteca-luis-angel-arango/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: bogota_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_13:
+    display_plugin: rest_export
+    id: rest_export_13
+    display_title: 'Bogota - Centro Cultural'
+    position: 13
+    display_options:
+      display_extenders: {  }
+      path: api/bogota/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: bogota_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_14:
+    display_plugin: rest_export
+    id: rest_export_14
+    display_title: 'Bogota - Museo Arte'
+    position: 14
+    display_options:
+      display_extenders: {  }
+      path: api/bogota/museo-de-arte/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: bogota_museo_arte_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_15:
+    display_plugin: rest_export
+    id: rest_export_15
+    display_title: 'Bogota - Museo Botero'
+    position: 15
+    display_options:
+      display_extenders: {  }
+      path: api/bogota/museo-botero/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: bogota_museo_botero_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_16:
+    display_plugin: rest_export
+    id: rest_export_16
+    display_title: 'Bogota - Museo Oro'
+    position: 16
+    display_options:
+      display_extenders: {  }
+      path: api/bogota/museo-del-oro/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: bogota_museo_oro_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_17:
+    display_plugin: rest_export
+    id: rest_export_17
+    display_title: 'Bogota - Casa Gómez'
+    position: 17
+    display_options:
+      display_extenders: {  }
+      path: api/bogota/casa-gomez-campuzano/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: bogota_casa_gomez_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_18:
+    display_plugin: rest_export
+    id: rest_export_18
+    display_title: 'Bogota - Casa Moneda'
+    position: 18
+    display_options:
+      display_extenders: {  }
+      path: api/bogota/casa-de-moneda/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: bogota_casa_moneda_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_19:
+    display_plugin: rest_export
+    id: rest_export_19
+    display_title: 'Bucaramanga - Biblioteca'
+    position: 19
+    display_options:
+      display_extenders: {  }
+      path: api/bucaramanga/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: bucaramanga_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_2:
+    display_plugin: rest_export
+    id: rest_export_2
+    display_title: 'Accesibilidad - Sordos'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: api/accesibilidad/sordos/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: accesibilidad_sordos_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_20:
+    display_plugin: rest_export
+    id: rest_export_20
+    display_title: 'Bucaramanga - Centro Cultural'
+    position: 20
+    display_options:
+      display_extenders: {  }
+      path: api/bucaramanga/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: bucaramanga_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_21:
+    display_plugin: rest_export
+    id: rest_export_21
+    display_title: 'Buenaventura - Biblioteca'
+    position: 21
+    display_options:
+      display_extenders: {  }
+      path: api/buenaventura/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: buenaventura_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_22:
+    display_plugin: rest_export
+    id: rest_export_22
+    display_title: 'Buenaventura - Centro Cultural'
+    position: 22
+    display_options:
+      display_extenders: {  }
+      path: api/buenaventura/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: buenaventura_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_23:
+    display_plugin: rest_export
+    id: rest_export_23
+    display_title: 'Cali - Biblioteca'
+    position: 23
+    display_options:
+      display_extenders: {  }
+      path: api/cali/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: cali_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_24:
+    display_plugin: rest_export
+    id: rest_export_24
+    display_title: 'Cali - Centro Cultural'
+    position: 24
+    display_options:
+      display_extenders: {  }
+      path: api/cali/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: cali_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_25:
+    display_plugin: rest_export
+    id: rest_export_25
+    display_title: 'Cali - Museo'
+    position: 25
+    display_options:
+      display_extenders: {  }
+      path: api/cali/museo-del-oro-calima/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: cali_museo_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_26:
+    display_plugin: rest_export
+    id: rest_export_26
+    display_title: 'Cartagena - Biblioteca'
+    position: 26
+    display_options:
+      display_extenders: {  }
+      path: api/cartagena/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: cartagena_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_27:
+    display_plugin: rest_export
+    id: rest_export_27
+    display_title: 'Cartagena - Centro Cultural'
+    position: 27
+    display_options:
+      display_extenders: {  }
+      path: api/cartagena/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: cartagena_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_28:
+    display_plugin: rest_export
+    id: rest_export_28
+    display_title: 'Cartagena - Museo'
+    position: 28
+    display_options:
+      display_extenders: {  }
+      path: api/cartagena/museo-del-oro-zenu/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: cartagena_museo_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_29:
+    display_plugin: rest_export
+    id: rest_export_29
+    display_title: 'Cúcuta - Biblioteca'
+    position: 29
+    display_options:
+      display_extenders: {  }
+      path: api/cucuta/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: cucuta_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_3:
+    display_plugin: rest_export
+    id: rest_export_3
+    display_title: 'Accesibilidad - Discapacidad Visual'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      path: api/accesibilidad/discapacidad-visual/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: accesibilidad_visual_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_30:
+    display_plugin: rest_export
+    id: rest_export_30
+    display_title: 'Cúcuta - Centro Cultural'
+    position: 30
+    display_options:
+      display_extenders: {  }
+      path: api/cucuta/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: cucuta_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_31:
+    display_plugin: rest_export
+    id: rest_export_31
+    display_title: 'Florencia - Biblioteca'
+    position: 31
+    display_options:
+      display_extenders: {  }
+      path: api/florencia/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: florencia_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_32:
+    display_plugin: rest_export
+    id: rest_export_32
+    display_title: 'Florencia - Centro Cultural'
+    position: 32
+    display_options:
+      display_extenders: {  }
+      path: api/florencia/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: florencia_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_33:
+    display_plugin: rest_export
+    id: rest_export_33
+    display_title: 'Girardot - Biblioteca'
+    position: 33
+    display_options:
+      display_extenders: {  }
+      path: api/girardot/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: girardot_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_34:
+    display_plugin: rest_export
+    id: rest_export_34
+    display_title: 'Girardot - Centro Cultural'
+    position: 34
+    display_options:
+      display_extenders: {  }
+      path: api/girardot/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: girardot_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_35:
+    display_plugin: rest_export
+    id: rest_export_35
+    display_title: 'Honda - Biblioteca'
+    position: 35
+    display_options:
+      display_extenders: {  }
+      path: api/honda/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: honda_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_36:
+    display_plugin: rest_export
+    id: rest_export_36
+    display_title: 'Honda - Centro Cultural'
+    position: 36
+    display_options:
+      display_extenders: {  }
+      path: api/honda/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: honda_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_37:
+    display_plugin: rest_export
+    id: rest_export_37
+    display_title: 'Ibagué - Biblioteca'
+    position: 37
+    display_options:
+      display_extenders: {  }
+      path: api/ibague/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: ibague_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_38:
+    display_plugin: rest_export
+    id: rest_export_38
+    display_title: 'Ibagué - Centro Cultural'
+    position: 38
+    display_options:
+      display_extenders: {  }
+      path: api/ibague/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: ibague_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_39:
+    display_plugin: rest_export
+    id: rest_export_39
+    display_title: 'Ipiales - Biblioteca'
+    position: 39
+    display_options:
+      display_extenders: {  }
+      path: api/ipiales/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: ipiales_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_4:
+    display_plugin: rest_export
+    id: rest_export_4
+    display_title: 'Actividad Musical'
+    position: 4
+    display_options:
+      display_extenders: {  }
+      path: api/actividad-musical/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: actividad_musical_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_40:
+    display_plugin: rest_export
+    id: rest_export_40
+    display_title: 'Ipiales - Centro Cultural'
+    position: 40
+    display_options:
+      display_extenders: {  }
+      path: api/ipiales/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: ipiales_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_41:
+    display_plugin: rest_export
+    id: rest_export_41
+    display_title: 'Leticia - Biblioteca'
+    position: 41
+    display_options:
+      display_extenders: {  }
+      path: api/leticia/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: leticia_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_42:
+    display_plugin: rest_export
+    id: rest_export_42
+    display_title: 'Leticia - Centro Cultural'
+    position: 42
+    display_options:
+      display_extenders: {  }
+      path: api/leticia/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: leticia_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_43:
+    display_plugin: rest_export
+    id: rest_export_43
+    display_title: 'Leticia - Museo'
+    position: 43
+    display_options:
+      display_extenders: {  }
+      path: api/leticia/museo-etnografico/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: leticia_museo_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_44:
+    display_plugin: rest_export
+    id: rest_export_44
+    display_title: 'Manizales - Biblioteca'
+    position: 44
+    display_options:
+      display_extenders: {  }
+      path: api/manizales/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: manizales_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_45:
+    display_plugin: rest_export
+    id: rest_export_45
+    display_title: 'Manizales - Centro Cultural'
+    position: 45
+    display_options:
+      display_extenders: {  }
+      path: api/manizales/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: manizales_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_46:
+    display_plugin: rest_export
+    id: rest_export_46
+    display_title: 'Medellín - Biblioteca'
+    position: 46
+    display_options:
+      display_extenders: {  }
+      path: api/medellin/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: medellin_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_47:
+    display_plugin: rest_export
+    id: rest_export_47
+    display_title: 'Medellín - Centro Cultural'
+    position: 47
+    display_options:
+      display_extenders: {  }
+      path: api/medellin/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: medellin_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_48:
+    display_plugin: rest_export
+    id: rest_export_48
+    display_title: 'Montería - Biblioteca'
+    position: 48
+    display_options:
+      display_extenders: {  }
+      path: api/monteria/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: monteria_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_49:
+    display_plugin: rest_export
+    id: rest_export_49
+    display_title: 'Montería - Centro Cultural'
+    position: 49
+    display_options:
+      display_extenders: {  }
+      path: api/monteria/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: monteria_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_5:
+    display_plugin: rest_export
+    id: rest_export_5
+    display_title: 'Armenia - Biblioteca'
+    position: 5
+    display_options:
+      display_extenders: {  }
+      path: api/armenia/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: armenia_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_50:
+    display_plugin: rest_export
+    id: rest_export_50
+    display_title: 'Neiva - Biblioteca'
+    position: 50
+    display_options:
+      display_extenders: {  }
+      path: api/neiva/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: neiva_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_51:
+    display_plugin: rest_export
+    id: rest_export_51
+    display_title: 'Neiva - Centro Cultural'
+    position: 51
+    display_options:
+      display_extenders: {  }
+      path: api/neiva/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: neiva_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_52:
+    display_plugin: rest_export
+    id: rest_export_52
+    display_title: Niños
+    position: 52
+    display_options:
+      display_extenders: {  }
+      path: api/ninos/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: ninos_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_53:
+    display_plugin: rest_export
+    id: rest_export_53
+    display_title: 'Pasto - Biblioteca'
+    position: 53
+    display_options:
+      display_extenders: {  }
+      path: api/pasto/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: pasto_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_54:
+    display_plugin: rest_export
+    id: rest_export_54
+    display_title: 'Pasto - Centro Cultural'
+    position: 54
+    display_options:
+      display_extenders: {  }
+      path: api/pasto/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: pasto_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_55:
+    display_plugin: rest_export
+    id: rest_export_55
+    display_title: 'Pasto - Museo'
+    position: 55
+    display_options:
+      display_extenders: {  }
+      path: api/pasto/museo-del-oro-narino/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: pasto_museo_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_56:
+    display_plugin: rest_export
+    id: rest_export_56
+    display_title: 'Pereira - Biblioteca'
+    position: 56
+    display_options:
+      display_extenders: {  }
+      path: api/pereira/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: pereira_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_57:
+    display_plugin: rest_export
+    id: rest_export_57
+    display_title: 'Pereira - Centro Cultural'
+    position: 57
+    display_options:
+      display_extenders: {  }
+      path: api/pereira/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: pereira_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_58:
+    display_plugin: rest_export
+    id: rest_export_58
+    display_title: 'Popayán - Biblioteca'
+    position: 58
+    display_options:
+      display_extenders: {  }
+      path: api/popayan/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: popayan_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_59:
+    display_plugin: rest_export
+    id: rest_export_59
+    display_title: 'Popayán - Centro Cultural'
+    position: 59
+    display_options:
+      display_extenders: {  }
+      path: api/popayan/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: popayan_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_6:
+    display_plugin: rest_export
+    id: rest_export_6
+    display_title: 'Armenia - Centro Cultural'
+    position: 6
+    display_options:
+      display_extenders: {  }
+      path: api/armenia/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: armenia_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_60:
+    display_plugin: rest_export
+    id: rest_export_60
+    display_title: 'Quibdó - Biblioteca'
+    position: 60
+    display_options:
+      display_extenders: {  }
+      path: api/quibdo/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: quibdo_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_61:
+    display_plugin: rest_export
+    id: rest_export_61
+    display_title: 'Quibdó - Centro Cultural'
+    position: 61
+    display_options:
+      display_extenders: {  }
+      path: api/quibdo/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: quibdo_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_62:
+    display_plugin: rest_export
+    id: rest_export_62
+    display_title: 'Riohacha - Biblioteca'
+    position: 62
+    display_options:
+      display_extenders: {  }
+      path: api/riohacha/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: riohacha_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_63:
+    display_plugin: rest_export
+    id: rest_export_63
+    display_title: 'Riohacha - Centro Cultural'
+    position: 63
+    display_options:
+      display_extenders: {  }
+      path: api/riohacha/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: riohacha_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_64:
+    display_plugin: rest_export
+    id: rest_export_64
+    display_title: 'San Andres - Biblioteca'
+    position: 64
+    display_options:
+      display_extenders: {  }
+      path: api/san-andres/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: san_andres_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_65:
+    display_plugin: rest_export
+    id: rest_export_65
+    display_title: 'San Andres - Centro Cultural'
+    position: 65
+    display_options:
+      display_extenders: {  }
+      path: api/san-andres/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: san_andres_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_66:
+    display_plugin: rest_export
+    id: rest_export_66
+    display_title: 'Santa Marta - Biblioteca'
+    position: 66
+    display_options:
+      display_extenders: {  }
+      path: api/santa-marta/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: santa_marta_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_67:
+    display_plugin: rest_export
+    id: rest_export_67
+    display_title: 'Santa Marta - Centro Cultural'
+    position: 67
+    display_options:
+      display_extenders: {  }
+      path: api/santa-marta/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: santa_marta_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_68:
+    display_plugin: rest_export
+    id: rest_export_68
+    display_title: 'Santa Marta - Museo'
+    position: 68
+    display_options:
+      display_extenders: {  }
+      path: api/santa-marta/museo-del-oro-tairona/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: santa_marta_museo_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_69:
+    display_plugin: rest_export
+    id: rest_export_69
+    display_title: 'Sincelejo - Biblioteca'
+    position: 69
+    display_options:
+      display_extenders: {  }
+      path: api/sincelejo/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: sincelejo_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_7:
+    display_plugin: rest_export
+    id: rest_export_7
+    display_title: 'Armenia - Museo'
+    position: 7
+    display_options:
+      display_extenders: {  }
+      path: api/armenia/museo-del-oro-quimbaya/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: armenia_museo_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_70:
+    display_plugin: rest_export
+    id: rest_export_70
+    display_title: 'Sincelejo - Centro Cultural'
+    position: 70
+    display_options:
+      display_extenders: {  }
+      path: api/sincelejo/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: sincelejo_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_71:
+    display_plugin: rest_export
+    id: rest_export_71
+    display_title: 'Tunja - Biblioteca'
+    position: 71
+    display_options:
+      display_extenders: {  }
+      path: api/tunja/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: tunja_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_72:
+    display_plugin: rest_export
+    id: rest_export_72
+    display_title: 'Tunja - Centro Cultural'
+    position: 72
+    display_options:
+      display_extenders: {  }
+      path: api/tunja/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: tunja_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_73:
+    display_plugin: rest_export
+    id: rest_export_73
+    display_title: 'Valledupar - Biblioteca'
+    position: 73
+    display_options:
+      display_extenders: {  }
+      path: api/valledupar/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: valledupar_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_74:
+    display_plugin: rest_export
+    id: rest_export_74
+    display_title: 'Valledupar - Centro Cultural'
+    position: 74
+    display_options:
+      display_extenders: {  }
+      path: api/valledupar/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: valledupar_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_75:
+    display_plugin: rest_export
+    id: rest_export_75
+    display_title: 'Villavicencio - Biblioteca'
+    position: 75
+    display_options:
+      display_extenders: {  }
+      path: api/villavicencio/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: villavicencio_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_76:
+    display_plugin: rest_export
+    id: rest_export_76
+    display_title: 'Villavicencio - Centro Cultural'
+    position: 76
+    display_options:
+      display_extenders: {  }
+      path: api/villavicencio/centro-cultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: villavicencio_cc_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_8:
+    display_plugin: rest_export
+    id: rest_export_8
+    display_title: Banrepcultural
+    position: 8
+    display_options:
+      display_extenders: {  }
+      path: api/banrepcultural/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: banrepcultural_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data
+  rest_export_9:
+    display_plugin: rest_export
+    id: rest_export_9
+    display_title: 'Barranquilla - Biblioteca'
+    position: 9
+    display_options:
+      display_extenders: {  }
+      path: api/barranquilla/biblioteca/servicios
+      pager:
+        type: none
+        options:
+          offset: 0
+      style:
+        type: custom_serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            title:
+              alias: ''
+              raw_output: false
+    display_description: ''
+    relationships:
+      entityqueue_relationship:
+        id: entityqueue_relationship
+        table: node_field_data
+        field: entityqueue_relationship
+        relationship: none
+        group_type: group
+        admin_label: 'Content queue'
+        required: true
+        limit_queue: barranquilla_bb_servicios
+        entity_type: node
+        plugin_id: entity_queue
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:entityqueue.entity_queue.actividad_musical_servicios'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image_media'
+        - entity_field_info
+        - views_data

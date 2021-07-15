@@ -1,0 +1,24 @@
+uuid: 0b52eb75-e70e-4202-bb98-e4d4d3b75b93
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_bb_contenido
+label: 'Armenia - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

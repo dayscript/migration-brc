@@ -1,0 +1,24 @@
+uuid: 6fce6743-9054-4782-b8bc-0e1d8257cbfe
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_cc_contenido
+label: 'Santa Marta - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,19 @@
+uuid: 0b3ccdd3-68bc-4655-a8be-f0f1225f202a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_fecha_nacimiento
+    - taxonomy.vocabulary.ca_artista
+id: taxonomy_term.ca_artista.field_fecha_nacimiento
+field_name: field_fecha_nacimiento
+entity_type: taxonomy_term
+bundle: ca_artista
+label: 'Fecha Nacimiento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

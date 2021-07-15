@@ -1,3 +1,8 @@
 services:
   brc_elasticsearch_custom.manager:
     class: Drupal\brc_elasticsearch_custom\ElasticsearchManager
+
+  brc_elasticsearch_custom.commands:
+    class: \Drupal\brc_elasticsearch_custom\Commands\ElasticsearchCommands
+    tags:
+      - { name: drush.command }

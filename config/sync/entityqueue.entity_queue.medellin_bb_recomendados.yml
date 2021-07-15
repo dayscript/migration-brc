@@ -1,0 +1,25 @@
+uuid: bdcda7ef-faf1-4ea8-ad7e-907c79edf6cb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: medellin_bb_recomendados
+label: 'Medellín - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

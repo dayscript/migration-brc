@@ -1,0 +1,19 @@
+uuid: 09c22607-b1a2-4a3c-82ec-3b08440b846b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_moneda_servicios
+label: 'Bogota - Casa Moneda - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

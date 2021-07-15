@@ -1,0 +1,25 @@
+uuid: 08a79daf-4a7e-48ae-bd66-ba9bac52791d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: riohacha_cc_recomendados
+label: 'Riohacha - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

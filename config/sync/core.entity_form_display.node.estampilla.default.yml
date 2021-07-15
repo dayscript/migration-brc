@@ -1,0 +1,284 @@
+uuid: 3613b2cc-3047-45e3-bf2a-f1d14babc069
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.estampilla.body
+    - field.field.node.estampilla.comment_node_estampilla
+    - field.field.node.estampilla.field_autor_estampilla
+    - field.field.node.estampilla.field_catalogo_colombia
+    - field.field.node.estampilla.field_color_de_estampilla
+    - field.field.node.estampilla.field_fecha_de_creaci_n
+    - field.field.node.estampilla.field_fecha_de_creaci_n_completa
+    - field.field.node.estampilla.field_gallery
+    - field.field.node.estampilla.field_gallery_media
+    - field.field.node.estampilla.field_numero_de_registro
+    - field.field.node.estampilla.field_scott
+    - field.field.node.estampilla.field_servicio_estampilla
+    - field.field.node.estampilla.field_sufijo_valor
+    - field.field.node.estampilla.field_tags
+    - field.field.node.estampilla.field_tipo_estampilla
+    - field.field.node.estampilla.field_unidades
+    - field.field.node.estampilla.field_valor_facial
+    - node.type.estampilla
+  module:
+    - comment
+    - datetime
+    - field_group
+    - file
+    - media_library
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_general:
+      children:
+        - body
+        - field_numero_de_registro
+        - field_fecha_de_creaci_n
+        - field_autor_estampilla
+        - field_scott
+        - field_tipo_estampilla
+        - field_unidades
+        - field_color_de_estampilla
+        - field_servicio_estampilla
+        - field_fecha_de_creaci_n_completa
+        - field_catalogo_colombia
+        - field_tags
+        - title
+        - group_valor_estampilla
+      parent_name: ''
+      weight: 0
+      label: General
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        required_fields: true
+      format_type: tab
+      region: content
+    group_valor_estampilla:
+      children:
+        - field_sufijo_valor
+        - field_valor_facial
+      parent_name: group_general
+      weight: 13
+      label: Valor
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: 'group-valor-estampilla field-group-fieldset'
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_multimedia:
+      children:
+        - field_gallery
+      parent_name: ''
+      weight: 1
+      label: Multimedia
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-multimedia field-group-tab'
+        required_fields: true
+      format_type: tab
+      region: content
+id: node.estampilla.default
+targetEntityType: node
+bundle: estampilla
+mode: default
+content:
+  body:
+    weight: 11
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment_node_estampilla:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_autor_estampilla:
+    weight: 22
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_catalogo_colombia:
+    weight: 17
+    type: string_textfield
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_color_de_estampilla:
+    weight: 20
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_fecha_de_creaci_n:
+    weight: 14
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fecha_de_creaci_n_completa:
+    weight: 15
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    weight: 24
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_gallery_media:
+    type: media_library_widget
+    weight: 25
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_numero_de_registro:
+    weight: 12
+    type: string_textfield
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_scott:
+    weight: 16
+    type: string_textfield
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_servicio_estampilla:
+    weight: 21
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_sufijo_valor:
+    weight: 10
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 23
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tipo_estampilla:
+    weight: 19
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_unidades:
+    weight: 18
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_valor_facial:
+    weight: 9
+    type: string_textfield
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

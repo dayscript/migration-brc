@@ -1,0 +1,25 @@
+uuid: a4db4199-cdd5-45eb-94ca-7d4f965d47bb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_cc_recomendados
+label: 'Armenia - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

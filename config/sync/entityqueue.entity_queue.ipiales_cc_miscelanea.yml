@@ -1,0 +1,23 @@
+uuid: 2f2513ad-c741-4e7d-8a03-46769ce6d63c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ipiales_cc_miscelanea
+label: 'Ipiales - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

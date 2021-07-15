@@ -1,0 +1,21 @@
+uuid: 58c4b0d4-7100-438b-a116-f1820164a7a1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: biblioteca_virtual_colecciones
+label: 'Biblioteca Virtual - Colecciones Digitales'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - multimedia
+      - article
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 6

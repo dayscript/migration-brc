@@ -1,0 +1,26 @@
+uuid: 2be237e9-e1f1-4c7d-934e-d0c88d3b1296
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_material
+    - node.type.pieza_arqueologica
+    - taxonomy.vocabulary.cmo_material
+id: node.pieza_arqueologica.field_material
+field_name: field_material
+entity_type: node
+bundle: pieza_arqueologica
+label: Material
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      cmo_material: cmo_material
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

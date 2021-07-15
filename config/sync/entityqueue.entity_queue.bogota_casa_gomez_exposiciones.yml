@@ -1,0 +1,22 @@
+uuid: d9062990-1ae6-445a-b605-2c341e7d3453
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_gomez_exposiciones
+label: 'Bogota - Casa Gómez - Exposiciones'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

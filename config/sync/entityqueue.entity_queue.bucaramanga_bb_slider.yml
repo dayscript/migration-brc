@@ -1,0 +1,25 @@
+uuid: 756ac324-bf9c-4a94-b583-cb1f23bee6a1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bucaramanga_bb_slider
+label: 'Bucaramanga - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

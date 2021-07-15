@@ -1,0 +1,25 @@
+uuid: c925ae8f-85dd-4d0b-8ea6-a3f5b7d3f631
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_cc_recomendados
+label: 'Cartagena - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

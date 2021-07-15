@@ -1,0 +1,25 @@
+uuid: 27a67001-328b-4b5c-be0c-0a7ade57a8d7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: san_andres_bb_slider
+label: 'San Andres - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

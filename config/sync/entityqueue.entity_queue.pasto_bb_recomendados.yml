@@ -1,0 +1,25 @@
+uuid: 80a04df6-8f71-4ca4-be4c-54f8ee14596b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pasto_bb_recomendados
+label: 'Pasto - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

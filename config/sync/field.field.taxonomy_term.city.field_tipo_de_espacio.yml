@@ -1,0 +1,26 @@
+uuid: cb59f866-87ac-4802-8baf-47a360f9f94d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_tipo_de_espacio
+    - taxonomy.vocabulary.city
+    - taxonomy.vocabulary.tipo_de_espacio
+id: taxonomy_term.city.field_tipo_de_espacio
+field_name: field_tipo_de_espacio
+entity_type: taxonomy_term
+bundle: city
+label: 'Tipo de espacio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tipo_de_espacio: tipo_de_espacio
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

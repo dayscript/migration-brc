@@ -1,0 +1,14 @@
+uuid: 4f3f9458-beb0-45a6-8ebb-c296fd95ecfd
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.valledupar_colas_de_nodos
+  module:
+    - user
+id: user_add_role_action.valledupar_colas_de_nodos
+label: 'Añade el rol Valledupar - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: valledupar_colas_de_nodos

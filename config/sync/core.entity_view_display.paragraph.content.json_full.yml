@@ -1,0 +1,32 @@
+uuid: 3c928eff-5af8-4538-84e1-848514257a4a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.json_full
+    - field.field.paragraph.content.field_city
+    - field.field.paragraph.content.field_description
+    - paragraphs.paragraphs_type.content
+  module:
+    - text
+id: paragraph.content.json_full
+targetEntityType: paragraph
+bundle: content
+mode: json_full
+content:
+  field_city:
+    label: hidden
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_description:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

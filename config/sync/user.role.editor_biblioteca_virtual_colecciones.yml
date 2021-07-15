@@ -1,0 +1,37 @@
+uuid: 80176dee-cbdb-4240-b395-3cc67b8b68fa
+langcode: es
+status: true
+dependencies: {  }
+id: editor_biblioteca_virtual_colecciones
+label: 'Editor Biblioteca Virtual - colecciones'
+weight: 8
+is_admin: null
+permissions:
+  - 'access administration menu'
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access media browser'
+  - 'administer entityform types'
+  - 'create coleccion_bibliografica content'
+  - 'create files'
+  - 'create publicacion content'
+  - 'create url aliases'
+  - 'delete any coleccion_bibliografica content'
+  - 'delete any image files'
+  - 'delete any publicacion content'
+  - 'delete own coleccion_bibliografica content'
+  - 'delete own image files'
+  - 'delete own publicacion content'
+  - 'edit any coleccion_bibliografica content'
+  - 'edit any image files'
+  - 'edit any publicacion content'
+  - 'edit own coleccion_bibliografica content'
+  - 'edit own image files'
+  - 'edit own publicacion content'
+  - 'edit terms in 1'
+  - 'manipulate queues'
+  - 'notify of path changes'
+  - 'use text format filtered_html'
+  - 'use text format full_html'
+  - 'view own unpublished content'

@@ -1,0 +1,23 @@
+uuid: 85b40e9c-29c0-48cf-ada6-72d0962b4c4f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: quibdo_bb_miscelanea
+label: 'Quibdó - Biblioteca - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

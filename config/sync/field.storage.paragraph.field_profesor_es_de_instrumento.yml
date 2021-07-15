@@ -1,0 +1,21 @@
+uuid: cf330089-23cb-45e7-ad9b-f813f424cea7
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_profesor_es_de_instrumento
+field_name: field_profesor_es_de_instrumento
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

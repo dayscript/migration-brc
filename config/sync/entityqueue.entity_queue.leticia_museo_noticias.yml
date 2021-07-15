@@ -1,0 +1,19 @@
+uuid: 0717e5e7-de68-4e83-866a-cf13433a8dc9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_museo_noticias
+label: 'Leticia - Museo - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

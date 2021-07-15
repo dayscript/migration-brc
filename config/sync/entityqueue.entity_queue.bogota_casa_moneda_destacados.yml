@@ -1,0 +1,22 @@
+uuid: c6014ab1-5c66-4b2f-af09-ef3d5af32f75
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_casa_moneda_destacados
+label: 'Bogota - Casa Moneda - Destacados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - page
+queue_settings:
+  min_size: 0
+  max_size: 0

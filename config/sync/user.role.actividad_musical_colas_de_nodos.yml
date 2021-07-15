@@ -1,0 +1,12 @@
+uuid: ef8434d4-c69e-4ccb-a7c0-6b2b4407a62f
+langcode: es
+status: true
+dependencies: {  }
+id: actividad_musical_colas_de_nodos
+label: 'Actividad musical - colas de nodos'
+weight: 13
+is_admin: null
+permissions:
+  - 'administer entityform types'
+  - 'edit terms in 1'
+  - 'manipulate queues'

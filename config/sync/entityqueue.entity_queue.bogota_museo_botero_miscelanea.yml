@@ -1,0 +1,23 @@
+uuid: 088cc3d2-30b7-466b-af00-694f06f28bc6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_museo_botero_miscelanea
+label: 'Bogota - Museo Botero - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

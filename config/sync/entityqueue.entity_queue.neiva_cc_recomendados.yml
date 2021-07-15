@@ -1,0 +1,25 @@
+uuid: 12bf09a1-c548-4779-8d18-7577815760b3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: neiva_cc_recomendados
+label: 'Neiva - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

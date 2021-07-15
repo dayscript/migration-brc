@@ -1,0 +1,19 @@
+uuid: d3c5d49f-210b-464d-8263-d63fb458f420
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: manizales_cc_noticias
+label: 'Manizales - Centro Cultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

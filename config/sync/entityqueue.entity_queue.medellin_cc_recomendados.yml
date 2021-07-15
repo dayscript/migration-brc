@@ -1,0 +1,25 @@
+uuid: 3df7de2b-46d8-440f-a7cd-a4608a03c31e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: medellin_cc_recomendados
+label: 'Medellín - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

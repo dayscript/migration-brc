@@ -1,0 +1,21 @@
+uuid: c19ddf7c-8deb-419a-9846-420cd91e8a57
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node_multimedia
+label: 'Content - Multimedia'
+type: 'canonical_entities:node'
+pattern: 'multimedia/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      multimedia: multimedia
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

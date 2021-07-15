@@ -1,0 +1,19 @@
+uuid: 9ff73c98-f89e-437e-9413-a9b7385cf90f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pereira_bb_noticias
+label: 'Pereira - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

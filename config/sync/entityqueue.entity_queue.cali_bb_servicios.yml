@@ -1,0 +1,19 @@
+uuid: f9e40423-3c8f-460c-a4c6-17d6a7a2812d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cali_bb_servicios
+label: 'Cali - Biblioteca - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

@@ -1,0 +1,23 @@
+uuid: 12939785-88fb-40e0-bf45-f9c96daa87d3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: popayan_cc_miscelanea
+label: 'Popayán - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

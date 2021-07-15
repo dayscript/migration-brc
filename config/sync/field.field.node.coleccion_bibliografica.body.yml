@@ -1,0 +1,23 @@
+uuid: c219f055-1850-4795-9872-3e0692a0ccc2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.coleccion_bibliografica
+  module:
+    - text
+id: node.coleccion_bibliografica.body
+field_name: body
+entity_type: node
+bundle: coleccion_bibliografica
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

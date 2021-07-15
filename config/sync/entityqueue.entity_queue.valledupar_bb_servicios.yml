@@ -1,0 +1,19 @@
+uuid: 98a7131f-9dc7-4cee-aaa3-df4acd489cb1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: valledupar_bb_servicios
+label: 'Valledupar - Biblioteca - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

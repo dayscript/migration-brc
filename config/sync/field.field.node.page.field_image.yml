@@ -1,0 +1,33 @@
+uuid: 5a346a2b-db02-462e-9c4e-2d0ad2dcceca
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.page
+  module:
+    - image
+id: node.page.field_image
+field_name: field_image
+entity_type: node
+bundle: page
+label: Imágen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: pagina_basica
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 5MB
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,23 @@
+uuid: 65f80ebc-c787-41eb-8581-97d2d32500bf
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: leticia_cc_miscelanea
+label: 'Leticia - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

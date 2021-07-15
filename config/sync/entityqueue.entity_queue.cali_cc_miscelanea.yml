@@ -1,0 +1,23 @@
+uuid: cf3f598b-5639-4754-86d9-a1e58b206735
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cali_cc_miscelanea
+label: 'Cali - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

@@ -1,0 +1,8 @@
+uuid: 6eefac48-e4b1-47ee-b56a-09681d2622ec
+langcode: es
+status: true
+dependencies: {  }
+name: CMO-Estilo
+vid: cmo_estilo
+description: 'Piezas arqueológicas de la colección del Museo del Oro'
+weight: 0

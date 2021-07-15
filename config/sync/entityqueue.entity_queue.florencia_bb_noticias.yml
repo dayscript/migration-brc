@@ -1,0 +1,19 @@
+uuid: 9bb6f11b-d8bb-4e04-8130-910a26057cde
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: florencia_bb_noticias
+label: 'Florencia - Biblioteca - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

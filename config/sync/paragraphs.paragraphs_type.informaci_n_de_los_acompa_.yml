@@ -1,0 +1,10 @@
+uuid: 2ab16ede-1a58-4714-aa7f-1d919535bec4
+langcode: es
+status: true
+dependencies: {  }
+id: informaci_n_de_los_acompa_
+label: 'Informaci n de los acompa '
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_informaci_n_de_los_acompa_'
+behavior_plugins: {  }

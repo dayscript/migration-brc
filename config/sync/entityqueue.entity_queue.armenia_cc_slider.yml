@@ -1,0 +1,25 @@
+uuid: 5b947a8e-c629-43df-9b30-6addd984f8fc
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: armenia_cc_slider
+label: 'Armenia - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

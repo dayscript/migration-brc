@@ -1,0 +1,19 @@
+uuid: df49d26f-c3a2-47d3-a16f-fc4b75f0036f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_dir
+    - paragraphs.paragraphs_type.representante_agrupacion
+id: paragraph.representante_agrupacion.field_dir
+field_name: field_dir
+entity_type: paragraph
+bundle: representante_agrupacion
+label: Dirección
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

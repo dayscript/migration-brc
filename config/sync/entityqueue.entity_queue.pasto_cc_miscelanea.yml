@@ -1,0 +1,23 @@
+uuid: 69d51292-1dcf-40aa-8216-ece59339f792
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pasto_cc_miscelanea
+label: 'Pasto - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

@@ -1,0 +1,25 @@
+uuid: 85080ce8-d058-4756-a5f9-eb579b959130
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: quibdo_cc_slider
+label: 'Quibdó - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

@@ -1,0 +1,8 @@
+uuid: 303ba6b3-ede9-4228-b059-db16e1fbd922
+langcode: es
+status: true
+dependencies: {  }
+name: 'Items de submenu'
+vid: items_de_submenu
+description: 'esta taxonomía se usa para construir los menus de los espacios'
+weight: -2

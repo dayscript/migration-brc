@@ -1,0 +1,25 @@
+uuid: 93ca026d-e9f4-4261-b00b-a2905af5a163
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ninos_recomendados
+label: 'Niños - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

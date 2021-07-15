@@ -1,0 +1,23 @@
+uuid: 904e7219-8c46-4c9e-a9c9-73e086b74275
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_cc_miscelanea
+label: 'Bogota - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

@@ -1,0 +1,14 @@
+uuid: a51ae58f-002a-41d3-85d8-68abe2be4bb7
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.tunja_colas_de_nodos
+  module:
+    - user
+id: user_remove_role_action.tunja_colas_de_nodos
+label: 'Elimina el rol Tunja - colas de nodos al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: tunja_colas_de_nodos

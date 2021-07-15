@@ -1,0 +1,25 @@
+uuid: c4d8d72e-8336-4b74-8e8f-4805c016918d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: manizales_bb_recomendados
+label: 'Manizales - Biblioteca - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

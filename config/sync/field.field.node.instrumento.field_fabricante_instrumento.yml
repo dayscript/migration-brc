@@ -1,0 +1,19 @@
+uuid: 35c841d1-7714-4ae8-bb58-36a88b36919e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fabricante_instrumento
+    - node.type.instrumento
+id: node.instrumento.field_fabricante_instrumento
+field_name: field_fabricante_instrumento
+entity_type: node
+bundle: instrumento
+label: 'Autor de instrumento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

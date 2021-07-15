@@ -1,0 +1,19 @@
+uuid: 10e03bb0-5d64-4c8e-b00a-34f690871c08
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pasto_museo_servicios
+label: 'Pasto - Museo - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

@@ -1,0 +1,19 @@
+uuid: 0374df5d-fc01-42ca-a16c-93d33ee00a1c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartagena_museo_noticias
+label: 'Cartagena - Museo - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

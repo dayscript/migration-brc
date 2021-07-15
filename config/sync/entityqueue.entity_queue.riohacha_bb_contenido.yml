@@ -1,0 +1,24 @@
+uuid: 3127486d-59cc-490c-82da-824fd08d2f92
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: riohacha_bb_contenido
+label: 'Riohacha - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

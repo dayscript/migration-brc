@@ -1,0 +1,19 @@
+uuid: 4c0c9480-3e92-4489-bf72-c5300c2b3d3e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cucuta_cc_noticias
+label: 'Cúcuta - Centro Cultural - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

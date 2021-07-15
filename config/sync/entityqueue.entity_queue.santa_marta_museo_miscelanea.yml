@@ -1,0 +1,23 @@
+uuid: 938cbab4-5330-4d81-8bd1-f3cd3613974b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: santa_marta_museo_miscelanea
+label: 'Santa Marta - Museo - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

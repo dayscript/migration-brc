@@ -1,0 +1,23 @@
+uuid: 34efd9fa-80fb-4e8a-9c57-5386eb781d32
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - book
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+    available_menus:
+      - main
+_core:
+  default_config_hash: 2gWGA-X4ERc4McStS7cMEG3ZBpDEqfNRDPTjB1v674Y
+name: 'Revista Credencial Historia'
+type: book
+description: 'Uselo solamente para publicar la revista Credencial Historia (portada y artículos).  tienen un sistema de navegación jerarquizado incorporado. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

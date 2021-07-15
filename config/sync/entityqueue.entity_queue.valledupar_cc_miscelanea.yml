@@ -1,0 +1,23 @@
+uuid: f341c919-7142-4818-ba4d-d4191e7ae9ab
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: valledupar_cc_miscelanea
+label: 'Valledupar - Centro Cultural - Miscelanea'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 3

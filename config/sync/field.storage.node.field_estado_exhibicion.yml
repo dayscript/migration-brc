@@ -1,0 +1,27 @@
+uuid: 98e949ce-c5fe-4198-a776-432a8d7fa0be
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_estado_exhibicion
+field_name: field_estado_exhibicion
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Si
+      label: Si
+    -
+      value: 'No'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

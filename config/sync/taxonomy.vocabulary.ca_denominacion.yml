@@ -1,0 +1,8 @@
+uuid: f9f1e966-8463-47c2-ac12-91f782feb253
+langcode: es
+status: true
+dependencies: {  }
+name: 'CA - Denominación'
+vid: ca_denominacion
+description: ''
+weight: 0

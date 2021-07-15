@@ -1,0 +1,95 @@
+uuid: cb20e971-6cdc-4a92-8cc4-6b6a9e244b97
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.representante_agrupacion.field_birth_year
+    - field.field.paragraph.representante_agrupacion.field_dir
+    - field.field.paragraph.representante_agrupacion.field_email
+    - field.field.paragraph.representante_agrupacion.field_firstname
+    - field.field.paragraph.representante_agrupacion.field_form_city
+    - field.field.paragraph.representante_agrupacion.field_lastname
+    - field.field.paragraph.representante_agrupacion.field_numero_identificacion
+    - field.field.paragraph.representante_agrupacion.field_tel
+    - field.field.paragraph.representante_agrupacion.field_tipo_de_documento
+    - paragraphs.paragraphs_type.representante_agrupacion
+  module:
+    - options
+id: paragraph.representante_agrupacion.default
+targetEntityType: paragraph
+bundle: representante_agrupacion
+mode: default
+content:
+  field_birth_year:
+    label: above
+    weight: 2
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_dir:
+    label: above
+    weight: 5
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_email:
+    label: above
+    weight: 9
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_firstname:
+    label: above
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_form_city:
+    label: above
+    weight: 6
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_lastname:
+    label: above
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_numero_identificacion:
+    label: above
+    weight: 4
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_tel:
+    label: above
+    weight: 8
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_tipo_de_documento:
+    label: above
+    weight: 3
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: 23b463c3-48c5-4f45-9220-8c9443a7d7a5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pasto_cc_recomendados
+label: 'Pasto - Centro Cultural - Recomendados'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 5

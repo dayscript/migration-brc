@@ -1,0 +1,19 @@
+uuid: abd41c08-c858-4b01-bc59-01a02801bbce
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: girardot_cc_servicios
+label: 'Girardot - Centro Cultural - Servicios'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 12

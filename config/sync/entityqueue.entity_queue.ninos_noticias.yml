@@ -1,0 +1,19 @@
+uuid: 5a3d1afd-0c63-44b2-bc68-ec504d07f49f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: ninos_noticias
+label: 'Niños - Noticias'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+queue_settings:
+  min_size: 0
+  max_size: 6

@@ -1,0 +1,27 @@
+uuid: 2d9c96fe-17f1-4a73-ae85-4d810b418a54
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.minisitio
+  module:
+    - file
+id: node.minisitio.field_files
+field_name: field_files
+entity_type: node
+bundle: minisitio
+label: 'Archivos adjuntos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: minisitios/file-attached
+  file_extensions: 'txt pdf png jpg doc sls xslx docx jpeg'
+  max_filesize: '50 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

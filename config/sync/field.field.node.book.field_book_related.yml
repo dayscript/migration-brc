@@ -1,0 +1,30 @@
+uuid: 76d895e6-544d-4bb5-82c6-78e13339d1af
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_related
+    - node.type.book
+    - node.type.minisitio
+id: node.book.field_book_related
+field_name: field_book_related
+entity_type: node
+bundle: book
+label: 'Libro relacionado'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      minisitio: minisitio
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

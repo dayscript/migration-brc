@@ -1,0 +1,25 @@
+uuid: cb245827-4e19-4b02-88b5-16198ba87ae0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: florencia_bb_slider
+label: 'Florencia - Biblioteca - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4

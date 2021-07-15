@@ -1,0 +1,33 @@
+uuid: 3fa2f6c4-8e2d-4cf7-817d-ed29c39b894f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery
+    - node.type.obra_de_arte
+  module:
+    - image
+id: node.obra_de_arte.field_gallery
+field_name: field_gallery
+entity_type: node
+bundle: obra_de_arte
+label: 'Galería de imágenes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: obra-de-arte/gallery
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  title_field: false
+  default_image: '43984'
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

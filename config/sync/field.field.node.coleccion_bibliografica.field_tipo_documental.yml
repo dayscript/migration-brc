@@ -1,0 +1,26 @@
+uuid: 8170515f-edcf-4e3b-97b2-d3a02cfed5c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_documental
+    - node.type.coleccion_bibliografica
+    - taxonomy.vocabulary.tipos_documentales
+id: node.coleccion_bibliografica.field_tipo_documental
+field_name: field_tipo_documental
+entity_type: node
+bundle: coleccion_bibliografica
+label: 'Tipo documental'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      tipos_documentales: tipos_documentales
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -41,31 +41,48 @@ class BrcCustomController extends ControllerBase {
   public function fullNode() {
     $path = \Drupal::service('path.alias_manager')->getPathByAlias($this->alias);
     if(preg_match('/node\/(\d+)/', $path, $matches)) {
-      $node = Node::load($matches[1]);
+      $nid = $matches[1];
+      $response = $this->nodeLoad($nid);
+      return new JsonResponse($response);
     }
+  }
+
+  public function childsBook($nid) {
+    $response = [];
+    $book_outline_storage = \Drupal::service('book.outline_storage');
+    $childrens  =  $book_outline_storage->loadBookChildren($nid);
+    foreach ($childrens as $key => $values) {
+      $response[] = $this->nodeLoad($childrens[$key]['nid']);
+    }
+    return $response;
+  }
+
+  public function nodeLoad($nid) {
+    $response = [];
+    $node = Node::load($nid);
     foreach ($node->toArray() as $keys => $values) {
       foreach ($values as $key => $value) {
         switch ($keys) {
           case 'type':
-            $reponse[$keys] = $value['target_id'];
+            $response[$keys] = $value['target_id'];
             break;
           case 'status':
-            $reponse[$keys] = 200;
+            $response[$keys] = 200;
             break;
           case 'created':
           case 'changed':
-            $reponse[$keys] = date('Y/m/d H:i:s', $value['value']);
+            $response[$keys] = date('Y/m/d H:i:s', $value['value']);
             break;
           case 'path':
-            $reponse[$keys] = $value['alias'];
-            $reponse['target'] = '_self';
+            $response[$keys] = $value['alias'];
+            $response['target'] = '_self';
             if(strpos($path, 'http://') === 0 || strpos($path, 'https://') === 0 || strpos($path, '/http://') === 0 || strpos($path, '/https://') === 0){
-              $reponse['target'] = '_blank';
+              $response['target'] = '_blank';
             }
             break;
           case 'field_plugin':
            $plugin = Node::load($value['target_id']);
-           $reponse[$keys] = $plugin->title->value;
+           $response[$keys] = $plugin->title->value;
             break;
           case 'field_image_media':
           case 'field_gallery_media':
@@ -81,7 +98,7 @@ class BrcCustomController extends ControllerBase {
             $term_rights = Term::load($media->get('field_media_rights')->target_id);
             $term_rights = $term_rights->name->value;
 
-            $reponse[$keys][] = [
+            $response['image'][] = [
               'src' => $file->url(),
               'alt' => $media->get('field_media_image')->alt,
               'title' => $media->get('field_media_image')->title,
@@ -93,26 +110,31 @@ class BrcCustomController extends ControllerBase {
             ];
             break;
           default:
-            $exclude = ['uuid','vid','langcode','revision_timestamp','revision_uid','revision_log','uid','promote','sticky','default_langcode','revision_default','revision_translation_affected','metatag','field_metatag','field_image','comment_node_activity','comment_node_multimedia'];
+            $exclude = ['uuid','vid','langcode','revision_timestamp','revision_uid','revision_log','uid','promote','sticky','default_langcode','revision_default','revision_translation_affected','metatag','field_metatag','field_image','field_imagen_para_slider', 'field_gallery','comment_node_activity','comment_node_article','comment_node_book','comment_node_coleccion_bibliografica','comment_node_estampilla','comment_node_instrumento','comment_node_minisitio','comment_node_multimedia','comment_node_obra_de_arte','comment_node_page','comment_node_pieza_arqueologica','comment_node_pieza_coleccion_monedas_billetes','comment_node_publicacion','comment_node_service'];
+
             if(!in_array($keys, $exclude)) {
               switch (key($value)) {
                 case 'value':
-                  $reponse[$keys] = $value['value'];
+                  $response[$keys] = $value['value'];
                   break;
                 case 'target_id':
                   $term = Term::load($value['target_id']);
-                  $reponse[$keys][] = '<a href="'.$term->path->alias.'">'.$term->name->value.'</a>';
+                  $response[$keys][] = '<a href="'.$term->path->alias.'">'.$term->name->value.'</a>';
                   break;
                 default:
-                  $reponse[$keys] = $value;
+                  $response[$keys] = $value;
                   break;
               }
             }
             break;
         }
-
       }
     }
-    return new JsonResponse($reponse);
+
+    if($childs = $this->childsBook($nid)) {
+      $response['childs'] = $childs;
+    }
+
+    return $response;
   }
 }

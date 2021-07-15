@@ -1,0 +1,24 @@
+uuid: 467645e8-28bc-4580-9bf7-e22bc971b3ce
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: bogota_bb_contenido
+label: 'Bogota - Biblioteca - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

@@ -1,0 +1,24 @@
+uuid: 5b7c4f20-7f4b-4fe7-a3b0-2cedb69709f3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: honda_cc_contenido
+label: 'Honda - Centro Cultural - Contenido'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - article
+      - book
+      - multimedia
+      - publicacion
+      - page
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 0

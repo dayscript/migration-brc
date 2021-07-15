@@ -1,0 +1,25 @@
+uuid: d0ecbf4d-916e-4659-98fb-d51b797c568c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: valledupar_cc_slider
+label: 'Valledupar - Centro Cultural - Slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: default
+  handler_settings:
+    target_bundles:
+      - activity
+      - minisitio
+      - multimedia
+      - article
+      - page
+      - book
+      - service
+queue_settings:
+  min_size: 0
+  max_size: 4
