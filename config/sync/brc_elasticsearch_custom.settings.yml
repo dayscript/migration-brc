@@ -860,12 +860,12 @@ sconfig:
           field: 0
     mediawiki:
       type:
-        enciclopedia: enciclopedia
+        enciclopedia: 0
       container:
         text:
-          field: 1
+          field: 0
         title:
-          field: 1
+          field: 0
     babel:
       type:
         p17054coll24: p17054coll24
