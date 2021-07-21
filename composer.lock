@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "16e80d40855c335819991a3b47932672",
+    "content-hash": "6624350260977457e58e7149894c428e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3016,17 +3016,17 @@
         },
         {
             "name": "drupal/cshs",
-            "version": "3.3.0",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/cshs.git",
-                "reference": "8.x-3.3"
+                "reference": "8.x-3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/cshs-8.x-3.3.zip",
-                "reference": "8.x-3.3",
-                "shasum": "ed17bd0018c475dbbf554700d140a50ea1a3962b"
+                "url": "https://ftp.drupal.org/files/projects/cshs-8.x-3.4.zip",
+                "reference": "8.x-3.4",
+                "shasum": "be95af1f62b88457f1de027b5167a07939bc7288"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -3035,8 +3035,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.3",
-                    "datestamp": "1625151395",
+                    "version": "8.x-3.4",
+                    "datestamp": "1626424435",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
