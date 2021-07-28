@@ -7,9 +7,9 @@ use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\brc_elasticsearch_custom\ElasticsearchManagerInterface;
 /**
- * Declaration of class ElasticsearchIndexingForm.
+ * Declaration of class ElasticsearchIndexingBalbelOjsForm.
  */
-class ElasticsearchIndexingForm extends ConfigFormBase {
+class ElasticsearchIndexingBalbelOjsForm extends ConfigFormBase {
 
   public $sets;
   public $tokens;
@@ -39,77 +39,13 @@ class ElasticsearchIndexingForm extends ConfigFormBase {
     $config = $this->config('brc_elasticsearch_custom.settings');
     $form['#attached']['library'][] = 'core/drupal.ajax';
     $form['#attached']['library'][] = 'core/drupal.dialog.ajax';
-    $form['#tree'] = TRUE;
-     
+    $form['#tree'] = TRUE;     
     $form['settings'] = ['#type' => 'vertical_tabs'];
-
-    $form['drupal'] = [
-      '#type' => 'details',
-      '#title' => $this->t('Drupal'),
-      '#group' => 'settings',
-    ];
     $form['babelojs'] = [
       '#type' => 'details',
       '#title' => $this->t('OAI-PMH'),
       '#group' => 'settings',
     ];
-    $form['makemake'] = [
-      '#type' => 'details',
-      '#title' => $this->t('Make Make'),
-      '#group' => 'settings',
-    ];
-
-    $form['drupal']['container'] = [
-      '#type'       => 'container',
-      '#attributes' => ['id' => 'drupal-container'],
-    ];
-
-    $form['drupal']['container']['node'] = [
-      '#type' => 'fieldset',
-      '#title' => 'Nodos a indexar',
-    ];
-    foreach ($this->commonFunction->checkedType($config->get('categories')['node']['mapping']) as $mk => $m) {
-      $form['drupal']['container']['node'][$mk] = [
-        '#type' => 'checkbox',
-        '#title' => $m,
-        '#default_value' => '',
-      ];
-    }
-
-    $form['drupal']['container']['taxonomy'] = [
-      '#type' => 'fieldset',
-      '#title' => 'Taxonomía a indexar',
-    ];
-    foreach ($this->commonFunction->checkedType($config->get('categories')['taxonomy']['mapping']) as $mk => $m) {
-      $form['drupal']['container']['taxonomy'][$mk] = [
-        '#type' => 'checkbox',
-        '#title' => $m,
-        '#default_value' => '',
-      ];
-    }
-    $form['drupal']['container']['actions'] = [
-      '#type' => 'actions',
-    ];
-    $form['drupal']['container']['actions']['add_item'] = [
-      '#type'   => 'submit',
-      '#value'  => $this->t('Indexar'),
-      '#submit' => ['::indicesDrupalCreate'],
-      '#ajax'   => [
-        'callback' => [ $this, 'indicesDrupalCallback'],
-        'wrapper'  => 'drupal-container',
-      ],
-    ];
-    $form['drupal']['container']['actions']['remove_item'] = [
-      '#type'   => 'submit',
-      '#value'  => $this->t('Eliminar'),
-      '#submit' => ['::indicesDrupalDelete'],
-      '#limit_validation_errors' => [],
-      '#ajax'                    => [
-        'callback' => [ $this, 'indicesDrupalCallback'],
-        'wrapper'  => 'drupal-container',
-      ],
-    ];
-
     $form['babelojs']['container'] = [
       '#type'       => 'container',
       '#attributes' => ['id' => 'babelojs-container'],
@@ -150,120 +86,36 @@ class ElasticsearchIndexingForm extends ConfigFormBase {
     $form['babelojs']['container']['actions']['load_item'] = [
       '#type'   => 'submit',
       '#value'  => $this->t('Cargar'),
-      '#submit' => ['::indicesBjLoad'],
+      '#submit' => ['::indicesBabelOjsLoad'],
       '#ajax'   => [
-        'callback' => [ $this, 'indicesBjCallback'],
+        'callback' => [ $this, 'indicesBabelOjsCallback'],
         'wrapper'  => 'babelojs-container',
       ],
     ];
     $form['babelojs']['container']['actions']['add_item'] = [
       '#type'   => 'submit',
       '#value'  => $this->t('Indexar'),
-      '#submit' => ['::indicesBjCreate'],
+      '#submit' => ['::indicesBabelOjsCreate'],
       '#ajax'   => [
-        'callback' => [ $this, 'indicesBjCallback'],
+        'callback' => [ $this, 'indicesBabelOjsCallback'],
         'wrapper'  => 'babelojs-container',
       ],
     ];
     $form['babelojs']['container']['actions']['remove_item'] = [
       '#type'   => 'submit',
       '#value'  => $this->t('Eliminar'),
-      '#submit' => ['::indicesBjDelete'],
+      '#submit' => ['::indicesBabelOjsDelete'],
       '#limit_validation_errors' => [],
       '#ajax'                    => [
-        'callback' => [ $this, 'indicesBjCallback'],
+        'callback' => [ $this, 'indicesBabelOjsCallback'],
         'wrapper'  => 'babelojs-container',
       ],
     ];
-
-    $form['makemake']['container'] = [
-      '#type'       => 'container',
-      '#attributes' => ['id' => 'makemake-container'],
-    ];
-    $form['makemake']['container']['makemake'] = [
-      '#type' => 'fieldset',
-      '#title' => 'Importar Make make',
-    ];
-
-    $form['makemake']['container']['makemake']['file'] = [ 
-      '#title' => 'Archivo en formato CSV',
-      '#type' => 'managed_file',
-      '#title' => $this->t('Archivo en formato CSV'),
-      '#upload_location' => 'public://import',
-      '#upload_validators' => [
-        'file_validate_extensions' => ['csv'],
-      ],
-    ];
-    $form['makemake']['container']['actions'] = [
-      '#type' => 'actions',
-    ];
-    $form['makemake']['container']['actions']['add_item'] = [
-      '#type'   => 'submit',
-      '#value'  => $this->t('Indexar'),
-      '#submit' => ['::indicesMakeCreate'],
-      '#limit_validation_errors' => [],
-      '#ajax'                    => [
-        'callback' => [ $this, 'indicesMakeCallback'],
-        'wrapper'  => 'makemake-container',
-      ],
-    ];
-    $form['makemake']['container']['actions']['remove_item'] = [
-      '#type'   => 'submit',
-      '#value'  => $this->t('Eliminar'),
-      '#submit' => ['::indicesMakeDelete'],
-      '#limit_validation_errors' => [],
-      '#ajax'                    => [
-        'callback' => [ $this, 'indicesMakeCallback'],
-        'wrapper'  => 'makemake-container',
-      ],
-    ];
-
     $form_state->setCached(FALSE);
-
-    /*$form['actions']['submit'] = [
-      '#type' => 'submit',
-      '#value' => $this->t('Save'),
-    ];*/
-
-    return $form;//parent::buildForm($form, $form_state);
+    return $form;
   }
 
-  public function indicesDrupalCreate(array $form, FormStateInterface $form_state) {
-    $i = $form_state->getValue('drupal');
-    foreach ($i['container']['node'] as $k => $v) {
-      if($v == 1) {
-        $this->commonFunction->indexingApi('node', $k, 'create');
-      }
-    }
-    foreach ($i['container']['taxonomy'] as $k => $v) { 
-      if($v == 1) {
-        $this->commonFunction->indexingApi('taxonomy', $k, 'create');
-      }
-    }
-    $form_state->setRebuild();
-  }
-
-  public function indicesDrupalDelete(array $form, FormStateInterface $form_state) {
-    $i = $form_state->getValue('indices');
-    
-    foreach ($i['container']['node'] as $k => $v) {
-      if($v == 1) {
-        $this->commonFunction->indexingApi('node', $k, 'delete');
-      }
-    }
-    foreach ($i['container']['taxonomy'] as $k => $v) { 
-      if($v == 1) {
-        $this->commonFunction->indexingApi('taxonomy', $k, 'delete');
-      }
-    }
-    $form_state->setRebuild();
-  }
-
-  public function indicesDrupalCallback(array $form, FormStateInterface $form_state) {
-    return $form['drupal']['container'];
-  }
-
-  public function indicesBjLoad(array $form, FormStateInterface $form_state) {
+  public function indicesBabelOjsLoad(array $form, FormStateInterface $form_state) {
     $i = $form_state->getValue('babelojs');
     $endpoint = $i['container']['babelojs']['endpoint'];
     $sets = [];
@@ -274,7 +126,7 @@ class ElasticsearchIndexingForm extends ConfigFormBase {
     $form_state->setRebuild();
   }
 
-  public function indicesBjCreate(array $form, FormStateInterface $form_state) {
+  public function indicesBabelOjsCreate(array $form, FormStateInterface $form_state) {
     $log = ['total' => 0, 'successful' => 0, 'failed' => 0, 'error' => []];
     $i = $form_state->getValue('babelojs');
     $endpoint = $i['container']['babelojs']['endpoint'];
@@ -299,7 +151,7 @@ class ElasticsearchIndexingForm extends ConfigFormBase {
     $form_state->setRebuild();
   }
 
-  public function indicesBjDelete(array $form, FormStateInterface $form_state) {
+  public function indicesBabelOjsDelete(array $form, FormStateInterface $form_state) {
     $log = ['total' => 0, 'successful' => 0, 'failed' => 0, 'error' => []];
     $i = $form_state->getValue('babelojs');
     $endpoint = $i['container']['babelojs']['endpoint'];
@@ -324,20 +176,8 @@ class ElasticsearchIndexingForm extends ConfigFormBase {
     $form_state->setRebuild();
   }
 
-  public function indicesBjCallback(array $form, FormStateInterface $form_state) {
+  public function indicesBabelOjsCallback(array $form, FormStateInterface $form_state) {
     return $form['babelojs']['container'];
-  }
-
-  public function indicesMakeCreate(array $form, FormStateInterface $form_state) {
-    $this->commonFunction->indexingApi('makemake', '', 'create');
-  }
-
-  public function indicesMakeDelete(array $form, FormStateInterface $form_state) {
-    $this->commonFunction->indexingApi('makemake', '', 'delete');
-  }
-
-  public function indicesMakeCallback(array $form, FormStateInterface $form_state) {
-    return $form['makemake']['container'];
   }
 
   public function submitForm(array &$form, FormStateInterface $form_state) {

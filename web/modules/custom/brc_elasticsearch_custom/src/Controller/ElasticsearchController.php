@@ -42,7 +42,10 @@ class ElasticsearchController extends ControllerBase {
       $this->fields = null;
     }
     if (isset($_REQUEST['filter'])) {
+      $this->filter = $_REQUEST['filter'];
       $this->type = 'general_' . $_REQUEST['filter'];
+    }else {
+      $this->filter = null;
     }
 
     if (isset($_REQUEST['page'])) {
@@ -69,11 +72,12 @@ class ElasticsearchController extends ControllerBase {
     $categorys = $seekers[$this->type];
     $config = $seekers[$this->type]['config'];
     $types = [];
-    $fields = [];
+    $fields = $this->fields;
     $parameters = [];
     $params = [];
-    $result = ['nodes' => [], 'pagination' => [], 'suggest' => []];
-    $terms = explode(':',  $this->term);
+    $result = ['nodes' => [], 'pagination' => ['all' => ['total' => 0]], 'suggest' => []];
+    $terms = isset($this->term) && !empty($this->term) ? explode(':',  $this->term) : null;
+
     $suggest_term = $terms[0];
     if ($terms !== null) {
       $clte = null;
@@ -141,6 +145,12 @@ class ElasticsearchController extends ControllerBase {
                   break;
                 case 'obra_de_arte':
                   $params[$ck][$t]['sort'] = $this->type == 'general' ? ["date" => ["order" => "asc"], "_score" => ["order" => "desc"]] : ["date_collection" => ["order" => "desc"]];
+                  if ($this->type === 'node_category_obra_de_arte') {
+                    $params[$ck][$t]['sort'] = ["date_collection" => ["order" => "desc"]];
+                    if (in_array('title', explode(',', $field))) {
+                      $field = null;
+                    }
+                  }
                   break;
                 case 'pieza_arqueologica':
                   $params[$ck][$t]['sort'] = ["_score" => ["order" => "desc"]];
@@ -242,7 +252,7 @@ class ElasticsearchController extends ControllerBase {
               if (empty($this->fields) && !empty($terms)) {
                 $fg = [];
                 foreach ($this->commonFunction->checkedType($c['container']) as $key => $f) {
-                  $fg[] = $f . '^10';
+                  $fg[] = $f . '^' . $this->commonFunction->bootingFields($f);
                 }
                 array_push($params[$ck][$t]['query']['bool']['must'], ['query_string' => ['fields' => $fg, 'query' => (in_array('title', $fg)) ? $terms[0] : $terms[0]]]);
               }
@@ -292,7 +302,7 @@ class ElasticsearchController extends ControllerBase {
               if (empty($this->fields) && !empty($terms)) {
                 $fg = [];
                 foreach ($this->commonFunction->checkedType($c['container']) as $key => $f) {
-                  $fg[] = $f . '^10';
+                  $fg[] = $f . '^'  . $this->commonFunction->bootingFields($ck, $f);
                 }
                 array_push($params[$ck][$t]['query']['bool']['must'], ['query_string' => ['fields' => $fg, 'query' => (in_array('title', $fg)) ? $terms[0] : $terms[0]]]);
               }
@@ -348,7 +358,7 @@ class ElasticsearchController extends ControllerBase {
               if (empty($this->fields) && !empty($terms)) {
                 $fg = [];
                 foreach ($this->commonFunction->checkedType($c['container']) as $key => $f) {
-                  $fg[] = $f . '^10';
+                  $fg[] = $f . '^' . $this->commonFunction->bootingFields($ck, $f);
                 }
                 array_push($params[$ck][($ck == 'mediawiki') ? $ck : $t]['query']['bool']['must'], ['query_string' => ['fields' => $fg, 'query' => (in_array('title', $fg)) ? $terms[0] : $terms[0]]]);
               }
@@ -362,28 +372,52 @@ class ElasticsearchController extends ControllerBase {
       }
     }
 
-    foreach ($params as $pck => $pc) {
-      foreach ($pc as $ptk => $pt) {
+    if(!empty($this->filter)){
+      if($this->filter == 'collections' || $this->filter == 'others' || $this->filter == 'biblioteca_virtual' || $this->filter == 'mediawiki' || $this->filter == 'makemake'){
+        $clave = array_search('type', explode(',', $fields));
+        $fltr = $terms[$clave];
+        
+        foreach ($params as $pck => $pc) {
+          foreach ($pc as $ptk => $pt) {
+            if($ptk === $fltr) {
+              try {
+                $response = $this->commonFunction->processResult($this->commonFunction->clientElasticsearch('search', $parameters[$ptk]['indice'], $parameters[$ptk]['doc'], $pt), $pck, $parameters[$ptk]);
+                $clave = $parameters[$ptk]['category'];
+                $result['nodes'][$clave] = empty($result['nodes'][$clave]) ? $response['nodes'][0] : array_merge($result['nodes'][$clave], $response['nodes'][0]);
+                $result['pagination'][$clave]['total'] = $response['pagination'][0]->hits->total;
+                $result['pagination']['all']['total'] += $response['pagination'][0]->hits->total;
+                $result['params'][$ptk] = [$pt, $parameters[$ptk]];
+              } catch (Exception $e) {
+                return new JsonResponse($e->getMessage());
+              }
+            }
+          }
+        }
+      }
+    }else {
+      foreach ($params as $pck => $pc) {
+        foreach ($pc as $ptk => $pt) {
+          try {
+            $response = $this->commonFunction->processResult($this->commonFunction->clientElasticsearch('search', $parameters[$ptk]['indice'], $parameters[$ptk]['doc'], $pt), $pck, $parameters[$ptk]);
+            $clave = $parameters[$ptk]['category'];
+            $result['nodes'][$clave] = empty($result['nodes'][$clave]) ? $response['nodes'][0] : array_merge($result['nodes'][$clave], $response['nodes'][0]);
+            $result['pagination'][$clave]['total'] = $response['pagination'][0]->hits->total;
+            $result['pagination']['all']['total'] += $response['pagination'][0]->hits->total;
+            $result['params'][$ptk] = [$pt, $parameters[$ptk]];
+          } catch (Exception $e) {
+            return new JsonResponse($e->getMessage());
+          }
+        }
         try {
-          $response = $this->commonFunction->processResult($this->commonFunction->clientElasticsearch('search', $parameters[$ptk]['indice'], $parameters[$ptk]['doc'], $pt), $pck, $parameters[$ptk]);
-          $clave = $parameters[$ptk]['category'];
-          $result['nodes'][$clave] = empty($result['nodes'][$clave]) ? $response['nodes'][0] : array_merge($result['nodes'][$clave], $response['nodes'][0]);
-          $result['pagination'][$clave]['total'] = $response['pagination'][0]->hits->total;
-          $result['pagination']['all']['total'] += $response['pagination'][0]->hits->total;
-          $result['params'][$ptk] = [$pt, $parameters[$ptk]];
+          /*Revisar en prod
+          if($pck == 'node'){
+            $suggest = ['suggest' => ["my-suggestion" => [ "text" => $suggest_term, "term" => [ "field" => "title"] ] ] ];
+            $response = $this->commonFunction->processResult($this->commonFunction->clientElasticsearch('suggest', $parameters[$t]['index'], $parameters[$t]['doc'], $suggest), 'suggest');
+            $result['suggest'] = $response;
+          }*/
         } catch (Exception $e) {
           return new JsonResponse($e->getMessage());
         }
-      }
-      try {
-        /*Revisar en prod
-        if($pck == 'node'){
-          $suggest = ['suggest' => ["my-suggestion" => [ "text" => $suggest_term, "term" => [ "field" => "title"] ] ] ];
-          $response = $this->commonFunction->processResult($this->commonFunction->clientElasticsearch('suggest', $parameters[$t]['index'], $parameters[$t]['doc'], $suggest), 'suggest');
-          $result['suggest'] = $response;
-        }*/
-      } catch (Exception $e) {
-        return new JsonResponse($e->getMessage());
       }
     }
     return new JsonResponse($result);

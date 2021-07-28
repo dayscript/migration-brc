@@ -118,8 +118,8 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
         'subtitle' => '',
         'summary' => '',
         'tags' => '',
-        'title' => '',
         'technique' => '',
+        'title' => '',
         'type' => '',
       ], 
       'taxonomy' => [
@@ -127,8 +127,8 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
         'category'=> '',
         'nid'=> '',
         'path'=> '',      
-        'summary'=> '',
         'status'=> '',
+        'summary'=> '',
         'title'=> '',
         'type'=> '',
       ],
@@ -137,31 +137,28 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
         'title' => '',
       ],
       'oai_dc' => [
-        'title' => '',
         'author' => '',
-        'tags' => '',
         'body' => '',
-        'date' => '',
         'category' => '',
-        'subcategory' => '',
+        'changed' => '',
+        'city_place' => '',
+        'created' => '',
+        'date' => '',
         'nid' => '',
         'path' => '',
-        'city_place' => '',
+        'subcategory' => '',
+        'tags' => '',
+        'title' => '',
         'type' => '',
         'type_name' => '',
-        'created' => '',
-        'changed' => '',
       ],
       'makemake' => [
-        'title' => '',
         'author' => '',
-        'tags' => '',
         'body' => '',
-        'date' => '',
         'category' => '',
-        'subcategory' => '',
-        'nid' => '',
-        'path' => '',
+        'changed' => '',
+        'created' => '',
+        'date' => '',
         'image' => [
           'src' => '',
           'alt' => '',
@@ -170,10 +167,13 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
           'rights' => '',
           'longdesc' => '',
         ],
+        'nid' => '',
+        'path' => '',
+        'subcategory' => '',
+        'tags' => '',
+        'title' => '',
         'type' => '',
         'type_name' => '',
-        'created' => '',
-        'changed' => '',
       ]
     ];
     return $types[$type];
@@ -209,6 +209,39 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
       }
     }
     return $terms;
+  }
+
+  public function bootingFields($field) {
+    $fields = [
+        'abstract' => 7,
+        'area' => 6,
+        'author' => 6,
+        'available' => 5,
+        'body' => 9,
+        'book' => 5,
+        'category' => 5,
+        'city' => 7,
+        'city_place' => 7,
+        'editorial' => 5,
+        'function' => 5,
+        'material' => 5,
+        'modality' => 5,
+        'period' => 5,
+        'public' => 6,
+        'region' => 5,
+        'registry_number' => 5,
+        'style' => 5,
+        'subcategory' => 5,
+        'subtitle' => 8,
+        'summary' => 5,
+        'tags' => 8,
+        'technique' => 5,
+        'title' => 10,
+        'type' => 8,
+        'text' => 9,
+        'type_name' => 8,
+    ];
+    return isset($fields[$field]) ? $fields[$field] : 0;
   }
 
   public function indexingApi($category, $type, $operation, $returnresult = false) {
@@ -659,7 +692,8 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
                 if(isset($node['field_score_order']) && !empty($node['field_score_order'])){
                   $node_es->score_order = $node['field_score_order'][0]['value'];
                 }
-                /*if(isset($node->field_content['und']) && !empty($node->field_content['und'])){
+                /*field collection
+                if(isset($node->field_content['und']) && !empty($node->field_content['und'])){
                   $citys = [];
                   foreach ($node->field_content['und'] as $key => $item){
                   $entityf = entity_load('field_collection_item', [$item['value']]);
@@ -672,7 +706,7 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
                 break;
             }
 
-            $node_es = $this->clearObject($node_es);
+            $node_es = $this->clearObject($node_es);dpm((array)$node_es);
             $result = $this->clientElasticsearch('create', 'banrepcultural', 'node', $node_es);
           break;
           case 'delete':
@@ -751,7 +785,7 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
               if(isset($node['coverage']) && !empty($node['coverage'])){
                 $node_es->city_place =  $node['coverage'];
               }
-              $node_es->image = $this->processFieldImageSet($nid, $node_es->title);
+              $node_es->image = $this->processFieldImageSet($nid, $node_es->title, $node_es->path);
               $node_es->type = $this->clearType($nid);
               $node_es->type_name = $this->typeNameSets($node_es->type);
  
@@ -903,7 +937,7 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
     $data = json_decode($data);
     $result = ['nodes' => [], 'pagination' => [], 'original' => $data];
     $node = [];
-    $types = [];//common_translate_types();
+    $types = $this->checkedType($this->config->get('categories')[$type]['mapping']);
     switch ($type) {
       case 'suggest':
         foreach ($data->suggest->{'my-suggestion'} as $key => $value) {
@@ -922,8 +956,8 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
             '_score' => $value->_score * $parameters['score'],
             'type' => $parameters['name'],
             'type_id' => 'mediawiki',
-            'title' => $value->_source->title,
-            'body' => text_summary($value->_source->text),
+            'title' => isset($value->_source->title) ? $value->_source->title : '',
+            'body' => isset($value->_source->text) ? text_summary($value->_source->text) : '',
             'path' => (isset($parameters['endpoint']) && !empty($parameters['endpoint'])) ? $parameters['endpoint'].'/index.php?title='.str_replace(' ', '_', $value->_source->title) : '/'.str_replace(' ', '_', $value->_source->title),
             'target' => '_blank',
             'order' => $parameters['from']+$key,
@@ -938,16 +972,16 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
               '_score' => $value->_score * $parameters['score'],
               'type' => $types[$value->_source->type],
               'type_id' => 'babel',
-              'nid' => $value->_source->nid,
-              'title' => $value->_source->title,
-              'body' => text_summary($value->_source->body),
+              'nid' => isset($value->_source->nid) ? $value->_source->nid : '',
+              'title' => isset($value->_source->title) ? $value->_source->title : '',
+              'body' => isset($value->_source->body) ? text_summary($value->_source->body) : '',
               'image' => array(
-                'src' => $value->_source->image->src,
-                'alt' => $value->_source->image->alt,
-                'title' => $value->_source->image->title,
-                'author' => $value->_source->image->author,
-                'rights' => $value->_source->image->rights,
-                'longdesc' => $value->_source->image->longdesc,
+                'src' => isset($value->_source->image->src) ? $value->_source->image->src : '',
+                'alt' => isset($value->_source->image->alt) ? $value->_source->image->alt : '',
+                'title' => isset($value->_source->image->title) ? $value->_source->image->title : '',
+                'author' => isset($value->_source->image->author) ? $value->_source->image->author : '',
+                'rights' => isset($value->_source->image->rights) ? $value->_source->image->rights : '',
+                'longdesc' => isset($value->_source->image->longdesc) ? $value->_source->image->longdesc : '',
               ),
               'path' => is_object($value->_source->path) ? json_decode(json_encode($value->_source->path), true)[1] : $value->_source->path, 
               'target' => '_blank',
@@ -966,16 +1000,16 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
               '_score' => $value->_score * $parameters['score'],
               'type' => $parameters['name'],
               'type_id' => 'ojs',
-              'nid' => $value->_source->nid,
-              'title' => $value->_source->title,
-              'body' => text_summary($value->_source->body),
+              'nid' => isset($value->_source->nid) ? $value->_source->nid : '',
+              'title' => isset($value->_source->title) ? $value->_source->title : '',
+              'body' => isset($value->_source->body) ? text_summary($value->_source->body) : '',
               'image' => array(
-                'src' => $value->_source->image->src,
-                'alt' => $value->_source->image->alt,
-                'title' => $value->_source->image->title,
-                'author' => $value->_source->image->author,
-                'rights' => $value->_source->image->rights,
-                'longdesc' => $value->_source->image->longdesc,
+                'src' => isset($value->_source->image->src) ? $value->_source->image->src : '',
+                'alt' => isset($value->_source->image->alt) ? $value->_source->image->alt : '',
+                'title' => isset($value->_source->image->title) ? $value->_source->image->title : '',
+                'author' => isset($value->_source->image->author) ? $value->_source->image->author : '',
+                'rights' => isset($value->_source->image->rights) ? $value->_source->image->rights : '',
+                'longdesc' => isset($value->_source->image->longdesc) ? $value->_source->image->longdesc : '',
               ),
               'path' => is_object($value->_source->path) ? json_decode(json_encode($value->_source->path), true)[1] : $value->_source->path, 
               'target' => '_blank',
@@ -992,63 +1026,66 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
           if (!empty($value->_source->image->src)) {
              $image = !empty($parameters['image_style']) ? image_style_url($parameters['image_style'], $value->_source->image->src) : file_create_url($value->_source->image->src);
              $image = str_replace("//assets.", "//admin.", $image);
-             //file_create_url($value->_source->image->src);
+          }
+          $target = '_self';
+          if(isset($value->_source->path) && strpos($value->_source->path, '/http') === 0 || strpos($value->_source->path, 'http') === 0 || strpos($value->_source->path, '/https') === 0 || strpos($value->_source->path, 'https') === 0) {
+            $target = '_blank';
           }
           array_push($node, array(
             'score' => $value->_score,
             '_score' => $value->_score * $parameters['score'],
             'type' => $types[$value->_source->type],
-            'nid' => $value->_source->nid,
-            'title' => $value->_source->title,
-            'subtitle' => $value->_source->subtitle,
-            'summary' => $value->_source->summary,
-            'abstract' => $value->_source->abstract,
-            'body' => text_summary($value->_source->body),
-            'book' => $value->_source->book,
-            'date' => $value->_source->date,
-            'date_end' => $value->_source->date_end,
-            'date_full'  => $value->_source->date_full,
-            'date_collection' => $value->_source->date_collection,
-            'hour' => $value->_source->hour,
-            'prefix' => $value->_source->prefix,
-            'category' => $value->_source->category,
-            'subcategory' => $value->_source->subcategory,
-            'price' => $value->_source->price,
+            'nid' => isset($value->_source->nid) ? $value->_source->nid : '',
+            'title' => isset($value->_source->title) ? $value->_source->title : '',
+            'subtitle' => isset($value->_source->subtitle) ? $value->_source->subtitle : '',
+            'summary' => isset($value->_source->summary) ? $value->_source->summary : '',
+            'abstract' => isset($value->_source->abstract) ? $value->_source->abstract : '',
+            'body' => isset($value->_source->body) ? text_summary($value->_source->body) : '',
+            'book' => isset($value->_source->book) ? $value->_source->book : '',
+            'date' => isset($value->_source->date) ? $value->_source->date : '',
+            'date_end' => isset($value->_source->date_end) ? $value->_source->date_end : '',
+            'date_full'  => isset($value->_source->date_full) ? $value->_source->date_full : '',
+            'date_collection' => isset($value->_source->date_collection) ? $value->_source->date_collection : '',
+            'hour' => isset($value->_source->hour) ? $value->_source->hour : '',
+            'prefix' => isset($value->_source->prefix) ? $value->_source->prefix : '',
+            'category' => isset($value->_source->category) ? $value->_source->category : '',
+            'subcategory' => isset($value->_source->subcategory) ? $value->_source->subcategory : '',
+            'price' => isset($value->_source->price) ? $value->_source->price : '',
             'image' => array(
               'src' => $image,
-              'alt' => $value->_source->image->alt,
-              'title' => $value->_source->image->title,
-              'author' => $value->_source->image->author,
-              'rights' => $value->_source->image->rights,
-              'longdesc' => $value->_source->image->longdesc,
+              'alt' => isset($value->_source->image->alt) ? $value->_source->image->alt : '',
+              'title' => isset($value->_source->image->title) ? $value->_source->image->title : '',
+              'author' => isset($value->_source->image->author) ? $value->_source->image->author : '',
+              'rights' => isset($value->_source->image->rights) ? $value->_source->image->rights : '',
+              'longdesc' => isset($value->_source->image->longdesc) ? $value->_source->image->longdesc : '',
             ),
-            'city' => $value->_source->city,
-            'city_place' => $value->_source->city_place,
-            'featured' => $value->_source->featured,
-            'display' => $value->_source->display,
-            'available' => $value->_source->available,
-            'area' => $value->_source->area,
-            'public' => $value->_source->public,
-            'tags' => $value->_source->tags,
-            'registry_number' => $value->_source->registry_number,
-            'score_order' => $value->_source->score_order,
-            'style' => $value->_source->style,
-            'technique' => $value->_source->technique,
-            'material' => $value->_source->material,
-            'modality' => $value->_source->modality,
-            'function' => $value->_source->function,
-            'region' => $value->_source->region,
-            'period' => $value->_source->period,
-            'isbn' => $value->_source->isbn,
-            'editorial' => $value->_source->editorial,
-            'author' => $value->_source->author,
-            'path' => $value->_source->path,
-            'target' => (isset($value->_source->path) && strpos($value->_source->path, '/http') === 0 || strpos($value->_source->path, 'http') === 0 || strpos($value->_source->path, '/https') === 0 || strpos($value->_source->path, 'https') === 0) ? '_blank' : '_self',
-            'path_external' => $value->_source->path_external,
-            'status' => $value->_source->status,
-            'created' => $value->_source->created,
-            'changed' => $value->_source->changed,
-            'access' => $value->_source->type == 'makemake' ? 'Disponible para socios' : '',
+            'city' => isset($value->_source->city) ? $value->_source->city : '',
+            'city_place' => isset($value->_source->city_place) ? $value->_source->city_place : '',
+            'featured' => isset($value->_source->featured) ? $value->_source->featured : '',
+            'display' => isset($value->_source->display) ? $value->_source->display : '',
+            'available' => isset($value->_source->available) ? $value->_source->available : '',
+            'area' => isset($value->_source->area) ? $value->_source->area : '',
+            'public' => isset($value->_source->public) ? $value->_source->public : '',
+            'tags' => isset($value->_source->tags) ? $value->_source->tags : '',
+            'registry_number' => isset($value->_source->registry_number) ? $value->_source->registry_number : '',
+            'score_order' => isset($value->_source->score_order) ? $value->_source->score_order : '',
+            'style' => isset($value->_source->style) ? $value->_source->style : '',
+            'technique' => isset($value->_source->technique) ? $value->_source->technique : '',
+            'material' => isset($value->_source->material) ? $value->_source->material : '',
+            'modality' => isset($value->_source->modality) ? $value->_source->modality : '',
+            'function' => isset($value->_source->function) ? $value->_source->function : '',
+            'region' => isset($value->_source->region) ? $value->_source->region : '',
+            'period' => isset($value->_source->period) ? $value->_source->period : '',
+            'isbn' => isset($value->_source->isbn) ? $value->_source->isbn : '',
+            'editorial' => isset($value->_source->editorial) ? $value->_source->editorial : '',
+            'author' => isset($value->_source->author) ? $value->_source->author : '',
+            'path' => isset($value->_source->path) ? $value->_source->path : '',
+            'target' => $target,
+            'path_external' => isset($value->_source->path_external) ? $value->_source->path_external : '',
+            'status' => isset($value->_source->status) ? $value->_source->status : '',
+            'created' => isset($value->_source->created) ? $value->_source->created : '',
+            'changed' => isset($value->_source->changed) ? $value->_source->changed : '',
+            'access' => isset($value->_source->type) ? $value->_source->type == 'makemake' ? 'Disponible para socios' : '' : '',
             'order' => $parameters['from']+$key,
           ));
         }
@@ -1084,7 +1121,7 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
     ];
   }
 
-  public function processFieldImageSet($type, $title){
+  public function processFieldImageSet($type, $title, $path){
     $t = explode(":", $type)[0];
     switch ($t) {
       case 'banrep':
@@ -1106,7 +1143,7 @@ class ElasticsearchManager implements ElasticsearchManagerInterface {
        $uri = 'https://publicaciones.banrepcultural.org/public/site/images/admin/ReportesEmisor_300px.jpg';
        break;
       default:
-       $uri = 'http://babel.banrepcultural.org/utils/getthumbnail/collection/' . str_replace("http://babel.banrepcultural.org/cdm/ref/collection/", "", $node->path);
+       $uri = 'http://babel.banrepcultural.org/utils/getthumbnail/collection/' . str_replace("http://babel.banrepcultural.org/cdm/ref/collection/", "", $path);
        break;
     }
     return $fields = [

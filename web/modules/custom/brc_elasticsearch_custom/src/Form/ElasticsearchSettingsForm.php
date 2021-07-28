@@ -39,9 +39,7 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
     $form['#attached']['library'][] = 'core/drupal.ajax';
     $form['#attached']['library'][] = 'core/drupal.dialog.ajax';
     $form['#tree'] = TRUE;
-     
     $form['settings'] = ['#type' => 'vertical_tabs'];
-
     $form['indices'] = [
       '#type' => 'details',
       '#title' => $this->t('Índices de Elasticsearch'),
@@ -57,12 +55,11 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
       '#title' => $this->t('Configurar buscador'),
       '#group' => 'settings',
     ];
-
     $form['indices']['container'] = [
       '#type'       => 'container',
       '#attributes' => ['id' => 'indices-container'],
     ];
-    //$this->indices = !empty($config->get('indices')) ? count($config->get('indices')) : 1;
+
     for ($i = 1; $i <= $this->indices; $i++) {
       $form['indices']['container']['index'][$i] = [
         '#type' => 'details',
@@ -104,28 +101,6 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
     $form['indices']['container']['actions'] = [
       '#type' => 'actions',
     ];
-    /*$form['indices']['container']['actions']['add_item'] = [
-      '#type'   => 'submit',
-      '#value'  => $this->t('Agregar más'),
-      '#submit' => ['::indicesAddMore'],
-      '#ajax'   => [
-        'callback' => [ $this, 'indicesAddMoreCallback'],
-        'wrapper'  => 'indices-container',
-      ],
-    ];
-    if ($this->indices > 1) {
-      $form['indices']['container']['actions']['remove_item'] = [
-        '#type'   => 'submit',
-        '#value'  => $this->t('Eliminar el último'),
-        '#submit' => ['::indicesRemoveMore'],
-        '#limit_validation_errors' => [],
-        '#ajax'                    => [
-          'callback' => [ $this, 'indicesAddMoreCallback'],
-          'wrapper'  => 'indices-container',
-        ],
-      ];
-    }*/
-
     $form['categories']['container'] = [
       '#type'       => 'container',
       '#attributes' => ['id' => 'categories-container'],
@@ -138,7 +113,6 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
         $endpoints[$e['index']] = $e['name'];
       }
     }
-
     foreach ($categorys as $ck => $c) {
       $form['categories']['container']['index'][$c] = [
         '#type' => 'details',
@@ -147,7 +121,7 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
         '#tree' => TRUE,
       ];
       $form['categories']['container']['index'][$c]['container']['mapping'] = [
-        '#type' => 'details',//'fieldset',
+        '#type' => 'details',
         '#title' => 'Tipos de contenido',
       ];
       foreach ($this->commonFunction->mappingCategory($c) as $mk => $m) {
@@ -161,17 +135,17 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
         ];
         $form['categories']['container']['index'][$c]['container']['mapping']['container'][$mk]['name'] = [
           '#type' => 'textfield',
-          '#title' => $this->t('Name'),
+          '#title' => $this->t('Nombre'),
           '#default_value' => isset($config->get('categories')[$c], $config->get('categories')[$c]['mapping'][$mk]['name']) ? $config->get('categories')[$c]['mapping'][$mk]['name'] : $m,
         ];
         $form['categories']['container']['index'][$c]['container']['mapping']['container'][$mk]['score'] = [
           '#type' => 'textfield',
           '#title' => $this->t('Score'),
-          '#default_value' => isset($config->get('categories')[$c], $config->get('categories')[$c]['mapping'][$mk]['score']) ? $config->get('categories')[$c]['mapping'][$mk]['score'] : '',
+          '#default_value' => isset($config->get('categories')[$c], $config->get('categories')[$c]['mapping'][$mk]['score']) ? $config->get('categories')[$c]['mapping'][$mk]['score'] : 0,
         ];
       }
       $form['categories']['container']['index'][$c]['container']['endpoint'] = [
-        '#type' => 'details',//'fieldset',
+        '#type' => 'details',
         '#title' => 'Servicio',
       ];
       $count_endpoints = $c == 'ojs' ? 6 : 1;
@@ -217,7 +191,7 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
 
       foreach ($categorys as $ck => $c) {
         $form['seekers']['container'][$sk]['container'][$c] = [
-          '#type' => 'details',//'fieldset',
+          '#type' => 'details',
           '#title' => $c,
         ];
         $form['seekers']['container'][$sk]['container'][$c]['type'] = [
@@ -236,11 +210,10 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
             '#title' => $f,
             '#default_value' => isset($config->get('sconfig')[$sk], $config->get('sconfig')[$sk][$c]['container'][$fk]['field']) ? $config->get('sconfig')[$sk][$c]['container'][$fk]['field'] : '',
           ];
-          /*$form['seekers']['container'][$sk]['container'][$c]['container'][$fk]['boot'] = [
-            '#type' => 'textfield',
-            '#title' => 'Boot',
-            //'#default_value' => '',
-          ];*/
+          $form['seekers']['container'][$sk]['container'][$c]['container'][$fk]['boot'] = [
+            '#type' => 'item',
+            '#markup' => '<b>Booting Query: </b>' . $this->commonFunction->bootingFields($f),
+          ];
         }
       }
       $form['seekers']['container'][$sk]['from'] = [
@@ -270,24 +243,8 @@ class ElasticsearchSettingsForm extends ConfigFormBase {
       '#value' => $this->t('Save'),
     ];
 
-    return $form;//parent::buildForm($form, $form_state);
+    return $form;
   }
-
-  /*public function indicesAddMore(array $form, FormStateInterface $form_state) {
-    $this->indices++;
-    $form_state->setRebuild();
-  }*/
-
-  /*public function indicesRemoveMore(array $form, FormStateInterface $form_state) {
-    if ($this->indices > 1) {
-      $this->indices--;
-    }
-    $form_state->setRebuild();
-  }*/
-
-  /*public function indicesAddMoreCallback(array $form, FormStateInterface $form_state) {
-    return $form['indices']['container'];
-  }*/
 
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $config = $this->configFactory->getEditable('brc_elasticsearch_custom.settings');

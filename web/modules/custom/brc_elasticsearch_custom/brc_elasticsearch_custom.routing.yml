@@ -7,14 +7,30 @@ brc_elasticsearch_custom.configuration:
     _permission: 'access content'
 
 brc_elasticsearch_custom.drupal:
-  path: '/elasticsearch/indexing'
+  path: '/elasticsearch/indexing/drupal'
   defaults:
-    _form: 'Drupal\brc_elasticsearch_custom\Form\ElasticsearchIndexingForm'
+    _form: 'Drupal\brc_elasticsearch_custom\Form\ElasticsearchIndexingDrupalForm'
     _title: 'Elasticsearch indexing'
   requirements:
     _permission: 'access content'
 
-brc_elasticsearch_custom.feeds:
+brc_elasticsearch_custom.babelojs:
+  path: '/elasticsearch/indexing/babelojs'
+  defaults:
+    _form: 'Drupal\brc_elasticsearch_custom\Form\ElasticsearchIndexingBalbelOjsForm'
+    _title: 'Elasticsearch indexing'
+  requirements:
+    _permission: 'access content'
+
+brc_elasticsearch_custom.makemake:
+  path: '/elasticsearch/indexing/makemake'
+  defaults:
+    _form: 'Drupal\brc_elasticsearch_custom\Form\ElasticsearchIndexingMakemakeForm'
+    _title: 'Elasticsearch indexing'
+  requirements:
+    _permission: 'access content'
+
+brc_elasticsearch_custom.api:
   path: '/api/elasticsearch'
   defaults:
     _controller: '\Drupal\brc_elasticsearch_custom\Controller\ElasticsearchController::elastic'

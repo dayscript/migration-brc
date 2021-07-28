@@ -19,14 +19,10 @@ use Drupal\file\Entity\File;
 class BrcCustomController extends ControllerBase {
 
   public $alias;
-
   public $page;
-
   public $config;
 
   public function __construct(ConfigFactory $config_factory) {
-    //$this->config = $config_factory->get('brc_custom.settings');
-
     if (isset($_REQUEST['alias'])) {
       $this->alias = $_REQUEST['alias'];
     }else {
