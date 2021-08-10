@@ -1476,12 +1476,12 @@ sconfig:
           field: 0
     mediawiki:
       type:
-        enciclopedia: enciclopedia
+        enciclopedia: 0
       container:
         text:
-          field: 1
+          field: 0
         title:
-          field: 1
+          field: 0
     babel:
       type:
         p17054coll24: p17054coll24
@@ -4681,6 +4681,7 @@ sconfig:
   node_category_obra_de_arte:
     node:
       type:
+        obra_de_arte: obra_de_arte
         activity: 0
         article: 0
         book: 0
@@ -4689,7 +4690,6 @@ sconfig:
         instrumento: 0
         minisitio: 0
         multimedia: 0
-        obra_de_arte: 0
         page: 0
         pieza_arqueologica: 0
         pieza_coleccion_monedas_billetes: 0
@@ -4701,15 +4701,15 @@ sconfig:
         area:
           field: 0
         author:
-          field: 0
+          field: 1
         available:
           field: 0
         body:
-          field: 0
+          field: 1
         book:
           field: 0
         category:
-          field: 0
+          field: 1
         changed:
           field: 0
         city:
@@ -4761,7 +4761,7 @@ sconfig:
         region:
           field: 0
         registry_number:
-          field: 0
+          field: 1
         score_order:
           field: 0
         status:
@@ -4769,22 +4769,22 @@ sconfig:
         style:
           field: 0
         subcategory:
-          field: 0
+          field: 1
         subtitle:
           field: 0
         summary:
           field: 0
         tags:
-          field: 0
+          field: 1
         title:
-          field: 0
+          field: 1
         technique:
           field: 0
         type:
           field: 0
     config:
-      from: ''
-      size: ''
+      from: '0'
+      size: '12'
       image_style: ''
   node_category_page:
     node:

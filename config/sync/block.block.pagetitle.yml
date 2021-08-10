@@ -6,8 +6,8 @@ dependencies:
     - adminimal_theme
 id: pagetitle
 theme: adminimal_theme
-region: header
-weight: -1
+region: content
+weight: -4
 provider: null
 plugin: page_title_block
 settings:

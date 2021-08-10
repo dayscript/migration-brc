@@ -7,7 +7,7 @@ dependencies:
 id: primaryadminactions
 theme: adminimal_theme
 region: content
-weight: -1
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:

@@ -9,7 +9,7 @@ dependencies:
 id: adminimal_system_main
 theme: adminimal_theme
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: system_main_block
 settings:

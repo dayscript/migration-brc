@@ -1,0 +1,23 @@
+uuid: 82a9c6e1-fe75-4882-aff6-5023f6ed015d
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - adminimal_theme
+id: marcadelsitio
+theme: adminimal_theme
+region: header
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

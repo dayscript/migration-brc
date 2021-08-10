@@ -28,12 +28,14 @@ dependencies:
     - field.field.node.activity.field_title_form
     - field.field.node.activity.field_tome_nota
     - field.field.node.activity.field_type_activity
+    - image.style.thumbnail
     - node.type.activity
   module:
     - comment
-    - datetime
+    - datetime_range
     - field_group
     - file
+    - image
     - media_library
     - metatag
     - office_hours
@@ -43,16 +45,15 @@ third_party_settings:
   field_group:
     group_general:
       children:
+        - title
+        - field_sumario
         - body
+        - field_tome_nota
+        - field_horarios
+        - field_date
         - field_type_activity
         - field_price
-        - field_horarios
-        - field_sumario
-        - field_date
         - field_disponibilidad
-        - field_tome_nota
-        - field_serie_franja
-        - title
       parent_name: ''
       weight: 0
       label: General
@@ -67,9 +68,9 @@ third_party_settings:
     group_multimedia:
       children:
         - field_image
-        - field_files
         - field_imagen_para_slider
         - field_gallery
+        - field_files
       parent_name: ''
       weight: 1
       label: Multimedia
@@ -83,10 +84,10 @@ third_party_settings:
       region: content
     group_related:
       children:
+        - field_area_misional
         - field_city
         - field_tags
         - field_p_blico_objetivo
-        - field_area_misional
       parent_name: ''
       weight: 2
       label: Relaciones
@@ -100,10 +101,9 @@ third_party_settings:
       region: content
     group_inscriptions:
       children:
-        - field_show_form
-        - field_description
         - field_title_form
         - field_limite_de_inscripciones
+        - field_description
       parent_name: ''
       weight: 4
       label: Inscripciones
@@ -173,8 +173,11 @@ content:
     region: content
   field_date:
     weight: 11
-    type: datetime_default
-    settings: {  }
+    type: daterange_datelist
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
     third_party_settings: {  }
     region: content
   field_description:
@@ -209,9 +212,10 @@ content:
     region: content
   field_gallery:
     weight: 18
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_gallery_media:
@@ -229,9 +233,10 @@ content:
     region: content
   field_image:
     weight: 16
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_image_media:
@@ -243,9 +248,10 @@ content:
     region: content
   field_imagen_para_slider:
     weight: 17
-    type: file_generic
+    type: image_image
     settings:
       progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
   field_imagen_para_slider_media:
